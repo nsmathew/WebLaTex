@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  21 JUL 2023 23:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  22 JUL 2023 14:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -78,20 +78,20 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 ) (PDF/myReport.aux)
 \openout1 = `myReport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -149,21 +149,21 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 <images/tuoslogo.png, id=1, 78.2925pt x 79.2561pt>
 File: images/tuoslogo.png Graphic file (type png)
 <use images/tuoslogo.png>
-Package pdftex.def Info: images/tuoslogo.png  used on input line 28.
+Package pdftex.def Info: images/tuoslogo.png  used on input line 30.
 (pdftex.def)             Requested size: 142.26378pt x 144.03468pt.
  [1
 
 
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./images/tuoslogo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
 (./chapters/abstract.tex [1
 
 ])
-Underfull \hbox (badness 10000) in paragraph at lines 3--65
+Underfull \hbox (badness 10000) in paragraph at lines 3--71
 
  []
 
@@ -196,52 +196,62 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] (./chapters/chapter1.tex
 Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+
+ []
+
 ) (./chapters/chapter2.tex [1
 
 
-]
+] [2]
 Chapter 2.
 
-LaTeX Warning: Citation `Reference2' on page 2 undefined on input line 3.
+LaTeX Warning: Citation `Reference2' on page 3 undefined on input line 3.
 
 
-LaTeX Warning: Citation `Reference1' on page 2 undefined on input line 11.
+LaTeX Warning: Citation `Reference1' on page 3 undefined on input line 11.
 
-<figures/figure1.png, id=33, 645.16031pt x 304.13625pt>
+<figures/figure1.png, id=37, 645.16031pt x 304.13625pt>
 File: figures/figure1.png Graphic file (type png)
 <use figures/figure1.png>
 Package pdftex.def Info: figures/figure1.png  used on input line 13.
 (pdftex.def)             Requested size: 426.79134pt x 201.19461pt.
-[2
+[3
 
 ]
 
-LaTeX Warning: Citation `Reference3' on page 3 undefined on input line 21.
+LaTeX Warning: Citation `Reference3' on page 4 undefined on input line 21.
 
-[3 <./figures/figure1.png>]) (./chapters/chapter3.tex [4]
+[4 <./figures/figure1.png>]) (./chapters/chapter3.tex [5]
 Chapter 3.
-[5
+[6
 
-]) (./chapters/chapter4.tex [6]
+]) (./chapters/chapter4.tex [7]
 Chapter 4.
-[7
+[8
 
-]) (./chapters/chapter5.tex [8]
+]) (./chapters/chapter5.tex [9]
 Chapter 5.
-) (PDF/myReport.bbl [9
+) (PDF/myReport.bbl [10
 
-]) [10
+]) [11
 
-] [11
+] [12
 
 
 ] (./chapters/appendixA.tex
 Appendix A.
-) (./chapters/appendixB.tex [12
+) (./chapters/appendixB.tex [13
 
 ]
 Appendix B.
-) [13
+) [14
 
 ] (PDF/myReport.aux)
 
@@ -249,18 +259,18 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2197 strings out of 476047
- 36441 string characters out of 5790254
+ 2198 strings out of 476047
+ 36477 string characters out of 5790254
  1857248 words of memory out of 5000000
- 22596 multiletter control sequences out of 15000+600000
+ 22597 multiletter control sequences out of 15000+600000
  519095 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,8n,62p,1463b,230s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,8n,62p,1463b,228s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on PDF/myReport.pdf (19 pages, 304350 bytes).
+Output written on PDF/myReport.pdf (20 pages, 307147 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
+ 138 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

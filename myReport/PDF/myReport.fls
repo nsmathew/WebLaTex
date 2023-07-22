@@ -223,12 +223,12 @@ INPUT ./chapters/chapter2.tex
 INPUT chapters/chapter2.tex
 INPUT ./chapters/chapter2.tex
 INPUT chapters/chapter2.tex
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
 INPUT ./figures/figure1.png
 INPUT ./figures/figure1.png
 INPUT figures/figure1.png
 INPUT ./figures/figure1.png
 INPUT ./figures/figure1.png
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
 INPUT ./chapters/chapter3.tex
 INPUT chapters/chapter3.tex
 INPUT ./chapters/chapter3.tex

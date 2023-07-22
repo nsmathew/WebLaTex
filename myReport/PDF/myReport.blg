@@ -7,45 +7,46 @@ Warning--I didn't find a database entry for "Reference2"
 Warning--I didn't find a database entry for "Reference1"
 Warning--I didn't find a database entry for "Reference3"
 Warning--empty journal in olshtain_speechact_1987
-You've used 3 entries,
+Warning--empty journal in preotiuc-pietro_automatically_2019
+You've used 4 entries,
             2253 wiz_defined-function locations,
-            557 strings with 4624 characters,
-and the built_in function-call counts, 959 in all, are:
-= -- 98
-> -- 41
+            561 strings with 4786 characters,
+and the built_in function-call counts, 1201 in all, are:
+= -- 120
+> -- 58
 < -- 0
-+ -- 17
-- -- 14
-* -- 78
-:= -- 168
-add.period$ -- 11
-call.type$ -- 3
-change.case$ -- 16
++ -- 24
+- -- 20
+* -- 94
+:= -- 214
+add.period$ -- 13
+call.type$ -- 4
+change.case$ -- 22
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 26
-empty$ -- 71
-format.name$ -- 14
-if$ -- 189
+cite$ -- 6
+duplicate$ -- 34
+empty$ -- 84
+format.name$ -- 20
+if$ -- 234
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 3
-newline$ -- 20
-num.names$ -- 6
-pop$ -- 9
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 24
+num.names$ -- 8
+pop$ -- 15
 preamble$ -- 1
-purify$ -- 13
+purify$ -- 18
 quote$ -- 0
-skip$ -- 15
+skip$ -- 20
 stack$ -- 0
-substring$ -- 71
-swap$ -- 5
+substring$ -- 76
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
-warning$ -- 1
-while$ -- 11
-width$ -- 4
-write$ -- 35
-(There were 4 warnings)
+type$ -- 16
+warning$ -- 2
+while$ -- 13
+width$ -- 5
+write$ -- 42
+(There were 5 warnings)

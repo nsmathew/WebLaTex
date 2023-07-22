@@ -6,6 +6,21 @@
 \newblock {\em The Service industries journal 35}, 11-12 (2015), 633--654.
 \newblock Place: London Publisher: Routledge.
 
+\bibitem{coussement_improving_2008}
+{\sc Coussement, K., and Van~den Poel, D.}
+\newblock Improving customer complaint management by automatic email classification using linguistic style features as predictors.
+\newblock {\em DECISION SUPPORT SYSTEMS 44}, 4 (2008), 870--882.
+\newblock Place: AMSTERDAM Publisher: Elsevier B.V.
+
+\bibitem{jin_complaint_2020}
+{\sc Jin, M., and Aletras, N.}
+\newblock Complaint {Identification} in {Social} {Media} with {Transformer} {Networks}.
+
+\bibitem{liang_dictionary-based_2006}
+{\sc Liang, C.-Y., Guo, L., Xia, Z.-J., Nie, F.-G., Li, X.-X., Su, L., and Yang, Z.-Y.}
+\newblock Dictionary-based text categorization of chemical web pages.
+\newblock {\em Information Processing \& Management 42}, 4 (2006), 1017--1029.
+
 \bibitem{olshtain_speechact_1987}
 {\sc Olshtain, E., and Weinbach, L.}
 \newblock Complaints: {A} study of speech act behavior among native and non-native speakers of {Hebrew}.

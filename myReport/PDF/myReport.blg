@@ -6,47 +6,48 @@ Database file #1: mybibliography.bib
 Warning--I didn't find a database entry for "Reference2"
 Warning--I didn't find a database entry for "Reference1"
 Warning--I didn't find a database entry for "Reference3"
+Warning--empty journal in jin_complaint_2020
 Warning--empty journal in olshtain_speechact_1987
 Warning--empty journal in preotiuc-pietro_automatically_2019
-You've used 4 entries,
+You've used 7 entries,
             2253 wiz_defined-function locations,
-            561 strings with 4786 characters,
-and the built_in function-call counts, 1201 in all, are:
-= -- 120
-> -- 58
+            580 strings with 5433 characters,
+and the built_in function-call counts, 2242 in all, are:
+= -- 222
+> -- 119
 < -- 0
-+ -- 24
-- -- 20
-* -- 94
-:= -- 214
-add.period$ -- 13
-call.type$ -- 4
-change.case$ -- 22
++ -- 49
+- -- 42
+* -- 186
+:= -- 392
+add.period$ -- 22
+call.type$ -- 7
+change.case$ -- 42
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 34
-empty$ -- 84
-format.name$ -- 20
-if$ -- 234
+cite$ -- 10
+duplicate$ -- 60
+empty$ -- 153
+format.name$ -- 42
+if$ -- 437
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 4
-newline$ -- 24
-num.names$ -- 8
-pop$ -- 15
+int.to.str$ -- 7
+missing$ -- 7
+newline$ -- 39
+num.names$ -- 14
+pop$ -- 30
 preamble$ -- 1
-purify$ -- 18
+purify$ -- 35
 quote$ -- 0
-skip$ -- 20
+skip$ -- 35
 stack$ -- 0
-substring$ -- 76
-swap$ -- 6
+substring$ -- 147
+swap$ -- 11
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
-warning$ -- 2
-while$ -- 13
-width$ -- 5
-write$ -- 42
-(There were 5 warnings)
+type$ -- 28
+warning$ -- 3
+while$ -- 23
+width$ -- 8
+write$ -- 71
+(There were 6 warnings)

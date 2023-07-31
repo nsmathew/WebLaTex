@@ -5,9 +5,9 @@
 \contentsline {section}{\numberline {2.1}The act of complaining}{3}{}%
 \contentsline {section}{\numberline {2.2}Complaining online}{4}{}%
 \contentsline {chapter}{\numberline {3}Methodology}{5}{}%
-\contentsline {section}{\numberline {3.1}Project Requirements}{5}{}%
-\contentsline {section}{\numberline {3.2}Another Section}{6}{}%
-\contentsline {section}{\numberline {3.3}Ethical, Professional and Legal Issues}{6}{}%
+\contentsline {section}{\numberline {3.1}Data used and pre-processing applied}{5}{}%
+\contentsline {section}{\numberline {3.2}Another Section}{5}{}%
+\contentsline {section}{\numberline {3.3}Ethical, Professional and Legal Issues}{5}{}%
 \contentsline {chapter}{\numberline {4}Resulsts and discussion}{7}{}%
 \contentsline {section}{\numberline {4.1}Risk Analysis}{7}{}%
 \contentsline {section}{\numberline {4.2}Project Plan}{7}{}%

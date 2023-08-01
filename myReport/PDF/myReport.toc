@@ -4,11 +4,17 @@
 \contentsline {chapter}{\numberline {2}Literature Survey}{3}{}%
 \contentsline {section}{\numberline {2.1}The act of complaining}{3}{}%
 \contentsline {section}{\numberline {2.2}Complaining online}{4}{}%
+\contentsline {section}{\numberline {2.3}Complaining in social media}{4}{}%
+\contentsline {section}{\numberline {2.4}Self-expression on Twitter}{4}{}%
+\contentsline {section}{\numberline {2.5}Transformers}{4}{}%
+\contentsline {section}{\numberline {2.6}Ongoing research}{4}{}%
 \contentsline {chapter}{\numberline {3}Methodology}{5}{}%
-\contentsline {section}{\numberline {3.1}Data used and pre-processing applied}{5}{}%
-\contentsline {section}{\numberline {3.2}Another Section}{5}{}%
-\contentsline {section}{\numberline {3.3}Ethical, Professional and Legal Issues}{5}{}%
-\contentsline {chapter}{\numberline {4}Resulsts and discussion}{7}{}%
+\contentsline {section}{\numberline {3.1}Data and pre-processing}{5}{}%
+\contentsline {section}{\numberline {3.2}Models and Libraries}{5}{}%
+\contentsline {section}{\numberline {3.3}Nested cross validation}{6}{}%
+\contentsline {section}{\numberline {3.4}Domain splits with nested cross validation}{6}{}%
+\contentsline {section}{\numberline {3.5}Ethical, Professional and Legal Issues}{6}{}%
+\contentsline {chapter}{\numberline {4}Results and discussion}{7}{}%
 \contentsline {section}{\numberline {4.1}Risk Analysis}{7}{}%
 \contentsline {section}{\numberline {4.2}Project Plan}{7}{}%
 \contentsline {section}{\numberline {4.3}Another Section if You Need It}{8}{}%

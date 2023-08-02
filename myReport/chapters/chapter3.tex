@@ -5,9 +5,32 @@ The data used for the experiments is from Twitter. Twitter provides a good repre
 \newline \newline
 The data set used is the one created by \cite{preotiuc-pietro_automatically_2019} and further used by \cite{jin_complaint_2020}. The particular version \footnote{The data can be found here - https://archive.org/details/complaint\_severity\_data} used for the experiments is the one enhanced by \cite{jinModelingSeverityComplaints2021} with the addition of labels for the severity of complaints. The process used by \cite{preotiuc-pietro_automatically_2019} is described briefly below. 
 \newline \newline
-\textbf{Domain and organisations}
-93 customer service handles were identified across 9 domains. The data was extracted via the Twitter API \footnote{https://developer.twitter.com/en}
+\textbf{Domain and organisations} \newline
+93 customer service handles of organisations were identified across 9 domains. Since an organisation could have business activities across domains, the assigned domain was based on the products or services receiving the most number of complaints. The data was extracted via the Twitter API \footnote{https://developer.twitter.com/en} 
 
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|l|c|c|c|}
+    \hline
+    \multirow{2}{*}{Category} & \multirow{2}{*}{No. of Handles} & \multicolumn{2}{c|}{No. of Tweets} \\
+    \cline{3-4}
+    & & No. of Complaints & No. of Non-Complaints \\
+    \hline
+    Food \& Beverage & & 95 & 35\\
+    Apparel & & & \\
+    Retail & & & \\
+    Cars & & & \\
+    Services & & & \\
+    Software \& Online Services & & & \\
+    Transport & & & \\
+    Category 8 & & & \\
+    Category 9 & & & \\
+    \hline
+    Total & & & \\
+    \hline
+    \end{tabular}
+    \caption{Summary of Complaints}    
+    \end{table}    
 
 \section{Models and Libraries}
 

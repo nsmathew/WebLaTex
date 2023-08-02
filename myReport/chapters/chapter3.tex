@@ -6,35 +6,36 @@ The data used for the experiments is from Twitter. Twitter provides a good repre
 The data set used is the one created by \cite{preotiuc-pietro_automatically_2019} and further used by \cite{jin_complaint_2020}. The particular version \footnote{The data can be found here - https://archive.org/details/complaint\_severity\_data} used for the experiments is the one enhanced by \cite{jinModelingSeverityComplaints2021} with the addition of labels for the severity of complaints. The process used by \cite{preotiuc-pietro_automatically_2019} is described briefly below. 
 \newline \newline
 \textbf{Domain and organisations} \newline
-93 customer service handles of organisations were identified across 9 domains. Since an organisation could have business activities across domains, the assigned domain was based on the products or services receiving the most number of complaints. The data was extracted via the Twitter API \footnote{https://developer.twitter.com/en} 
+93 customer service handles of organisations were identified across 9 domains. Since an organisation could have business activities across domains, the assigned domain was based on the products or services receiving the most number of complaints. The data was extracted via the Twitter API \footnote{https://developer.twitter.com/en}. All the domains along with how many tweets per domain are listed in Table \ref{tab: domains}. 
 
 \begin{table}[ht]
     \centering
     \begin{tabular}{|l|c|c|c|}
     \hline
     \rowcolor[gray]{0.7}
-    \textbf{Domains} & \textbf{No. of Complaints} & \textbf{No. of Non-Complaints} \\
+    \textbf{Domains} & \textbf{No. of Complaints} & \textbf{No. of Non-Complaints} & \textbf{Total Tweets}\\
     \hline
-    Food \& Beverage & 95 (73\%) & 35 (27\%)\\
+    Food \& Beverage & 95 (73\%) & 35 (27\%) & 130 (7\%)\\
     \rowcolor[gray]{0.9}
-    Apparel & 141 (55\%) & 117 (45\%) \\
-    Retail & 124 (62\%)& 75 (38\%)\\
+    Apparel & 141 (55\%) & 117 (45\%) & 258 (13\%)\\
+    Retail & 124 (62\%)& 75 (38\%) & 199 (10\%)\\
     \rowcolor[gray]{0.9}
-    Cars & 67 (73\%)& 25 (27\%)\\
-    Services  & 207 (61\%)& 130 (39\%)\\
+    Cars & 67 (73\%)& 25 (27\%) & 92 (4\%)\\
+    Services  & 207 (61\%)& 130 (39\%) & 337 (17\%)\\
     \rowcolor[gray]{0.9}
-    Software \& Online Services & 189 (65\%)& 103 (35\%)\\
-    Transport & 139 (56\%)& 109 (44\%)\\
+    Software \& Online Services & 189 (65\%)& 103 (35\%) & 292 (15\%)\\
+    Transport & 139 (56\%)& 109 (44\%) & 248 (12\%)\\
     \rowcolor[gray]{0.9}
-    Electronics & 174 (61\%)& 112 (39\%)\\
-    Other & 96 (79\%)& 33 (21\%)\\
+    Electronics & 174 (61\%)& 112 (39\%) & 286 (15\%)\\
+    Other & 96 (79\%)& 33 (21\%) & 129 (7\%)\\
     \hline
     \rowcolor[gray]{0.9}
-    Total & 1232 (63\%)& 739 (37\%)\\
+    Total & 1232 (63\%)& 739 (37\%) & 1971\\
     \hline
     \end{tabular}
-    \caption{Summary of Complaints}    
-    \end{table}    
+    \caption{The nine domains and the distribution of tweets that are complainats and those that are not. The percentages indicate how the splits are distributed.}    
+    \label{tab: domains}
+\end{table}    
 
 \section{Models and Libraries}
 

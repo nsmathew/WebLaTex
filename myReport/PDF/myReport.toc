@@ -6,19 +6,19 @@
 \contentsline {section}{\numberline {2.2}Complaining online}{4}{}%
 \contentsline {section}{\numberline {2.3}Complaining in social media}{4}{}%
 \contentsline {section}{\numberline {2.4}Self-expression on Twitter}{4}{}%
-\contentsline {section}{\numberline {2.5}Transformers}{4}{}%
-\contentsline {section}{\numberline {2.6}Ongoing research}{4}{}%
-\contentsline {chapter}{\numberline {3}Methodology}{5}{}%
-\contentsline {section}{\numberline {3.1}Data and pre-processing}{5}{}%
-\contentsline {section}{\numberline {3.2}Models and Libraries}{5}{}%
-\contentsline {section}{\numberline {3.3}Nested cross validation}{6}{}%
-\contentsline {section}{\numberline {3.4}Domain splits with nested cross validation}{6}{}%
-\contentsline {section}{\numberline {3.5}Ethical, Professional and Legal Issues}{6}{}%
-\contentsline {chapter}{\numberline {4}Results and discussion}{8}{}%
-\contentsline {section}{\numberline {4.1}Risk Analysis}{8}{}%
-\contentsline {section}{\numberline {4.2}Project Plan}{8}{}%
-\contentsline {section}{\numberline {4.3}Another Section if You Need It}{9}{}%
-\contentsline {chapter}{\numberline {5}Conclusions}{10}{}%
-\contentsline {chapter}{Appendices}{13}{}%
-\contentsline {chapter}{\numberline {A}An Appendix of Some Kind}{14}{}%
-\contentsline {chapter}{\numberline {B}Another Appendix}{15}{}%
+\contentsline {section}{\numberline {2.5}Transformers}{5}{}%
+\contentsline {section}{\numberline {2.6}Ongoing research}{5}{}%
+\contentsline {chapter}{\numberline {3}Methodology}{6}{}%
+\contentsline {section}{\numberline {3.1}Data and pre-processing}{6}{}%
+\contentsline {section}{\numberline {3.2}Models and Libraries}{6}{}%
+\contentsline {section}{\numberline {3.3}Nested cross validation}{7}{}%
+\contentsline {section}{\numberline {3.4}Domain splits with nested cross validation}{7}{}%
+\contentsline {section}{\numberline {3.5}Ethical, Professional and Legal Issues}{7}{}%
+\contentsline {chapter}{\numberline {4}Results and discussion}{9}{}%
+\contentsline {section}{\numberline {4.1}Risk Analysis}{9}{}%
+\contentsline {section}{\numberline {4.2}Project Plan}{9}{}%
+\contentsline {section}{\numberline {4.3}Another Section if You Need It}{10}{}%
+\contentsline {chapter}{\numberline {5}Conclusions}{11}{}%
+\contentsline {chapter}{Appendices}{14}{}%
+\contentsline {chapter}{\numberline {A}An Appendix of Some Kind}{15}{}%
+\contentsline {chapter}{\numberline {B}Another Appendix}{16}{}%

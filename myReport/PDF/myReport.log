@@ -96,4 +96,253 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx))
 \everycr=\toks19
-\minrowcleara
+\minrowclearance=\skip54
+\rownum=\count267
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count268
+\l__pdf_internal_box=\box53
+) (PDF/myReport.aux)
+\openout1 = `myReport.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(86.72377pt, 440.84746pt, 86.72377pt)
+* v-part:(T,H,B)=(86.72377pt, 621.52245pt, 86.72377pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=440.84746pt
+* \textheight=621.52245pt
+* \oddsidemargin=14.45378pt
+* \evensidemargin=14.45378pt
+* \topmargin=-17.42001pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=62.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count269
+\scratchdimen=\dimen154
+\scratchbox=\box54
+\nofMPsegments=\count270
+\nofMParguments=\count271
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count272
+\MPscratchDim=\dimen155
+\MPnumerator=\count273
+\makeMPintoPDFobject=\count274
+\everyMPtoPDFconversion=\toks21
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+<images/tuoslogo.png, id=1, 78.2925pt x 79.2561pt>
+File: images/tuoslogo.png Graphic file (type png)
+<use images/tuoslogo.png>
+Package pdftex.def Info: images/tuoslogo.png  used on input line 32.
+(pdftex.def)             Requested size: 142.26378pt x 144.03468pt.
+ [1
+
+
+
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./images/tuoslogo.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+(./chapters/abstract.tex [1
+
+])
+Underfull \hbox (badness 10000) in paragraph at lines 3--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--73
+
+ []
+
+[2
+
+] (PDF/myReport.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+)
+\tf@toc=\write3
+\openout3 = `myReport.toc'.
+
+ [3
+
+] (PDF/myReport.lof)
+\tf@lof=\write4
+\openout4 = `myReport.lof'.
+
+ [4
+
+] (PDF/myReport.lot)
+\tf@lot=\write5
+\openout5 = `myReport.lot'.
+
+ [5
+
+] (./chapters/chapter1.tex
+Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--11
+
+ []
+
+
+Overfull \hbox (5.06148pt too wide) in paragraph at lines 4--11
+\OT1/cmr/m/n/10.95 In ad-di-tion to the timely ad-dress-ing of cus-tomer com-plaints, au-to-mated de-tec-tion of com-plaints
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--11
+
+ []
+
+[1
+
+
+]) (./chapters/chapter2.tex [2]
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--12
+
+ []
+
+
+Overfull \hbox (2.47609pt too wide) in paragraph at lines 5--12
+\OT1/cmr/m/n/10.95 per-son-al-ity traits like im-pul-siv-ity and self-monitoring im-pact cus-tomer com-plain-ing be-haviour.
+ []
+
+
+Overfull \hbox (10.20187pt too wide) in paragraph at lines 5--12
+\OT1/cmr/m/n/10.95 Im-pul-siv-ity as de-fined by [[]], refers to a con-sis-tent in-cli-na-tion of cus-tomers to act spon-ta-neously
+ []
+
+
+Overfull \hbox (3.66231pt too wide) in paragraph at lines 5--12
+\OT1/cmr/m/n/10.95 in-di-vid-u-als with high self-monitoring tend to com-plain less than those with low self-monitoring.
+ []
+
+[3
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 15--18
+
+ []
+
+[4]) (./chapters/chapter3.tex [5]
+Chapter 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--10
+
+ []
+
+
+Overfull \hbox (42.62308pt too wide) in paragraph at lines 13--36
+ [][] 
+ []
+
+[6
+
+]) (./chapters/chapter4.tex [7] [8]
+Chapter 4.
+[9
+
+]) (./chapters/chapter5.tex [10]
+Chapter 5.
+) (PDF/myReport.bbl [11
+
+] [12
+
+]) [13] [14
+
+
+] (./chapters/appendixA.tex
+Appendix A.
+) (./chapters/appendixB.tex [15
+
+]
+Appendix B.
+) [16
+
+] (PDF/myReport.aux) ) 
+Here is how much of TeX's memory you used:
+ 2518 strings out of 476047
+ 42116 string characters out of 5790254
+ 1863248 words of memory out of 5000000
+ 22897 multiletter control sequences out of 15000+600000
+ 520007 words of font info for 57 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,9n,62p,1467b,221s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on PDF/myReport.pdf (22 pages, 288905 bytes).
+PDF statistics:
+ 136 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+

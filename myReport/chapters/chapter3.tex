@@ -1,5 +1,8 @@
 \chapter{Methodology}
 
+\section{Task}
+For a short text segment, $T = \{t_1, t_2, ..., t_n\}$ where $t_i$ is defined as a token, classify if the sequence of tokens $T$ is a complaint or not.
+
 \section{Data and pre-processing}
 The data used for the experiments is from Twitter. Twitter provides a good representation of social media text due to the direct connection consumers have with organisations and brands as well as the ability to express oneself \cite{preotiuc-pietro_automatically_2019}. **Add content on why Twitter**
 \newline \newline
@@ -8,10 +11,10 @@ The data set created by \cite{preotiuc-pietro_automatically_2019} and further us
 A cross-industry representative collection of 93 customer service handles of organisations on Twitter were identified manually. These handles were then categorised into 9 domains based on their industry type. Since an organisation could have business activities across domains, the assigned domain was based on the products or services receiving the most number of complaints. All the domains used in the experiments are listed in Table \ref{tab: domains}. 
 \begin{table}[ht]
     \centering
-    \begin{tabular}{|l|c|c|c|}
+    \begin{tabularx}{\textwidth}{|X|c|c|c|}
     \hline
     \rowcolor[gray]{0.7}
-    \textbf{Domains} & \textbf{Complaints} & \textbf{No. of Non-Complaints} & \textbf{Total Tweets}\\
+    \textbf{Domains} & \textbf{Complaints} & \textbf{Non-Complaints} & \textbf{Total Tweets}\\
     \hline
     Food \& Beverage & 95 (73\%) & 35 (27\%) & 130 (7\%)\\
     \rowcolor[gray]{0.9}
@@ -30,7 +33,7 @@ A cross-industry representative collection of 93 customer service handles of org
     \rowcolor[gray]{0.9}
     \textbf{Total} & 1232 (63\%)& 739 (37\%) & 1971\\
     \hline
-    \end{tabular}
+    \end{tabularx}
     \caption{The nine domains and the distribution of tweets that are complaints and those that are not. The percentages indicate how the splits are distributed.}    
     \label{tab: domains}
 \end{table}  
@@ -54,12 +57,12 @@ The data was extracted from Twitter via the Twitter API \footnote{https://develo
     Total & 1232 (36\%) & 2217 (64\%) & 3449 \\
     \hline
     \end{tabularx}
-    \caption{Selection of tweets based on random sampling and where they have received replies when addressed to the 93 customer service handles combined with random sampled tweets that are addressed to other handles and tweets that are not addressed to any handle}    
+    \caption{Selection of tweets based on random sampling and where they have received replies when addressed to the 93 customer service handles combined with random sampled tweets that are addressed to other handles and tweets that are not addressed to any handle.}    
     \label{tab: tweet_counts}
 \end{table}  
 
 \subsection{Annotation}
-A binary annotation task was setup to determine whether a tweet includes a complaint. Since tweets are concise and typically express a single idea, an entire tweet was classified as a complaint if it contained at least one speech act of complaining. To guide the annotation process, a complaint definition from \cite{olshtain_speechact_1987}, stating that a complaint portrays a situation that contradicts the writer's positive expectation was used. Two of the authors with extensive annotation experience in linguistics independently labelled the 1,971 tweets with Cohen's Kappa of $\kappa$ = 0.731, indicating substantial agreement as per \cite{artsteinInterCoderAgreementComputational2008}. In the end, 1,232 tweets (63\%) and 739 tweets (37\%) were identified as complaints and non-complaints. Table \ref{tab: domains} gives the breakdown of the complaint and non-complaint tweets for each domain.
+The classification of the 1,971 tweets as complaints or not was A binary annotation task was setup to classify the 1,971 tweets . Since tweets are concise and typically express a single idea, an entire tweet was classified as a complaint if it contained at least one speech act of complaining. To guide the annotation process, a complaint definition from \cite{olshtain_speechact_1987}, stating that a complaint portrays a situation that contradicts the writer's positive expectation was used. Two of the authors with extensive annotation experience in linguistics independently labelled the 1,971 tweets with Cohen's Kappa of $\kappa$ = 0.731, indicating substantial agreement as per \cite{artsteinInterCoderAgreementComputational2008}. In the end, 1,232 tweets (63\%) and 739 tweets (37\%) were identified as complaints and non-complaints. Table \ref{tab: domains} gives the breakdown of the complaint and non-complaint tweets for each domain.
 
 
 

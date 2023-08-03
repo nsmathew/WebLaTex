@@ -1,12 +1,15 @@
 \chapter{Methodology}
 
 \section{Data and pre-processing}
-The data used for the experiments is from Twitter. Twitter provides a good representation of social media text due to the direct connection consumers could have with companies and brands as well as the ability to express onself \cite{preotiuc-pietro_automatically_2019}. **Add content on why twitter**
+The data used for the experiments is from Twitter. Twitter provides a good representation of social media text due to the direct connection consumers have with organisations and brands as well as the ability to express oneself \cite{preotiuc-pietro_automatically_2019}. **Add content on why Twitter**
 \newline \newline
-The data set used is the one created by \cite{preotiuc-pietro_automatically_2019} and further used by \cite{jin_complaint_2020}. The particular version \footnote{The data can be found here - https://archive.org/details/complaint\_severity\_data} used for the experiments is the one enhanced by \cite{jinModelingSeverityComplaints2021} with the addition of labels for the severity of complaints. The process used by \cite{preotiuc-pietro_automatically_2019} is described briefly below. 
+The data set created by \cite{preotiuc-pietro_automatically_2019} and further used by \cite{jin_complaint_2020} is utilised for this project and their process is breifly described below. The particular version \footnote{The data can be found here - https://archive.org/details/complaint\_severity\_data} used for the experiments is the one enhanced by \cite{jinModelingSeverityComplaints2021} with the addition of labels for the severity of complaints. 
 \newline \newline
 \textbf{Domain and organisations} \newline
-93 customer service handles of organisations were identified across 9 domains. Since an organisation could have business activities across domains, the assigned domain was based on the products or services receiving the most number of complaints. The data was extracted via the Twitter API \footnote{https://developer.twitter.com/en}. All the domains along with how many tweets per domain are listed in Table \ref{tab: domains}. 
+93 customer service handles of organisations on Twitter were identified. These handles were then categorised into 9 domains based on their industry type. Since an organisation could have business activities across domains, the assigned domain was based on the products or services receiving the most number of complaints.  All the domains along with how many tweets per domain are listed in Table \ref{tab: domains}. \newline \newline
+\textbf{Collection} \newline
+The data was extracted from Twitter via the Twitter API \footnote{https://developer.twitter.com/en}. The most recent 3200 tweets at the time of the exercise w
+
 
 \begin{table}[ht]
     \centering
@@ -33,7 +36,7 @@ The data set used is the one created by \cite{preotiuc-pietro_automatically_2019
     Total & 1232 (63\%)& 739 (37\%) & 1971\\
     \hline
     \end{tabular}
-    \caption{The nine domains and the distribution of tweets that are complainats and those that are not. The percentages indicate how the splits are distributed.}    
+    \caption{The nine domains and the distribution of tweets that are complaints and those that are not. The percentages indicate how the splits are distributed.}    
     \label{tab: domains}
 \end{table}    
 

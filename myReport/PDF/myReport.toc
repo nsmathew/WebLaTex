@@ -10,8 +10,10 @@
 \contentsline {section}{\numberline {2.6}Ongoing research}{5}{}%
 \contentsline {chapter}{\numberline {3}Methodology}{6}{}%
 \contentsline {section}{\numberline {3.1}Data and pre-processing}{6}{}%
+\contentsline {subsection}{\numberline {3.1.1}Domains and organisations}{6}{}%
+\contentsline {subsection}{\numberline {3.1.2}Collection}{6}{}%
 \contentsline {section}{\numberline {3.2}Models and Libraries}{7}{}%
-\contentsline {section}{\numberline {3.3}Nested cross validation}{7}{}%
+\contentsline {section}{\numberline {3.3}Nested cross validation}{8}{}%
 \contentsline {section}{\numberline {3.4}Domain splits with nested cross validation}{8}{}%
 \contentsline {section}{\numberline {3.5}Ethical, Professional and Legal Issues}{8}{}%
 \contentsline {chapter}{\numberline {4}Results and discussion}{9}{}%

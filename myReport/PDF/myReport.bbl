@@ -43,6 +43,11 @@
 \newblock Dictionary-based text categorization of chemical web pages.
 \newblock {\em Information Processing \& Management 42}, 4 (2006), 1017--1029.
 
+\bibitem{luiLangidPyOfftheshelf2012}
+{\sc Lui, M., and Baldwin, T.}
+\newblock langid.py: {An} {Off}-the-shelf {Language} {Identification} {Tool}.
+\newblock In {\em Proceedings of the {ACL} 2012 {System} {Demonstrations}\/} (Jeju Island, Korea, July 2012), Association for Computational Linguistics, pp.~25--30.
+
 \bibitem{olshtain_speechact_1987}
 {\sc Olshtain, E., and Weinbach, L.}
 \newblock Complaints: {A} study of speech act behavior among native and non-native speakers of {Hebrew}.

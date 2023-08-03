@@ -66,8 +66,8 @@ The classification of the 1,971 tweets as complaints or not was carried out usin
 
 
 \section{Models and Libraries}
-For the experiments, we use the BERT transformer large language model along with a number of its variants to classify the tweets and compare the performance. The models are based on the Transformers library implementation from Hugging Face \footnote{https://huggingface.co/}. 
-Aside from the Transformers, the 
+For the experiments, we use the BERT transformer large language model along with a number of its variants to classify the tweets and compare the performance. The models are based on the \textit{transformers} library implementation from Hugging Face \footnote{https://huggingface.co/} along with the \textit{datasets} and \textit{evaluate} libraries. From scikit-learn the model\_selection library is used to generate the stratified splits for the nested cross-fold validation.
+
 
 
 \section{Nested cross validation}

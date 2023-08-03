@@ -5,8 +5,8 @@ The data used for the experiments is from Twitter. Twitter provides a good repre
 \newline \newline
 The data set created by \cite{preotiuc-pietro_automatically_2019} and further used by \cite{jin_complaint_2020} is utilised for this project and their process is breifly described below. The particular version \footnote{The data can be found here - https://archive.org/details/complaint\_severity\_data} used for the experiments is the one enhanced by \cite{jinModelingSeverityComplaints2021} with the addition of labels for the severity of complaints. 
 \newline \newline
-\textbf{Domain and organisations} \newline
-A cross-industry representative collection of 93 customer service handles of organisations on Twitter were identified manually. These handles were then categorised into 9 domains based on their industry type. Since an organisation could have business activities across domains, the assigned domain was based on the products or services receiving the most number of complaints. All the domains along with how many tweets per domain are listed in Table \ref{tab: domains}. 
+\textbf{Domains and organisations} \newline
+A cross-industry representative collection of 93 customer service handles of organisations on Twitter were identified manually. These handles were then categorised into 9 domains based on their industry type. Since an organisation could have business activities across domains, the assigned domain was based on the products or services receiving the most number of complaints. All the domains along with how many tweets per domain used are listed in Table \ref{tab: domains}. 
 \begin{table}[ht]
     \centering
     \begin{tabular}{|l|c|c|c|}
@@ -45,13 +45,17 @@ The data was extracted from Twitter via the Twitter API \footnote{https://develo
     \rowcolor[gray]{0.7}
     \textbf{Colllection Criteria} & \textbf{No. of Tweets} \\
     \hline
-    Addressed to and replied by 93 customer service handles & 95 (73\%) \\  
+    Addressed to and replied by identified 93 customer service handles & 1971 (58\%) \\
     \hline
+    Addressed to other customer service handles & 739 (21\%) \\
+    \hline
+    Not addressed to any Twitter handle & 739 (21\%) \\
+    \hline    
     \rowcolor[gray]{0.9}
-    Total & 1232 \\
+    Total & 3449 \\
     \hline
     \end{tabular}
-    \caption{Selection of tweets based on random sampling and where they have received replies when addressed to the 93 customer service handles combined with random sampled tweets that are replies to other handles and tweets that are not addressed to any handle}    
+    \caption{Selection of tweets based on random sampling and where they have received replies when addressed to the 93 customer service handles combined with random sampled tweets that are addressed to other handles and tweets that are not addressed to any handle}    
     \label{tab: tweet_counts}
 \end{table}  
 \section{Models and Libraries}

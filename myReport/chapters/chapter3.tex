@@ -11,7 +11,7 @@ A cross-industry representative collection of 93 customer service handles of org
     \begin{tabular}{|l|c|c|c|}
     \hline
     \rowcolor[gray]{0.7}
-    \textbf{Domains} & \textbf{No. of Complaints} & \textbf{No. of Non-Complaints} & \textbf{Total Tweets}\\
+    \textbf{Domains} & \textbf{Complaints} & \textbf{No. of Non-Complaints} & \textbf{Total Tweets}\\
     \hline
     Food \& Beverage & 95 (73\%) & 35 (27\%) & 130 (7\%)\\
     \rowcolor[gray]{0.9}
@@ -39,21 +39,21 @@ A cross-industry representative collection of 93 customer service handles of org
 The data was extracted from Twitter via the Twitter API \footnote{https://developer.twitter.com/en}. The most recent 3,200 tweets at the time of the collection exercise were extracted and the original tweets to which the customer service handles responded were identified. Then, random sampling equally for each handle, 1,971 tweets were identified where there was a response from the support's handle. To ensure a more balanced and diverse dataset, 1,478 randomly sampled tweets were added to the dataset. 739 tweets were replies to other handles (outside the 93 identified) and the remaining 739 tweets were not addressed to any Twitter handle. Table \ref{tab: tweet_counts} shows the breakdown of the total population of the tweets dataset. Tweets were filtered for English using langid.py \cite{luiLangidPyOfftheshelf2012}. Retweets were excluded and all usernames and URLs were anonymised and replaced with placeholder tokens.
 \begin{table}[ht]
     \centering
-    \begin{tabular}{|l|c|c|c|}
+    \begin{tabularx}{\textwidth}{|X|c|c|c|}
     \hline
     \rowcolor[gray]{0.7}
     \textbf{Colllection Criteria} & \textbf{Complaints} & \textbf{Non-Complaints} & \textbf{Total Tweets} \\
     \hline
-    Addressed to and replied by identified 93 customer service handles & 1239 ( 63\%) & 739 (37\%) & 1971 (58\%) \\
+    Addressed to and replied by the identified 93 customer service handles & 1239 ( 63\%) & 739 (37\%) & 1971 (58\%) \\
     \hline
     Addressed to other customer service handles & 0 & 739 (100\%)& 739 (21\%) \\
     \hline
     Not addressed to any Twitter handle & 0 & 739 (100\%)& 739 (21\%) \\
     \hline    
     \rowcolor[gray]{0.9}
-    Total 1271 (\%) & & 3449 \\
+    Total & 1232 (36\%) & 2217 (64\%) & 3449 \\
     \hline
-    \end{tabular}
+    \end{tabularx}
     \caption{Selection of tweets based on random sampling and where they have received replies when addressed to the 93 customer service handles combined with random sampled tweets that are addressed to other handles and tweets that are not addressed to any handle}    
     \label{tab: tweet_counts}
 \end{table}  

@@ -66,7 +66,7 @@ The classification of the 1,971 tweets as complaints or not was carried out usin
 
 
 \section{Models and Libraries}
-For the experiments, the BERT transformer large language models along with a number of its variants are used to classify the tweets and compare the performance. The models are based on the \textit{transformers} library implementation from Hugging Face\footnote{https://huggingface.co/} along with the \textit{datasets} and \textit{evaluate} libraries. From scikit-learn\footnote{https://scikit-learn.org/stable/} the \textit{sklearn} library is used to generate the stratified splits for the nested cross-fold validation. The versions for each library are shown in \ref{tab: libs_used}.
+For the experiments, the BERT transformer large language models along with a number of its variants are used to classify the tweets and compare the performance. The models are based on the \textit{transformers} library implementation from Hugging Face\footnote{https://huggingface.co/} along with the \textit{datasets} and \textit{evaluate} libraries. From scikit-learn\footnote{https://scikit-learn.org/stable/} the \textit{sklearn} library is used to generate the stratified splits for the nested cross-fold validation. The versions for each library are shown in the table \ref{tab: libs_used}.
 
 \begin{table}[ht]
     \centering
@@ -88,10 +88,11 @@ For the experiments, the BERT transformer large language models along with a num
     \label{tab: libs_used}
 \end{table}
 
-The transformer models used are listed in 
+The transformer models used are listed in table \ref{model_dtls}.
+
 \begin{table}[ht]
     \centering
-    \begin{tabularx}{\textwidth}{|X|X|X|}
+    \begin{tabularx}{\textwidth}{|l|c|X|}
         \hline
         \rowcolor[gray]{0.7}
         \textbf{Model} & \textbf{No. of Parameters} & \textbf{Model Documentation} \\
@@ -112,7 +113,7 @@ The transformer models used are listed in
         \hline
     \end{tabularx}
     \caption{Details of the transformer models used including the number of parameters for each of them.}    
-    \label{tab: tweet_counts}
+    \label{tab: model_dtls}
 \end{table} 
 \section{Nested cross validation}
 ** To UPDATE **

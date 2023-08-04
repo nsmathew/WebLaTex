@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  4 AUG 2023 19:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  4 AUG 2023 19:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -111,11 +111,7 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count269
 \l__pdf_internal_box=\box53
-) (PDF/myReport.aux
-
-LaTeX Warning: Label `tab: tweet_counts' multiply defined.
-
-)
+) (PDF/myReport.aux)
 \openout1 = `myReport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
@@ -352,37 +348,41 @@ Underfull \hbox (badness 3826) in paragraph at lines 59--59
 [6
 
 ] [7]
-Overfull \hbox (38.53352pt too wide) in paragraph at lines 113--113
+
+LaTeX Warning: Reference `model_dtls' on page 8 undefined on input line 91.
+
+
+Overfull \hbox (0.51216pt too wide) in paragraph at lines 113--113
 []|\OT1/cmr/m/n/10.95 https://huggingface.co/roberta-base| 
  []
 
 
-Overfull \hbox (64.72229pt too wide) in paragraph at lines 113--113
+Overfull \hbox (26.70093pt too wide) in paragraph at lines 113--113
 []|\OT1/cmr/m/n/10.95 https://huggingface.co/bert-base-uncased| 
  []
 
 
-Overfull \hbox (73.4823pt too wide) in paragraph at lines 113--113
+Overfull \hbox (35.46094pt too wide) in paragraph at lines 113--113
 []|\OT1/cmr/m/n/10.95 https://huggingface.co/vinai/bertweet-base| 
  []
 
 
-Overfull \hbox (88.50816pt too wide) in paragraph at lines 113--113
+Overfull \hbox (50.4868pt too wide) in paragraph at lines 113--113
 []|\OT1/cmr/m/n/10.95 https://huggingface.co/distilbert-base-uncased| 
  []
 
 
-Overfull \hbox (107.54903pt too wide) in paragraph at lines 113--113
+Overfull \hbox (69.52766pt too wide) in paragraph at lines 113--113
 []|\OT1/cmr/m/n/10.95 https://huggingface.co/google/mobilebert-uncased| 
  []
 
 
-Overfull \hbox (46.71562pt too wide) in paragraph at lines 113--113
+Overfull \hbox (8.69426pt too wide) in paragraph at lines 113--113
 []|\OT1/cmr/m/n/10.95 https://huggingface.co/albert-base-v2| 
  []
 
 
-Overfull \hbox (71.62689pt too wide) in paragraph at lines 113--113
+Overfull \hbox (33.60553pt too wide) in paragraph at lines 113--113
 []|\OT1/cmr/m/n/10.95 https://huggingface.co/prajjwal1/bert-tiny| 
  []
 
@@ -409,19 +409,19 @@ Appendix B.
 
 ] (PDF/myReport.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2588 strings out of 476047
- 43411 string characters out of 5790254
+ 2590 strings out of 476047
+ 43440 string characters out of 5790254
  1869248 words of memory out of 5000000
- 22964 multiletter control sequences out of 15000+600000
+ 22966 multiletter control sequences out of 15000+600000
  520314 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,12n,62p,1467b,317s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on PDF/myReport.pdf (24 pages, 326826 bytes).
+Output written on PDF/myReport.pdf (24 pages, 327112 bytes).
 PDF statistics:
  157 PDF objects out of 1000 (max. 8388607)
  99 compressed objects within 1 object stream

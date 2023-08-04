@@ -16,46 +16,46 @@ A cross-industry representative collection of 93 customer service handles of org
     \rowcolor[gray]{0.7}
     \textbf{Domains} & \textbf{Complaints} & \textbf{Non-Complaints} & \textbf{Total Tweets}\\
     \hline
-    Food \& Beverage & 95 (73\%) & 35 (27\%) & 130 (7\%)\\
+    Food \& Beverage & 95 \small{(73\%)} & 35 \small{(27\%)} & 130 \small{(7\%)}\\
     \rowcolor[gray]{0.9}
-    Apparel & 141 (55\%) & 117 (45\%) & 258 (13\%)\\
-    Retail & 124 (62\%)& 75 (38\%) & 199 (10\%)\\
+    Apparel & 141 \small{(55\%)} & 117 \small{(45\%)} & 258 \small{(13\%)}\\
+    Retail & 124 \small{(62\%)}& 75 \small{(38\%)} & 199 \small{(10\%)}\\
     \rowcolor[gray]{0.9}
-    Cars & 67 (73\%)& 25 (27\%) & 92 (4\%)\\
-    Services  & 207 (61\%)& 130 (39\%) & 337 (17\%)\\
+    Cars & 67 \small{(73\%)} & 25 \small{(27\%)}  & 92 \small{(4\%)} \\
+    Services  & 207 \small{(61\%)} & 130 \small{(39\%)}  & 337 \small{(17\%)} \\
     \rowcolor[gray]{0.9}
-    Software \& Online Services & 189 (65\%)& 103 (35\%) & 292 (15\%)\\
-    Transport & 139 (56\%)& 109 (44\%) & 248 (12\%)\\
+    Software \& Online Services & 189 \small{(65\%)} & 103 \small{(35\%)}  & 292 \small{(15\%)} \\
+    Transport & 139 \small{(56\%)} & 109 \small{(44\%)}  & 248 \small{(12\%)} \\
     \rowcolor[gray]{0.9}
-    Electronics & 174 (61\%)& 112 (39\%) & 286 (15\%)\\
-    Other & 96 (79\%)& 33 (21\%) & 129 (7\%)\\
+    Electronics & 174 \small{(61\%)} & 112 \small{(39\%)}  & 286 \small{(15\%)} \\
+    Other & 96 \small{(79\%)} & 33 \small{(21\%)}  & 129 \small{(7\%)} \\
     \hline
     \rowcolor[gray]{0.9}
-    \textbf{Total} & 1232 (63\%)& 739 (37\%) & 1971\\
+    \textbf{Total} & 1232 \small{(63\%)} & 739 \small{(37\%)}& 1971\\
     \hline
     \end{tabularx}
     \caption{The nine domains and the distribution of tweets that are complaints and those that are not. The percentages indicate how the splits are distributed.}    
     \label{tab: domains}
 \end{table}  
 
-\subsection{Collection}
+\subsection{Data Extraction}
 The data was extracted from Twitter via the Twitter API \footnote{https://developer.twitter.com/en}. The most recent 3,200 tweets at the time of the collection exercise were extracted and the original tweets to which the customer service handles responded were identified. Then, random sampling equally for each handle, 1,971 tweets were identified where there was a response from the support's handle. To ensure a more balanced and diverse dataset, 1,478 randomly sampled tweets were added to the dataset. 739 tweets were replies to other handles (outside the 93 identified) and the remaining 739 tweets were not addressed to any Twitter handle. Table \ref{tab: tweet_counts} shows the breakdown of the total population of the tweets dataset. Tweets were filtered for English using langid.py \cite{luiLangidPyOfftheshelf2012}. Retweets were excluded and all usernames and URLs were anonymised and replaced with placeholder tokens.
 \begin{table}[ht]
     \centering
     \begin{tabularx}{\textwidth}{|X|c|c|c|}
-    \hline
-    \rowcolor[gray]{0.7}
-    \textbf{Colllection Criteria} & \textbf{Complaints} & \textbf{Non-Complaints} & \textbf{Total Tweets} \\
-    \hline
-    Addressed to and replied by the identified 93 customer service handles & 1239 ( 63\%) & 739 (37\%) & 1971 (58\%) \\
-    \hline
-    Addressed to other customer service handles & 0 & 739 (100\%)& 739 (21\%) \\
-    \hline
-    Not addressed to any Twitter handle & 0 & 739 (100\%)& 739 (21\%) \\
-    \hline    
-    \rowcolor[gray]{0.9}
-    Total & 1232 (36\%) & 2217 (64\%) & 3449 \\
-    \hline
+        \hline
+        \rowcolor[gray]{0.7}
+        \textbf{Extraction Criteria} & \textbf{Complaints} & \textbf{Non-Complaints} & \textbf{Total Tweets} \\
+        \hline
+        Addressed to and replied by the identified 93 customer service handles & 1239 \small{(63\%)}  & 739 \small{(37\%)}  & 1971 \small{(58\%)}  \\
+        \hline
+        Addressed to other customer service handles & 0 & 739 \small{(100\%)} & 739 \small{(21\%)}  \\
+        \hline
+        Not addressed to any Twitter handle & 0 & 739 \small{(100\%)} & 739 \small{(21\%)}  \\
+        \hline    
+        \rowcolor[gray]{0.9}
+        Total & 1232 \small{(36\%)}  & 2217 \small{(64\%)}  & 3449 \\
+        \hline
     \end{tabularx}
     \caption{Selection of tweets based on random sampling and where they have received replies when addressed to the 93 customer service handles combined with random sampled tweets that are addressed to other handles and tweets that are not addressed to any handle.}    
     \label{tab: tweet_counts}
@@ -66,7 +66,7 @@ The classification of the 1,971 tweets as complaints or not was carried out usin
 
 
 \section{Models and Libraries}
-For the experiments, the BERT transformer large language models along with a number of its variants are used to classify the tweets and compare the performance. The models are based on the \textit{transformers} library implementation from Hugging Face\footnote{https://huggingface.co/} along with the \textit{datasets} and \textit{evaluate} libraries. From scikit-learn\footnote{https://scikit-learn.org/stable/} the \textit{sklearn} library is used to generate the stratified splits for the nested cross-fold validation. The versions for each library are shown in \ref{tab: libs_used}
+For the experiments, the BERT transformer large language models along with a number of its variants are used to classify the tweets and compare the performance. The models are based on the \textit{transformers} library implementation from Hugging Face\footnote{https://huggingface.co/} along with the \textit{datasets} and \textit{evaluate} libraries. From scikit-learn\footnote{https://scikit-learn.org/stable/} the \textit{sklearn} library is used to generate the stratified splits for the nested cross-fold validation. The versions for each library are shown in \ref{tab: libs_used}.
 
 \begin{table}[ht]
     \centering
@@ -88,6 +88,32 @@ For the experiments, the BERT transformer large language models along with a num
     \label{tab: libs_used}
 \end{table}
 
+The transformer models used are listed in 
+\begin{table}[ht]
+    \centering
+    \begin{tabularx}{\textwidth}{|X|X|X|}
+        \hline
+        \rowcolor[gray]{0.7}
+        \textbf{Model} & \textbf{No. of Parameters} & \textbf{Model Documentation} \\
+        \hline
+        robberta-base & 125M & https://huggingface.co/roberta-base \\
+        \hline
+        bert-base-uncased & 110M & https://huggingface.co/bert-base-uncased \\
+        \hline
+        vinai/bertweet-base & 110M & https://huggingface.co/vinai/bertweet-base \\
+        \hline
+        distilbert-base-uncased & 66M & https://huggingface.co/distilbert-base-uncased \\
+        \hline
+        google/mobilebert-uncased & 25.3M & https://huggingface.co/google/mobilebert-uncased \\
+        \hline
+        albert-base-v2 & 11M & https://huggingface.co/albert-base-v2 \\
+        \hline
+        prajjwal1/bert-tiny & 4.4M & https://huggingface.co/prajjwal1/bert-tiny \\
+        \hline
+    \end{tabularx}
+    \caption{Details of the transformer models used including the number of parameters for each of them.}    
+    \label{tab: tweet_counts}
+\end{table} 
 \section{Nested cross validation}
 ** To UPDATE **
 

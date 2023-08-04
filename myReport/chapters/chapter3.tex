@@ -88,31 +88,31 @@ For the experiments, the BERT transformer large language models along with a num
     \label{tab: libs_used}
 \end{table}
 
-The transformer models used are listed in table \ref{tab: model_dtls} along with the no. of parameters for each of them. The no. of parameters are based on the embedding and output layers along with the atten heads. The models 
+The transformer models used are listed in table \ref{tab: model_dtls} along with the no. of parameters for each of them. The no. of parameters are based on the embedding and output layers along with the atten heads. The models chosen are based on 
 
 \begin{table}[ht]
     \centering
     \begin{tabularx}{\textwidth}{|l|c|X|}
         \hline
         \rowcolor[gray]{0.7}
-        \textbf{Model} & \textbf{No. of Parameters} & \textbf{Model Documentation} \\
+        \textbf{Model} & \textbf{Parameter Count} & \textbf{Model Documentation} \\
         \hline
-        Roberta base & 125M & \url{https://huggingface.co/roberta-base} \\
+        Roberta base & 125M & \small{\url{https://huggingface.co/roberta-base}} \\
         \hline 
-        Bert base (uncased) & 110M & \url{https://huggingface.co/bert-base-uncased} \\
+        Bert base (uncased) & 110M & \small{\url{https://huggingface.co/bert-base-uncased}} \\
         \hline
-        Bertweet base & 110M & \url{https://huggingface.co/vinai/bertweet-base} \\
+        Bertweet base & 110M & \small{\url{https://huggingface.co/vinai/bertweet-base}} \\
         \hline
-        Distilbert base (uncased) & 66M & \url{https://huggingface.co/distilbert-base-uncased} \\
+        Distilbert base (uncased) & 66M & \small{\url{https://huggingface.co/distilbert-base-uncased}} \\
         \hline
-        Mobilebert (uncased) & 25.3M & \url{https://huggingface.co/google/mobilebert-uncased} \\
+        Mobilebert (uncased) & 25.3M & \small{\url{https://huggingface.co/google/mobilebert-uncased}} \\
         \hline
-        Albert base & 11M & \url{https://huggingface.co/albert-base-v2} \\
+        Albert base & 11M & \small{\url{https://huggingface.co/albert-base-v2}} \\
         \hline
-        Bert Tiny & 4.4M & \url{https://huggingface.co/prajjwal1/bert-tiny} \\
+        Bert Tiny & 4.4M & \small{\url{https://huggingface.co/prajjwal1/bert-tiny}} \\
         \hline
     \end{tabularx}
-    \caption{Details of the transformer models used including the number of parameters for each of them.}    
+    \caption{Details of the transformer models used including the number of parameters for each of them. The parameter counts are from \cite{bhargavaGeneralizationNLIWays2021} for Roberta, Bert, Albert and Bert Tiny. For Bertweet it is from }    
     \label{tab: model_dtls}
 \end{table} 
 \section{Nested cross validation}

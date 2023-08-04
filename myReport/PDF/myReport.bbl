@@ -18,6 +18,11 @@
 \newblock {\em The Journal of consumer research 5}, 3 (1978), 159--162.
 \newblock Place: CHICAGO Publisher: Journal of Consumer Research.
 
+\bibitem{bhargavaGeneralizationNLIWays2021}
+{\sc Bhargava, P., Drozd, A., and Rogers, A.}
+\newblock Generalization in {NLI}: {Ways} ({Not}) {To} {Go} {Beyond} {Simple} {Heuristics}, Oct. 2021.
+\newblock arXiv:2110.01518 [cs].
+
 \bibitem{boxerSocialDistanceSpeech1993}
 {\sc Boxer, D.}
 \newblock Social distance and speech behavior: {The} case of indirect complaints.
@@ -54,6 +59,11 @@
 \newblock langid.py: {An} {Off}-the-shelf {Language} {Identification} {Tool}.
 \newblock In {\em Proceedings of the {ACL} 2012 {System} {Demonstrations}\/} (Jeju Island, Korea, July 2012), Association for Computational Linguistics, pp.~25--30.
 
+\bibitem{nguyenBERTweetPretrainedLanguage2020}
+{\sc Nguyen, D.~Q., Vu, T., and Nguyen, A.~T.}
+\newblock {BERTweet}: {A} pre-trained language model for {English} {Tweets}, Oct. 2020.
+\newblock arXiv:2005.10200 [cs].
+
 \bibitem{olshtain_speechact_1987}
 {\sc Olshtain, E., and Weinbach, L.}
 \newblock Complaints: {A} study of speech act behavior among native and non-native speakers of {Hebrew}.
@@ -69,6 +79,11 @@
 \newblock {\em The Journal of consumer research 22}, 3 (1995), 305--313.
 \newblock Place: CARY Publisher: University of Chicago Press.
 
+\bibitem{sanhDistilBERTDistilledVersion2020}
+{\sc Sanh, V., Debut, L., Chaumond, J., and Wolf, T.}
+\newblock {DistilBERT}, a distilled version of {BERT}: smaller, faster, cheaper and lighter, Feb. 2020.
+\newblock arXiv:1910.01108 [cs].
+
 \bibitem{sharma_complainers_2010}
 {\sc Sharma, P., Marshall, R., Alan~Reday, P., and Na, W.}
 \newblock Complainers versus non-complainers: a multi-national investigation of individual and situational influences on customer complaint behaviour.
@@ -80,6 +95,11 @@
 \newblock Complaining in {Cyberspace}: {The} {Motives} and {Forms} of {Hotel} {Guests}' {Complaints} {Online}.
 \newblock {\em Journal of hospitality marketing \& management 19}, 7 (2010), 797--818.
 \newblock Publisher: Taylor \& Francis Group.
+
+\bibitem{sunMobileBERTCompactTaskAgnostic2020}
+{\sc Sun, Z., Yu, H., Song, X., Liu, R., Yang, Y., and Zhou, D.}
+\newblock {MobileBERT}: a {Compact} {Task}-{Agnostic} {BERT} for {Resource}-{Limited} {Devices}, Apr. 2020.
+\newblock arXiv:2004.02984 [cs].
 
 \bibitem{tripp_when_2011}
 {\sc Tripp, T.~M., and Gregoire, Y.}

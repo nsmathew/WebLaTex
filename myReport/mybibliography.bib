@@ -280,3 +280,41 @@ Publisher: Elsevier Inc},
 	annote = {Comment: In Proceedings of EMNLP 2020: System Demonstrations},
 	file = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/ZF79EWG9/Nguyen et al. - 2020 - BERTweet A pre-trained language model for English.pdf:application/pdf;arXiv.org Snapshot:/Users/nitinmathew/Zotero/storage/FSRW6IFL/2005.html:text/html},
 }
+
+
+
+@misc{sunMobileBERTCompactTaskAgnostic2020,
+	title = {{MobileBERT}: a {Compact} {Task}-{Agnostic} {BERT} for {Resource}-{Limited} {Devices}},
+	shorttitle = {{MobileBERT}},
+	url = {http://arxiv.org/abs/2004.02984},
+	doi = {10.48550/arXiv.2004.02984},
+	abstract = {Natural Language Processing (NLP) has recently achieved great success by using huge pre-trained models with hundreds of millions of parameters. However, these models suffer from heavy model sizes and high latency such that they cannot be deployed to resource-limited mobile devices. In this paper, we propose MobileBERT for compressing and accelerating the popular BERT model. Like the original BERT, MobileBERT is task-agnostic, that is, it can be generically applied to various downstream NLP tasks via simple fine-tuning. Basically, MobileBERT is a thin version of BERT\_LARGE, while equipped with bottleneck structures and a carefully designed balance between self-attentions and feed-forward networks. To train MobileBERT, we first train a specially designed teacher model, an inverted-bottleneck incorporated BERT\_LARGE model. Then, we conduct knowledge transfer from this teacher to MobileBERT. Empirical studies show that MobileBERT is 4.3x smaller and 5.5x faster than BERT\_BASE while achieving competitive results on well-known benchmarks. On the natural language inference tasks of GLUE, MobileBERT achieves a GLUEscore o 77.7 (0.6 lower than BERT\_BASE), and 62 ms latency on a Pixel 4 phone. On the SQuAD v1.1/v2.0 question answering task, MobileBERT achieves a dev F1 score of 90.0/79.2 (1.5/2.1 higher than BERT\_BASE).},
+	urldate = {2023-08-04},
+	publisher = {arXiv},
+	author = {Sun, Zhiqing and Yu, Hongkun and Song, Xiaodan and Liu, Renjie and Yang, Yiming and Zhou, Denny},
+	month = apr,
+	year = {2020},
+	note = {arXiv:2004.02984 [cs]},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+	annote = {Comment: Accepted to ACL 2020},
+	file = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/UPVNAA52/Sun et al. - 2020 - MobileBERT a Compact Task-Agnostic BERT for Resou.pdf:application/pdf;arXiv.org Snapshot:/Users/nitinmathew/Zotero/storage/NMDTPAQ6/2004.html:text/html},
+}
+
+
+
+@misc{sanhDistilBERTDistilledVersion2020,
+	title = {{DistilBERT}, a distilled version of {BERT}: smaller, faster, cheaper and lighter},
+	shorttitle = {{DistilBERT}, a distilled version of {BERT}},
+	url = {http://arxiv.org/abs/1910.01108},
+	doi = {10.48550/arXiv.1910.01108},
+	abstract = {As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can then be fine-tuned with good performances on a wide range of tasks like its larger counterparts. While most prior work investigated the use of distillation for building task-specific models, we leverage knowledge distillation during the pre-training phase and show that it is possible to reduce the size of a BERT model by 40\%, while retaining 97\% of its language understanding capabilities and being 60\% faster. To leverage the inductive biases learned by larger models during pre-training, we introduce a triple loss combining language modeling, distillation and cosine-distance losses. Our smaller, faster and lighter model is cheaper to pre-train and we demonstrate its capabilities for on-device computations in a proof-of-concept experiment and a comparative on-device study.},
+	urldate = {2023-06-29},
+	publisher = {arXiv},
+	author = {Sanh, Victor and Debut, Lysandre and Chaumond, Julien and Wolf, Thomas},
+	month = feb,
+	year = {2020},
+	note = {arXiv:1910.01108 [cs]},
+	keywords = {Computer Science - Computation and Language},
+	annote = {Comment: February 2020 - Revision: fix bug in evaluation metrics, updated metrics, argumentation unchanged. 5 pages, 1 figure, 4 tables. Accepted at the 5th Workshop on Energy Efficient Machine Learning and Cognitive Computing - NeurIPS 2019},
+	file = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/ZZSCPCF7/Sanh et al. - 2020 - DistilBERT, a distilled version of BERT smaller, .pdf:application/pdf;arXiv.org Snapshot:/Users/nitinmathew/Zotero/storage/ICWWL7H3/1910.html:text/html},
+}

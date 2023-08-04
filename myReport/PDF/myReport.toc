@@ -17,7 +17,7 @@
 \contentsline {section}{\numberline {3.3}Models and Libraries}{8}{}%
 \contentsline {section}{\numberline {3.4}Nested cross validation}{8}{}%
 \contentsline {section}{\numberline {3.5}Domain splits with nested cross validation}{8}{}%
-\contentsline {section}{\numberline {3.6}Ethical, Professional and Legal Issues}{8}{}%
+\contentsline {section}{\numberline {3.6}Ethical, Professional and Legal Issues}{9}{}%
 \contentsline {chapter}{\numberline {4}Results and discussion}{10}{}%
 \contentsline {section}{\numberline {4.1}Risk Analysis}{10}{}%
 \contentsline {section}{\numberline {4.2}Project Plan}{10}{}%

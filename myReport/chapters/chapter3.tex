@@ -66,9 +66,27 @@ The classification of the 1,971 tweets as complaints or not was carried out usin
 
 
 \section{Models and Libraries}
-For the experiments, we use the BERT transformer large language model along with a number of its variants to classify the tweets and compare the performance. The models are based on the \textit{transformers} library implementation from Hugging Face \footnote{https://huggingface.co/} along with the \textit{datasets} and \textit{evaluate} libraries. From scikit-learn the model\_selection library is used to generate the stratified splits for the nested cross-fold validation.
+For the experiments, the BERT transformer large language models along with a number of its variants are used to classify the tweets and compare the performance. The models are based on the \textit{transformers} library implementation from Hugging Face\footnote{https://huggingface.co/} along with the \textit{datasets} and \textit{evaluate} libraries. From scikit-learn\footnote{https://scikit-learn.org/stable/} the \textit{model\_selection} library is used to generate the stratified splits for the nested cross-fold validation.
 
-
+\begin{table}[ht]
+    \centering
+    \begin{tabularx}{\textwidth}{|X|X|X|}
+    \hline
+    \rowcolor[gray]{0.7}
+    \textbf{Provider} & \textbf{Library Name} & \textbf{Version} \\
+    \hline
+    Hugging Face & transformers & 1.0 \\
+    \hline
+    Hugging Face & datasets & 1.0 \\
+    \hline
+    Hugging Face & evaluate & 1.0 \\
+    \hline
+    Scikit-Learn & model\_selection & 1.0 \\
+    \hline
+    \end{tabularx}
+    \caption{Libraries and versions used for this project.}    
+    \label{tab: libs_used}
+\end{table} 
 
 \section{Nested cross validation}
 ** To UPDATE **

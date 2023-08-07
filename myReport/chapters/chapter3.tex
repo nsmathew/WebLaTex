@@ -68,10 +68,17 @@ The classification of the 1,971 tweets as complaints or not was carried out usin
 
 \section{Environment and models}
 
-\subsection{Environment}
+\subsection{Hardware}
 The primary details of the enviornment used for the experiments are listed below. 
+\begin{itemize}
+    \item \textbf{CPU Count:} 8
+    \item \textbf{Memory:} 45 GB
+    \item \textbf{GPU Count:} 1
+    \item \textbf{GPU Model:} NVIDIA RTX A4000
+    \item \textbf{GPU Memory:} 16 GB
+\end{itemize}
 
-* fff
+
 
 \subsection{Libraries}
 For the experiments, the BERT transformer large language models along with a number of its variants are used to classify the tweets and compare the performance. The models are based on the \textit{transformers} library implementation from Hugging Face\footnote{https://huggingface.co/} along with the \textit{datasets} and \textit{evaluate} libraries. From scikit-learn\footnote{https://scikit-learn.org/stable/} the \textit{sklearn} library is used to generate the stratified splits for the nested cross-fold validation. The versions for each library are shown in the table \ref{tab: libs_used}.

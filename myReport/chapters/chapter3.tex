@@ -138,9 +138,10 @@ The transformer models used are listed in table \ref{tab: model_dtls} along with
 \end{table} 
 
 \section{Data tokenisation}
-For tokenisation the 
+For tokenization, the tokenizer provided by the \textit{transformers} library is used. The distribution of the number of tokens in the tweets from the pre-processed data from \cite{jinModelingSeverityComplaints2021} before applying the model-specific tokenization is shown in Figure \ref{fig: token_hist}. We have over 95\% of the tweets having 29 tokens or less. The tokenization process 
 \begin{figure}
     \centering
+    \captionsetup{font=small}
     \includegraphics[width=\textwidth]{figures/token_hist.png} % Replace with your image file name
     \caption{The distribution of the no. of tokens for the full dataset of 3,449 tweets.}
     \label{fig: token_hist}

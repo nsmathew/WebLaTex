@@ -10,6 +10,7 @@ The data set created by \cite{preotiuc-pietro_automatically_2019} and further us
 \subsection{Domains and organisations}
 A cross-industry representative collection of 93 customer service handles of organisations on Twitter were identified manually. These handles were then categorised into 9 domains based on their industry type. Since an organisation could have business activities across domains, the assigned domain was based on the products or services receiving the most number of complaints. All the domains used in the experiments are listed in Table \ref{tab: domains}. 
 \begin{table}[ht]
+    \captionsetup{font=small}
     \centering
     \begin{tabularx}{\textwidth}{|X|c|c|c|}
     \hline
@@ -41,6 +42,7 @@ A cross-industry representative collection of 93 customer service handles of org
 \subsection{Data Extraction}
 The data was extracted from Twitter via the Twitter API \footnote{https://developer.twitter.com/en}. The most recent 3,200 tweets at the time of the collection exercise were extracted and the original tweets to which the customer service handles responded were identified. Then, random sampling equally for each handle, 1,971 tweets were identified where there was a response from the support's handle. To ensure a more balanced and diverse dataset, 1,478 randomly sampled tweets were added to the dataset. 739 tweets were replies to other handles (outside the 93 identified) and the remaining 739 tweets were not addressed to any Twitter handle. Table \ref{tab: tweet_counts} shows the breakdown of the total population of the tweets dataset. Tweets were filtered for English using langid.py \cite{luiLangidPyOfftheshelf2012}. Retweets were excluded and all usernames and URLs were anonymised and replaced with placeholder tokens.
 \begin{table}[ht]
+    \captionsetup{font=small}
     \centering
     \begin{tabularx}{\textwidth}{|X|c|c|c|}
         \hline
@@ -69,6 +71,7 @@ The classification of the 1,971 tweets as complaints or not was carried out usin
 For the experiments, the BERT transformer large language models along with a number of its variants are used to classify the tweets and compare the performance. The models are based on the \textit{transformers} library implementation from Hugging Face\footnote{https://huggingface.co/} along with the \textit{datasets} and \textit{evaluate} libraries. From scikit-learn\footnote{https://scikit-learn.org/stable/} the \textit{sklearn} library is used to generate the stratified splits for the nested cross-fold validation. The versions for each library are shown in the table \ref{tab: libs_used}.
 
 \begin{table}[ht]
+    \captionsetup{font=small}
     \centering
     \begin{tabularx}{\textwidth}{|X|X|X|}
         \hline
@@ -91,6 +94,7 @@ For the experiments, the BERT transformer large language models along with a num
 The transformer models used are listed in table \ref{tab: model_dtls} along with the no. of parameters for each of them. The no. of parameters are based on the embedding and output layers along with the atten heads. The models chosen are based on 
 
 \begin{table}[ht]
+    \captionsetup{font=small}
     \centering
     \begin{tabularx}{\textwidth}{|l|c|X|}
         \hline

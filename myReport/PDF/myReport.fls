@@ -307,6 +307,10 @@ INPUT ./chapters/chapter1.tex
 INPUT chapters/chapter1.tex
 INPUT ./chapters/chapter1.tex
 INPUT chapters/chapter1.tex
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/omlcmr.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/omlcmr.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/omlcmr.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/omlcmr.fd
 INPUT ./chapters/chapter2.tex
 INPUT chapters/chapter2.tex
 INPUT ./chapters/chapter2.tex

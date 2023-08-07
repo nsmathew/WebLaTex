@@ -40,7 +40,7 @@ A cross-industry representative collection of 93 customer service handles of org
 \end{table}  
 
 \subsection{Data Extraction}
-The data was extracted from Twitter via the Twitter API \footnote{https://developer.twitter.com/en}. The most recent 3,200 tweets at the time of the collection exercise were extracted and the original tweets to which the customer service handles responded were identified. Then, random sampling equally for each handle, 1,971 tweets were identified where there was a response from the support's handle. To ensure a more balanced and diverse dataset, 1,478 randomly sampled tweets were added to the dataset. 739 tweets were replies to other handles (outside the 93 identified) and the remaining 739 tweets were not addressed to any Twitter handle. Table \ref{tab: tweet_counts} shows the breakdown of the total population of the tweets dataset. Tweets were filtered for English using langid.py \cite{luiLangidPyOfftheshelf2012}. Retweets were excluded and all usernames and URLs were anonymised and replaced with placeholder tokens.
+The data was extracted from Twitter via the Twitter API \footnote{https://developer.twitter.com/en}. The latest 3,200 tweets at the time of the collection exercise were extracted and the original tweets to which the customer service handles responded were identified. Then, random sampling equally for each handle, 1,971 tweets were identified where there was a response from the support's handle. To ensure a more balanced and diverse dataset, 1,478 randomly sampled tweets were added to the dataset. 739 tweets were replies to other handles (outside the 93 identified) and the remaining 739 tweets were not addressed to any Twitter handle. Table \ref{tab: tweet_counts} shows the breakdown of the total population of the tweets dataset. Tweets were filtered for English using langid.py \cite{luiLangidPyOfftheshelf2012}. Retweets were excluded and all usernames and URLs were anonymised and replaced with placeholder tokens.
 \begin{table}[ht]
     \captionsetup{font=small}
     \centering
@@ -138,7 +138,7 @@ The transformer models used are listed in table \ref{tab: model_dtls} along with
 \end{table} 
 
 \section{Data tokenisation}
-For tokenization, the tokenizer provided by the \textit{transformers} library is used. The distribution of the number of tokens in the tweets from the pre-processed data from \cite{jinModelingSeverityComplaints2021} before applying the model-specific tokenization is shown in Figure \ref{fig: token_hist}. We have over 95\% of the tweets having 29 tokens or less. There are various model-specific tokenizers provided by \textit{transformers} library, like \textit{BertTokenizer} or \textit{RobertaTokenizer}. For the experiments, the \textit{AutoTokenizer} has been used which automatically selects the appropriate tokenizer relevant for the model being used. The tokenizer allows for the input to be prepared appropriately for use by BERT and its variants. It divides the input text into tokens based on a predefined set of rules. These tokens are subsequently transformed into numerical representations and tensors, along with any extra inputs needed by the model to complete the process.\newline
+For tokenization, the tokenizer provided by the \textit{transformers} library is used.  There are various model-specific tokenizers provided by \textit{transformers} library, like \textit{BertTokenizer} or \textit{RobertaTokenizer}. For the experiments, the \textit{AutoTokenizer} has been used which automatically selects the appropriate tokenizer relevant for the model being used. The tokenizer allows for the input to be prepared appropriately for use by BERT and its variants. It divides the input text into tokens based on a predefined set of rules. These tokens are subsequently transformed into numerical representations and tensors, along with any extra inputs needed by the model to complete the process.\newline
 
 \subsection{Tokenisation example}
 \textbf{Tweet from input dataset}\newline
@@ -151,15 +151,17 @@ For tokenization, the tokenizer provided by the \textit{transformers} library is
 \textbf{Post tokenisation}\newline
 
 \begin{adjustbox}{minipage={\textwidth},fbox}
-    [101, 2293, 2009, 2043, 1045, 2471, 3280, 4373, 3092, 2011, 1037, 4100, 3426, 2026, 14007, 4332, 2125, 2153, 1012, 2028, 2154, 2027, 2097, 8081, 2009, 1001, 14007, 6342, 10603, 1001, 17714, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    [101, 2293, 2009, 2043, 1045, 2471, 3280, 4373, 3092, 2011, 1037, 4100, 3426, 2026, 14007, 4332, 2125, 2153, 1012, 2028, 2154, 2027, 2097, 8081, 2009, 1001, 14007, 6342, 10603, 1001, 17714, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 \end{adjustbox} \newline\newline
 
 \textbf{Retrieving the tokenized input}\newline
 
 \begin{adjustbox}{minipage={\textwidth},fbox}
-    [CLS] love it when i almost die rear ended by a semi cause my jeep turns off again. one day they will fix it \# jeepsucks \# chrysler [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD]
+    [CLS] love it when i almost die rear ended by a semi cause my jeep turns off again. one day they will fix it \# jeepsucks \# chrysler [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD]
 \end{adjustbox} \newline\newline
 
+\subsection{Before and after tokenization}
+The distribution of the number of tokens in the tweets from the pre-processed data from \cite{jinModelingSeverityComplaints2021} before applying the model-specific tokenization is shown in Figure \ref{fig: token_hist}. We have over 95\% of the tweets having 29 tokens or less.
 
 \begin{figure}[htbp]
     \centering

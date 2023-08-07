@@ -78,9 +78,7 @@ The primary details of the enviornment used for the experiments are listed below
     \item \textbf{GPU Memory:} 16 GB
 \end{itemize}
 
-
-
-\subsection{Libraries}
+\subsection{Software}
 For the experiments, the BERT transformer large language models along with a number of its variants are used to classify the tweets and compare the performance. The models are based on the \textit{transformers} library implementation from Hugging Face\footnote{https://huggingface.co/} along with the \textit{datasets} and \textit{evaluate} libraries. From scikit-learn\footnote{https://scikit-learn.org/stable/} the \textit{sklearn} library is used to generate the stratified splits for the nested cross-fold validation. The versions for each library are shown in the table \ref{tab: libs_used}.
 
 \begin{table}[ht]
@@ -99,11 +97,13 @@ For the experiments, the BERT transformer large language models along with a num
         \hline
         Scikit-Learn & sklearn & 1.1.2 \\
         \hline
+        Numpy & numpy & 
     \end{tabularx}
-    \caption{Libraries and versions used for this project.}    
+    \caption{Software and library versions used for this project. Other more }    
     \label{tab: libs_used}
 \end{table}
 
+\subsection{Models}
 The transformer models used are listed in table \ref{tab: model_dtls} along with the no. of parameters for each of them. The no. of parameters is based on the embedding and output layers along with the attention heads. The models chosen are such that there is a wide range of parameter counts for the models. This allows for a comparison of the model performance both in terms of the predictions as well as the inference time in relation to the number of parameters used in the models. **Add content on the impact of layers and parameters on model performance**
 
 

@@ -1,7 +1,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The distribution of the no. of tokens for the full dataset of 3,449 tweets.\relax }}{10}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The distribution of the no. of tokens for the full dataset of 3,449 tweets before tokenization.\relax }}{10}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The token count distribution for the full dataset post tokenization.\relax }}{10}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

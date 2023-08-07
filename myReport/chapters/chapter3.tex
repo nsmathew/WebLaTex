@@ -137,15 +137,43 @@ The transformer models used are listed in table \ref{tab: model_dtls} along with
     \label{tab: model_dtls}
 \end{table} 
 
-\section{Data tokenisation}
-For tokenization, the tokenizer provided by the \textit{transformers} library is used. The distribution of the number of tokens in the tweets from the pre-processed data from \cite{jinModelingSeverityComplaints2021} before applying the model-specific tokenization is shown in Figure \ref{fig: token_hist}. We have over 95\% of the tweets having 29 tokens or less. The tokenization process 
 \begin{figure}
     \centering
     \captionsetup{font=small}
     \includegraphics[width=\textwidth]{figures/token_hist.png} % Replace with your image file name
-    \caption{The distribution of the no. of tokens for the full dataset of 3,449 tweets.}
+    \caption{The distribution of the no. of tokens for the full dataset of 3,449 tweets before tokenization.}
     \label{fig: token_hist}
 \end{figure}
+\section{Data tokenisation}
+For tokenization, the tokenizer provided by the \textit{transformers} library is used. The distribution of the number of tokens in the tweets from the pre-processed data from \cite{jinModelingSeverityComplaints2021} before applying the model-specific tokenization is shown in Figure \ref{fig: token_hist}. We have over 95\% of the tweets having 29 tokens or less. The tokenization process provided by the \textit{transformers} library using \textit{AutoTokenizer} allows for the input to be prepared appropriately for use by BERT and its variants.
+\begin{figure}
+    \centering
+    \captionsetup{font=small}
+    \includegraphics[width=\textwidth]{figures/token_pp_hist.png} % Replace with your image file name
+    \caption{The token count distribution for the full dataset post tokenization.}
+    \label{fig: token_pp_hist}
+\end{figure}
+
+
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{figure1.pdf}
+        \caption{Caption for Figure 1}
+        \label{fig:figure1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{token_pp_hist.png}
+        \caption{Caption for Figure 2}
+        \label{fig:figure2}
+    \end{subfigure}
+    \caption{Overall caption for both figures}
+    \label{fig:both_figures}
+\end{figure}
+
+
 \section{Nested cross validation}
 ** To UPDATE **
 

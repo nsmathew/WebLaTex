@@ -372,6 +372,11 @@ INPUT ./figures/token_hist.png
 INPUT figures/token_hist.png
 INPUT ./figures/token_hist.png
 INPUT ./figures/token_hist.png
+INPUT ./figures/token_pp_hist.png
+INPUT ./figures/token_pp_hist.png
+INPUT figures/token_pp_hist.png
+INPUT ./figures/token_pp_hist.png
+INPUT ./figures/token_pp_hist.png
 INPUT ./chapters/chapter4.tex
 INPUT chapters/chapter4.tex
 INPUT ./chapters/chapter4.tex

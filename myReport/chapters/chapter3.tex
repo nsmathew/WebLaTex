@@ -138,15 +138,27 @@ The transformer models used are listed in table \ref{tab: model_dtls} along with
 \end{table} 
 
 \section{Data tokenisation}
-For tokenization, the tokenizer provided by the \textit{transformers} library is used. The distribution of the number of tokens in the tweets from the pre-processed data from \cite{jinModelingSeverityComplaints2021} before applying the model-specific tokenization is shown in Figure \ref{fig: token_hist}. We have over 95\% of the tweets having 29 tokens or less. The tokenization process provided by the \textit{transformers} library using \textit{AutoTokenizer} allows for the input to be prepared appropriately for use by BERT and its variants. 
+For tokenization, the tokenizer provided by the \textit{transformers} library is used. The distribution of the number of tokens in the tweets from the pre-processed data from \cite{jinModelingSeverityComplaints2021} before applying the model-specific tokenization is shown in Figure \ref{fig: token_hist}. We have over 95\% of the tweets having 29 tokens or less. The tokenization process provided by the \textit{transformers} library using \textit{AutoTokenizer} allows for the input to be prepared appropriately for use by BERT and its variants. text into tokens according to a set of rules. The tokens are converted into numbers and then tensors, which become the model inputs. Any additional inputs required by the model are added by the tokenizer.\newline
 
-\textbf{Tweet from dataset}\newline
-love it when i almost die rear ended by a semi cause my jeep turns off again . one day they will fix it #jeepsucks #chrysler
+\subsection{Tokenisation example}
+\textbf{Tweet from input dataset}\newline
+
+\begin{adjustbox}{minipage={\textwidth},fbox}
+    love it when i almost die rear ended by a semi cause my jeep turns off again . one day they will fix it \#jeepsucks \#chrysler
+\end{adjustbox} \newline\newline
+
 
 \textbf{Post tokenisation}\newline
-101, 2293, 2009, 2043, 1045, 2471, 3280, 4373, 3092, 2011, 1037, 4100, 3426, 2026, 14007, 4332, 2125, 2153, 1012, 2028, 2154, 2027, 2097, 8081, 2009, 1001, 14007, 6342, 10603, 1001, 17714, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 
+\begin{adjustbox}{minipage={\textwidth},fbox}
+    [101, 2293, 2009, 2043, 1045, 2471, 3280, 4373, 3092, 2011, 1037, 4100, 3426, 2026, 14007, 4332, 2125, 2153, 1012, 2028, 2154, 2027, 2097, 8081, 2009, 1001, 14007, 6342, 10603, 1001, 17714, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+\end{adjustbox} \newline\newline
 
+\textbf{Retrieving the tokenized input}\newline
+
+\begin{adjustbox}{minipage={\textwidth},fbox}
+    [CLS] love it when i almost die rear ended by a semi cause my jeep turns off again. one day they will fix it \# jeepsucks \# chrysler [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD]
+\end{adjustbox} \newline\newline
 
 
 \begin{figure}[htbp]

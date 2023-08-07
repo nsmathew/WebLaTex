@@ -66,7 +66,6 @@ The data was extracted from Twitter via the Twitter API \footnote{https://develo
 \subsection{Annotation}
 The classification of the 1,971 tweets as complaints or not was carried out using a binary annotation task (complaint or not). Since tweets are concise and typically express a single idea, an entire tweet was classified as a complaint if it contained at least one speech act of complaining. To guide the annotation process, a complaint definition from \cite{olshtain_speechact_1987}, stating that a complaint portrays a situation that contradicts the writer's positive expectation was used. Two of the authors with extensive annotation experience in linguistics independently labelled the 1,971 tweets. They had substantial agreement \cite{artsteinInterCoderAgreementComputational2008} with Cohen's Kappa of $\kappa$ = 0.731. In the end, 1,232 tweets (63\%) and 739 tweets (37\%) were identified as complaints and non-complaints. Table \ref{tab: domains} gives the breakdown of the complaint and non-complaint tweets for each domain.
 
-
 \section{Models and Libraries}
 For the experiments, the BERT transformer large language models along with a number of its variants are used to classify the tweets and compare the performance. The models are based on the \textit{transformers} library implementation from Hugging Face\footnote{https://huggingface.co/} along with the \textit{datasets} and \textit{evaluate} libraries. From scikit-learn\footnote{https://scikit-learn.org/stable/} the \textit{sklearn} library is used to generate the stratified splits for the nested cross-fold validation. The versions for each library are shown in the table \ref{tab: libs_used}.
 
@@ -91,7 +90,8 @@ For the experiments, the BERT transformer large language models along with a num
     \label{tab: libs_used}
 \end{table}
 
-The transformer models used are listed in table \ref{tab: model_dtls} along with the no. of parameters for each of them. The no. of parameters are based on the embedding and output layers along with the atten heads. The models chosen are based on 
+The transformer models used are listed in table \ref{tab: model_dtls} along with the no. of parameters for each of them. The no. of parameters is based on the embedding and output layers along with the attention heads. The models chosen are such that there is a wide range of parameter counts for the models. This allows for a comparison of the model performance both in terms of the predictions as well as the inference time in relation to the number of parameters used in the models.
+
 
 \begin{table}[ht]
     \captionsetup{font=small}
@@ -116,7 +116,7 @@ The transformer models used are listed in table \ref{tab: model_dtls} along with
         Bert Tiny & 4.4M & \small{\url{https://huggingface.co/prajjwal1/bert-tiny}} \\
         \hline
     \end{tabularx}
-    \caption{The transformer models used for the experiments and ordered by the number of parameters for each of them. The parameter counts are from \cite{bhargavaGeneralizationNLIWays2021} for Roberta, Bert, Albert and Bert Tiny. For Bertweet it is from \cite{nguyenBERTweetPretrainedLanguage2020}, MobileBert from \cite{sunMobileBERTCompactTaskAgnostic2020} and Distilbert from \cite{sanhDistilBERTDistilledVersion2020}.}    
+    \caption{The transformer models used for the experiments, ordered by the number of parameters for each of them. The parameter counts are from \cite{bhargavaGeneralizationNLIWays2021} for Roberta, Bert, Albert and Bert Tiny. For Bertweet it is from \cite{nguyenBERTweetPretrainedLanguage2020}, MobileBert from \cite{sunMobileBERTCompactTaskAgnostic2020} and Distilbert from \cite{sanhDistilBERTDistilledVersion2020}.}    
     \label{tab: model_dtls}
 \end{table} 
 

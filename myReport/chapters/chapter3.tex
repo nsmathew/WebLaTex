@@ -114,27 +114,27 @@ The transformer models used are listed in table \ref{tab: model_dtls} along with
 \begin{table}[ht]
     \captionsetup{font=small}
     \centering
-    \begin{tabularx}{\textwidth}{|l|c|X|}
+    \begin{tabularx}{\textwidth}{|l|c|X|c|}
         \hline
         \rowcolor[gray]{0.7}
-        \textbf{Model}            & \textbf{Parameter Count} & \textbf{Tokenizer Type} & \textbf{Vocab. Size}\\
+        \textbf{Model}            & \textbf{Parameter Count} & \textbf{Tokenizer Type} & \textbf{Vocab. Size} \\
         \hline
-        ROBERTA base              & 125M                     & Byte-level BPE          \\
+        ROBERTA base              & 125M                     & Byte-level BPE          & 50,265                \\
         \hline
-        BERT base (uncased)       & 110M                     & WordPiece               \\
+        BERT base (uncased)       & 110M                     & WordPiece               & 30,522                \\
         \hline
-        BERTweet base             & 110M                     & Byte-Pair Encoding      \\
+        BERTweet base             & 110M                     & Byte-Pair Encoding      & 64,000                \\
         \hline
-        DistilBERT base (uncased) & 66M                      & WordPiece               \\
+        DistilBERT base (uncased) & 66M                      & WordPiece               & 30,522                \\
         \hline
-        MobileBERT (uncased)      & 25.3M                    & WordPiece               \\
+        MobileBERT (uncased)      & 25.3M                    & WordPiece               & 30,522                \\
         \hline
-        ALBERT base               & 11M                      & SentencePiece           \\
+        ALBERT base               & 11M                      & SentencePiece           & 30,000                \\
         \hline
-        BERT Tiny                 & 4.4M                     & WordPiece               \\
+        BERT Tiny                 & 4.4M                     & WordPiece               & 30,522                \\
         \hline
     \end{tabularx}
-    \caption{The transformer models used for the experiments along with type of tokenization and sorted by the number of parameters for each of them. The parameter counts are from \cite{bhargavaGeneralizationNLIWays2021} for Roberta, Bert, Albert and Bert Tiny. For Bertweet it is from \cite{nguyenBERTweetPretrainedLanguage2020}, MobileBert from \cite{sunMobileBERTCompactTaskAgnostic2020} and Distilbert from \cite{sanhDistilBERTDistilledVersion2020}.}
+    \caption{The transformer models used for the experiments along with type of tokenization, and vocabulary size and sorted by the number of parameters for each of them. The parameter counts are from \cite{bhargavaGeneralizationNLIWays2021} for Roberta, Bert, Albert and Bert Tiny. For Bertweet it is from \cite{nguyenBERTweetPretrainedLanguage2020}, MobileBert from \cite{sunMobileBERTCompactTaskAgnostic2020} and Distilbert from \cite{sanhDistilBERTDistilledVersion2020}.}
     \label{tab: model_dtls}
 \end{table}
 

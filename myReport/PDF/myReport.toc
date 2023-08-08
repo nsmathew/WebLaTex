@@ -29,5 +29,6 @@
 \contentsline {section}{\numberline {4.3}Another Section if You Need It}{13}{}%
 \contentsline {chapter}{\numberline {5}Conclusions}{14}{}%
 \contentsline {chapter}{Appendices}{17}{}%
-\contentsline {chapter}{\numberline {A}An Appendix of Some Kind}{18}{}%
+\contentsline {chapter}{\numberline {A}References}{18}{}%
+\contentsline {section}{\numberline {A.1}Model References}{18}{}%
 \contentsline {chapter}{\numberline {B}Another Appendix}{19}{}%

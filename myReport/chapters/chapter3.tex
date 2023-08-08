@@ -8,36 +8,36 @@ The data used for the experiments is from Twitter. Twitter provides a good repre
 \newline \newline
 The data set created by \cite{preotiuc-pietro_automatically_2019} and further used by \cite{jin_complaint_2020} is utilised for this project. The original process for collection and annotation employed by them is breifly described below. The particular version \footnote{The data can be found here - https://archive.org/details/complaint\_severity\_data} used for the experiments is the one enhanced by \cite{jinModelingSeverityComplaints2021} with the addition of labels for the severity of complaints. These additional labels are not used for the experiments in this project.
 \subsection{Domains and organisations}
-A cross-industry representative collection of 93 customer service handles of organisations on Twitter were identified manually. These handles were then categorised into 9 domains based on their industry type. Since an organisation could have business activities across domains, the assigned domain was based on the products or services receiving the most number of complaints. All the domains used in the experiments are listed in Table \ref{tab: domains}. 
+A cross-industry representative collection of 93 customer service handles of organisations on Twitter were identified manually. These handles were then categorised into 9 domains based on their industry type. Since an organisation could have business activities across domains, the assigned domain was based on the products or services receiving the most number of complaints. All the domains used in the experiments are listed in Table \ref{tab: domains}.
 \begin{table}[ht]
     \captionsetup{font=small}
     \centering
     \begin{tabularx}{\textwidth}{|X|c|c|c|}
-    \hline
-    \rowcolor[gray]{0.7}
-    \textbf{Domains} & \textbf{Complaints} & \textbf{Non-Complaints} & \textbf{Total Tweets}\\
-    \hline
-    Food \& Beverage & 95 \small{(73\%)} & 35 \small{(27\%)} & 130 \small{(7\%)}\\
-    \rowcolor[gray]{0.9}
-    Apparel & 141 \small{(55\%)} & 117 \small{(45\%)} & 258 \small{(13\%)}\\
-    Retail & 124 \small{(62\%)}& 75 \small{(38\%)} & 199 \small{(10\%)}\\
-    \rowcolor[gray]{0.9}
-    Cars & 67 \small{(73\%)} & 25 \small{(27\%)}  & 92 \small{(4\%)} \\
-    Services  & 207 \small{(61\%)} & 130 \small{(39\%)}  & 337 \small{(17\%)} \\
-    \rowcolor[gray]{0.9}
-    Software \& Online Services & 189 \small{(65\%)} & 103 \small{(35\%)}  & 292 \small{(15\%)} \\
-    Transport & 139 \small{(56\%)} & 109 \small{(44\%)}  & 248 \small{(12\%)} \\
-    \rowcolor[gray]{0.9}
-    Electronics & 174 \small{(61\%)} & 112 \small{(39\%)}  & 286 \small{(15\%)} \\
-    Other & 96 \small{(79\%)} & 33 \small{(21\%)}  & 129 \small{(7\%)} \\
-    \hline
-    \rowcolor[gray]{0.9}
-    \textbf{Total} & 1232 \small{(63\%)} & 739 \small{(37\%)}& 1971\\
-    \hline
+        \hline
+        \rowcolor[gray]{0.7}
+        \textbf{Domains}            & \textbf{Complaints} & \textbf{Non-Complaints} & \textbf{Total Tweets} \\
+        \hline
+        Food \& Beverage            & 95 \small{(73\%)}   & 35 \small{(27\%)}       & 130 \small{(7\%)}     \\
+        \rowcolor[gray]{0.9}
+        Apparel                     & 141 \small{(55\%)}  & 117 \small{(45\%)}      & 258 \small{(13\%)}    \\
+        Retail                      & 124 \small{(62\%)}  & 75 \small{(38\%)}       & 199 \small{(10\%)}    \\
+        \rowcolor[gray]{0.9}
+        Cars                        & 67 \small{(73\%)}   & 25 \small{(27\%)}       & 92 \small{(4\%)}      \\
+        Services                    & 207 \small{(61\%)}  & 130 \small{(39\%)}      & 337 \small{(17\%)}    \\
+        \rowcolor[gray]{0.9}
+        Software \& Online Services & 189 \small{(65\%)}  & 103 \small{(35\%)}      & 292 \small{(15\%)}    \\
+        Transport                   & 139 \small{(56\%)}  & 109 \small{(44\%)}      & 248 \small{(12\%)}    \\
+        \rowcolor[gray]{0.9}
+        Electronics                 & 174 \small{(61\%)}  & 112 \small{(39\%)}      & 286 \small{(15\%)}    \\
+        Other                       & 96 \small{(79\%)}   & 33 \small{(21\%)}       & 129 \small{(7\%)}     \\
+        \hline
+        \rowcolor[gray]{0.9}
+        \textbf{Total}              & 1232 \small{(63\%)} & 739 \small{(37\%)}      & 1971                  \\
+        \hline
     \end{tabularx}
-    \caption{The nine domains and the distribution of tweets that are complaints and those that are not. The percentages indicate how the splits are distributed.}    
+    \caption{The nine domains and the distribution of tweets that are complaints and those that are not. The percentages indicate how the splits are distributed.}
     \label{tab: domains}
-\end{table}  
+\end{table}
 
 \subsection{Data Extraction}
 The data was extracted from Twitter via the Twitter API \footnote{https://developer.twitter.com/en}. The latest 3,200 tweets at the time of the collection exercise were extracted and the original tweets to which the customer service handles responded were identified. Then, random sampling equally for each handle, 1,971 tweets were identified where there was a response from the support's handle. To ensure a more balanced and diverse dataset, 1,478 randomly sampled tweets were added to the dataset. 739 tweets were replies to other handles (outside the 93 identified) and the remaining 739 tweets were not addressed to any Twitter handle. Table \ref{tab: tweet_counts} shows the breakdown of the total population of the tweets dataset. Tweets were filtered for English using langid.py \cite{luiLangidPyOfftheshelf2012}. Retweets were excluded and all usernames and URLs were anonymised and replaced with placeholder tokens.
@@ -47,21 +47,21 @@ The data was extracted from Twitter via the Twitter API \footnote{https://develo
     \begin{tabularx}{\textwidth}{|X|c|c|c|}
         \hline
         \rowcolor[gray]{0.7}
-        \textbf{Extraction Criteria} & \textbf{Complaints} & \textbf{Non-Complaints} & \textbf{Total Tweets} \\
+        \textbf{Extraction Criteria}                                           & \textbf{Complaints} & \textbf{Non-Complaints} & \textbf{Total Tweets} \\
         \hline
-        Addressed to and replied by the identified 93 customer service handles & 1239 \small{(63\%)}  & 739 \small{(37\%)}  & 1971 \small{(58\%)}  \\
+        Addressed to and replied by the identified 93 customer service handles & 1239 \small{(63\%)} & 739 \small{(37\%)}      & 1971 \small{(58\%)}   \\
         \hline
-        Addressed to other customer service handles & 0 & 739 \small{(100\%)} & 739 \small{(21\%)}  \\
+        Addressed to other customer service handles                            & 0                   & 739 \small{(100\%)}     & 739 \small{(21\%)}    \\
         \hline
-        Not addressed to any Twitter handle & 0 & 739 \small{(100\%)} & 739 \small{(21\%)}  \\
-        \hline    
+        Not addressed to any Twitter handle                                    & 0                   & 739 \small{(100\%)}     & 739 \small{(21\%)}    \\
+        \hline
         \rowcolor[gray]{0.9}
-        Total & 1232 \small{(36\%)}  & 2217 \small{(64\%)}  & 3449 \\
+        Total                                                                  & 1232 \small{(36\%)} & 2217 \small{(64\%)}     & 3449                  \\
         \hline
     \end{tabularx}
-    \caption{Selection of tweets based on random sampling and where they have received replies when addressed to the 93 customer service handles combined with random sampled tweets that are addressed to other handles and tweets that are not addressed to any handle.}    
+    \caption{Selection of tweets based on random sampling and where they have received replies when addressed to the 93 customer service handles combined with random sampled tweets that are addressed to other handles and tweets that are not addressed to any handle.}
     \label{tab: tweet_counts}
-\end{table}  
+\end{table}
 
 \subsection{Annotation}
 The classification of the 1,971 tweets as complaints or not was carried out using a binary annotation task (complaint or not). Since tweets are concise and typically express a single idea, an entire tweet was classified as a complaint if it contained at least one speech act of complaining. To guide the annotation process, a complaint definition from \cite{olshtain_speechact_1987}, stating that a complaint portrays a situation that contradicts the writer's positive expectation was used. Two of the authors with extensive annotation experience in linguistics independently labelled the 1,971 tweets. They had substantial agreement \cite{artsteinInterCoderAgreementComputational2008} with Cohen's Kappa of $\kappa$ = 0.731. In the end, 1,232 tweets (63\%) and 739 tweets (37\%) were identified as complaints and non-complaints. Table \ref{tab: domains} gives the breakdown of the complaint and non-complaint tweets for each domain.
@@ -69,7 +69,7 @@ The classification of the 1,971 tweets as complaints or not was carried out usin
 \section{Environment and models}
 
 \subsection{Hardware}
-The key details of the environment used for the experiments are listed below. 
+The key details of the environment used for the experiments are listed below.
 \begin{itemize}
     \small
     \item \textbf{CPU Count:} 8
@@ -90,20 +90,20 @@ For the experiments, the BERT transformer large language models along with a num
         \rowcolor[gray]{0.7}
         \multirow{-3}{*}{} \textbf{Provider} & \textbf{Library Name} & \textbf{Version} \\
         \hline
-        \multirow{3}{*}{Hugging Face} & transformers & 4.21.3 \\
+        \multirow{3}{*}{Hugging Face}        & transformers          & 4.21.3           \\
         \cline{2-3}
-        & datasets & 2.4.0 \\
+                                             & datasets              & 2.4.0            \\
         \cline{2-3}
-        & evaluate & 0.4.0 \\
+                                             & evaluate              & 0.4.0            \\
         \hline
-        Scikit-Learn & sklearn & 1.1.2 \\
+        Scikit-Learn                         & sklearn               & 1.1.2            \\
         \hline
-        Numpy & numpy & 1.23.4 \\
+        Numpy                                & numpy                 & 1.23.4           \\
         \hline
-        Pandas & pandas & 1.5.0 \\
+        Pandas                               & pandas                & 1.5.0            \\
         \hline
     \end{tabularx}
-    \caption{Software and library versions used for this project. Other more }    
+    \caption{Software and library versions used for this project. Other more }
     \label{tab: libs_used}
 \end{table}
 
@@ -117,30 +117,32 @@ The transformer models used are listed in table \ref{tab: model_dtls} along with
     \begin{tabularx}{\textwidth}{|l|c|X|}
         \hline
         \rowcolor[gray]{0.7}
-        \textbf{Model} & \textbf{Parameter Count} & \textbf{Model Documentation} \\
+        \textbf{Model}            & \textbf{Parameter Count} & \textbf{Tokenizer Type} \\
         \hline
-        Roberta base & 125M & \small{\url{https://huggingface.co/roberta-base}} \\
-        \hline 
-        Bert base (uncased) & 110M & \small{\url{https://huggingface.co/bert-base-uncased}} \\
+        ROBERTA base              & 125M                     & Byte-level BPE          \\
         \hline
-        Bertweet base & 110M & \small{\url{https://huggingface.co/vinai/bertweet-base}} \\
+        BERT base (uncased)       & 110M                     & WordPiece               \\
         \hline
-        Distilbert base (uncased) & 66M & \small{\url{https://huggingface.co/distilbert-base-uncased}} \\
+        BERTweet base             & 110M                     & Byte-Pair Encoding      \\
         \hline
-        Mobilebert (uncased) & 25.3M & \small{\url{https://huggingface.co/google/mobilebert-uncased}} \\
+        DistilBERT base (uncased) & 66M                      & WordPiece               \\
         \hline
-        Albert base & 11M & \small{\url{https://huggingface.co/albert-base-v2}} \\
+        MobileBERT (uncased)      & 25.3M                    & WordPiece               \\
         \hline
-        Bert Tiny & 4.4M & \small{\url{https://huggingface.co/prajjwal1/bert-tiny}} \\
+        ALBERT base               & 11M                      & SentencePiece           \\
+        \hline
+        BERT Tiny                 & 4.4M                     & WordPiece               \\
         \hline
     \end{tabularx}
-    \caption{The transformer models used for the experiments, sorted by the number of parameters for each of them. The parameter counts are from \cite{bhargavaGeneralizationNLIWays2021} for Roberta, Bert, Albert and Bert Tiny. For Bertweet it is from \cite{nguyenBERTweetPretrainedLanguage2020}, MobileBert from \cite{sunMobileBERTCompactTaskAgnostic2020} and Distilbert from \cite{sanhDistilBERTDistilledVersion2020}.}    
+    \caption{The transformer models used for the experiments along with type of tokenization and sorted by the number of parameters for each of them. The parameter counts are from \cite{bhargavaGeneralizationNLIWays2021} for Roberta, Bert, Albert and Bert Tiny. For Bertweet it is from \cite{nguyenBERTweetPretrainedLanguage2020}, MobileBert from \cite{sunMobileBERTCompactTaskAgnostic2020} and Distilbert from \cite{sanhDistilBERTDistilledVersion2020}.}
     \label{tab: model_dtls}
-\end{table} 
+\end{table}
 
 \section{Data tokenisation}
-Tokenization process is required to be applied to input data for it to be prepared appropriately for use by BERT and its variants. The tokenization process involves dividing the input text into tokens based on a predefined set of rules. These tokens are subsequently transformed into numerical representations and tensors, along with any extra inputs needed by the model. Tokens in general could be words, subwords, phrases or even characters. The models in scope of the experiments use one of the 3 types of tokenizers
-The tokenizer provided by the \textit{transformers} library is used for tokenizing the input tweets. The library provides various model-specific tokenizers such as, \textit{BertTokenizer} \footnote{\url{https://huggingface.co/docs/transformers/v4.21.3/en/model_doc/bert#transformers.BertTokenizer}} or \textit{RobertaTokenizer} \footnote{\url{https://huggingface.co/docs/transformers/v4.21.3/en/model_doc/roberta#transformers.RobertaTokenizer}}. Certain models like BERTweet do not use dedicated tokenizers and leverage existing ones. For the experiments, the \textit{AutoTokenizer} \footnote{\url{https://huggingface.co/docs/transformers/v4.21.3/en/model_doc/auto#transformers.AutoTokenizer}} has been used which conviniently selects the appropriate tokenizer relevant for the model in use. 
+The tokenization process is required to be applied to input data for it to be prepared appropriately for use by BERT and its variants. The tokenization process involves dividing the input text into tokens based on a predefined set of rules. These tokens are subsequently transformed into numerical representations and tensors, along with any extra inputs needed by the model. Tokens in general could be words, subwords, phrases or even characters. The models in scope of the experiments use one of the Byte-level BPE, Byte-Pair Encoding, WordPiece or SentencePiece tokenization processes and are shown in Table \ref{tab: model_dtls}.
+\newline \newline
+
+The tokenizer provided by the \textit{transformers} library is used for tokenizing the input tweets. The library provides various model-specific tokenizers such as, \textit{BertTokenizer} \footnote{\url{https://huggingface.co/docs/transformers/v4.21.3/en/model_doc/bert#transformers.BertTokenizer}} or \textit{RobertaTokenizer} \footnote{\url{https://huggingface.co/docs/transformers/v4.21.3/en/model_doc/roberta#transformers.RobertaTokenizer}}. Certain models like BERTweet do not use dedicated tokenizers and leverage existing ones. For the experiments, the \textit{AutoTokenizer} \footnote{\url{https://huggingface.co/docs/transformers/v4.21.3/en/model_doc/auto#transformers.AutoTokenizer}} has been used which conviniently selects the appropriate tokenizer relevant for the model in use.
 \newline\newline
 
 ** Talk about the default settings from the preprocess page**
@@ -165,7 +167,7 @@ The tokenizer provided by the \textit{transformers} library is used for tokenizi
 \end{adjustbox} \newline\newline
 
 \subsection{Before and after tokenization}
-The distribution of the number of tokens in the tweets from the pre-processed data from \cite{jinModelingSeverityComplaints2021} before applying the model-specific tokenization is shown in Figure \ref{fig: token_hist}. We have over 95\% of the tweets having 29 tokens or less. Using the BertTokenizer as an example, as shown in Figure \ref{fig: token_pp_hist}, we find we need about 37 tokens to completely cover 95\% of the tweets. This analysis assists in the decision on the appropriate value for the \textit{max\_value} for the tokenizer. This when used in conjunction with \textit{truncation=True}, it sets the maximum number of tokens for each input tweet. Anything that follows is truncated and not used for the training or inference. Based on this, a \textit{max\_value=50} is selected for the experiments. 
+The distribution of the number of tokens in the tweets from the pre-processed data from \cite{jinModelingSeverityComplaints2021} before applying the model-specific tokenization is shown in Figure \ref{fig: token_hist}. We have over 95\% of the tweets having 29 tokens or less. Using the BertTokenizer as an example, as shown in Figure \ref{fig: token_pp_hist}, we find we need about 37 tokens to completely cover 95\% of the tweets. This analysis assists in the decision on the appropriate value for the \textit{max\_value} for the tokenizer. This when used in conjunction with \textit{truncation=True}, it sets the maximum number of tokens for each input tweet. Anything that follows is truncated and not used for the training or inference. Based on this, a \textit{max\_value=50} is selected for the experiments.
 
 \begin{figure}[htbp]
     \centering
@@ -181,7 +183,7 @@ The distribution of the number of tokens in the tweets from the pre-processed da
         \caption{After tokenization}
         \label{fig: token_pp_hist}
     \end{subfigure}
-    \caption{The token count distribution for the full dataset of 3,449 tweets before and after tokenization. BertTokenizer is used here.}
+    \caption{The token count distribution for the full dataset of 3,449 tweets before and after tokenization with the red dashed line indicating 95\% coverage of tweets. BertTokenizer is used here.}
     \label{fig: bef_aft_token}
 \end{figure}
 

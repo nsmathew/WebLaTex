@@ -34,17 +34,30 @@
 \newblock {\em Politeness : some universals in language usage}.
 \newblock Studies in interactional sociolinguistics ; 4. Cambridge University Press, Cambridge [Cambridgeshire] ; New York, 1987.
 
+\bibitem{chungEmpiricalEvaluationGated2014}
+{\sc Chung, J., Gulcehre, C., Cho, K., and Bengio, Y.}
+\newblock Empirical {Evaluation} of {Gated} {Recurrent} {Neural} {Networks} on {Sequence} {Modeling}.
+
 \bibitem{coussement_improving_2008}
 {\sc Coussement, K., and Van~den Poel, D.}
 \newblock Improving customer complaint management by automatic email classification using linguistic style features as predictors.
 \newblock {\em DECISION SUPPORT SYSTEMS 44}, 4 (2008), 870--882.
 \newblock Place: AMSTERDAM Publisher: Elsevier B.V.
 
+\bibitem{devlinBERTPretrainingDeep2018}
+{\sc Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K.}
+\newblock {BERT}: {Pre}-training of {Deep} {Bidirectional} {Transformers} for {Language} {Understanding}.
+
 \bibitem{hennig-thurauElectronicWordofmouthConsumeropinion2004}
 {\sc Hennig-Thurau, T., Gwinner, K.~P., Walsh, G., and Gremler, D.~D.}
 \newblock Electronic word-of-mouth via consumer-opinion platforms: {What} motivates consumers to articulate themselves on the {Internet}?
 \newblock {\em Journal of interactive marketing 18}, 1 (2004), 38--52.
 \newblock Place: Hoboken Publisher: Elsevier Inc.
+
+\bibitem{hochreiterLongShortTermMemory1997}
+{\sc Hochreiter, S., and Schmidhuber, J.}
+\newblock Long {Short}-{Term} {Memory}.
+\newblock {\em Neural Computation 9}, 8 (Nov. 1997), 1735--1780.
 
 \bibitem{jin_complaint_2020}
 {\sc Jin, M., and Aletras, N.}
@@ -111,5 +124,10 @@
 \newblock When unhappy customers strike back on the {Internet}.
 \newblock {\em MIT Sloan management review 52}, 3 (2011), 37.
 \newblock Place: Cambridge Publisher: Sloan Management Review.
+
+\bibitem{vaswaniAttentionAllYou2023a}
+{\sc Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N., Kaiser, L., and Polosukhin, I.}
+\newblock Attention {Is} {All} {You} {Need}, Aug. 2023.
+\newblock arXiv:1706.03762 [cs].
 
 \end{thebibliography}

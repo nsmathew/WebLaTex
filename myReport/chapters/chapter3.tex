@@ -117,21 +117,21 @@ The transformer models used are listed in table \ref{tab: model_dtls} along with
     \begin{tabularx}{\textwidth}{|l|c|X|c|}
         \hline
         \rowcolor[gray]{0.7}
-        \textbf{Model}            & \textbf{Parameter Count} & \textbf{Tokenizer Type} & \textbf{Vocab. Size} \\
+        \textbf{Model}            & \textbf{Parameter Count} & \textbf{Tokenizer Type}  & \textbf{Vocab. Size} \\
         \hline
-        ROBERTA base              & 125M                     & Byte-level BPE          & 50,265                \\
+        ROBERTA base              & 125M                     & Byte-level BPE           & 50,265               \\
         \hline
-        BERT base (uncased)       & 110M                     & WordPiece               & 30,522                \\
+        BERT base (uncased)       & 110M                     & WordPiece                & 30,522               \\
         \hline
-        BERTweet base             & 110M                     & Byte-Pair Encoding (BPE)      & 64,000                \\
+        BERTweet base             & 110M                     & Byte-Pair Encoding (BPE) & 64,000               \\
         \hline
-        DistilBERT base (uncased) & 66M                      & WordPiece               & 30,522                \\
+        DistilBERT base (uncased) & 66M                      & WordPiece                & 30,522               \\
         \hline
-        MobileBERT (uncased)      & 25.3M                    & WordPiece               & 30,522                \\
+        MobileBERT (uncased)      & 25.3M                    & WordPiece                & 30,522               \\
         \hline
-        ALBERT base               & 11M                      & SentencePiece           & 30,000                \\
+        ALBERT base               & 11M                      & SentencePiece            & 30,000               \\
         \hline
-        BERT Tiny                 & 4.4M                     & WordPiece               & 30,522                \\
+        BERT Tiny                 & 4.4M                     & WordPiece                & 30,522               \\
         \hline
     \end{tabularx}
     \caption{The transformer models used for the experiments along with type of tokenization, and vocabulary size and sorted by the number of parameters for each of them. The parameter counts are from \cite{bhargavaGeneralizationNLIWays2021} for Roberta, Bert, Albert and Bert Tiny. For Bertweet it is from \cite{nguyenBERTweetPretrainedLanguage2020}, MobileBert from \cite{sunMobileBERTCompactTaskAgnostic2020} and Distilbert from \cite{sanhDistilBERTDistilledVersion2020}.}
@@ -151,9 +151,9 @@ The tokenizer provided by the \textit{transformers} library is used for tokenizi
 
 
 \subsection{Choice of settings}
-Prior to applying tokenization, the settings for padding and truncation \footnote{\url{https://huggingface.co/docs/transformers/pad_truncation}} is chosen to ensure the var. The parameter, \textit{max\_length} determines the maximum number of tokens for each input, the type of padding is controlled by \textit{padding} and \textit{truncation} allows to truncate input to a pre-determined number of tokens. 
+Prior to applying tokenization, the settings for padding and truncation \footnote{\url{https://huggingface.co/docs/transformers/pad_truncation}} is chosen to ensure the varying input length will still result in rectangular tensors. The parameter, \textit{max\_length} determines the maximum number of tokens for each input, the type of padding is controlled by \textit{padding} and \textit{truncation} allows to truncate input to a pre-determined number of tokens.
 \newline\newline
-The distribution of the number of tokens in the tweets from the pre-processed data from \cite{jinModelingSeverityComplaints2021} before applying the model-specific tokenization is shown in Figure \ref{fig: token_hist}. We have over 95\% of the tweets having 29 tokens or less. Using the BertTokenizer as an example, as shown in Figure \ref{fig: token_pp_hist}, we find we need about 37 tokens to comprehensively cover 95\% of the tweets. Although not shown here, similar token counts (36-43) are seen to be required for the other tokenizers. This analysis assists in the decision on the appropriate value for the \textit{max\_value} for the tokenizer. This when used in conjunction with \textit{truncation=True}, sets the maximum number of tokens for each input tweet. Anything that follows is truncated and not used for training or inference. Additionally, since there are tweets with far less number of tokens we set \textit{padding} to 'max_length' which ensures Based on this, a \textit{max\_value=50} is selected for the experiments.
+The distribution of the number of tokens in the tweets from the pre-processed data from \cite{jinModelingSeverityComplaints2021} before applying the model-specific tokenization is shown in Figure \ref{fig: token_hist}. We have over 95\% of the tweets having 29 tokens or less. Using the BertTokenizer as an example, from Figure \ref{fig: token_pp_hist} we find we need about 37 tokens to comprehensively cover 95\% of the tweets. Although not shown here, similar token counts (35 to 43) are required for the other tokenizers. This analysis assists in the decision on the appropriate \textit{max\_value} for the tokenizer. A value of 50 ensures coverage of over 99\% of the tweets completely for all the tokenizers. This when used in conjunction with \textit{truncation=True}, sets the maximum number of tokens for each input tweet to 50. Anything that follows is truncated and not used for training or inference. Additionally, since the dataset includes shorter tweets with resulting tokens less than 50, we set \textit{padding} to 'max\_length' to apply padding.
 
 \begin{figure}[htbp]
     \centering
@@ -173,7 +173,7 @@ The distribution of the number of tokens in the tweets from the pre-processed da
     \label{fig: bef_aft_token}
 \end{figure}
 
-** Talk about the default settings from the preprocess page**
+** Describe an example tweet tokenisation below**
 
 \textbf{Tweet from input dataset}\newline
 
@@ -194,10 +194,10 @@ The distribution of the number of tokens in the tweets from the pre-processed da
     [CLS] love it when i almost die rear ended by a semi cause my jeep turns off again. one day they will fix it \# jeepsucks \# chrysler [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD]
 \end{adjustbox} \newline\newline
 
-\section{Nested cross validation}
+\section{Experiment 1: Nested cross-validation}
 ** To UPDATE **
 
-\section{Domain splits with nested cross-validation}
+\section{Experiment 2: Domain splits with nested cross-validation}
 ** To UPDATE **
 
 \section{Ethical, Professional and Legal Issues}

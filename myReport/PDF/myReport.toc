@@ -14,16 +14,16 @@
 \contentsline {subsection}{\numberline {3.2.1}Domains and organisations}{6}{}%
 \contentsline {subsection}{\numberline {3.2.2}Data Extraction}{7}{}%
 \contentsline {subsection}{\numberline {3.2.3}Annotation}{8}{}%
-\contentsline {section}{\numberline {3.3}Environment and models}{8}{}%
+\contentsline {section}{\numberline {3.3}Environment}{8}{}%
 \contentsline {subsection}{\numberline {3.3.1}Hardware}{8}{}%
 \contentsline {subsection}{\numberline {3.3.2}Software}{8}{}%
-\contentsline {subsection}{\numberline {3.3.3}Models}{8}{}%
-\contentsline {section}{\numberline {3.4}Data tokenisation}{9}{}%
-\contentsline {subsection}{\numberline {3.4.1}Tokenization methods}{10}{}%
-\contentsline {subsection}{\numberline {3.4.2}Choice of settings}{10}{}%
-\contentsline {section}{\numberline {3.5}Nested cross validation}{12}{}%
-\contentsline {section}{\numberline {3.6}Domain splits with nested cross-validation}{12}{}%
-\contentsline {section}{\numberline {3.7}Ethical, Professional and Legal Issues}{12}{}%
+\contentsline {section}{\numberline {3.4}Model selection}{8}{}%
+\contentsline {section}{\numberline {3.5}Data tokenisation}{9}{}%
+\contentsline {subsection}{\numberline {3.5.1}Tokenization methods}{10}{}%
+\contentsline {subsection}{\numberline {3.5.2}Choice of settings}{10}{}%
+\contentsline {section}{\numberline {3.6}Experiment 1: Nested cross-validation}{12}{}%
+\contentsline {section}{\numberline {3.7}Experiment 2: Domain splits with nested cross-validation}{12}{}%
+\contentsline {section}{\numberline {3.8}Ethical, Professional and Legal Issues}{12}{}%
 \contentsline {chapter}{\numberline {4}Results and discussion}{13}{}%
 \contentsline {section}{\numberline {4.1}Risk Analysis}{13}{}%
 \contentsline {section}{\numberline {4.2}Project Plan}{13}{}%

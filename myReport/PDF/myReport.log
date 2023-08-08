@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  8 AUG 2023 11:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  8 AUG 2023 11:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -442,160 +442,159 @@ Underfull \hbox (badness 6173) in paragraph at lines 136--136
  []
 
 [8{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 153.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-)
-Overfull \hbox (13.6625pt too wide) in paragraph at lines 142--155
+Overfull \hbox (13.6625pt too wide) in paragraph at lines 142--144
 \T1/cmr/m/n/10.95 The to-k-eniza-tion pro-cess is re-quired to be ap-plied to in-put data for it to be pre-pared ap-pro-pri-ately
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--155
+Underfull \hbox (badness 10000) in paragraph at lines 142--144
 
  []
 
 
-Overfull \hbox (1.99272pt too wide) in paragraph at lines 142--155
-\T1/cmr/bx/n/10.95 WordPiece \T1/cmr/m/n/10.95 Word-Piece works by seg-ment-ing text into sub-word en-ti-ties by iden-ti-fy-ing prob-a-ble
- []
-
-
-Overfull \hbox (1.93713pt too wide) in paragraph at lines 142--155
-\T1/cmr/m/n/10.95 car-ried out un-til a pre-de-fined vo-cab-u-lary size is reached. The re-sult-ing vo-cab-u-lary en-com-passes
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--155
+Underfull \hbox (badness 10000) in paragraph at lines 142--144
 
  []
 
-
-Overfull \hbox (0.37431pt too wide) in paragraph at lines 142--155
-\T1/cmr/m/n/10.95 li-brary pro-vides var-i-ous model-specific to-k-eniz-ers such as, \T1/cmr/m/it/10.95 Bert-To-k-enizer [] \T1/cmr/m/n/10.95 or \T1/cmr/m/it/10.95 Rober-ta-To-k-enizer
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--155
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 150.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 145--151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--155
+Underfull \hbox (badness 10000) in paragraph at lines 145--151
+
+ []
+
+
+Overfull \hbox (6.7124pt too wide) in paragraph at lines 145--151
+\T1/cmr/m/n/10.95 that op-ti-mize like-li-hood within the train-ing data. The to-k-enizer may com-bine of-ten co-occurring
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--151
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
-
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 160--163
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
-
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 167--170
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--170
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--170
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
-
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 173--176
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--176
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--176
-
- []
-
-[10]
-<figures/token_hist.png, id=81, 517.4532pt x 290.5254pt>
+<figures/token_hist.png, id=77, 517.4532pt x 290.5254pt>
 File: figures/token_hist.png Graphic file (type png)
 <use figures/token_hist.png>
-Package pdftex.def Info: figures/token_hist.png  used on input line 184.
+Package pdftex.def Info: figures/token_hist.png  used on input line 160.
 (pdftex.def)             Requested size: 211.60489pt x 118.80586pt.
-<figures/token_pp_hist.png, id=83, 517.4532pt x 290.5254pt>
+<figures/token_pp_hist.png, id=79, 517.4532pt x 290.5254pt>
 File: figures/token_pp_hist.png Graphic file (type png)
 <use figures/token_pp_hist.png>
-Package pdftex.def Info: figures/token_pp_hist.png  used on input line 190.
+Package pdftex.def Info: figures/token_pp_hist.png  used on input line 166.
 (pdftex.def)             Requested size: 211.60489pt x 118.80586pt.
-) (./chapters/chapter4.tex [11 <./figures/token_hist.png> <./figures/token_pp_hist.png>]
+ [10]
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
+
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 178--181
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 185--188
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 191--194
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--194
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--194
+
+ []
+
+) (./chapters/chapter4.tex [11 <./figures/token_hist.png> <./figures/token_pp_hist.png>] [12]
 Chapter 4.
-[12
+[13
 
-]) (./chapters/chapter5.tex [13]
+]) (./chapters/chapter5.tex [14]
 Chapter 5.
-) (PDF/myReport.bbl [14
+) (PDF/myReport.bbl [15
 
-] [15
+] [16
 
 ]
 Underfull \hbox (badness 4859) in paragraph at lines 105--108
 []\T1/cmr/m/sc/10.95 Sun, Z., Yu, H., Song, X., Liu, R., Yang, Y., and Zhou, D.
  []
 
-) [16] [17
+) [17] [18
 
 
 ] (./chapters/appendixA.tex
 Appendix A.
-) (./chapters/appendixB.tex [18
+) (./chapters/appendixB.tex [19
 
 ]
 Appendix B.
-) [19
+) [20
 
 ] (PDF/myReport.aux) ) 
 Here is how much of TeX's memory you used:
  5597 strings out of 476047
  98240 string characters out of 5790254
- 1873248 words of memory out of 5000000
+ 1872248 words of memory out of 5000000
  25897 multiletter control sequences out of 15000+600000
  532107 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,13n,79p,1467b,781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on PDF/myReport.pdf (26 pages, 641324 bytes).
+Output written on PDF/myReport.pdf (27 pages, 642134 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
+ 228 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

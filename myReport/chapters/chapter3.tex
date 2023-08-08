@@ -139,18 +139,38 @@ The transformer models used are listed in table \ref{tab: model_dtls} along with
 \end{table}
 
 \section{Data tokenisation}
-The tokenization process is required to be applied to input data for it to be prepared appropriately for use by BERT and its variants. The tokenization process involves dividing the input text into tokens based on a predefined set of rules. These tokens are subsequently transformed into numerical representations and tensors, along with any extra inputs needed by the model. Tokens in general could be words, subwords, phrases or even characters. There are various approaches to tokenization with each having advantages and shortcomings. The approaches are described below and Table \ref{tab: model_dtls} shows the approach used by each of the models in the scope of the experiments.
+The tokenization process is required to be applied to input data for it to be prepared appropriately for use by BERT and its variants. The tokenization process involves dividing the input text into tokens based on a predefined set of rules. These tokens are subsequently transformed into numerical representations and tensors, along with any extra inputs needed by the model. Tokens in general could be words, subwords, phrases or even characters. There are various approaches to tokenization with each having advantages and shortcomings. The methods used by each of the models in the scope of the experiments are briefly described below and Table \ref{tab: model_dtls}.
 \newline \newline
-\textbf{Byte-Pair Encoding or BPE}: BPE works by iteratively combining the most frequently occurring pairs of characters or subwords within a corpus until a predefined vocabulary size is reached or after reaching a maximum number of iterations. The vocabulary will consist of a set of subwords, which can include characters, character sequences, or partial words. \newline
-\textbf{Byte-level BPE}
-This approach works similarly to BPE but operates at byte level, treating each byte of a text as a token and merging the most frequent pairs of bytes in a text corpus. \newline
-\textbf{WordPiece}
-WordPiece works by segmenting text into subword entities by identifying probable splits that optimize likelihood within the training data. The tokenizer may combine often co-occurring subword pairs to create new subword elements. This sequence of merging is carried out until a predefined vocabulary size is reached. The resulting vocabulary encompasses these subword components, which may be entire words or word fragments. \newline
-\textbf{SentencePiece}
-SentencePiece treats the entire text as a single stream of text and splits the input text into subword units with whitespace also handled as a normal symbol. While training, SentencePiece generates a vocabulary of subword units based on the given text corpus. Subword units are selected such that the frequent patterns in the text are captured.
+\subsection{Tokenization methods}
+\textbf{Byte-Pair Encoding or BPE:} BPE works by iteratively combining the most frequently occurring pairs of characters or subwords within a corpus until a predefined vocabulary size is reached or after reaching a maximum number of iterations. The vocabulary will consist of a set of subwords, which can include characters, character sequences, or partial words. \newline\newline
+\textbf{Byte-level BPE:} This approach works similarly to BPE but operates at byte level, treating each byte of a text as a token and merging the most frequent pairs of bytes in a text corpus. \newline\newline
+\textbf{WordPiece:} WordPiece segments text into subword entities by identifying probable splits that optimize likelihood within the training data. The tokenizer may combine often co-occurring subword pairs to create new subword elements. This sequence of merging is carried out until a predefined vocabulary size is reached. The resulting vocabulary encompasses these subword components, which may be entire words or word fragments. \newline\newline
+\textbf{SentencePiece:} SentencePiece treats the entire text as a single stream of text and splits the input text into subword units with whitespace also handled as a normal symbol. While training, SentencePiece generates a vocabulary of subword units based on the given text corpus. Subword units are selected such that the frequent patterns in the text are captured.
 \newline\newline
-The tokenizer provided by the \textit{transformers} library is used for tokenizing the input tweets. The library provides various model-specific tokenizers such as, \textit{BertTokenizer} \footnote{\url{https://huggingface.co/docs/transformers/v4.21.3/en/model_doc/bert#transformers.BertTokenizer}} or \textit{RobertaTokenizer} \footnote{\url{https://huggingface.co/docs/transformers/v4.21.3/en/model_doc/roberta#transformers.RobertaTokenizer}}. Certain models like BERT-tiny do not use dedicated tokenizers and leverage existing ones. For the experiments, the \textit{AutoTokenizer} \footnote{\url{https://huggingface.co/docs/transformers/v4.21.3/en/model_doc/auto#transformers.AutoTokenizer}} has been used which conveniently selects the appropriate tokenizer relevant for the model in use.
-\newline\newline
+The tokenizer provided by the \textit{transformers} library is used for tokenizing the input tweets. The library includes model-specific tokenizers such as, \textit{BertTokenizer} \footnote{\url{https://huggingface.co/docs/transformers/v4.21.3/en/model_doc/bert#transformers.BertTokenizer}} or \textit{RobertaTokenizer} \footnote{\url{https://huggingface.co/docs/transformers/v4.21.3/en/model_doc/roberta#transformers.RobertaTokenizer}} while models like BERT-tiny leverage existing ones. For the experiments, the \textit{AutoTokenizer} \footnote{\url{https://huggingface.co/docs/transformers/v4.21.3/en/model_doc/auto#transformers.AutoTokenizer}} has been used which conveniently selects the appropriate tokenizer relevant for the model in use.
+
+
+\subsection{Choice of settings}
+Prior to applying tokenization, the settings for 3 key parameters is done. \textit{max_length}  
+The distribution of the number of tokens in the tweets from the pre-processed data from \cite{jinModelingSeverityComplaints2021} before applying the model-specific tokenization is shown in Figure \ref{fig: token_hist}. We have over 95\% of the tweets having 29 tokens or less. Using the BertTokenizer as an example, as shown in Figure \ref{fig: token_pp_hist}, we find we need about 37 tokens to completely cover 95\% of the tweets. This analysis assists in the decision on the appropriate value for the \textit{max\_value} for the tokenizer. This when used in conjunction with \textit{truncation=True}, sets the maximum number of tokens for each input tweet. Anything that follows is truncated and not used for training or inference. Based on this, a \textit{max\_value=50} is selected for the experiments.
+
+\begin{figure}[htbp]
+    \centering
+    \captionsetup{font=small}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{figures/token_hist.png}
+        \caption{Before tokenization}
+        \label{fig: token_hist}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{figures/token_pp_hist.png}
+        \caption{After tokenization}
+        \label{fig: token_pp_hist}
+    \end{subfigure}
+    \caption{The token count distribution for the full dataset of 3,449 tweets before and after tokenization with the red dashed line indicating 95\% coverage of tweets. BertTokenizer is used here.}
+    \label{fig: bef_aft_token}
+\end{figure}
 
 ** Talk about the default settings from the preprocess page**
 
@@ -172,28 +192,6 @@ The tokenizer provided by the \textit{transformers} library is used for tokenizi
 \begin{adjustbox}{minipage={\textwidth},fbox}
     [CLS] love it when i almost die rear ended by a semi cause my jeep turns off again. one day they will fix it \# jeepsucks \# chrysler [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD]
 \end{adjustbox} \newline\newline
-
-\subsection{Before and after tokenization}
-The distribution of the number of tokens in the tweets from the pre-processed data from \cite{jinModelingSeverityComplaints2021} before applying the model-specific tokenization is shown in Figure \ref{fig: token_hist}. We have over 95\% of the tweets having 29 tokens or less. Using the BertTokenizer as an example, as shown in Figure \ref{fig: token_pp_hist}, we find we need about 37 tokens to completely cover 95\% of the tweets. This analysis assists in the decision on the appropriate value for the \textit{max\_value} for the tokenizer. This when used in conjunction with \textit{truncation=True}, sets the maximum number of tokens for each input tweet. Anything that follows is truncated and not used for training or inference. Based on this, a \textit{max\_value=50} is selected for the experiments.
-
-\begin{figure}[htbp]
-    \centering
-    \captionsetup{font=small}
-    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=\textwidth]{figures/token_hist.png}
-        \caption{Before tokenization}
-        \label{fig: token_hist}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=\textwidth]{figures/token_pp_hist.png}
-        \caption{After tokenization}
-        \label{fig: token_pp_hist}
-    \end{subfigure}
-    \caption{The token count distribution for the full dataset of 3,449 tweets before and after tokenization with the red dashed line indicating 95\% coverage of tweets. BertTokenizer is used here.}
-    \label{fig: bef_aft_token}
-\end{figure}
-
 
 \section{Nested cross validation}
 ** To UPDATE **

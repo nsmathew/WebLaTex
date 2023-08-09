@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  9 AUG 2023 09:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  9 AUG 2023 09:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -442,6 +442,10 @@ Underfull \hbox (badness 6348) in paragraph at lines 61--61
 [6
 
 ] [7]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 83.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
 Overfull \hbox (0.9916pt too wide) in paragraph at lines 111--114
 \T1/cmr/m/n/10.95 [[]]. Us-ing BERT for the text clas-si-fi-ca-tion task has sev-eral ad-van-tages over pre-vi-ous dom-i-nant
  []
@@ -462,10 +466,6 @@ Overfull \hbox (13.6625pt too wide) in paragraph at lines 143--144
  []
 
 [9]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 151.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-)
 Underfull \hbox (badness 10000) in paragraph at lines 146--152
 
  []
@@ -491,17 +491,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--152
  []
 
 
+Overfull \hbox (0.20459pt too wide) in paragraph at lines 146--152
+[] \T1/cmr/m/n/10.95 while mod-els like BERT-tiny lever-age ex-ist-ing ones. For the ex-per-i-ments, the \T1/cmtt/m/n/10.95 AutoTokenizer
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
 [10]
-<figures/token_hist.png, id=81, 517.4532pt x 290.5254pt>
+<figures/token_hist.png, id=82, 517.4532pt x 290.5254pt>
 File: figures/token_hist.png Graphic file (type png)
 <use figures/token_hist.png>
 Package pdftex.def Info: figures/token_hist.png  used on input line 161.
 (pdftex.def)             Requested size: 211.60489pt x 118.80586pt.
-<figures/token_pp_hist.png, id=83, 517.4532pt x 290.5254pt>
+<figures/token_pp_hist.png, id=84, 517.4532pt x 290.5254pt>
 File: figures/token_pp_hist.png Graphic file (type png)
 <use figures/token_pp_hist.png>
 Package pdftex.def Info: figures/token_pp_hist.png  used on input line 167.
@@ -591,31 +596,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
-) (./chapters/chapter4.tex [12]
+) (./chapters/chapter4.tex [12] [13]
 Chapter 4.
-[13
+[14
 
-]) (./chapters/chapter5.tex [14]
+]) (./chapters/chapter5.tex [15]
 Chapter 5.
-) (PDF/myReport.bbl [15
+) (PDF/myReport.bbl [16
 
-] [16
+] [17
 
 ]
 Underfull \hbox (badness 4859) in paragraph at lines 118--121
 []\T1/cmr/m/sc/10.95 Sun, Z., Yu, H., Song, X., Liu, R., Yang, Y., and Zhou, D.
  []
 
-[17]) [18] [19
+[18]) [19] [20
 
 
 ] (./chapters/appendixA.tex
 Appendix A.
-) (./chapters/appendixB.tex [20
+) (./chapters/appendixB.tex [21
 
 ]
 Appendix B.
-) [21
+) [22
 
 ] (PDF/myReport.aux) ) 
 Here is how much of TeX's memory you used:
@@ -627,10 +632,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  57i,13n,79p,1467b,781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on PDF/myReport.pdf (28 pages, 680801 bytes).
+Output written on PDF/myReport.pdf (29 pages, 677216 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
+ 239 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

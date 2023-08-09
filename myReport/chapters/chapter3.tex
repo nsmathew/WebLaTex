@@ -108,9 +108,9 @@ For the experiments, the BERT transformer large language models along with a num
 \end{table}
 
 \section{Model selection}
-The performance of BERT and its variants on the text classification task will be explored as part of the experiments. BERT \cite{devlinBERTPretrainingDeep2018} is based on the modern transformers network architecture \cite{vaswaniAttentionAllYou2023a}. Using BERT for the text classification task has several advantages over previous dominant methods such as Gated Recurrent Units GRU) \cite{chungEmpiricalEvaluationGated2014} or Long Short Term Memory (LSTM) \cite{hochreiterLongShortTermMemory1997} networks. Although tweets tend to be made up of short texts, the ability to capture long-term dependencies is still useful for better understanding relationships across the content better. They rely on bidirectional processing to use contextual information to have a more nuanced understanding of the intention of the author of the tweet or post. BERT is already pre-trained on large corpora allowing it to possess a significant general understanding of language. The pre-training enables transfer learning and domain adaptation with relative ease which is very useful for tasks where annotated data is limited.
+The performance of BERT and its variants on the text classification task will be explored as part of the experiments. BERT \cite{devlinBERTPretrainingDeep2018} is based on the modern transformers network architecture \cite{vaswaniAttentionAllYou2023a}. Using BERT for the text classification task has several advantages over previous dominant methods such as Gated Recurrent Units GRU) \cite{chungEmpiricalEvaluationGated2014} or Long Short Term Memory (LSTM) \cite{hochreiterLongShortTermMemory1997} networks. Although tweets tend to be made up of short texts, the ability to capture long-term dependencies is still useful for better understanding relationships across the content better. They also rely on bidirectional processing to use contextual information to have a more nuanced understanding of the intention of the author of the tweet or post. Since BERT is already pre-trained on large corpora, it to possess a significant general understanding of language. Finally, the pre-training enables transfer learning and domain adaptation with relative ease which is very useful for tasks where annotated data is limited (we use only 3,449 tweets for the experiments).
 \newline\newline
-The transformer models used are listed in table \ref{tab: model_dtls} along with the number of parameters for each of them. The number of parameters or model size is based on the embedding and output layers along with the attention heads. The models chosen are such that there is a wide range of model sizes. This allows for a comparison of the model performance both in terms of the predictions as well as the inference time in relation to the model size. **Add content on the impact of layers and parameters on model performance**
+The transformer models used are listed in table \ref{tab: model_dtls} along with the number of parameters for each of them. The number of parameters or model size is based on the embedding and output layers along with the attention heads. The models chosen are such that there is a wide range of model sizes, from ROBERTA and BERT base with 110 million parameters to lightweight variants such as DistilBERT base, MobileBERT and other with much lower model size. This allows for a comparison of the model performance both in terms of the predictions as well as the inference time in relation to the model size. **Add content on the impact of layers and parameters on model performance**
 
 \begin{table}[ht]
     \captionsetup{font=small}
@@ -202,8 +202,10 @@ again. one day they will fix it # jeepsucks # chrysler [SEP] [PAD] [PAD] [PAD]
 [PAD] [PAD]\end{verbatim}
 \end{adjustbox} \newline\newline
 
-\section{Experiment 1: Nested cross-validation}
-In the first experiment, the objective is to identify which of the models performs the best for the text classification task for complaints identification and also analyse the relative performance of the models. A nested cross-validation approach will be used to finetune the learning rate hyperparameter and calculate performance metrics on inference. 
+\section{Experiment 1: Comparision of BERT variants}
+In the first experiment, the objective is to identify which of the models performs the best for the text classification task for complaints identification. Additionally the relative performance of the models and the inference time will be analysed to assess how the model size impacts these aspects.  A nested cross-validation approach will be used to finetune the learning rate hyperparameter and calculate performance metrics on inference. 
+\newline\newline
+
 
 \section{Experiment 2: Domain splits with nested cross-validation}
 ** To UPDATE **

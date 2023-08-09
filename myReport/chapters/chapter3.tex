@@ -187,7 +187,7 @@ An example tweet from the input data is shown in \textbf{A}. The pre-processing 
 \textbf{B - Encoding the input}\newline
 
 \begin{adjustbox}{minipage={\textwidth},fbox}
-\begin{verbatim}[101, 2293, 2009, 2043, 1045, 2471, 3280, 4373, 3092, 2011, 1037, 4100, 3426, 
+    \begin{verbatim}[101, 2293, 2009, 2043, 1045, 2471, 3280, 4373, 3092, 2011, 1037, 4100, 3426, 
 2026, 14007, 4332, 2125, 2153, 1012, 2028, 2154, 2027, 2097, 8081, 2009, 1001, 
 14007, 6342, 10603, 1001, 17714, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 0, 0, 0, 0, 0]\end{verbatim}
@@ -196,15 +196,17 @@ An example tweet from the input data is shown in \textbf{A}. The pre-processing 
 \textbf{C - Decoding the tokenized input}\newline
 
 \begin{adjustbox}{minipage={\textwidth},fbox}
-\begin{verbatim}[CLS] love it when i almost die rear ended by a semi cause my jeep turns off 
+    \begin{verbatim}[CLS] love it when i almost die rear ended by a semi cause my jeep turns off 
 again. one day they will fix it # jeepsucks # chrysler [SEP] [PAD] [PAD] [PAD] 
 [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] 
 [PAD] [PAD]\end{verbatim}
-\end{adjustbox} \newline\newline
+\end{adjustbox}\\ \\
 
 \section{Experiment 1: Comparision of BERT variants}
-In the first experiment, the objective is to identify which of the models performs the best for the text classification task for complaints identification. Additionally the relative performance of the models and the inference time will be analysed to assess how the model size impacts these aspects.  A nested cross-validation approach will be used to finetune the learning rate hyperparameter and calculate performance metrics on inference. 
-\newline\newline
+In the first experiment, the objective is to identify which of the models performs the best for the text classification task for complaints identification. Additionally the relative performance of the models and the inference time will be analysed to assess how the model size impacts these aspects.  A nested cross-validation approach will be used to finetune the learning rate hyperparameter and calculate performance metrics on inference. \\ \\
+
+A nested cross-validation approach similar to \cite{preotiuc-pietro_automatically_2019} is utilised. The number of outer 
+
 
 
 \section{Experiment 2: Domain splits with nested cross-validation}

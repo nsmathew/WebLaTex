@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  9 AUG 2023 11:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  9 AUG 2023 11:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -313,8 +313,11 @@ Overfull \hbox (6.01888pt too wide) in paragraph at lines 8--8
  [][] []\T1/cmr/m/n/10.95 The trans-former mod-els used for the ex-per-i-ments along with type of to-k-eniza-tion, 
  []
 
-
-Overfull \hbox (3.35544pt too wide) in paragraph at lines 13--13
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 13.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+Overfull \hbox (3.35544pt too wide) in paragraph at lines 14--14
  [][] []\T1/cmr/m/n/10.95 The trans-former mod-els used for the ex-per-i-ments and links to their doc-u-men-ta-tion. [][]  
  []
 
@@ -442,10 +445,6 @@ Underfull \hbox (badness 6348) in paragraph at lines 61--61
 [6
 
 ] [7]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 83.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-)
 Overfull \hbox (0.9916pt too wide) in paragraph at lines 111--114
 \T1/cmr/m/n/10.95 [[]]. Us-ing BERT for the text clas-si-fi-ca-tion task has sev-eral ad-van-tages over pre-vi-ous dom-i-nant
  []
@@ -624,15 +623,15 @@ Appendix B.
 
 ] (PDF/myReport.aux) ) 
 Here is how much of TeX's memory you used:
- 5604 strings out of 476047
- 98413 string characters out of 5790254
+ 5605 strings out of 476047
+ 98436 string characters out of 5790254
  1869248 words of memory out of 5000000
- 25903 multiletter control sequences out of 15000+600000
+ 25904 multiletter control sequences out of 15000+600000
  532421 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,13n,79p,1467b,781s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,13n,79p,1467b,780s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on PDF/myReport.pdf (30 pages, 682975 bytes).
+Output written on PDF/myReport.pdf (30 pages, 684275 bytes).
 PDF statistics:
  242 PDF objects out of 1000 (max. 8388607)
  150 compressed objects within 2 object streams

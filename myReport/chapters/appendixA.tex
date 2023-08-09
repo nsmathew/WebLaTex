@@ -4,17 +4,17 @@
 \begin{table}[ht]
     \captionsetup{font=small}
     \centering
-    \begin{tabularx}{\textwidth}{|l|X|}
+    \begin{tabularx}{\textwidth}{|l|X|c|c|l|}
         \hline
         \rowcolor[gray]{0.7}
-        \textbf{id}  & \textbf{text} & \textbf{binarylabel}& \textbf{multilabel}& \textbf{domain}\\
+        \textbf{id} & \textbf{text}                                               & \textbf{binarylabel} & \textbf{multilabel} & \textbf{domain} \\
         \hline
-        1.20E+17  & asus g60 series . bought it to play games but guess not bf3 & 1 & 1 & electronics \\
-        \hline        
-        4.88E+17 & love this trimmer ! making the sidewalk look sharp <url> & 0 & 0 & other \\
+        1.20E+17    & asus g60 series . bought it to play games but guess not bf3 & 1                    & 1                   & electronics     \\
+        \hline
+        4.88E+17    & love this trimmer ! making the sidewalk look sharp <url>    & 0                    & 0                   & other           \\
         \hline
     \end{tabularx}
-    \caption{Sample data from \cite{jinModelingSeverityComplaints2021}. The \texttt{binarylabel} represents the label for complaints with}    
+    \caption{Sample data from \cite{jinModelingSeverityComplaints2021}. The \texttt{binarylabel} represents the label for complaints with 1 indicating the tweet is a complaint. Columns \texttt{id} and \texttt{multilabel} are not used for the experiments}
     \label{tab: apdx_sample_data}
 \end{table}
 
@@ -26,24 +26,24 @@
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
         \rowcolor[gray]{0.7}
-        \textbf{Model}  & \textbf{Model Documentation} \\
+        \textbf{Model}            & \textbf{Model Documentation}                                   \\
         \hline
 
-        ALBERT base  & \small{\url{https://huggingface.co/albert-base-v2}} \\
-        \hline        
-        BERT base (uncased)  & \small{\url{https://huggingface.co/bert-base-uncased}} \\
+        ALBERT base               & \small{\url{https://huggingface.co/albert-base-v2}}            \\
         \hline
-        BERT Tiny  & \small{\url{https://huggingface.co/prajjwal1/bert-tiny}} \\
-        \hline        
-        BERTweet base  & \small{\url{https://huggingface.co/vinai/bertweet-base}} \\
+        BERT base (uncased)       & \small{\url{https://huggingface.co/bert-base-uncased}}         \\
         \hline
-        DistilBERT base (uncased)  & \small{\url{https://huggingface.co/distilbert-base-uncased}} \\
+        BERT Tiny                 & \small{\url{https://huggingface.co/prajjwal1/bert-tiny}}       \\
         \hline
-        MobileBERT (uncased) & \small{\url{https://huggingface.co/google/mobilebert-uncased}} \\
+        BERTweet base             & \small{\url{https://huggingface.co/vinai/bertweet-base}}       \\
         \hline
-        ROBERTA base & \small{\url{https://huggingface.co/roberta-base}} \\
-        \hline 
+        DistilBERT base (uncased) & \small{\url{https://huggingface.co/distilbert-base-uncased}}   \\
+        \hline
+        MobileBERT (uncased)      & \small{\url{https://huggingface.co/google/mobilebert-uncased}} \\
+        \hline
+        ROBERTA base              & \small{\url{https://huggingface.co/roberta-base}}              \\
+        \hline
     \end{tabularx}
-    \caption{The transformer models used for the experiments and links to their documentation.}    
+    \caption{The transformer models used for the experiments and links to their documentation.}
     \label{tab: apdx_model_doc}
 \end{table}

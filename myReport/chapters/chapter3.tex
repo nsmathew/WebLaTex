@@ -203,35 +203,38 @@ again. one day they will fix it # jeepsucks # chrysler [SEP] [PAD] [PAD] [PAD]
 \end{adjustbox}\\ \\
 
 \section{Experiment 1: Comparision of BERT variants}
-In the first experiment, the objective is to identify which of the models performs the best for the text classification task of complaints identification. Additionally, the relative performance of the models and the inference time will be analysed to assess how the model size impacts these aspects.  A nested cross-validation approach will be used to finetune the learning rate hyperparameter and calculate performance metrics on inference. \\
+In the first experiment, the objective is to identify which of the models performs the best for the text classification task of complaints identification. Additionally, the relative performance of the models and the inference time will be analysed to assess how the model size impacts these aspects.  A nested cross-validation approach will be used to experiment finetuning the model the multiple learning rate hyperparameter and calculate performance metrics on inference. All models in scope for the experiments are pre-trained, hence finetuning will be performed for the downstream complaints identification task.\\
 
-A nested cross-validation approach adapted from \cite{preotiuc-pietro_automatically_2019} is utilised. The outer loop consists of 6 iterations and the inner loop of 4 iterations. Each outer loop includes a stratified split of the entire dataset into train (\textbf{A}) and test (\textbf{B}) datasets. Within the inner loop, \textbf{A} is further split into inner train and dev datasets using stratified split with each iteration, training and validating on 1 of the 4 learning rates set for hyperparameter tuning. The best model from the inner loop is selected based on the F1 score on the dev dataset. This best model is used to perform inference using the test dataset, \textbf{B}. At the end of the 6 outer loop iterations, the mean of the performance metrics is calculated. While \cite{preotiuc-pietro_automatically_2019} used 10 iterations for the outer loop, it has been restricted to 6 for the experiments considering significant variations were not observed on the metrics. This is likely due to the 6 stratified splits capturing sufficient variability in the input dataset.
+A nested cross-validation approach adapted from \cite{preotiuc-pietro_automatically_2019} is utilised. The outer loop consists of 6 iterations and the inner loop of 4 iterations. Each outer loop includes a stratified split of the entire dataset into train (\textbf{A}) and test (\textbf{B}) datasets. Within the inner loop, \textbf{A} is further split into inner train and dev datasets using stratified split with each iteration, finetuning and validating on 1 of the 4 learning rates set for hyperparameter tuning. The best model from the inner loop is selected based on the F1 score on the dev dataset. This best model is used to perform inference using the test dataset, \textbf{B}. At the end of the 6 outer loop iterations, the mean of the performance metrics is calculated as the final metrics for that model. While \cite{preotiuc-pietro_automatically_2019} used 10 iterations for the outer loop, it has been restricted to 6 for the experiments considering significant variations were not observed on the metrics. This is likely due to the 6 stratified splits capturing sufficient variability in the input dataset.\\
 
-The key choices for the experiments including that of the hyperparameters are described in Table 
+The key choices for the experiments including that of the hyperparameters are described in Table \ref{tab: exp1_params}. For the stratified split, the \texttt{StratifiedKFold} function from \texttt{sklearn} library is used. 
 \begin{table}[ht]
     \captionsetup{font=small}
     \centering
-    \begin{tabularx}{\textwidth}{|l|c|X|c|}
+    \begin{tabularx}{\textwidth}{|X|c|}
         \hline
         \rowcolor[gray]{0.7}
-        \textbf{Parameter}            & \textbf{Value} \\
+        \textbf{Parameter}         & \textbf{Value}           \\
         \hline
-        Outer loop iterations              & 6 \\
+        Outer loop iterations      & 6                        \\
         \hline
-        Inner loop iterations       & 4 \\
+        Inner loop iterations      & 4                        \\
         \hline
-        Random Seed             & 2023 \\
+        Random Seed                & 2023                     \\
         \hline
         \hline
-        No. of Epochs (finetuning) & 66M \\
+        \rowcolor[gray]{0.7}
+        \textbf{Hyperparameter}         & \textbf{Value}           \\        
         \hline
-        Learning Rate      & 25.3M\\
+        No. of Epochs & 4                        \\
         \hline
-        All other hyperparameters               & 11M\\
+        Learning Rate              & [1e-5, 5e-6, 5e-5, 3e-5] \\
+        \hline
+        All other hyperparameters  & Model defaults           \\
         \hline
     \end{tabularx}
-    \caption{The transformer models used for the experiments along with type of tokenization, and vocabulary size and sorted by the number of parameters for each of them. The parameter counts are from \cite{bhargavaGeneralizationNLIWays2021} for Roberta, Bert, Albert and Bert Tiny. For Bertweet it is from \cite{nguyenBERTweetPretrainedLanguage2020}, MobileBert from \cite{sunMobileBERTCompactTaskAgnostic2020} and Distilbert from \cite{sanhDistilBERTDistilledVersion2020}.}
-    \label{tab: model_dtls}
+    \caption{The choice of key parameters and hyperparameters used for Experiment 1.}
+    \label{tab: exp1_params}
 \end{table}
 
 

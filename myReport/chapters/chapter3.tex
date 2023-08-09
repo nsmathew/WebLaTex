@@ -140,7 +140,7 @@ The transformer models used are listed in table \ref{tab: model_dtls} along with
 \end{table}
 
 \section{Data tokenisation}
-The tokenization process is required to be applied to input data for it to be prepared appropriately for use by BERT and its variants. The tokenization process involves dividing the input text into tokens based on a predefined set of rules. These tokens are subsequently transformed into numerical representations and tensors, along with any extra inputs needed by the model. Tokens in general could be words, subwords, phrases or even characters. There are various approaches to tokenization with each having advantages and shortcomings. The methods used by each of the models in the scope of the experiments are briefly described below and Table \ref{tab: model_dtls}.
+The tokenization process is required to be applied to input data for it to be prepared appropriately for use by BERT and its variants. The tokenization process involves dividing the input text into tokens based on a predefined set of rules. These tokens are subsequently transformed into numerical representations and tensors, along with any extra inputs needed by the model. Tokens in general could be words, subwords, phrases or even characters. There are various approaches to tokenization with each having advantages and shortcomings. The methods used by each of the models in the scope of the experiments are briefly described below and shown in Table \ref{tab: model_dtls}.
 
 \subsection{Tokenization methods}
 \textbf{Byte-Pair Encoding or BPE:} BPE works by iteratively combining the most frequently occurring pairs of characters or subwords within a corpus until a predefined vocabulary size is reached or after reaching a maximum number of iterations. The vocabulary will consist of a set of subwords, which can include characters, character sequences, or partial words. \newline\newline
@@ -152,7 +152,7 @@ The tokenizer provided by the \textit{transformers} library is used for tokenizi
 
 
 \subsection{Choice of settings}
-Prior to applying tokenization, the settings for padding and truncation \footnote{\url{https://huggingface.co/docs/transformers/pad_truncation}} is chosen to ensure the varying input length will still result in rectangular tensors. The parameter, \textit{max\_length} determines the maximum number of tokens for each input, the type of padding is controlled by \textit{padding} and \textit{truncation} allows to truncate input to a pre-determined number of tokens.\newline
+Prior to applying tokenization, the settings for padding and truncation \footnote{\url{https://huggingface.co/docs/transformers/pad_truncation}} is chosen to ensure the varying input length will still result in rectangular tensors. The parameter, \textit{max\_length} determines the maximum number of tokens for each input, \textit{padding} controls the type of padding and \textit{truncation} allows to truncate input to a pre-determined number of tokens.\newline
 
 \begin{figure}[htbp]
     \centering
@@ -172,11 +172,11 @@ Prior to applying tokenization, the settings for padding and truncation \footnot
     \label{fig: bef_aft_token}
 \end{figure}
 
-The distribution of the number of tokens in the tweets from the pre-processed data from \cite{jinModelingSeverityComplaints2021} before applying the model-specific tokenization is shown in Figure \ref{fig: token_hist}. We have over 95\% of the tweets having 29 tokens or less. Using the BertTokenizer as an example, from Figure \ref{fig: token_pp_hist} we find we need about 37 tokens to comprehensively cover 95\% of the tweets. Although not shown here, similar token counts (35 to 43) are required for the other tokenizers. This analysis assists in the decision on the appropriate \textit{max\_value} for the tokenizer. A value of 50 ensures coverage of over 99\% of the tweets completely for all the tokenizers. This when used in conjunction with \textit{truncation=True}, sets the maximum number of tokens for each input tweet to 50. Anything that follows is truncated and not used for training or inference. Additionally, since the dataset includes shorter tweets with resulting tokens less than 50, we set \textit{padding} to 'max\_length' to apply padding.
+The distribution of the number of tokens in the tweets from the pre-processed data from \cite{preotiuc-pietro_automatically_2019,jinModelingSeverityComplaints2021} before applying the model-specific tokenization is shown in Figure \ref{fig: token_hist}. We have over 95\% of the tweets having 29 tokens or less. Using the BertTokenizer as an example, from Figure \ref{fig: token_pp_hist} we find we need about 37 tokens to comprehensively cover 95\% of the tweets. The other tokenizers require between 35 and 43 tokens to cover the same percentage. This analysis assists in the decision on the appropriate \textit{max\_value} for the tokenizer. A value of 50 ensures coverage of over 99\% of the tweets completely for all the tokenizers. This when used in conjunction with \textit{truncation=True}, sets the maximum number of tokens for each input tweet to 50. Anything that follows is truncated and not used for training or inference. Additionally, since the dataset includes shorter tweets with resulting tokens less than 50, we set \textit{padding} to 'max\_length' to apply padding upto 50 tokens.
 
 
 \subsection{Tokenisation example}
-An example tweet from the input data is shown in \textbf{A}. It is made of words and punctuation as separate tokens, e.g. 'again' and '.'. The hashtags are retained as single tokens. After applying tokenisation using the \textit{BertTokenizer}, the data is converted into a list of input IDs representing their reference into the model's vocabulary as shown in \textbf{B}. To better understand the effect of tokenization, \textbf{C} shows the decoded input from \textbf{B}. The tokenizer adds special tokens, [CLS] - classification token for beginning of an input sequence, [SEP] - separator token to separate input sequences and [PAD] - padding token. Aside from this, punctuation is combined with the word for 'again.'. In the case of hashtags, the '\#' symbol has been separated out as a token.\newline\newline
+An example tweet from the input data is shown in \textbf{A}. The pre-processing applied by \cite{preotiuc-pietro_automatically_2019,jinModelingSeverityComplaints2021} results in punctuation as separate tokens, e.g. 'again' and '.'. The hashtags are retained as single tokens. After applying tokenisation using the \textit{BertTokenizer}, the data is converted into a list of input IDs representing their reference into the model's vocabulary as shown in \textbf{B}. To better understand the effect of tokenization, \textbf{C} shows the decoded input from \textbf{B}. The tokenizer adds special tokens, [CLS] - classification token for beginning of an input sequence, [SEP] - separator token to separate input sequences and [PAD] - padding token. Aside from this, punctuation is combined with the word for 'again.'. In the case of hashtags, the '\#' symbol has been separated out as a token.\newline\newline
 \textbf{A - Tweet from input dataset}\newline
 
 \begin{adjustbox}{minipage={\textwidth},fbox}
@@ -184,7 +184,7 @@ An example tweet from the input data is shown in \textbf{A}. It is made of words
 . one day they will fix it #jeepsucks #chrysler\end{verbatim}
 \end{adjustbox} \newline\newline
 
-\textbf{B - Post tokenisation}\newline
+\textbf{B - Encoding the input}\newline
 
 \begin{adjustbox}{minipage={\textwidth},fbox}
 \begin{verbatim}[101, 2293, 2009, 2043, 1045, 2471, 3280, 4373, 3092, 2011, 1037, 4100, 3426, 
@@ -203,7 +203,7 @@ again. one day they will fix it # jeepsucks # chrysler [SEP] [PAD] [PAD] [PAD]
 \end{adjustbox} \newline\newline
 
 \section{Experiment 1: Nested cross-validation}
-In the first experiment, the objective is to identify which of the models performs the best for the text classification task for complaints identification and also analyse the relative performance of the models. 
+In the first experiment, the objective is to identify which of the models performs the best for the text classification task for complaints identification and also analyse the relative performance of the models. 0
 
 \section{Experiment 2: Domain splits with nested cross-validation}
 ** To UPDATE **

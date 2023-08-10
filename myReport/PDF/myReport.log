@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  9 AUG 2023 11:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  9 AUG 2023 17:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -421,7 +421,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--25
 
  []
 
-[4]) (./chapters/chapter3.tex [5]
+
+Overfull \hbox (3.38284pt too wide) in paragraph at lines 18--25
+\T1/cmr/m/n/10.95 in-volved the in-di-vid-ual com-plain-ing on-line af-ter hav-ing failed to re-ceive a sat-is-fac-tory res-o-lu-tion
+ []
+
+[4]) (./chapters/chapter3.tex [5] [6]
 Chapter 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 9.
@@ -442,9 +447,9 @@ Underfull \hbox (badness 6348) in paragraph at lines 61--61
 []|\T1/cmr/m/n/10.95 Not ad-dressed to any Twit-ter
  []
 
-[6
+[7
 
-] [7]
+] [8]
 Overfull \hbox (0.9916pt too wide) in paragraph at lines 111--114
 \T1/cmr/m/n/10.95 [[]]. Us-ing BERT for the text clas-si-fi-ca-tion task has sev-eral ad-van-tages over pre-vi-ous dom-i-nant
  []
@@ -454,7 +459,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--114
 
  []
 
-[8{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+[9{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 Underfull \hbox (badness 6173) in paragraph at lines 137--137
 []|\T1/cmr/m/n/10.95 Byte-Pair En-cod-ing
  []
@@ -464,7 +469,7 @@ Overfull \hbox (13.6625pt too wide) in paragraph at lines 143--144
 \T1/cmr/m/n/10.95 The to-k-eniza-tion pro-cess is re-quired to be ap-plied to in-put data for it to be pre-pared ap-pro-pri-ately
  []
 
-[9]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 146--152
 
  []
@@ -499,13 +504,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
-[10]
-<figures/token_hist.png, id=82, 517.4532pt x 290.5254pt>
+[11]
+<figures/token_hist.png, id=85, 517.4532pt x 290.5254pt>
 File: figures/token_hist.png Graphic file (type png)
 <use figures/token_hist.png>
 Package pdftex.def Info: figures/token_hist.png  used on input line 161.
 (pdftex.def)             Requested size: 211.60489pt x 118.80586pt.
-<figures/token_pp_hist.png, id=84, 517.4532pt x 290.5254pt>
+<figures/token_pp_hist.png, id=87, 517.4532pt x 290.5254pt>
 File: figures/token_pp_hist.png Graphic file (type png)
 <use figures/token_pp_hist.png>
 Package pdftex.def Info: figures/token_pp_hist.png  used on input line 167.
@@ -520,7 +525,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--181
 
  []
 
-[11 <./figures/token_hist.png> <./figures/token_pp_hist.png>]
+[12 <./figures/token_hist.png> <./figures/token_pp_hist.png>]
 Overfull \hbox (6.79999pt too wide) in paragraph at lines 182--186
 [] 
  []
@@ -590,36 +595,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
-[12]
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
-) (./chapters/chapter4.tex [13] [14]
+) (./chapters/chapter4.tex [14] [15]
 Chapter 4.
-[15
+[16
 
-]) (./chapters/chapter5.tex [16]
+]) (./chapters/chapter5.tex [17]
 Chapter 5.
-) (PDF/myReport.bbl [17
+) (PDF/myReport.bbl [18
 
-] [18
+] [19
 
 ]
 Underfull \hbox (badness 4859) in paragraph at lines 118--121
 []\T1/cmr/m/sc/10.95 Sun, Z., Yu, H., Song, X., Liu, R., Yang, Y., and Zhou, D.
  []
 
-[19]) [20] [21
+[20]) [21] [22
 
 
 ] (./chapters/appendixA.tex
 Appendix A.
-) (./chapters/appendixB.tex [22
+) (./chapters/appendixB.tex [23
 
 ]
 Appendix B.
-) [23
+) [24
 
 ] (PDF/myReport.aux) ) 
 Here is how much of TeX's memory you used:
@@ -629,12 +634,12 @@ Here is how much of TeX's memory you used:
  25904 multiletter control sequences out of 15000+600000
  532421 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,13n,79p,1467b,780s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,13n,79p,1480b,780s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on PDF/myReport.pdf (30 pages, 684275 bytes).
+Output written on PDF/myReport.pdf (31 pages, 685340 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
- 150 compressed objects within 2 object streams
+ 246 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

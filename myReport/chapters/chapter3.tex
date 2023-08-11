@@ -237,16 +237,10 @@ The nested cross-validation approach utilized is adapted from \cite{preotiuc-pie
 
 The key choices for the experiments including that of the hyperparameters are described in Table \ref{tab: exp1_params}. For the stratified split, the \texttt{StratifiedKFold} function from \texttt{sklearn} library is used. This results in approximately 2874 and 575 tweets for the outer loop's train and test datasets and 2155 and 719 tweets for the inner loop's train and dev datasets. The number of epochs is set to 4 in line with official documentation for BERT \footnote{\url{https://github.com/google-research/bert}} where they use between 2 and 4 epochs for the various downstream tasks. The learning rate includes the default rate used by the models as well as a range of alternate values. All other hyperparameters take on their default values for the models as defined in the \texttt{transformers} library.\\
 
-For the performance metrics, precision, recall, accuracy, F1 and AOC scores are computed for both the inner loop's validation as well as the outer loop's testing. Further, the final metrics for each model are based on each of the mean metrics from the 6 outer loop iterations. Additionally, the samples per second and steps per second are captured for each of the models during the inference phase to analyse the time taken for inference in relation to the model size.
-
-
-
-
-
-
+For the performance metrics, precision, recall, accuracy, F1, and AOC scores are computed for both the inner loop's validation as well as the outer loop's testing. Further, the final metrics for each model are based on each of the mean metrics from the 6 outer loop iterations. Additionally, the samples per second and steps per second are captured for each of the models during the inference phase to analyse the time taken for inference in relation to the model size.
 
 \section{Experiment 2: Domain splits with nested cross-validation}
-** To UPDATE **
+To assess how the models perform when finetuned with significantly small dataset and 
 
 \section{Ethical, Professional and Legal Issues}
 The data used for the experiments were created by \cite{preotiuc-pietro_automatically_2019} and further enhanced with complaints severity type annotation by \cite{jinModelingSeverityComplaints2021}. This data is anonymised and is available in the public domain \footnote{\url{ https://archive.org/details/complaint_severity_data}}. No additional data has been collected for the experiments documented in this report. To ensure the appropriate compliance with the ethical review requirements of the University of Sheffield, a self-declared ethics review application with reference number 054854 was raised and approved by the University Research Ethics Committee. 

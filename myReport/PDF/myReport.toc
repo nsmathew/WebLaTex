@@ -11,7 +11,7 @@
 \contentsline {chapter}{\numberline {3}Methodology}{7}{}%
 \contentsline {section}{\numberline {3.1}Task}{7}{}%
 \contentsline {section}{\numberline {3.2}Data and pre-processing}{7}{}%
-\contentsline {subsection}{\numberline {3.2.1}Domains and organisations}{7}{}%
+\contentsline {subsection}{\numberline {3.2.1}Criteria for tweets}{7}{}%
 \contentsline {subsection}{\numberline {3.2.2}Data Extraction}{8}{}%
 \contentsline {subsection}{\numberline {3.2.3}Annotation}{9}{}%
 \contentsline {section}{\numberline {3.3}Environment}{9}{}%

@@ -35,12 +35,12 @@ A cross-industry representative collection of 93 customer service handles of org
         \textbf{Total}              & 1232 \small{(63\%)} & 739 \small{(37\%)}      & 1971                  \\
         \hline
     \end{tabularx}
-    \caption{The nine domains and the distribution of tweets that are complaints and those that are not. The percentages indicate how the splits are distributed.}
+    \caption{The nine domains and the distribution of tweets that are complaints and those that are not. The percentages indicate how the splits are distributed \cite{preotiuc-pietro_automatically_2019}.}
     \label{tab: domains}
 \end{table}
 
 \subsection{Data Extraction}
-The data was extracted from Twitter via the Twitter API \footnote{https://developer.twitter.com/en}. The latest 3,200 tweets at the time of the collection exercise were extracted and the original tweets to which the customer service handles responded were identified. Then, random sampling equally for each handle, 1,971 tweets were identified where there was a response from the support's handle. To ensure a more balanced and diverse dataset, 1,478 randomly sampled tweets were added to the dataset. 739 tweets were replies to other handles (outside the 93 identified) and the remaining 739 tweets were not addressed to any Twitter handle. Table \ref{tab: tweet_counts} shows the breakdown of the total population of the tweets dataset. Tweets were filtered for English using langid.py \cite{luiLangidPyOfftheshelf2012}. Retweets were excluded and all usernames and URLs were anonymised and replaced with placeholder tokens.
+The data was extracted from Twitter via the Twitter API \footnote{\url{https://developer.twitter.com/en}}. The latest 3,200 tweets at the time of the collection exercise were extracted and the original tweets to which the customer service handles responded were identified. Random sampling equally for each handle, 1,971 tweets were then identified where there was a response from the support's handle. To ensure a more balanced and diverse dataset, 1,478 randomly sampled tweets were added to the dataset. 739 tweets were replies to other handles (outside the 93 identified) and the remaining 739 tweets were not addressed to any Twitter handle. Table \ref{tab: tweet_counts} shows the breakdown of the total population of the tweets dataset. Tweets were filtered for English using langid.py \cite{luiLangidPyOfftheshelf2012}. Retweets were excluded and all usernames and URLs were anonymised and replaced with placeholder tokens.
 \begin{table}[ht]
     \captionsetup{font=small}
     \centering
@@ -59,7 +59,7 @@ The data was extracted from Twitter via the Twitter API \footnote{https://develo
         Total                                                                  & 1232 \small{(36\%)} & 2217 \small{(64\%)}     & 3449                  \\
         \hline
     \end{tabularx}
-    \caption{Selection of tweets based on random sampling and where they have received replies when addressed to the 93 customer service handles combined with random sampled tweets that are addressed to other handles (random\_reply) and tweets that are not addressed to any handle (random\_tweet).}
+    \caption{Selection of tweets based on random sampling and where they have received replies when addressed to the 93 customer service handles combined with random sampled tweets that are addressed to other handles (random\_reply) and tweets that are not addressed to any handle (random\_tweet) \cite{preotiuc-pietro_automatically_2019}.}
     \label{tab: tweet_counts}
 \end{table}
 
@@ -75,12 +75,12 @@ The key details of the environment used for the experiments are listed below. Al
     \item \textbf{CPU Count:} 8
     \item \textbf{Memory:} 45 GB
     \item \textbf{GPU Count:} 1
-    \item \textbf{GPU Model:} NVIDIA RTX A4000
+    \item \textbf{GPU Model:} NVIDIA RTX A4000 \footnote{\url{https://www.nvidia.com/en-gb/design-visualization/rtx-a4000/}}
     \item \textbf{GPU Memory:} 16 GB
 \end{itemize}
 
 \subsection{Software}
-For the experiments, the BERT large language model along with a number of its variants are used to classify the tweets and compare the performance. The models are based on the \texttt{transformers} library implementation from Hugging Face\footnote{https://huggingface.co/}. Additionally, the \texttt{datasets} and \texttt{evaluate} libraries are used. From scikit-learn\footnote{https://scikit-learn.org/stable/} the \texttt{sklearn} library is utilised to generate the stratified splits for the nested cross-fold validation. The versions for each library are shown in the table \ref{tab: libs_used}.
+For the experiments, the BERT large language model along with a number of its variants are used to classify the tweets and compare the performance. The models are based on the \texttt{transformers} library implementation from Hugging Face\footnote{\url{https://huggingface.co/}}. Additionally, the \texttt{datasets} and \texttt{evaluate} libraries are used. From scikit-learn\footnote{\url{https://scikit-learn.org/stable/}} the \texttt{sklearn} library is utilised to generate the stratified splits for the nested cross-fold validation. The versions for each library are shown in the table \ref{tab: libs_used}.
 
 \begin{table}[ht]
     \captionsetup{font=small}
@@ -240,7 +240,7 @@ The key choices for the experiments including that of the hyperparameters are de
 For the performance metrics, precision, recall, accuracy, F1, and AOC scores are computed for both the inner loop's validation as well as the outer loop's testing. Further, the final metrics for each model are based on each of the mean metrics from the 6 outer loop iterations. Additionally, the samples per second and steps per second are captured for each of the models during the inference phase to analyse the time taken for inference in relation to the model size.
 
 \section{Experiment 2: Domain splits with nested cross-validation}
-To assess how the models perform when finetuned with a significantly small dataset cmobined with class imbalance
+To assess how the models perform when finetuned with a significantly small dataset combined with class imbalance, cross-domain experiments are executed. Here, the best performing models from the first experiment is selected along with the 
 
 \section{Ethical, Professional and Legal Issues}
 The data used for the experiments were created by \cite{preotiuc-pietro_automatically_2019} and further enhanced with complaints severity type annotation by \cite{jinModelingSeverityComplaints2021}. This data is anonymised and is available in the public domain \footnote{\url{ https://archive.org/details/complaint_severity_data}}. No additional data has been collected for the experiments documented in this report. To ensure the appropriate compliance with the ethical review requirements of the University of Sheffield, a self-declared ethics review application with reference number 054854 was raised and approved by the University Research Ethics Committee. 

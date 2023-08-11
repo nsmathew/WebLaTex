@@ -23,7 +23,7 @@
 \contentsline {subsection}{\numberline {3.5.2}Choice of settings}{12}{}%
 \contentsline {subsection}{\numberline {3.5.3}Tokenisation example}{13}{}%
 \contentsline {section}{\numberline {3.6}Experiment 1: Comparision of BERT variants}{13}{}%
-\contentsline {section}{\numberline {3.7}Experiment 2: Domain splits with nested cross-validation}{15}{}%
+\contentsline {section}{\numberline {3.7}Experiment 2: Cross-domain performance}{15}{}%
 \contentsline {section}{\numberline {3.8}Ethical, Professional and Legal Issues}{15}{}%
 \contentsline {chapter}{\numberline {4}Results and discussion}{16}{}%
 \contentsline {section}{\numberline {4.1}Risk Analysis}{16}{}%

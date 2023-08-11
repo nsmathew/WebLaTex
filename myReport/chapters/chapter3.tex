@@ -202,7 +202,7 @@ again. one day they will fix it # jeepsucks # chrysler [SEP] [PAD] [PAD] [PAD]
 [PAD] [PAD]\end{verbatim}
 \end{adjustbox}\\ \\
 
-\section{Experiment 1: Comparision of BERT variants}
+\section{Experiments set 1: Comparision of BERT variants}
 In the first experiment, the objective is to identify which of the models performs the best for the text classification task of complaints identification. Additionally, the relative performance of the models and the inference time will be analysed to assess how the model size impacts these aspects. A nested cross-validation approach will be used to experiment finetuning the model the various learning rate hyperparameter values and calculate mean performance metrics on inference. All models in scope for the experiments are pre-trained, hence finetuning will be performed for the downstream complaints identification task.\\
 
 The nested cross-validation approach utilized is adapted from \cite{preotiuc-pietro_automatically_2019}. The outer loop consists of 6 iterations and the inner loop of 4 iterations. Each outer loop includes a stratified split of the entire dataset into train (\textbf{A}) and test (\textbf{B}) datasets. Within the inner loop, \textbf{A} is further split into inner train and dev datasets using stratified split with each iteration, finetuning and validating on 1 of the 4 learning rates set for hyperparameter tuning. The best model from the inner loop is selected based on the F1 score on the dev dataset. This best model is used to perform inference using the test dataset, \textbf{B}. At the end of the 6 outer loop iterations, the mean of the performance metrics is calculated as the final metrics for that model. While \cite{preotiuc-pietro_automatically_2019} used 10 iterations for the outer loop, it has been restricted to 6 for the experiments considering significant variations were not observed on the metrics. This is likely due to the 6 stratified splits capturing sufficient variability in the input dataset.\\
@@ -239,10 +239,14 @@ The key choices for the experiments including that of the hyperparameters are de
 
 For the performance metrics, precision, recall, accuracy, F1, and AOC scores are computed for both the inner loop's validation as well as the outer loop's testing. Further, the final metrics for each model are based on each of the mean metrics from the 6 outer loop iterations. Additionally, the samples per second and steps per second are captured for each of the models during the inference phase to analyse the time taken for inference in relation to the model size.
 
-\section{Experiment 2: Cross-domain performance}
+\section{Experiments set 2: Cross-domain performance}
 To assess how the models perform when finetuned with a significantly small dataset combined with class imbalance, cross-domain experiments are executed. Additionally, this provides an avenue to assess how the complaints differ linguistically across the domains and hence impact the finetuning performance. \\
 
 For the experiments, the best-performing model from the first experiment is utilised. The tweets for each of the 9 domains are used for training separately with tweets from every other domain used for testing. Additionally, each domain is used for testing while training is based on all tweets except the domain used for testing. Stratified split is applied on the training dataset for each domain using the \texttt{StratifiedKFold} function from \texttt{sklearn} library for 3 iterations of finetuning. At the end of each iteration, inference is performed on the testing data.  The number of epochs remains at '4', similar to experiment 1 while the learning rate used is the best learning for the selected model from experiment 1. All other hyperparameters are the model defaults. The parameters and hyperparameters used for the experiment are listed in Table \ref{tab: exp2_params}.
+
+In this set of experiments, only the most effective model identified from the previous experiment is utilised. The model is finetuned using tweets belonging to one domain at a time while testing is performed for each of the remaining domains separately and performance recorded. Additionally, each domain tested on a fine while training is based on all tweets except the domain used for testing.
+
+To ensure balanced training sets, a stratified split is applied using the StratifiedKFold function from the sklearn library. This process is repeated for three iterations of finetuning. Following each iteration, the model's performance is evaluated through inference on the testing data. The experiment maintains a consistent number of epochs (4), similar to the first experiment. The learning rate is determined by the optimal value identified in the initial experiment for the selected model. All other hyperparameters follow the model's default settings. For comprehensive details of the parameters and hyperparameters employed in this experiment, please refer to Table \ref{tab: exp2_params}.
 
 \begin{table}[ht]
     \captionsetup{font=small}
@@ -270,8 +274,7 @@ For the experiments, the best-performing model from the first experiment is util
     \caption{The choice of key parameters and hyperparameters used for Experiment 2. Refer the Chapter on results for the model and learning rate used for this experiment. }
     \label{tab: exp2_params}
 \end{table}
-The performance metrics calculated include precision, recall, accuracy, F1, and AOC scores
-calculating performance metrics. Finally, the mean of the metrics is calculated.
+For each iteration and combination of domains for finetuning and testing, the performance metrics are calculated for precision, recall, accuracy, F1, and AOC. At the end of the third iteration, the mean of the metrics is calculated. The results and findings for them are presented in Chapter 4.
 
 \section{Ethical, Professional and Legal Issues}
 The data used for the experiments were created by \cite{preotiuc-pietro_automatically_2019} and further enhanced with complaints severity type annotation by \cite{jinModelingSeverityComplaints2021}. This data is anonymised and is available in the public domain \footnote{\url{ https://archive.org/details/complaint_severity_data}}. No additional data has been collected for the experiments documented in this report. To ensure the appropriate compliance with the ethical review requirements of the University of Sheffield, a self-declared ethics review application with reference number 054854 was raised and approved by the University Research Ethics Committee.

@@ -32,6 +32,7 @@
 \contentsline {chapter}{\numberline {5}Conclusions}{18}{}%
 \contentsline {chapter}{Appendices}{22}{}%
 \contentsline {chapter}{\numberline {A}References}{23}{}%
-\contentsline {section}{\numberline {A.1}Sample data from dataset}{23}{}%
-\contentsline {section}{\numberline {A.2}Model References}{23}{}%
+\contentsline {section}{\numberline {A.1}Code Repository}{23}{}%
+\contentsline {section}{\numberline {A.2}Sample data from dataset}{23}{}%
+\contentsline {section}{\numberline {A.3}Model References}{23}{}%
 \contentsline {chapter}{\numberline {B}Another Appendix}{24}{}%

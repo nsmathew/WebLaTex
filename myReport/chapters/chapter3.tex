@@ -68,8 +68,8 @@ The classification of the 1,971 tweets as complaints or not was carried out usin
 
 \section{Environment}
 
+The key details of the environment used for the experiments are listed below. All experiments are run in a Jupyter notebook on a single GPU. 
 \subsection{Hardware}
-The key details of the environment used for the experiments are listed below.
 \begin{itemize}
     \small
     \item \textbf{CPU Count:} 8
@@ -80,7 +80,7 @@ The key details of the environment used for the experiments are listed below.
 \end{itemize}
 
 \subsection{Software}
-For the experiments, the BERT transformer large language models along with a number of its variants are used to classify the tweets and compare the performance. The models are based on the \texttt{transformers} library implementation from Hugging Face\footnote{https://huggingface.co/} along with the \texttt{datasets} and \texttt{evaluate} libraries. From scikit-learn\footnote{https://scikit-learn.org/stable/} the \texttt{sklearn} library is used to generate the stratified splits for the nested cross-fold validation. The versions for each library are shown in the table \ref{tab: libs_used}.
+For the experiments, the BERT large language model along with a number of its variants are used to classify the tweets and compare the performance. The models are based on the \texttt{transformers} library implementation from Hugging Face\footnote{https://huggingface.co/}. Additionally, the \texttt{datasets} and \texttt{evaluate} libraries are used. From scikit-learn\footnote{https://scikit-learn.org/stable/} the \texttt{sklearn} library is utilised to generate the stratified splits for the nested cross-fold validation. The versions for each library are shown in the table \ref{tab: libs_used}.
 
 \begin{table}[ht]
     \captionsetup{font=small}
@@ -240,7 +240,7 @@ The key choices for the experiments including that of the hyperparameters are de
 For the performance metrics, precision, recall, accuracy, F1, and AOC scores are computed for both the inner loop's validation as well as the outer loop's testing. Further, the final metrics for each model are based on each of the mean metrics from the 6 outer loop iterations. Additionally, the samples per second and steps per second are captured for each of the models during the inference phase to analyse the time taken for inference in relation to the model size.
 
 \section{Experiment 2: Domain splits with nested cross-validation}
-To assess how the models perform when finetuned with significantly small dataset and 
+To assess how the models perform when finetuned with a significantly small dataset cmobined with class imbalance
 
 \section{Ethical, Professional and Legal Issues}
 The data used for the experiments were created by \cite{preotiuc-pietro_automatically_2019} and further enhanced with complaints severity type annotation by \cite{jinModelingSeverityComplaints2021}. This data is anonymised and is available in the public domain \footnote{\url{ https://archive.org/details/complaint_severity_data}}. No additional data has been collected for the experiments documented in this report. To ensure the appropriate compliance with the ethical review requirements of the University of Sheffield, a self-declared ethics review application with reference number 054854 was raised and approved by the University Research Ethics Committee. 

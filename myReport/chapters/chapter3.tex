@@ -6,7 +6,7 @@ For a short text segment, $T = \{t_1, t_2, ..., t_n\}$ where $t_i$ is defined as
 \section{Data and pre-processing}
 The data used for the experiments is from Twitter. Twitter provides a good representation of social media text due to the direct connection consumers have with organisations and brands as well as the ability to express oneself \cite{preotiuc-pietro_automatically_2019}. **Add content on why Twitter**
 \newline \newline
-The data set created by \cite{preotiuc-pietro_automatically_2019} and further used by \cite{jin_complaint_2020} is utilised for this project. The original process for collection and annotation employed by them is briefly described below. The particular version \footnote{The data can be found here - https://archive.org/details/complaint\_severity\_data} used for the experiments is the one enhanced by \cite{jinModelingSeverityComplaints2021} with the addition of labels for the severity of complaints. These additional labels are not used for the experiments in this project.
+The data set created by \cite{preotiuc-pietro_automatically_2019} and further used by \cite{jin_complaint_2020} is utilised for this project. The original process for collection and annotation employed by them is briefly described below. The particular version\footnote{\url{https://archive.org/details/complaint_severity_data}} used for the experiments is the one enhanced by \cite{jinModelingSeverityComplaints2021} with the addition of labels for the severity of complaints. These additional labels are not used for the experiments in this project.
 \subsection{Domains and organisations}
 A cross-industry representative collection of 93 customer service handles of organisations on Twitter were identified manually. These handles were then categorised into 9 domains based on their industry type. Since an organisation could have business activities across domains, the assigned domain was based on the products or services receiving the most number of complaints. All the domains used in the experiments are listed in Table \ref{tab: domains}.
 \begin{table}[ht]
@@ -40,7 +40,7 @@ A cross-industry representative collection of 93 customer service handles of org
 \end{table}
 
 \subsection{Data Extraction}
-The data was extracted from Twitter via the Twitter API \footnote{\url{https://developer.twitter.com/en}}. The latest 3,200 tweets at the time of the collection exercise were extracted and the original tweets to which the customer service handles responded were identified. Random sampling equally for each handle, 1,971 tweets were then identified where there was a response from the support's handle. To ensure a more balanced and diverse dataset, 1,478 randomly sampled tweets were added to the dataset. 739 tweets were replies to other handles (outside the 93 identified) and the remaining 739 tweets were not addressed to any Twitter handle. Table \ref{tab: tweet_counts} shows the breakdown of the total population of the tweets dataset. Tweets were filtered for English using langid.py \cite{luiLangidPyOfftheshelf2012}. Retweets were excluded and all usernames and URLs were anonymised and replaced with placeholder tokens.
+The data was extracted from Twitter via the Twitter API\footnote{\url{https://developer.twitter.com/en}}. The latest 3,200 tweets at the time of the collection exercise were extracted and the original tweets to which the customer service handles responded were identified. Random sampling equally for each handle, 1,971 tweets were then identified where there was a response from the support's handle. To ensure a more balanced and diverse dataset, 1,478 randomly sampled tweets were added to the dataset. 739 tweets were replies to other handles (outside the 93 identified) and the remaining 739 tweets were not addressed to any Twitter handle. Table \ref{tab: tweet_counts} shows the breakdown of the total population of the tweets dataset. Tweets were filtered for English using langid.py \cite{luiLangidPyOfftheshelf2012}. Retweets were excluded and all usernames and URLs were anonymised and replaced with placeholder tokens.
 \begin{table}[ht]
     \captionsetup{font=small}
     \centering
@@ -68,14 +68,14 @@ The classification of the 1,971 tweets as complaints or not was carried out usin
 
 \section{Environment}
 
-The key details of the environment used for the experiments are listed below. All experiments are run in a Jupyter notebook on a single GPU. 
+The key details of the environment used for the experiments are listed below. All experiments are run in a Jupyter notebook on a single GPU.
 \subsection{Hardware}
 \begin{itemize}
     \small
     \item \textbf{CPU Count:} 8
     \item \textbf{Memory:} 45 GB
     \item \textbf{GPU Count:} 1
-    \item \textbf{GPU Model:} NVIDIA RTX A4000 \footnote{\url{https://www.nvidia.com/en-gb/design-visualization/rtx-a4000/}}
+    \item \textbf{GPU Model:} NVIDIA RTX A4000\footnote{\url{https://www.nvidia.com/en-gb/design-visualization/rtx-a4000/}}
     \item \textbf{GPU Memory:} 16 GB
 \end{itemize}
 
@@ -212,23 +212,23 @@ The nested cross-validation approach utilized is adapted from \cite{preotiuc-pie
     \begin{tabularx}{\textwidth}{|X|c|}
         \hline
         \rowcolor[gray]{0.7}
-        \textbf{Parameter}         & \textbf{Value}           \\
+        \textbf{Parameter}        & \textbf{Value}           \\
         \hline
-        Outer loop iterations      & 6                        \\
+        Outer loop iterations     & 6                        \\
         \hline
-        Inner loop iterations      & 4                        \\
+        Inner loop iterations     & 4                        \\
         \hline
-        Random Seed                & 2023                     \\
+        Random Seed               & 2023                     \\
         \hline
         \hline
         \rowcolor[gray]{0.7}
-        \textbf{Hyperparameter}         & \textbf{Value}           \\        
+        \textbf{Hyperparameter}   & \textbf{Value}           \\
         \hline
-        No. of Epochs & 4                        \\
+        No. of Epochs             & 4                        \\
         \hline
-        Learning Rate              & [1e-5, 5e-6, 5e-5, 3e-5] \\
+        Learning Rate             & [1e-5, 5e-6, 5e-5, 3e-5] \\
         \hline
-        All other hyperparameters  & Model defaults           \\
+        All other hyperparameters & Model defaults           \\
         \hline
     \end{tabularx}
     \caption{The choice of key parameters and hyperparameters used for Experiment 1.}
@@ -242,8 +242,36 @@ For the performance metrics, precision, recall, accuracy, F1, and AOC scores are
 \section{Experiment 2: Cross-domain performance}
 To assess how the models perform when finetuned with a significantly small dataset combined with class imbalance, cross-domain experiments are executed. Additionally, this provides an avenue to assess how the complaints differ linguistically across the domains and hence impact the finetuning performance. \\
 
-For the experiments, the best-performing model from the first experiment is selected along with the best learning rate for it. The tweets for each of the 9 domains are used for training separately with tweets from every other domain used for testing. Additionally, each domain is used for testing while training is based on all tweets except the domain used for testing. Stratified split is applied on the training dataset for each domain using the \texttt{StratifiedKFold} function from \texttt{sklearn} library for 3 iterations of finetuning. At the end of each iteration,  inference is performed on the testing data, calculating performance metrics. Finally, the mean of the metrics is calculated. The number of epochs remains at 4, similar to experiment 1. T
+For the experiments, the best-performing model from the first experiment is utilised. The tweets for each of the 9 domains are used for training separately with tweets from every other domain used for testing. Additionally, each domain is used for testing while training is based on all tweets except the domain used for testing. Stratified split is applied on the training dataset for each domain using the \texttt{StratifiedKFold} function from \texttt{sklearn} library for 3 iterations of finetuning. At the end of each iteration, inference is performed on the testing data.  The number of epochs remains at '4', similar to experiment 1 while the learning rate used is the best learning for the selected model from experiment 1. All other hyperparameters are the model defaults. The parameters and hyperparameters used for the experiment are listed in Table \ref{tab: exp2_params}.
 
+\begin{table}[ht]
+    \captionsetup{font=small}
+    \centering
+    \begin{tabularx}{\textwidth}{|X|c|}
+        \hline
+        \rowcolor[gray]{0.7}
+        \textbf{Parameter}        & \textbf{Value}                       \\
+        \hline
+        No. of iterations         & 3                                    \\
+        \hline
+        Random Seed               & 2023                                 \\
+        \hline
+        \hline
+        \rowcolor[gray]{0.7}
+        \textbf{Hyperparameter}   & \textbf{Value}                       \\
+        \hline
+        No. of Epochs             & 4                                    \\
+        \hline
+        Learning Rate             & Best learning rate from Experiment 1 \\
+        \hline
+        All other hyperparameters & Model defaults                       \\
+        \hline
+    \end{tabularx}
+    \caption{The choice of key parameters and hyperparameters used for Experiment 2. Refer the Chapter on results for the model and learning rate used for this experiment. }
+    \label{tab: exp2_params}
+\end{table}
+The performance metrics calculated include precision, recall, accuracy, F1, and AOC scores
+calculating performance metrics. Finally, the mean of the metrics is calculated.
 
 \section{Ethical, Professional and Legal Issues}
-The data used for the experiments were created by \cite{preotiuc-pietro_automatically_2019} and further enhanced with complaints severity type annotation by \cite{jinModelingSeverityComplaints2021}. This data is anonymised and is available in the public domain \footnote{\url{ https://archive.org/details/complaint_severity_data}}. No additional data has been collected for the experiments documented in this report. To ensure the appropriate compliance with the ethical review requirements of the University of Sheffield, a self-declared ethics review application with reference number 054854 was raised and approved by the University Research Ethics Committee. 
+The data used for the experiments were created by \cite{preotiuc-pietro_automatically_2019} and further enhanced with complaints severity type annotation by \cite{jinModelingSeverityComplaints2021}. This data is anonymised and is available in the public domain \footnote{\url{ https://archive.org/details/complaint_severity_data}}. No additional data has been collected for the experiments documented in this report. To ensure the appropriate compliance with the ethical review requirements of the University of Sheffield, a self-declared ethics review application with reference number 054854 was raised and approved by the University Research Ethics Committee.

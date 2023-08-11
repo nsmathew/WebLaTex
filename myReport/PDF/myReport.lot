@@ -7,6 +7,7 @@
 \contentsline {table}{\numberline {3.3}{\ignorespaces Software and library versions used for this project. Other more \relax }}{10}{}%
 \contentsline {table}{\numberline {3.4}{\ignorespaces The transformer models used for the experiments along with type of tokenization, and vocabulary size and sorted by the number of parameters for each of them. The parameter counts are from \cite {bhargavaGeneralizationNLIWays2021} for Roberta, Bert, Albert and Bert Tiny. For Bertweet it is from \cite {nguyenBERTweetPretrainedLanguage2020}, MobileBert from \cite {sunMobileBERTCompactTaskAgnostic2020} and Distilbert from \cite {sanhDistilBERTDistilledVersion2020}.\relax }}{11}{}%
 \contentsline {table}{\numberline {3.5}{\ignorespaces The choice of key parameters and hyperparameters used for Experiment 1.\relax }}{14}{}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces The choice of key parameters and hyperparameters used for Experiment 2. Refer the Chapter on results for the model and learning rate used for this experiment. \relax }}{15}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

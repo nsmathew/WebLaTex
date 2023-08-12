@@ -1,44 +1,61 @@
-\chapter{Token distribution after tokenization}
 
-\begin{figure}[htbp]
-    \centering
+\chapter{Other references}
+
+\section{Code Repository}
+The code (Jupyter notebook) used for the experiments in this report and the results from the finetuning and testing are available at \url{https://github.com/nsmathew/complaints}.
+
+\section{Model references}
+
+\begin{table}[ht]
     \captionsetup{font=small}
-    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=\textwidth]{figures/token_pp_hist_albert-base-v2.png}
-        \caption{Albert base}
-        \label{fig: token_pp_hist_albert}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=\textwidth]{figures/token_pp_hist_distilbert-base-uncased.png}
-        \caption{DistilBERT base uncase}
-        \label{fig: token_pp_hist_distilbert}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=\textwidth]{figures/token_pp_hist_google-mobilebert-uncased.png}
-        \caption{MobileBERT uncased}
-        \label{fig: token_pp_hist_mobile}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=\textwidth]{figures/token_pp_hist_prajjwal1-bert-tiny.png}
-        \caption{BERT tiny}
-        \label{fig: token_pp_hist}
-    \end{subfigure}
-    \caption{The token count distribution for the full dataset of 3,449 tweets before and after tokenization with the red dashed line indicating 95\% coverage of tweets. BertTokenizer is used here.}
-    \label{fig: bef_aft_token}
-    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=\textwidth]{figures/token_hist.png}
-        \caption{Before tokenization}
-        \label{fig: token_hist}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=\textwidth]{figures/token_pp_hist.png}
-        \caption{After tokenization}
-        \label{fig: token_pp_hist}
-    \end{subfigure}
-    \caption{The token count distribution for the full dataset of 3,449 tweets before and after tokenization with the red dashed line indicating 95\% coverage of tweets. BertTokenizer is used here.}
-    \label{fig: bef_aft_token}
-\end{figure}
+    \centering
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \rowcolor[gray]{0.7}
+        \textbf{Model}            & \textbf{Model Documentation}                                   \\
+        \hline
 
+        ALBERT base               & \small{\url{https://huggingface.co/albert-base-v2}}            \\
+        \hline
+        BERT base (uncased)       & \small{\url{https://huggingface.co/bert-base-uncased}}         \\
+        \hline
+        BERT Tiny                 & \small{\url{https://huggingface.co/prajjwal1/bert-tiny}}       \\
+        \hline
+        BERTweet base             & \small{\url{https://huggingface.co/vinai/bertweet-base}}       \\
+        \hline
+        DistilBERT base (uncased) & \small{\url{https://huggingface.co/distilbert-base-uncased}}   \\
+        \hline
+        MobileBERT (uncased)      & \small{\url{https://huggingface.co/google/mobilebert-uncased}} \\
+        \hline
+        ROBERTA base              & \small{\url{https://huggingface.co/roberta-base}}              \\
+        \hline
+    \end{tabularx}
+    \caption{The transformer models used for the experiments and links to their documentation.}
+    \label{tab: apdxb_model_doc}
+\end{table}
+
+\section{Evaluation metrics references}
+
+\begin{table}[ht]
+    \captionsetup{font=small}
+    \centering
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \rowcolor[gray]{0.7}
+        \textbf{Metric} & \textbf{Metric Documentation}                                         \\
+        \hline
+
+        Accuracy        & \small{\url{https://huggingface.co/spaces/evaluate-metric/accuracy}}  \\
+        \hline
+        F1              & \small{\url{https://huggingface.co/spaces/evaluate-metric/f1}}        \\
+        \hline
+        Precision       & \small{\url{https://huggingface.co/spaces/evaluate-metric/precision}} \\
+        \hline
+        Recall          & \small{\url{https://huggingface.co/spaces/evaluate-metric/recall}}    \\
+        \hline
+        ROC AUC         & \small{\url{https://huggingface.co/spaces/evaluate-metric/roc_auc}}   \\
+        \hline
+    \end{tabularx}
+    \caption{The metrics used for evaluating the performance of the experiments and links to their documentation.}
+    \label{tab: apdxb_metric_doc}
+\end{table}

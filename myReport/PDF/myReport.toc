@@ -31,9 +31,10 @@
 \contentsline {section}{\numberline {4.3}Another Section if You Need It}{18}{}%
 \contentsline {chapter}{\numberline {5}Conclusions}{19}{}%
 \contentsline {chapter}{Appendices}{23}{}%
-\contentsline {chapter}{\numberline {A}References}{24}{}%
-\contentsline {section}{\numberline {A.1}Code Repository}{24}{}%
-\contentsline {section}{\numberline {A.2}Sample data from dataset}{24}{}%
-\contentsline {section}{\numberline {A.3}Model references}{24}{}%
-\contentsline {section}{\numberline {A.4}Evaluation metrics references}{25}{}%
-\contentsline {chapter}{\numberline {B}Another Appendix}{26}{}%
+\contentsline {chapter}{\numberline {A}Additional graphs and analysis}{24}{}%
+\contentsline {section}{\numberline {A.1}Sample data from dataset}{24}{}%
+\contentsline {section}{\numberline {A.2}Token distribution after tokenization}{24}{}%
+\contentsline {chapter}{\numberline {B}Other references}{26}{}%
+\contentsline {section}{\numberline {B.1}Code Repository}{26}{}%
+\contentsline {section}{\numberline {B.2}Model references}{26}{}%
+\contentsline {section}{\numberline {B.3}Evaluation metrics references}{26}{}%

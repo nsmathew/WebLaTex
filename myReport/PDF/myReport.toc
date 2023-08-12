@@ -34,5 +34,6 @@
 \contentsline {chapter}{\numberline {A}References}{24}{}%
 \contentsline {section}{\numberline {A.1}Code Repository}{24}{}%
 \contentsline {section}{\numberline {A.2}Sample data from dataset}{24}{}%
-\contentsline {section}{\numberline {A.3}Model References}{24}{}%
-\contentsline {chapter}{\numberline {B}Another Appendix}{25}{}%
+\contentsline {section}{\numberline {A.3}Model references}{24}{}%
+\contentsline {section}{\numberline {A.4}Evaluation metrics references}{25}{}%
+\contentsline {chapter}{\numberline {B}Another Appendix}{26}{}%

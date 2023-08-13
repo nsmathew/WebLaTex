@@ -1,7 +1,7 @@
 \chapter{Results and discussion}
 
 \section{Data exploration}
-As described earlier in Chapter 3, the data for the experiments is from Twitter. It was extracted and pre-processed by \cite{preotiuc-pietro_automatically_2019} and further enhanced with the labels for complaint severity by \cite{jinModelingSeverityComplaints2021}. What follows are the key findings from the exploratory data analysis performed. Additionally, some minor differences in the distribution of the tweets across the domains are observed between the latest version of the dataset available in the public domain\footnote{\url{https://archive.org/details/complaint_severity_data}} and the distribution described in the original paper. Since the variations are minor (0.5 to 2\%), any potential impact on the model performance should be insignificant in the context of the objectives of the experiments.
+As described earlier in Chapter 3, the data for the experiments is from Twitter. It was extracted and pre-processed by \cite{preotiuc-pietro_automatically_2019} and further enhanced with the labels for complaint severity by \cite{jinModelingSeverityComplaints2021}. What follows are the key findings from the exploratory data analysis performed. Additionally, some minor differences in the distribution of the tweets across the domains are observed between the latest version of the dataset available in the public domain\footnote{\url{https://archive.org/details/complaint_severity_data}} and the distribution described in the original paper. Since the variations are minor (0.5 to 2\%), any potential impact on the model performance should be insignificant in the context of the objectives of the experiments. Refer \ref{sec: apdxa_fulldataset} for the full breakdown of the dataset used 
 
 
 \begin{figure}[htb]
@@ -35,7 +35,27 @@ All tweets categorised as complaints are assigned the label \texttt{label:1}, wh
     \label{fig: compl_main_dist}
 \end{figure}
 
-The domains selected for the dataset are distributed between tweets that forms complaints and those that do not. From Figure \ref{fig: domain_dist_pct}, the top 3 domains are services, software and electronics, making up close to 50\% of the tweets. Looking at \ref{fig: domain_dist_count}, the key observation is the class imbalance within most domains. Also, the no. of tweets within the domains themselves are relatively low in volume. The impact on the predictions are analysed as part of the Experiments set 2 later in this chapter.
+The dataset comprises domains encompassing both complaint-related tweets and non-complaint tweets. Figure \ref{fig: domain_dist_pct} illustrates the distribution of domains, with the top 3 categories being services, software, and electronics, collectively constituting nearly 50\% of the tweets. A key observation from Figure \ref{fig: domain_dist_count} is the prevalent class imbalance within most domains, accompanied by relatively low tweet volumes within each domain. The implications of these observations on predictions are analyzed in Experiments set 2, elaborated upon later in this chapter. 
+
+\begin{figure}[htbp]
+    \centering
+    \captionsetup{font=small}
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/domain_dist.png}
+        \caption{Proportion of each domain}
+        \label{fig: domain_dist_pct}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/domain_counts_bar_norandom.png}
+        \caption{No. of tweets for each domain}
+        \label{fig: domain_dist_count}
+    \end{subfigure}
+    \caption{Shows the distribution of the domains used in the dataset}
+    \label{fig: compl_main_dist}
+\end{figure}
 
 \section{Comparision of model performance}
 **TO UPDATE**

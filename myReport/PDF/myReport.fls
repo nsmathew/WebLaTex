@@ -503,6 +503,14 @@ INPUT ./figures/domain_counts_bar_norandom.png
 INPUT figures/domain_counts_bar_norandom.png
 INPUT ./figures/domain_counts_bar_norandom.png
 INPUT ./figures/domain_counts_bar_norandom.png
+INPUT ./figures/domain_dist.png
+INPUT ./figures/domain_dist.png
+INPUT figures/domain_dist.png
+INPUT ./figures/domain_dist.png
+INPUT ./figures/domain_counts_bar_norandom.png
+INPUT ./figures/domain_counts_bar_norandom.png
+INPUT figures/domain_counts_bar_norandom.png
+INPUT ./figures/domain_counts_bar_norandom.png
 INPUT ./chapters/chapter5.tex
 INPUT chapters/chapter5.tex
 INPUT ./chapters/chapter5.tex

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  13 AUG 2023 18:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  13 AUG 2023 19:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -183,7 +183,23 @@ Package caption Info: New subtype `subtable' on input line 239.
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count276
 \l__pdf_internal_box=\box55
-) (PDF/myReport.aux)
+) (PDF/myReport.aux
+
+LaTeX Warning: Label `fig: domain_dist_pct' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig: domain_dist_pct' multiply defined.
+
+
+LaTeX Warning: Label `fig: domain_dist_count' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig: domain_dist_count' multiply defined.
+
+
+LaTeX Warning: Label `fig: compl_main_dist' multiply defined.
+
+)
 \openout1 = `myReport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -319,7 +335,7 @@ Overfull \hbox (6.01888pt too wide) in paragraph at lines 8--8
  []
 
 
-Overfull \hbox (3.35544pt too wide) in paragraph at lines 17--17
+Overfull \hbox (3.35544pt too wide) in paragraph at lines 18--18
  [][] []\T1/cmr/m/n/10.95 The trans-former mod-els used for the ex-per-i-ments and links to their doc-u-men-ta-tion. [][]  
  []
 
@@ -662,18 +678,31 @@ Overfull \hbox (5.10176pt too wide) in paragraph at lines 38--39
 []\T1/cmr/m/n/10.95 The dataset com-prises do-mains en-com-pass-ing both complaint-related tweets and non-complaint
  []
 
-) (./chapters/chapter5.tex [18 <./figures/domain_dist.png> <./figures/domain_counts_bar_norandom.png>]
-Chapter 5.
-) (PDF/myReport.bbl [19
+File: figures/domain_dist.png Graphic file (type png)
+<use figures/domain_dist.png>
+Package pdftex.def Info: figures/domain_dist.png  used on input line 45.
+(pdftex.def)             Requested size: 216.01767pt x 108.00774pt.
+File: figures/domain_counts_bar_norandom.png Graphic file (type png)
+<use figures/domain_counts_bar_norandom.png>
+Package pdftex.def Info: figures/domain_counts_bar_norandom.png  used on input line 52.
+(pdftex.def)             Requested size: 216.01767pt x 108.00774pt.
 
-] [20
+Overfull \hbox (7.66905pt too wide) in paragraph at lines 64--86
+ [][] 
+ []
+
+) (./chapters/chapter5.tex [18 <./figures/domain_dist.png> <./figures/domain_counts_bar_norandom.png>] [19]
+Chapter 5.
+) (PDF/myReport.bbl [20
+
+] [21
 
 ]
 Underfull \hbox (badness 4859) in paragraph at lines 118--121
 []\T1/cmr/m/sc/10.95 Sun, Z., Yu, H., Song, X., Liu, R., Yang, Y., and Zhou, D.
  []
 
-[21]) [22] [23
+[22]) [23] [24
 
 
 ] (./chapters/appendixA.tex
@@ -683,56 +712,60 @@ Overfull \hbox (0.64908pt too wide) in paragraph at lines 49--66
 \T1/cmr/m/n/10.95 The \T1/cmtt/m/n/10.95 binarylabel \T1/cmr/m/n/10.95 rep-re-sents the la-bel for com-plaints with 1 in-di-cat-ing the tweet is a com-plaint.
  []
 
-<figures/token_pp_hist_albert-base-v2.png, id=136, 578.16pt x 289.08pt>
+<figures/token_pp_hist_albert-base-v2.png, id=140, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_albert-base-v2.png Graphic file (type png)
 <use figures/token_pp_hist_albert-base-v2.png>
 Package pdftex.def Info: figures/token_pp_hist_albert-base-v2.png  used on input line 75.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-<figures/token_pp_hist_vinai-bertweet-base.png, id=137, 578.16pt x 289.08pt>
+<figures/token_pp_hist_vinai-bertweet-base.png, id=141, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_vinai-bertweet-base.png Graphic file (type png)
 <use figures/token_pp_hist_vinai-bertweet-base.png>
 Package pdftex.def Info: figures/token_pp_hist_vinai-bertweet-base.png  used on input line 81.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-<figures/token_pp_hist_prajjwal1-bert-tiny.png, id=138, 578.16pt x 289.08pt>
+<figures/token_pp_hist_prajjwal1-bert-tiny.png, id=142, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_prajjwal1-bert-tiny.png Graphic file (type png)
 <use figures/token_pp_hist_prajjwal1-bert-tiny.png>
 Package pdftex.def Info: figures/token_pp_hist_prajjwal1-bert-tiny.png  used on input line 86.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-<figures/token_pp_hist_distilbert-base-uncased.png, id=139, 578.16pt x 289.08pt>
+<figures/token_pp_hist_distilbert-base-uncased.png, id=143, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_distilbert-base-uncased.png Graphic file (type png)
 <use figures/token_pp_hist_distilbert-base-uncased.png>
 Package pdftex.def Info: figures/token_pp_hist_distilbert-base-uncased.png  used on input line 92.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-<figures/token_pp_hist_google-mobilebert-uncased.png, id=140, 578.16pt x 289.08pt>
+<figures/token_pp_hist_google-mobilebert-uncased.png, id=144, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_google-mobilebert-uncased.png Graphic file (type png)
 <use figures/token_pp_hist_google-mobilebert-uncased.png>
 Package pdftex.def Info: figures/token_pp_hist_google-mobilebert-uncased.png  used on input line 97.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-<figures/token_pp_hist_roberta-base.png, id=141, 578.16pt x 289.08pt>
+<figures/token_pp_hist_roberta-base.png, id=145, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_roberta-base.png Graphic file (type png)
 <use figures/token_pp_hist_roberta-base.png>
 Package pdftex.def Info: figures/token_pp_hist_roberta-base.png  used on input line 103.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-) (./chapters/appendixB.tex [24
+[25
 
-] [25] [26 <./figures/token_pp_hist_albert-base-v2.png> <./figures/token_pp_hist_vinai-bertweet-base.png> <./figures/token_pp_hist_prajjwal1-bert-tiny.png> <./figures/token_pp_hist_distilbert-base-uncased.png> <./figures/token_pp_hist_google-mobilebert-uncased.png> <./figures/token_pp_hist_roberta-base.png>]
+]) (./chapters/appendixB.tex [26] [27 <./figures/token_pp_hist_albert-base-v2.png> <./figures/token_pp_hist_vinai-bertweet-base.png> <./figures/token_pp_hist_prajjwal1-bert-tiny.png> <./figures/token_pp_hist_distilbert-base-uncased.png> <./figures/token_pp_hist_google-mobilebert-uncased.png> <./figures/token_pp_hist_roberta-base.png>]
 Appendix B.
-) [27
+) [28
 
-] [28] (PDF/myReport.aux) ) 
+] [29] (PDF/myReport.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5694 strings out of 476047
- 101843 string characters out of 5790254
+ 5695 strings out of 476047
+ 101867 string characters out of 5790254
  1870248 words of memory out of 5000000
- 25983 multiletter control sequences out of 15000+600000
+ 25984 multiletter control sequences out of 15000+600000
  533189 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,13n,79p,1479b,790s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on PDF/myReport.pdf (35 pages, 916811 bytes).
+Output written on PDF/myReport.pdf (36 pages, 918429 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
+ 284 PDF objects out of 1000 (max. 8388607)
+ 166 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

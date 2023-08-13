@@ -3,6 +3,25 @@
 \section{Data exploration}
 As described earlier in Chapter 3, the data for the experiments is from Twitter. It was extracted and pre-processed by \cite{preotiuc-pietro_automatically_2019} and further enhanced with the labels for complaint severity by \cite{jinModelingSeverityComplaints2021}. What follows are the key findings from the exploratory data analysis performed. Additionally, some minor differences in the distribution of the tweets across the domains are observed between the latest version of the dataset available in the public domain\footnote{\url{https://archive.org/details/complaint_severity_data}} and the distribution described in the original paper. Since the variations are minor (0.5 to 2\%), there should not be any significant impact on the performance.
 
+\begin{figure}[htbp]
+    \centering
+    \captionsetup{font=small}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/compl_non_random_dist.png}
+        \caption{Before tokenization}
+        \label{fig: compl_non_random_dist}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/domain_dist.png}
+        \caption{After tokenization}
+        \label{fig: domain_dist}
+    \end{subfigure}
+    \caption{bla blah.}
+    \label{fig: compl_main_dist}
+\end{figure}
 
 
 \section{Comparision of model performance}

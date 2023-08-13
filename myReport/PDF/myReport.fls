@@ -488,6 +488,16 @@ INPUT ./chapters/chapter4.tex
 INPUT chapters/chapter4.tex
 INPUT ./chapters/chapter4.tex
 INPUT chapters/chapter4.tex
+INPUT ./figures/compl_non_random_dist.png
+INPUT ./figures/compl_non_random_dist.png
+INPUT figures/compl_non_random_dist.png
+INPUT ./figures/compl_non_random_dist.png
+INPUT ./figures/compl_non_random_dist.png
+INPUT ./figures/domain_dist.png
+INPUT ./figures/domain_dist.png
+INPUT figures/domain_dist.png
+INPUT ./figures/domain_dist.png
+INPUT ./figures/domain_dist.png
 INPUT ./chapters/chapter5.tex
 INPUT chapters/chapter5.tex
 INPUT ./chapters/chapter5.tex

@@ -23,7 +23,27 @@ As described earlier in Chapter 3, the data for the experiments is from Twitter.
     \label{fig: compl_main_dist}
 \end{figure}
 
-All tweets that are complaints have \texttt{label:1} and any tweet that is not a complaint has \texttt{label:0}. From a class balance perspective, the dataset is weighted in favour of 'not complaint' tweets as can be seen in Figure \ref{fig: compl_non_random_dist}, with \texttt{label:1} at 35.7\% vs \texttt{label:0} at 64.3\%. The authors of \cite{preotiuc-pietro_automatically_2019} included several random tweets and replies to allow the model to generalise better and not be 
+All tweets categorized as complaints are assigned the label \texttt{label:1}, while tweets that do not constitute complaints are assigned \texttt{label:0}. In terms of class distribution, the dataset is skewed towards 'not complaint' tweets, as depicted in Figure \ref{fig: compl_non_random_dist}, where \texttt{label:1} represents 35.7\% and \texttt{label:0} represents 64.3\% of the dataset. To ensure a more representative dataset, the authors of \cite{preotiuc-pietro_automatically_2019} introduced several random tweets and replies. This approach aligns with the real-world scenario where complaint-related posts form a smaller proportion within an organization's social media tweets and posts. Additionally, this strategy has the potential to enhance the model's ability to generalize effectively during the finetuning process.\\
+
+\begin{figure}[htbp]
+    \centering
+    \captionsetup{font=small}
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/compl_non_random_dist.png}
+        \caption{Types of tweets}
+        \label{fig: compl_non_random_dist}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/domain_dist.png}
+        \caption{Proportion of each domains}
+        \label{fig: domain_dist}
+    \end{subfigure}
+    \caption{ \ref{fig: compl_non_random_dist} illustrates the distribution of tweets categorized as 'complaints' and 'not complaints', with random 'tweets / replies' shown separately. Figure \ref{fig: domain_dist}, on the other hand, presents the domain proportions within the two categories of tweets, 'complaints' and 'not complaints'.}
+    \label{fig: compl_main_dist}
+\end{figure}
 
 \section{Comparision of model performance}
 **TO UPDATE**

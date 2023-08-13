@@ -1,24 +1,7 @@
 \chapter{Additional graphs and analysis}
 
-\section{Sample data from dataset}
-\begin{table}[ht]
-    \captionsetup{font=small}
-    \centering
-    \begin{tabularx}{\textwidth}{|l|X|c|c|l|}
-        \hline
-        \rowcolor[gray]{0.7}
-        \textbf{id} & \textbf{text}                                               & \textbf{binarylabel} & \textbf{multilabel} & \textbf{domain} \\
-        \hline
-        1.20E+17    & asus g60 series . bought it to play games but guess not bf3 & 1                    & 1                   & electronics     \\
-        \hline
-        4.88E+17    & love this trimmer ! making the sidewalk look sharp <url>    & 0                    & 0                   & other           \\
-        \hline
-    \end{tabularx}
-    \caption{Sample data from \cite{jinModelingSeverityComplaints2021}. The \texttt{binarylabel} represents the label for complaints with 1 indicating the tweet is a complaint. Columns \texttt{id} and \texttt{multilabel} are not used for the experiments}
-    \label{tab: apdx_sample_data}
-\end{table}
-
 \section{Breakdown of tweets in full dataset}
+\label{sec: apdxa_fulldataset}
 \begin{table}[ht]
     \captionsetup{font=small}
     \centering
@@ -60,6 +43,25 @@
     \end{tabularx}
     \caption{The nine domains and the distribution of tweets that are complaints and those that are not from the latest version of the dataset used for the experiments. Also includes the number of random tweets and replies introduced into the dataset.}
     \label{tab: fulldataset_breakdown}
+\end{table}
+
+\section{Sample data from dataset}
+The \texttt{binarylabel} represents the label for complaints with 1 indicating the tweet is a complaint. Columns \texttt{id} and \texttt{multilabel} are not used for the experiments.
+\begin{table}[ht]
+    \captionsetup{font=small}
+    \centering
+    \begin{tabularx}{\textwidth}{|l|X|c|c|l|}
+        \hline
+        \rowcolor[gray]{0.7}
+        \textbf{id} & \textbf{text}                                               & \textbf{binarylabel} & \textbf{multilabel} & \textbf{domain} \\
+        \hline
+        1.20E+17    & asus g60 series . bought it to play games but guess not bf3 & 1                    & 1                   & electronics     \\
+        \hline
+        4.88E+17    & love this trimmer ! making the sidewalk look sharp <url>    & 0                    & 0                   & other           \\
+        \hline
+    \end{tabularx}
+    \caption{Sample data from \cite{jinModelingSeverityComplaints2021}.} 
+    \label{tab: apdx_sample_data}
 \end{table}
 
 

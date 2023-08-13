@@ -21,19 +21,21 @@ All tweets categorised as complaints are assigned the label \texttt{label:1}, wh
     \begin{subfigure}{0.49\textwidth}
         \centering
         \includegraphics[width=\linewidth]{figures/domain_dist.png}
-        \caption{Proportion of each domains}
+        \caption{Proportion of each domain}
         \label{fig: domain_dist_pct}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.49\textwidth}
         \centering
         \includegraphics[width=\linewidth]{figures/domain_counts_bar_norandom.png}
-        \caption{No. of tweets for each domains}
+        \caption{No. of tweets for each domain}
         \label{fig: domain_dist_count}
     \end{subfigure}
     \caption{Shows the distribution of the domains used in the dataset}
     \label{fig: compl_main_dist}
 \end{figure}
+
+The domains selected for the dataset are distributed between tweets that forms complaints and those that do not. From Figure \ref{fig: domain_dist_pct}, the top 3 domains are services, software and electronics, making up close to 50\% of the tweets. Looking at \ref{fig: domain_dist_count}, the key observation is the class imbalance within most domains. Also, the no. of tweets within the domains themselves are relatively low in volume. The impact on the predictions are analysed as part of the Experiments set 2 later in this chapter.
 
 \section{Comparision of model performance}
 **TO UPDATE**

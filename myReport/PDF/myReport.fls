@@ -442,11 +442,6 @@ OUTPUT PDF/myReport.lof
 INPUT PDF/myReport.lot
 INPUT PDF/myReport.lot
 INPUT PDF/myReport.lot
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ectt1095.tfm
 OUTPUT PDF/myReport.lot
 INPUT ./chapters/chapter1.tex
 INPUT chapters/chapter1.tex
@@ -468,11 +463,16 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ectt0900.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecrm0700.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ectt1095.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ./figures/token_hist.png
 INPUT ./figures/token_hist.png
@@ -516,7 +516,6 @@ INPUT ./chapters/appendixA.tex
 INPUT chapters/appendixA.tex
 INPUT ./chapters/appendixA.tex
 INPUT chapters/appendixA.tex
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
 INPUT ./figures/token_pp_hist_albert-base-v2.png
 INPUT ./figures/token_pp_hist_albert-base-v2.png
 INPUT figures/token_pp_hist_albert-base-v2.png
@@ -551,6 +550,7 @@ INPUT ./chapters/appendixB.tex
 INPUT chapters/appendixB.tex
 INPUT ./chapters/appendixB.tex
 INPUT chapters/appendixB.tex
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
 INPUT PDF/myReport.aux
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb

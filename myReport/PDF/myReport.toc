@@ -1,0 +1,41 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{}%
+\contentsline {section}{\numberline {1.1}Background}{1}{}%
+\contentsline {section}{\numberline {1.2}Aims and Objectives}{2}{}%
+\contentsline {chapter}{\numberline {2}Literature Survey}{3}{}%
+\contentsline {section}{\numberline {2.1}The act of complaining}{3}{}%
+\contentsline {section}{\numberline {2.2}Complaining online}{4}{}%
+\contentsline {section}{\numberline {2.3}Complaining in social media}{5}{}%
+\contentsline {section}{\numberline {2.4}Self-expression on Twitter}{5}{}%
+\contentsline {section}{\numberline {2.5}Transformers}{5}{}%
+\contentsline {section}{\numberline {2.6}Ongoing research}{6}{}%
+\contentsline {chapter}{\numberline {3}Methodology}{7}{}%
+\contentsline {section}{\numberline {3.1}Task}{7}{}%
+\contentsline {section}{\numberline {3.2}Data and pre-processing}{7}{}%
+\contentsline {subsection}{\numberline {3.2.1}Criteria for tweets}{7}{}%
+\contentsline {subsection}{\numberline {3.2.2}Data Extraction}{8}{}%
+\contentsline {subsection}{\numberline {3.2.3}Annotation}{9}{}%
+\contentsline {section}{\numberline {3.3}Environment}{9}{}%
+\contentsline {subsection}{\numberline {3.3.1}Hardware}{9}{}%
+\contentsline {subsection}{\numberline {3.3.2}Software}{9}{}%
+\contentsline {section}{\numberline {3.4}Model selection}{10}{}%
+\contentsline {section}{\numberline {3.5}Data tokenisation}{10}{}%
+\contentsline {subsection}{\numberline {3.5.1}Tokenization methods}{11}{}%
+\contentsline {subsection}{\numberline {3.5.2}Choice of settings}{12}{}%
+\contentsline {subsection}{\numberline {3.5.3}Tokenisation example}{13}{}%
+\contentsline {section}{\numberline {3.6}Experiments set 1: Performance comparison of BERT variants}{13}{}%
+\contentsline {section}{\numberline {3.7}Experiments set 2: Cross-domain performance}{15}{}%
+\contentsline {section}{\numberline {3.8}Ethical, Professional and Legal Issues}{16}{}%
+\contentsline {chapter}{\numberline {4}Results and discussion}{17}{}%
+\contentsline {section}{\numberline {4.1}Data exploration}{17}{}%
+\contentsline {section}{\numberline {4.2}Comparision of model performance}{18}{}%
+\contentsline {section}{\numberline {4.3}Analysis of best performing model}{18}{}%
+\contentsline {section}{\numberline {4.4}Cross-domain results}{18}{}%
+\contentsline {chapter}{\numberline {5}Conclusions}{19}{}%
+\contentsline {chapter}{Appendices}{23}{}%
+\contentsline {chapter}{\numberline {A}Additional graphs and analysis}{24}{}%
+\contentsline {section}{\numberline {A.1}Sample data from dataset}{24}{}%
+\contentsline {section}{\numberline {A.2}Token distribution after tokenization}{24}{}%
+\contentsline {chapter}{\numberline {B}Other references}{26}{}%
+\contentsline {section}{\numberline {B.1}Code Repository}{26}{}%
+\contentsline {section}{\numberline {B.2}Model references}{26}{}%
+\contentsline {section}{\numberline {B.3}Evaluation metrics references}{26}{}%

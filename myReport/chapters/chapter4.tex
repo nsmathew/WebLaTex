@@ -1,7 +1,7 @@
 \chapter{Results and discussion}
 
 \section{Data exploration}
-As described earlier in Chapter 3, the data for the experiments is from Twitter. It was extracted and pre-processed by \cite{preotiuc-pietro_automatically_2019} and further enhanced with the labels for complaint severity by \cite{jinModelingSeverityComplaints2021}. What follows are the key findings from the exploratory data analysis performed. Additionally, some minor differences in the distribution of the tweets across the domains are observed between the latest version of the dataset available in the public domain\footnote{\url{https://archive.org/details/complaint_severity_data}} and the distribution described in the original paper. Since the variations are minor (0.5 to 2\%), any potential impact on the model performance should be insignificant in the context of the objectives of the experiments. Refer \ref{sec: apdxa_fulldataset} for the full breakdown of the dataset used 
+As described earlier in Chapter 3, the data for the experiments is from Twitter. It was extracted and pre-processed by \cite{preotiuc-pietro_automatically_2019} and further enhanced with the labels for complaint severity by \cite{jinModelingSeverityComplaints2021}. What follows are the key findings from the exploratory data analysis performed. Additionally, some minor differences in the distribution of the tweets across the domains are observed between the latest version of the dataset available in the public domain\footnote{\url{https://archive.org/details/complaint_severity_data}} and the distribution described in the original paper. Since the variations are minor (0.5 to 2\%), any potential impact on the model performance should be insignificant in the context of the objectives of the experiments. Refer \ref{sec: apdxa_fulldataset} for the full breakdown of the dataset used
 
 
 \begin{figure}[htb]
@@ -35,21 +35,21 @@ All tweets categorised as complaints are assigned the label \texttt{label:1}, wh
     \label{fig: compl_main_dist}
 \end{figure}
 
-The dataset comprises domains encompassing both complaint-related tweets and non-complaint tweets. Figure \ref{fig: domain_dist_pct} illustrates the distribution of domains, with the top 3 categories being services, software, and electronics, collectively constituting nearly 50\% of the tweets. A key observation from Figure \ref{fig: domain_dist_count} is the prevalent class imbalance within most domains, accompanied by relatively low tweet volumes within each domain. The implications of these observations on predictions are analyzed in Experiments set 2, elaborated upon later in this chapter. 
+The dataset comprises domains encompassing both complaint-related tweets and non-complaint tweets. Figure \ref{fig: domain_dist_pct} illustrates the distribution of domains, with the top 3 categories being services, software, and electronics, collectively constituting nearly 50\% of the tweets. A key observation from Figure \ref{fig: domain_dist_count} is the prevalent class imbalance within most domains, accompanied by relatively low tweet volumes within each domain. The implications of these observations on predictions are analyzed in Experiments set 2, elaborated upon later in this chapter.
 
 \begin{figure}[htbp]
     \centering
     \captionsetup{font=small}
-    \begin{subfigure}{0.49\textwidth}
+    \begin{subfigure}{1\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{figures/domain_dist.png}
+        \includegraphics[width=\linewidth]{figures/top_token_horiz_bar.png}
         \caption{Proportion of each domain}
         \label{fig: domain_dist_pct}
     \end{subfigure}
     \hfill
-    \begin{subfigure}{0.49\textwidth}
+    \begin{subfigure}{1\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{figures/domain_counts_bar_norandom.png}
+        \includegraphics[width=\linewidth]{figures/top_hash_horiz_bar.png}
         \caption{No. of tweets for each domain}
         \label{fig: domain_dist_count}
     \end{subfigure}
@@ -59,45 +59,50 @@ The dataset comprises domains encompassing both complaint-related tweets and non
 
 
 \begin{table}[htbp]
+    \captionsetup{font=small}
     \centering
-    \caption{Statistics of Tweet Data}
-    \begin{tabularx}{lcccc}
-    \hline
-    Statistic & All Tweets & Complaints & Not Complaints & Random \\
-    \hline
-    Number of tweets & 3449 & 1232 & 742 & 1475 \\
-    \hline
-    Number of unique tweets & 3395 & 1232 & 737 & 1427 \\
-    \hline
-    Max tweet length (characters) & 297 & 297 & 266 & 144 \\
-    \hline
-    Min tweet length (characters) & 1 & 7 & 6 & 1 \\
-    \hline
-    Mean tweet length (characters) & 77.8 & 96.7 & 70.2 & 65.8 \\
-    \hline
-    Median tweet length (characters) & 79.0 & 98.0 & 68.0 & 63.0 \\
-    \hline
-    Standard Deviation of tweet length & 41.4 & 40.5 & 38.9 & 37.5 \\
-    \hline
-    Total number of tokens & 55169 & 24260 & 10839 & 20070 \\
-    \hline
-    No. of unique tokens & 7937 & 4031 & 2558 & 4386 \\
-    \hline
-    Maximum tokens & 57 & 57 & 55 & 39 \\
-    \hline
-    Minimum tokens & 1 & 2 & 1 & 1 \\
-    \hline
-    Mean tokens & 16.0 & 19.7 & 14.6 & 13.6 \\
-    \hline
-    Median tokens & 16.0 & 20.0 & 14.0 & 13.0 \\
-    \hline
-    Standard Deviation for tokens & 8.6 & 8.4 & 8.0 & 8.0 \\
-    \hline
-    Average punctuation count & 3.4 & 3.9 & 2.7 & 3.3 \\
-    \hline
-    \end{tabular}
+    \begin{tabularx}{\textwidth}{|X|c|c|c|c|}
+        \hline
+        \rowcolor[gray]{0.7}
+        Statistic                        & All Tweets & Complaints & Not Complaints & Random \\
+        \hline
+        Number of tweets                 & 3,449      & 1,232      & 742            & 1,475  \\
+        \hline
+        Number of unique tweets          & 3,395      & 1,232      & 737            & 1427   \\
+        \hline
+        \hline
+        Max tweet length (characters)    & 297        & 297        & 266            & 144    \\
+        \hline
+        Min tweet length (characters)    & 1          & 7          & 6              & 1      \\
+        \hline
+        Mean tweet length (characters)   & 77.8       & 96.7       & 70.2           & 65.8   \\
+        \hline
+        Median tweet length (characters) & 79.0       & 98.0       & 68.0           & 63.0   \\
+        \hline
+        Standard Deviation tweet length  & 41.4       & 40.5       & 38.9           & 37.5   \\
+        \hline
+        \hline
+        Total number of tokens           & 55,169     & 24,260     & 10,839         & 20,070 \\
+        \hline
+        No. of unique tokens             & 7,937      & 4,031      & 2,558          & 4,386  \\
+        \hline
+        Maximum tokens                   & 57         & 57         & 55             & 39     \\
+        \hline
+        Minimum tokens                   & 1          & 2          & 1              & 1      \\
+        \hline
+        Mean tokens                      & 16.0       & 19.7       & 14.6           & 13.6   \\
+        \hline
+        Median tokens                    & 16.0       & 20.0       & 14.0           & 13.0   \\
+        \hline
+        Standard Deviation for tokens    & 8.6        & 8.4        & 8.0            & 8.0    \\
+        \hline
+        \hline
+        Average punctuation count        & 3.4        & 3.9        & 2.7            & 3.3    \\
+        \hline
+    \end{tabularx}
+    \caption{Statistics of tweets in the dataset.}
     \label{tab: tweets_statistics}
-    \end{table}
+\end{table}
 \section{Comparision of model performance}
 **TO UPDATE**
 

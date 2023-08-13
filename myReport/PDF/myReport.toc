@@ -27,16 +27,16 @@
 \contentsline {section}{\numberline {3.8}Ethical, Professional and Legal Issues}{16}{}%
 \contentsline {chapter}{\numberline {4}Results and discussion}{17}{}%
 \contentsline {section}{\numberline {4.1}Data exploration}{17}{}%
-\contentsline {section}{\numberline {4.2}Comparision of model performance}{18}{}%
-\contentsline {section}{\numberline {4.3}Analysis of best performing model}{18}{}%
-\contentsline {section}{\numberline {4.4}Cross-domain results}{19}{}%
-\contentsline {chapter}{\numberline {5}Conclusions}{20}{}%
-\contentsline {chapter}{Appendices}{24}{}%
-\contentsline {chapter}{\numberline {A}Additional graphs and analysis}{25}{}%
-\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{25}{}%
-\contentsline {section}{\numberline {A.2}Sample data from dataset}{25}{}%
-\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{26}{}%
-\contentsline {chapter}{\numberline {B}Other references}{28}{}%
-\contentsline {section}{\numberline {B.1}Code Repository}{28}{}%
-\contentsline {section}{\numberline {B.2}Model references}{28}{}%
-\contentsline {section}{\numberline {B.3}Evaluation metrics references}{28}{}%
+\contentsline {section}{\numberline {4.2}Comparision of model performance}{20}{}%
+\contentsline {section}{\numberline {4.3}Analysis of best performing model}{20}{}%
+\contentsline {section}{\numberline {4.4}Cross-domain results}{20}{}%
+\contentsline {chapter}{\numberline {5}Conclusions}{21}{}%
+\contentsline {chapter}{Appendices}{25}{}%
+\contentsline {chapter}{\numberline {A}Additional graphs and analysis}{26}{}%
+\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{26}{}%
+\contentsline {section}{\numberline {A.2}Sample data from dataset}{26}{}%
+\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{27}{}%
+\contentsline {chapter}{\numberline {B}Other references}{29}{}%
+\contentsline {section}{\numberline {B.1}Code Repository}{29}{}%
+\contentsline {section}{\numberline {B.2}Model references}{29}{}%
+\contentsline {section}{\numberline {B.3}Evaluation metrics references}{29}{}%

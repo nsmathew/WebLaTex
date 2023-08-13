@@ -26,15 +26,16 @@
 \contentsline {section}{\numberline {3.7}Experiments set 2: Cross-domain performance}{15}{}%
 \contentsline {section}{\numberline {3.8}Ethical, Professional and Legal Issues}{16}{}%
 \contentsline {chapter}{\numberline {4}Results and discussion}{17}{}%
-\contentsline {section}{\numberline {4.1}Risk Analysis}{17}{}%
-\contentsline {section}{\numberline {4.2}Project Plan}{17}{}%
-\contentsline {section}{\numberline {4.3}Another Section if You Need It}{18}{}%
-\contentsline {chapter}{\numberline {5}Conclusions}{19}{}%
-\contentsline {chapter}{Appendices}{23}{}%
-\contentsline {chapter}{\numberline {A}Additional graphs and analysis}{24}{}%
-\contentsline {section}{\numberline {A.1}Sample data from dataset}{24}{}%
-\contentsline {section}{\numberline {A.2}Token distribution after tokenization}{24}{}%
-\contentsline {chapter}{\numberline {B}Other references}{26}{}%
-\contentsline {section}{\numberline {B.1}Code Repository}{26}{}%
-\contentsline {section}{\numberline {B.2}Model references}{26}{}%
-\contentsline {section}{\numberline {B.3}Evaluation metrics references}{26}{}%
+\contentsline {section}{\numberline {4.1}Data exploration}{17}{}%
+\contentsline {section}{\numberline {4.2}Comparision of model performance}{17}{}%
+\contentsline {section}{\numberline {4.3}Analysis of best performing model}{17}{}%
+\contentsline {section}{\numberline {4.4}Cross-domain results}{17}{}%
+\contentsline {chapter}{\numberline {5}Conclusions}{18}{}%
+\contentsline {chapter}{Appendices}{22}{}%
+\contentsline {chapter}{\numberline {A}Additional graphs and analysis}{23}{}%
+\contentsline {section}{\numberline {A.1}Sample data from dataset}{23}{}%
+\contentsline {section}{\numberline {A.2}Token distribution after tokenization}{23}{}%
+\contentsline {chapter}{\numberline {B}Other references}{25}{}%
+\contentsline {section}{\numberline {B.1}Code Repository}{25}{}%
+\contentsline {section}{\numberline {B.2}Model references}{25}{}%
+\contentsline {section}{\numberline {B.3}Evaluation metrics references}{25}{}%

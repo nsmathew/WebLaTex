@@ -3,7 +3,8 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces The token count distribution for the full dataset of 3,449 tweets before and after tokenization with the red dashed line indicating 95\% coverage of tweets. BertTokenizer is used here.\relax }}{12}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces \ref {fig: compl_non_random_dist} illustrates the distribution of tweets categorized as 'complaints' and 'not complaints', with random 'tweets / replies' shown separately. Figure \ref {fig: domain_dist}, on the other hand, presents the domain proportions within the two categories of tweets, 'complaints' and 'not complaints'.\relax }}{17}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustrates the distribution of tweets categorised as 'complaints' and 'not complaints', with random 'tweets / replies' shown separately.\relax }}{17}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Shows the distribution of the domains used in the dataset\relax }}{18}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {A.1}{\ignorespaces The token count distribution for the full dataset of 3,449 tweets for all models.\relax }}{25}{}%

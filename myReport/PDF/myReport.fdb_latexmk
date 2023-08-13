@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex PDF/myReport"] 1691939016 "PDF/myReport.aux" "PDF/myReport.bbl" "PDF/myReport" 1691939017 0
+["bibtex PDF/myReport"] 1691941845 "PDF/myReport.aux" "PDF/myReport.bbl" "PDF/myReport" 1691942335 0
   "./mybibliography.bib" 1691510717 39343 2f1e26e0a7e2ffa2255ed9b10f11fe9e ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/base/acm.bst" 1292289607 21064 c61a48664f3c347ce7f73c1a6a530506 ""
-  "PDF/myReport.aux" 1691939017 14859 1de6211a264292f9bbf362b1e709922c "pdflatex"
+  "PDF/myReport.aux" 1691942335 14888 6ba3d201a0b937864fe5d047742bf7c5 "pdflatex"
   (generated)
   "PDF/myReport.bbl"
   "PDF/myReport.blg"
   (rewritten before read)
-["pdflatex"] 1691939016 "/workspaces/WebLaTex/myReport/myReport.tex" "PDF/myReport.pdf" "myReport" 1691939017 0
+["pdflatex"] 1691942334 "/workspaces/WebLaTex/myReport/myReport.tex" "PDF/myReport.pdf" "myReport" 1691942335 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -122,20 +122,21 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1683470675 7886660 8ca379e923703c32578767fd4cb91c4a ""
   "/usr/local/texlive/2023/texmf.cnf" 1683470455 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "/workspaces/WebLaTex/myReport/myReport.tex" 1691435917 3730 4dc45c015025802b33c11cf0da8d0e55 ""
-  "PDF/myReport.aux" 1691939017 14859 1de6211a264292f9bbf362b1e709922c "pdflatex"
-  "PDF/myReport.bbl" 1691939016 6538 ca562afc82b00bb43830a3595f49adb9 "bibtex PDF/myReport"
-  "PDF/myReport.lof" 1691939017 947 427173f7abea9a383394bcbe158c9590 "pdflatex"
-  "PDF/myReport.lot" 1691939017 2763 08326f5709cb30911844ee15d1b30c72 "pdflatex"
-  "PDF/myReport.toc" 1691939017 2868 a040663da31baf24f692bdad3a8efd79 "pdflatex"
+  "PDF/myReport.aux" 1691942335 14888 6ba3d201a0b937864fe5d047742bf7c5 "pdflatex"
+  "PDF/myReport.bbl" 1691941845 6538 ca562afc82b00bb43830a3595f49adb9 "bibtex PDF/myReport"
+  "PDF/myReport.lof" 1691942335 887 7bb501368894f601e7315ea681b7d0eb "pdflatex"
+  "PDF/myReport.lot" 1691942335 2763 08326f5709cb30911844ee15d1b30c72 "pdflatex"
+  "PDF/myReport.toc" 1691942335 2868 a040663da31baf24f692bdad3a8efd79 "pdflatex"
   "chapters/abstract.tex" 1691746190 1725 93a54545ef48a08c58ddc54d93779055 ""
   "chapters/appendixA.tex" 1691844929 2964 1b4de5b4ee569f50e858e65fc6b10b36 ""
   "chapters/appendixB.tex" 1691845159 2560 6ec57932fb22cf51e124b77c088cd185 ""
   "chapters/chapter1.tex" 1691791541 5967 d872101be9dd67b5ab39fd3fbcf8d843 ""
   "chapters/chapter2.tex" 1691663115 8342 786ec3210eed0fe139796dbb81acaa9f ""
   "chapters/chapter3.tex" 1691936231 28543 1b8bf741cb86288c8331b09a8100928e ""
-  "chapters/chapter4.tex" 1691938998 2699 6fefc97279e5b09997639d3ca296d1f1 ""
+  "chapters/chapter4.tex" 1691941840 2871 5349ba32d78847d77d0aac0dc7359816 ""
   "chapters/chapter5.tex" 1689604488 1392 3626243249023cda71b02896b8ff5f78 ""
   "figures/compl_non_random_dist.png" 1691934733 29987 cf2717c8eea7daf29a880585391ab0f2 ""
+  "figures/domain_counts_bar_norandom.png" 1691942325 36230 6a957e486e40cd5c54586edb7ea4f96a ""
   "figures/domain_dist.png" 1691934733 52171 923f8a4bccbfd5707b78ed4d3aea2ac3 ""
   "figures/token_hist.png" 1691446736 27968 e98edb528d1e15b481ff823a6d2b86e1 ""
   "figures/token_pp_hist.png" 1691446618 27459 161abf8c494bea97d0624aa28d6387fb ""

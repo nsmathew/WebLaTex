@@ -513,7 +513,6 @@ INPUT ./figures/top_hash_horiz_bar.png
 INPUT figures/top_hash_horiz_bar.png
 INPUT ./figures/top_hash_horiz_bar.png
 INPUT ./figures/top_hash_horiz_bar.png
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
 INPUT ./chapters/chapter5.tex
 INPUT chapters/chapter5.tex
 INPUT ./chapters/chapter5.tex

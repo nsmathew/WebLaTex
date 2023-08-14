@@ -28,7 +28,7 @@
 \contentsline {chapter}{\numberline {4}Results and discussion}{17}{}%
 \contentsline {section}{\numberline {4.1}Data exploration}{17}{}%
 \contentsline {section}{\numberline {4.2}Comparision of model performance}{19}{}%
-\contentsline {section}{\numberline {4.3}Analysis of best performing model}{19}{}%
+\contentsline {section}{\numberline {4.3}Analysis of best performing model}{20}{}%
 \contentsline {section}{\numberline {4.4}Cross-domain results}{20}{}%
 \contentsline {chapter}{\numberline {5}Conclusions}{21}{}%
 \contentsline {chapter}{Appendices}{25}{}%

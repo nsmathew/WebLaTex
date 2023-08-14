@@ -503,11 +503,11 @@ INPUT ./figures/domain_counts_bar_norandom.png
 INPUT figures/domain_counts_bar_norandom.png
 INPUT ./figures/domain_counts_bar_norandom.png
 INPUT ./figures/domain_counts_bar_norandom.png
-INPUT ./figures/top_trigram_horiz_bar.png
-INPUT ./figures/top_trigram_horiz_bar.png
-INPUT figures/top_trigram_horiz_bar.png
-INPUT ./figures/top_trigram_horiz_bar.png
-INPUT ./figures/top_trigram_horiz_bar.png
+INPUT ./figures/top_ngram_horiz_bar.png
+INPUT ./figures/top_ngram_horiz_bar.png
+INPUT figures/top_ngram_horiz_bar.png
+INPUT ./figures/top_ngram_horiz_bar.png
+INPUT ./figures/top_ngram_horiz_bar.png
 INPUT ./figures/top_hash_horiz_bar.png
 INPUT ./figures/top_hash_horiz_bar.png
 INPUT figures/top_hash_horiz_bar.png

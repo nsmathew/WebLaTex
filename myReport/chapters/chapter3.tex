@@ -50,9 +50,8 @@ The data was extracted from Twitter via the Twitter API\footnote{\url{https://de
         \textbf{Extraction Criteria}                                           & \textbf{Complaints} & \textbf{Non-Complaints} & \textbf{Total Tweets} \\
         \hline
         Addressed to and replied by the identified 93 customer service handles & 1239 \small{(63\%)} & 739 \small{(37\%)}      & 1971 \small{(58\%)}   \\
-        \hline
+        \rowcolor[gray]{0.9}
         Addressed to other customer service handles                            & 0                   & 739 \small{(100\%)}     & 739 \small{(21\%)}    \\
-        \hline
         Not addressed to any Twitter handle                                    & 0                   & 739 \small{(100\%)}     & 739 \small{(21\%)}    \\
         \hline
         \rowcolor[gray]{0.9}
@@ -95,11 +94,10 @@ For the experiments, the BERT large language model along with a number of its va
                                              & datasets              & 2.4.0            \\
         \cline{2-3}
                                              & evaluate              & 0.4.0            \\
-        \hline
+        \rowcolor[gray]{0.9}
         Scikit-Learn                         & sklearn               & 1.1.2            \\
-        \hline
         Numpy                                & numpy                 & 1.23.4           \\
-        \hline
+        \rowcolor[gray]{0.9}
         Pandas                               & pandas                & 1.5.0            \\
         \hline
     \end{tabularx}
@@ -115,23 +113,20 @@ The transformer models used are listed in table \ref{tab: model_dtls} along with
 \begin{table}[ht]
     \captionsetup{font=small}
     \centering
-    \begin{tabularx}{\textwidth}{|l|c|X|c|}
+    \begin{tabularx}{\textwidth}{|l|X|l|X|}
         \hline
         \rowcolor[gray]{0.7}
         \textbf{Model}            & \textbf{Parameter Count} & \textbf{Tokenizer Type}  & \textbf{Vocab. Size} \\
         \hline
         ROBERTA base              & 125M                     & Byte-level BPE           & 50,265               \\
-        \hline
+        \rowcolor[gray]{0.9}
         BERT base (uncased)       & 110M                     & WordPiece                & 30,522               \\
-        \hline
         BERTweet base             & 110M                     & Byte-Pair Encoding (BPE) & 64,000               \\
-        \hline
+        \rowcolor[gray]{0.9}
         DistilBERT base (uncased) & 66M                      & WordPiece                & 30,522               \\
-        \hline
         MobileBERT (uncased)      & 25.3M                    & WordPiece                & 30,522               \\
-        \hline
-        ALBERT base               & 11M                      & SentencePiece            & 30,000               \\
-        \hline
+        \rowcolor[gray]{0.9}
+        base               & 11M                      & SentencePiece            & 30,000               \\
         BERT Tiny                 & 4.4M                     & WordPiece                & 30,522               \\
         \hline
     \end{tabularx}
@@ -215,9 +210,7 @@ The nested cross-validation approach utilized is adapted from \cite{preotiuc-pie
         \textbf{Parameter}        & \textbf{Value}           \\
         \hline
         Outer loop iterations     & 6                        \\
-        \hline
         Inner loop iterations     & 4                        \\
-        \hline
         Random Seed               & 2023                     \\
         \hline
         \hline
@@ -225,9 +218,7 @@ The nested cross-validation approach utilized is adapted from \cite{preotiuc-pie
         \textbf{Hyperparameter}   & \textbf{Value}           \\
         \hline
         No. of Epochs             & 4                        \\
-        \hline
         Learning Rate             & [1e-5, 5e-6, 5e-5, 3e-5] \\
-        \hline
         All other hyperparameters & Model defaults           \\
         \hline
     \end{tabularx}
@@ -257,7 +248,6 @@ To ensure the balance of classes is maintained for the training and evaluation s
         \textbf{Parameter}        & \textbf{Value}                       \\
         \hline
         No. of iterations         & 3                                    \\
-        \hline
         Random Seed               & 2023                                 \\
         \hline
         \hline
@@ -265,9 +255,7 @@ To ensure the balance of classes is maintained for the training and evaluation s
         \textbf{Hyperparameter}   & \textbf{Value}                       \\
         \hline
         No. of Epochs             & 4                                    \\
-        \hline
         Learning Rate             & Best learning rate from Experiment 1 \\
-        \hline
         All other hyperparameters & Model defaults                       \\
         \hline
     \end{tabularx}

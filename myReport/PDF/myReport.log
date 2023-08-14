@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  14 AUG 2023 23:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  14 AUG 2023 23:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -342,22 +342,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--7
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--34
+Underfull \hbox (badness 10000) in paragraph at lines 28--33
 
  []
 
 
-Overfull \hbox (2.51476pt too wide) in paragraph at lines 29--34
+Overfull \hbox (2.51476pt too wide) in paragraph at lines 28--33
 \T1/cmr/m/n/10.95 In ad-di-tion to the timely ad-dress-ing of cus-tomer com-plaints, au-to-mated de-tec-tion of com-plaints
  []
 
 
-Overfull \hbox (18.17683pt too wide) in paragraph at lines 29--34
+Overfull \hbox (18.17683pt too wide) in paragraph at lines 28--33
 \T1/cmr/m/n/10.95 in nat-u-ral lan-guage has sev-eral other pur-poses. Lin-guists could gain a more de-tailed un-der-stand-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--34
+Underfull \hbox (badness 10000) in paragraph at lines 28--33
 
  []
 
@@ -443,12 +443,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--10
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
 \T1/cmr/m/n/10.95 iden-ti-fied 93 cus-tomer ser-vice
  []
 
 
-Underfull \hbox (badness 6348) in paragraph at lines 61--61
+Underfull \hbox (badness 6348) in paragraph at lines 60--60
 []|\T1/cmr/m/n/10.95 Not ad-dressed to any Twit-ter
  []
 
@@ -456,179 +456,179 @@ Underfull \hbox (badness 6348) in paragraph at lines 61--61
 
 ] [8]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 78.
+(Font)              <7> on input line 77.
 
-Overfull \hbox (0.9916pt too wide) in paragraph at lines 111--114
+Overfull \hbox (0.9916pt too wide) in paragraph at lines 109--112
 \T1/cmr/m/n/10.95 [[]]. Us-ing BERT for the text clas-si-fi-ca-tion task has sev-eral ad-van-tages over pre-vi-ous dom-i-nant
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--114
+Underfull \hbox (badness 10000) in paragraph at lines 109--112
 
  []
 
 [9{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Underfull \hbox (badness 6173) in paragraph at lines 137--137
-[]|\T1/cmr/m/n/10.95 Byte-Pair En-cod-ing
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]|\T1/cmr/bx/n/10.95 Parameter
  []
 
 
-Overfull \hbox (13.6625pt too wide) in paragraph at lines 143--144
+Overfull \hbox (13.6625pt too wide) in paragraph at lines 138--139
 \T1/cmr/m/n/10.95 The to-k-eniza-tion pro-cess is re-quired to be ap-plied to in-put data for it to be pre-pared ap-pro-pri-ately
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 146--152
+Underfull \hbox (badness 10000) in paragraph at lines 141--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--152
+Underfull \hbox (badness 10000) in paragraph at lines 141--147
 
  []
 
 
-Overfull \hbox (6.7124pt too wide) in paragraph at lines 146--152
+Overfull \hbox (6.7124pt too wide) in paragraph at lines 141--147
 \T1/cmr/m/n/10.95 that op-ti-mize like-li-hood within the train-ing data. The to-k-enizer may com-bine of-ten co-occurring
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--152
+Underfull \hbox (badness 10000) in paragraph at lines 141--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--152
+Underfull \hbox (badness 10000) in paragraph at lines 141--147
 
  []
 
 
-Overfull \hbox (0.20459pt too wide) in paragraph at lines 146--152
+Overfull \hbox (0.20459pt too wide) in paragraph at lines 141--147
 [] \T1/cmr/m/n/10.95 while mod-els like BERT-tiny lever-age ex-ist-ing ones. For the ex-per-i-ments, the \T1/cmtt/m/n/10.95 AutoTokenizer
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
 <figures/token_hist.png, id=85, 517.4532pt x 290.5254pt>
 File: figures/token_hist.png Graphic file (type png)
 <use figures/token_hist.png>
-Package pdftex.def Info: figures/token_hist.png  used on input line 161.
+Package pdftex.def Info: figures/token_hist.png  used on input line 156.
 (pdftex.def)             Requested size: 211.60489pt x 118.80586pt.
 <figures/token_pp_hist.png, id=87, 517.4532pt x 290.5254pt>
 File: figures/token_pp_hist.png Graphic file (type png)
 <use figures/token_pp_hist.png>
-Package pdftex.def Info: figures/token_pp_hist.png  used on input line 167.
+Package pdftex.def Info: figures/token_pp_hist.png  used on input line 162.
 (pdftex.def)             Requested size: 211.60489pt x 118.80586pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--181
+Underfull \hbox (badness 10000) in paragraph at lines 174--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--181
+Underfull \hbox (badness 10000) in paragraph at lines 174--176
 
  []
 
 [12 <./figures/token_hist.png> <./figures/token_pp_hist.png>]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 182--186
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 177--181
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--186
+Underfull \hbox (badness 10000) in paragraph at lines 177--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--186
+Underfull \hbox (badness 10000) in paragraph at lines 177--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
 
-Overfull \hbox (0.50548pt too wide) in paragraph at lines 193--193
+Overfull \hbox (0.50548pt too wide) in paragraph at lines 188--188
 []\T1/cmtt/m/n/10.95 2026, 14007, 4332, 2125, 2153, 1012, 2028, 2154, 2027, 2097, 8081, 2009, 1001,[] 
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 189--195
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 184--190
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--195
+Underfull \hbox (badness 10000) in paragraph at lines 184--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--195
+Underfull \hbox (badness 10000) in paragraph at lines 184--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
 
 
-Overfull \hbox (0.50548pt too wide) in paragraph at lines 202--202
+Overfull \hbox (0.50548pt too wide) in paragraph at lines 197--197
 []\T1/cmtt/m/n/10.95 again. one day they will fix it # jeepsucks # chrysler [SEP] [PAD] [PAD] [PAD][] 
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 198--204
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 193--199
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--204
+Underfull \hbox (badness 10000) in paragraph at lines 193--199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--204
+Underfull \hbox (badness 10000) in paragraph at lines 193--199
 
  []
 
 
-Overfull \hbox (18.35947pt too wide) in paragraph at lines 205--205
+Overfull \hbox (18.35947pt too wide) in paragraph at lines 200--200
 []\T1/cmr/bx/n/14.4 Experiments set 1: Per-for-mance com-par-i-son of BERT vari-ants 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
 
  []
 
 
-Overfull \hbox (2.52618pt too wide) in paragraph at lines 247--248
+Overfull \hbox (2.52618pt too wide) in paragraph at lines 238--239
 []\T1/cmr/m/n/10.95 In this set of ex-per-i-ments, only the most ef-fec-tive model iden-ti-fied from the pre-vi-ous ex-per-i-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
@@ -683,22 +683,22 @@ Overfull \hbox (12.66565pt too wide) in paragraph at lines 80--81
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
 []|\T1/cmr/bx/n/10.95 All
  []
 
 
-Overfull \hbox (6.38847pt too wide) in paragraph at lines 118--118
+Overfull \hbox (6.38847pt too wide) in paragraph at lines 112--112
 []|\T1/cmr/bx/n/10.95 Complaints| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
 []|\T1/cmr/bx/n/10.95 Not
  []
 
 
-Overfull \hbox (6.38847pt too wide) in paragraph at lines 118--118
+Overfull \hbox (6.38847pt too wide) in paragraph at lines 112--112
 \T1/cmr/bx/n/10.95 Com-plaints| 
  []
 
@@ -769,7 +769,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  57i,13n,79p,1479b,790s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on PDF/myReport.pdf (37 pages, 1014769 bytes).
+Output written on PDF/myReport.pdf (37 pages, 1014781 bytes).
 PDF statistics:
  299 PDF objects out of 1000 (max. 8388607)
  174 compressed objects within 2 object streams

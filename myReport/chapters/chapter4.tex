@@ -57,27 +57,27 @@ The dataset comprises domains encompassing both complaint-related tweets and non
     \label{fig: top_ngrams_hashtags}
 \end{figure}
 
-Delving deeper into the language used in Twitter complaints, the top n-grams, as depicted in Figure \ref{fig: top_ngrams}, involve phrases that convey an anticipation of resolution (such as "please help" and "need help"), express frustration (like "still waiting," "worst customer service," and "call back"), and pertain to broader customer service themes (for instance, "tracking number" and "customer care"). These findings align with the definition of a complaint outlined in previous chapters. Additionally, the sample tweets provided below showcase various characteristics previously discussed, including instances of Face Threatening Acts, feelings of betrayal, altruistic behavior (warning others), as well as elements like sarcasm.\\
+Delving deeper into the language used in Twitter complaints, the top n-grams, as depicted in Figure \ref{fig: top_ngrams}, involve phrases that convey anticipation of resolution (such as "please help" and "need help"), express frustration (like "still waiting," "worst customer service," and "call back"), and pertain to broader customer service themes (for instance, "tracking number" and "customer care"). To elaborate further, sample tweets with these phrases are shown below. They showcase various characteristics previously discussed, including instances of Face Threatening Acts, feelings of betrayal, altruistic behaviour (warning others), as well as elements like sarcasm. These findings align with the definition of a complaint and the intentions of the speaker as outlined in previous chapters.\\
 
-\textbf{Examples expectation of rectification}
+\textbf{Examples for expectation of rectification}
 \begin{quote}
-    "hey chrysler cares i'm the one with the 2011 200 need help with the heating . inside the car it's really strange"
+    \textit{"hey chrysler cares i'm the one with the 2011 200 \textbf{need help} with the heating . inside the car it's really strange"}
 \end{quote}
 \begin{quote}
-    "can someone please help me ? i've already sent a dm ."
+    \textit{"can someone \textbf{please help} me ? i've already sent a dm ."}
 \end{quote}
-\textbf{Examples expression of frustration}
+\textbf{Examples for expression of frustration}
 \begin{quote}
-    "worst customer service experience with <user> <user> <user> . never been treated with such contempt"
-\end{quote}
-\begin{quote}
-    "on hold with <user> an hour just to get told to call back another day . hell yeah"
+    \textit{"\textbf{worst customer service} experience with <user> <user> <user> . never been treated with such contempt"}
 \end{quote}
 \begin{quote}
-    "worst customer service experience with <user> <user> <user> . never been treated with such contempt"
+    \textit{"on hold with <user> an hour just to get told to \textbf{call back} another day . hell yeah"}
+\end{quote}
+\begin{quote}
+    \textit{"\textbf{worst customer service} experience with <user> <user> <user> . never been treated with such contempt"}
 \end{quote}
 
-Analysis of the hashtags in the complaints indicate the 
+Analysis of the hashtags in the complaints indicate the use of hashtags primarily as an expression of frustration as shown in Figure \ref{fig: top_hashtags}. Hashtags like \#nothappy, \#fail, \#disappointed are examples.
 
 \begin{table}[htbp]
     \captionsetup{font=small}
@@ -88,23 +88,17 @@ Analysis of the hashtags in the complaints indicate the
         \textbf{Statistic}              & \textbf{All Tweets} & \textbf{Complaints} & \textbf{Not Complaints} & \textbf{Random} \\
         \hline
         Number of tweets                & 3,449               & 1,232               & 742                     & 1,475           \\
-        \hline
         Number of unique tweets         & 3,395               & 1,232               & 737                     & 1427            \\
         \hline
         \hline
         Max tweet length (char.)        & 297                 & 297                 & 266                     & 144             \\
-        \hline
         Min tweet length (char.)   .    & 1                   & 7                   & 6                       & 1               \\
-        \hline
         Mean tweet length (char.)       & 77.8                & 96.7                & 70.2                    & 65.8            \\
-        \hline
         Median tweet length (char.)     & 79.0                & 98.0                & 68.0                    & 63.0            \\
-        \hline
         Standard Deviation tweet length & 41.4                & 40.5                & 38.9                    & 37.5            \\
         \hline
         \hline
         Total number of tokens          & 55,169              & 24,260              & 10,839                  & 20,070          \\
-        \hline
         No. of unique tokens            & 7,937               & 4,031               & 2,558                   & 4,386           \\
         \hline
         Maximum tokens                  & 57                  & 57                  & 55                      & 39              \\

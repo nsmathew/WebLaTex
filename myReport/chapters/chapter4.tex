@@ -40,24 +40,24 @@ The dataset comprises domains encompassing both complaint-related tweets and non
 \begin{figure}[htbp]
     \centering
     \captionsetup{font=small}
-    \begin{subfigure}{1\textwidth}
+    \begin{subfigure}{0.49\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{figures/top_token_horiz_bar.png}
-        \caption{Proportion of each domain}
+        \includegraphics[width=\linewidth]{figures/top_trigram_horiz_bar.png}
+        \caption{Top bi-grams}
         \label{fig: domain_dist_pct}
     \end{subfigure}
     \hfill
-    \begin{subfigure}{1\textwidth}
+    \begin{subfigure}{0.49\textwidth}
         \centering
         \includegraphics[width=\linewidth]{figures/top_hash_horiz_bar.png}
-        \caption{No. of tweets for each domain}
+        \caption{Top hashtags}
         \label{fig: domain_dist_count}
     \end{subfigure}
-    \caption{Shows the distribution of the domains used in the dataset}
+    \caption{Top bi-grams and hashtags in the complaint tweets.}
     \label{fig: compl_main_dist}
 \end{figure}
 
-
+Analysing further on the content of the tweets labelled as complaints we find a number of the most frequent tri-grams to be terms either describing 
 
 \begin{table}[htbp]
     \captionsetup{font=small}
@@ -65,20 +65,20 @@ The dataset comprises domains encompassing both complaint-related tweets and non
     \begin{tabularx}{\textwidth}{|X|c|c|c|c|}
         \hline
         \rowcolor[gray]{0.7}
-        Statistic                        & All Tweets & Complaints & Not Complaints & Random \\
+        \textbf{Statistic}                        & \textbf{All Tweets} & \textbf{Complaints} & \textbf{Not Complaints} & \textbf{Random} \\
         \hline
         Number of tweets                 & 3,449      & 1,232      & 742            & 1,475  \\
         \hline
         Number of unique tweets          & 3,395      & 1,232      & 737            & 1427   \\
         \hline
         \hline
-        Max tweet length (characters)    & 297        & 297        & 266            & 144    \\
+        Max tweet length (char.)    & 297        & 297        & 266            & 144    \\
         \hline
-        Min tweet length (characters)    & 1          & 7          & 6              & 1      \\
+        Min tweet length (char.)   .& 1          & 7          & 6              & 1      \\
         \hline
-        Mean tweet length (characters)   & 77.8       & 96.7       & 70.2           & 65.8   \\
+        Mean tweet length (char.)   & 77.8       & 96.7       & 70.2           & 65.8   \\
         \hline
-        Median tweet length (characters) & 79.0       & 98.0       & 68.0           & 63.0   \\
+        Median tweet length (char.) & 79.0       & 98.0       & 68.0           & 63.0   \\
         \hline
         Standard Deviation tweet length  & 41.4       & 40.5       & 38.9           & 37.5   \\
         \hline

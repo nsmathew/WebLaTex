@@ -91,6 +91,11 @@
 {\sc Preotiuc-Pietro, D., Gaman, M., and Aletras, N.}
 \newblock Automatically {Identifying} {Complaints} in {Social} {Media}.
 
+\bibitem{perezPysentimientoPythonToolkit2021}
+{\sc Pérez, J.~M., Giudici, J.~C., and Luque, F.}
+\newblock pysentimiento: {A} {Python} {Toolkit} for {Sentiment} {Analysis} and {SocialNLP} tasks, June 2021.
+\newblock arXiv:2106.09462 [cs].
+
 \bibitem{rookNormativeInfluencesImpulsive1995}
 {\sc Rook, D.~W., and Fisher, R.~J.}
 \newblock Normative {Influences} on {Impulsive} {Buying} {Behavior}.

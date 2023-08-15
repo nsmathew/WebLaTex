@@ -27,7 +27,7 @@
 \contentsline {section}{\numberline {3.8}Ethical, Professional and Legal Issues}{16}{}%
 \contentsline {chapter}{\numberline {4}Results and discussion}{17}{}%
 \contentsline {section}{\numberline {4.1}Data exploration}{17}{}%
-\contentsline {section}{\numberline {4.2}Comparision of model performance}{20}{}%
+\contentsline {section}{\numberline {4.2}Comparision of model performance}{21}{}%
 \contentsline {section}{\numberline {4.3}Analysis of best performing model}{21}{}%
 \contentsline {section}{\numberline {4.4}Cross-domain results}{21}{}%
 \contentsline {chapter}{\numberline {5}Conclusions}{22}{}%

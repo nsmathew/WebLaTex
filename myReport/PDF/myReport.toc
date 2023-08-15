@@ -30,13 +30,13 @@
 \contentsline {section}{\numberline {4.2}Comparision of model performance}{19}{}%
 \contentsline {section}{\numberline {4.3}Analysis of best performing model}{20}{}%
 \contentsline {section}{\numberline {4.4}Cross-domain results}{20}{}%
-\contentsline {chapter}{\numberline {5}Conclusions}{21}{}%
-\contentsline {chapter}{Appendices}{25}{}%
-\contentsline {chapter}{\numberline {A}Additional graphs and analysis}{26}{}%
-\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{26}{}%
-\contentsline {section}{\numberline {A.2}Sample data from dataset}{26}{}%
-\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{27}{}%
-\contentsline {chapter}{\numberline {B}Other references}{29}{}%
-\contentsline {section}{\numberline {B.1}Code Repository}{29}{}%
-\contentsline {section}{\numberline {B.2}Model references}{29}{}%
-\contentsline {section}{\numberline {B.3}Evaluation metrics references}{29}{}%
+\contentsline {chapter}{\numberline {5}Conclusions}{22}{}%
+\contentsline {chapter}{Appendices}{26}{}%
+\contentsline {chapter}{\numberline {A}Additional graphs and analysis}{27}{}%
+\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{27}{}%
+\contentsline {section}{\numberline {A.2}Sample data from dataset}{27}{}%
+\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{28}{}%
+\contentsline {chapter}{\numberline {B}Other references}{30}{}%
+\contentsline {section}{\numberline {B.1}Code Repository}{30}{}%
+\contentsline {section}{\numberline {B.2}Model references}{30}{}%
+\contentsline {section}{\numberline {B.3}Evaluation metrics references}{30}{}%

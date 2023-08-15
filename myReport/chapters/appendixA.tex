@@ -8,40 +8,40 @@
     \begin{tabularx}{\textwidth}{|X|c|c|c|}
         \hline
         \rowcolor[gray]{0.7}
-        \textbf{Domains}            & \textbf{Complaints}   & \textbf{Non-Complaints} & \textbf{Total Tweets} \\
+        \textbf{Domains}            & \textbf{Complaints}            & \textbf{Non-Complaints}        & \textbf{Total Tweets} \\
         \hline
-        Apparel                     & 145 \small{(55.3\%)}  & 117 \small{(44.7\%)}    & 262 \small{(7.6\%)}   \\
+        Apparel                     & 145 \small{(55.3\%)}           & 117 \small{(44.7\%)}           & 262 \small{(7.6\%)}   \\
         \hline
-        Cars                        & 68 \small{(73.1\%)}   & 25 \small{(26.9\%)}     & 93 \small{(2.7\%)}    \\
+        Cars                        & 68 \small{(73.1\%)}            & 25 \small{(26.9\%)}            & 93 \small{(2.7\%)}    \\
         \hline
-        Electronics                 & 176 \small{(60.7\%)}  & 114 \small{(39.3\%)}    & 290 \small{(8.4\%)}   \\
+        Electronics                 & 176 \small{(60.7\%)}           & 114 \small{(39.3\%)}           & 290 \small{(8.4\%)}   \\
         \hline
-        Food \& Beverage            & 92 \small{(72.4\%)}   & 35 \small{(27.6\%)}     & 127 \small{(3.7\%)}   \\
+        Food \& Beverage            & 92 \small{(72.4\%)}            & 35 \small{(27.6\%)}            & 127 \small{(3.7\%)}   \\
         \hline
-        Other                       & 95 \small{(74.2\%)}   & 33 \small{(25.8\%)}     & 128 \small{(3.7\%)}   \\
+        Other                       & 95 \small{(74.2\%)}            & 33 \small{(25.8\%)}            & 128 \small{(3.7\%)}   \\
         \hline
-        Retail                      & 122 \small{(61.9\%)}  & 75 \small{(38.1\%)}     & 197 \small{(5.7\%)}   \\
+        Retail                      & 122 \small{(61.9\%)}           & 75 \small{(38.1\%)}            & 197 \small{(5.7\%)}   \\
         \hline
-        Services                    & 204 \small{(60.9\%)}  & 131 \small{(39.1\%)}    & 335 \small{(9.7\%)}   \\
+        Services                    & 204 \small{(60.9\%)}           & 131 \small{(39.1\%)}           & 335 \small{(9.7\%)}   \\
         \hline
-        Software \& Online Services & 192 \small{(65.1\%)}  & 103 \small{(34.9\%)}    & 295 \small{(8.6\%)}   \\
+        Software \& Online Services & 192 \small{(65.1\%)}           & 103 \small{(34.9\%)}           & 295 \small{(8.6\%)}   \\
         \hline
-        Transport                   & 138 \small{(55.9\%)}  & 109 \small{(44.1\%)}    & 247 \small{(7.2\%)}   \\
-        \hline
-        \rowcolor[gray]{0.9}
-        \textbf{Sub-total}          & \textbf{1232 \small{(62.4\%)}} & \textbf{742 \small{(37.6\%)}} & \textbf{1974}  \\
-        \hline
-        \hline
-        Random Reply                & 0 \small{(0\%)}       & 739 \small{(100\%)}     & 739 \small{(21.4\%)}  \\
-        \hline
-        Random Tweet                & 0 \small{(0\%)}       & 736 \small{(100\%)}     & 736 \small{(21.3\%)}  \\
-        \hline
+        Transport                   & 138 \small{(55.9\%)}           & 109 \small{(44.1\%)}           & 247 \small{(7.2\%)}   \\
         \hline
         \rowcolor[gray]{0.9}
-        \textbf{Total}              & \textbf{1232 \small{(35.7\%)}}   & \textbf{2217 \small{(64.3\%)}}      & \textbf{3449}                  \\
+        \textbf{Sub-total}          & \textbf{1232 \small{(62.4\%)}} & \textbf{742 \small{(37.6\%)}}  & \textbf{1974}         \\
+        \hline
+        \hline
+        Random Reply                & 0 \small{(0\%)}                & 739 \small{(100\%)}            & 739 \small{(21.4\%)}  \\
+        \hline
+        Random Tweet                & 0 \small{(0\%)}                & 736 \small{(100\%)}            & 736 \small{(21.3\%)}  \\
+        \hline
+        \hline
+        \rowcolor[gray]{0.9}
+        \textbf{Total}              & \textbf{1232 \small{(35.7\%)}} & \textbf{2217 \small{(64.3\%)}} & \textbf{3449}         \\
         \hline
     \end{tabularx}
-    \caption{The nine domains and the distribution of tweets that are complaints and those that are not from the latest version of the dataset used for the experiments. Also includes the number of random tweets and replies introduced into the dataset.}
+    \caption{The nine domains and the distribution of tweets that are complaints and those that are not from the latest of the dataset available at https://archive.org/details/complaint\_severity\_data and as used for the experiments. Additionally, the table includes the number of random tweets and replies introduced into the dataset by the authors for a more proportionate representation of the classes.}
     \label{tab: fulldataset_breakdown}
 \end{table}
 
@@ -60,7 +60,7 @@ The \texttt{binarylabel} represents the label for complaints with 1 indicating t
         4.88E+17    & love this trimmer ! making the sidewalk look sharp <url>    & 0                    & 0                   & other           \\
         \hline
     \end{tabularx}
-    \caption{Sample data from \cite{jinModelingSeverityComplaints2021}.} 
+    \caption{Sample data from \cite{jinModelingSeverityComplaints2021}.}
     \label{tab: apdx_sample_data}
 \end{table}
 

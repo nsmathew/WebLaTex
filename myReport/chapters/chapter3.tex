@@ -94,10 +94,11 @@ For the experiments, the BERT large language model along with a number of its va
                                              & datasets              & 2.4.0            \\
         \cline{2-3}
                                              & evaluate              & 0.4.0            \\
-        \rowcolor[gray]{0.9}
+        \hline
         Scikit-Learn                         & sklearn               & 1.1.2            \\
+        \hline
         Numpy                                & numpy                 & 1.23.4           \\
-        \rowcolor[gray]{0.9}
+        \hline
         Pandas                               & pandas                & 1.5.0            \\
         \hline
     \end{tabularx}
@@ -210,6 +211,7 @@ The nested cross-validation approach utilized is adapted from \cite{preotiuc-pie
         \textbf{Parameter}        & \textbf{Value}           \\
         \hline
         Outer loop iterations     & 6                        \\
+        \rowcolor[gray]{0.9}
         Inner loop iterations     & 4                        \\
         Random Seed               & 2023                     \\
         \hline
@@ -218,6 +220,7 @@ The nested cross-validation approach utilized is adapted from \cite{preotiuc-pie
         \textbf{Hyperparameter}   & \textbf{Value}           \\
         \hline
         No. of Epochs             & 4                        \\
+        \rowcolor[gray]{0.9}
         Learning Rate             & [1e-5, 5e-6, 5e-5, 3e-5] \\
         All other hyperparameters & Model defaults           \\
         \hline
@@ -248,6 +251,7 @@ To ensure the balance of classes is maintained for the training and evaluation s
         \textbf{Parameter}        & \textbf{Value}                       \\
         \hline
         No. of iterations         & 3                                    \\
+        \rowcolor[gray]{0.9}
         Random Seed               & 2023                                 \\
         \hline
         \hline
@@ -255,6 +259,7 @@ To ensure the balance of classes is maintained for the training and evaluation s
         \textbf{Hyperparameter}   & \textbf{Value}                       \\
         \hline
         No. of Epochs             & 4                                    \\
+        \rowcolor[gray]{0.9}
         Learning Rate             & Best learning rate from Experiment 1 \\
         All other hyperparameters & Model defaults                       \\
         \hline

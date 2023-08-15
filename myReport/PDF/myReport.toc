@@ -38,5 +38,6 @@
 \contentsline {section}{\numberline {A.3}Token distribution after tokenization}{28}{}%
 \contentsline {chapter}{\numberline {B}Other references}{30}{}%
 \contentsline {section}{\numberline {B.1}Code Repository}{30}{}%
-\contentsline {section}{\numberline {B.2}Model references}{30}{}%
-\contentsline {section}{\numberline {B.3}Evaluation metrics references}{30}{}%
+\contentsline {section}{\numberline {B.2}References for models used in experiment sets 1 and 2}{30}{}%
+\contentsline {section}{\numberline {B.3}References for other models used}{30}{}%
+\contentsline {section}{\numberline {B.4}Evaluation metrics references}{31}{}%

@@ -135,7 +135,7 @@ The act of complaining typically involves conveying a sense of negativity. The o
 Finally, examining some of the key statistical measures from the tweets dataset in Table \ref{tab: tweets_statistics}, we observe that complaint tweets tend to exhibit a higher average tweet length, both in terms of characters (96.7) and tokens (19.7). In contrast, random tweets and replies have a token count lower by 30\%, while non-complaint tweets possess an average of 14.6 tokens or 25\% fewer than complaint tweets. This disparity may stem from individuals employing diverse linguistic expressions to express their dissatisfaction or disappointment, or to communicate a Face Threatening Act directed at the subject of the complaint.
 
 \section{Comparision of model performance}
-As described in the previous chapter, to compare the performance of the models a nested cross-validation approach was adopted. As part of these experiments
+As described in the previous chapter, to compare the performance of the models a nested cross-validation approach was adopted. The cross-validation method finetuned the models using 4 learning rates, $l\:\epsilon\:[1e-5, 5e-6, 5e-5, 3e-5]$ with the best-performing model based on the F1 score being selected for the testing. 
 
 \begin{table}[htbp]
     \centering
@@ -145,15 +145,15 @@ As described in the previous chapter, to compare the performance of the models a
         \textbf{Model}          & \textbf{Mean Test Accuracy} & \textbf{Mean Test Precision} & \textbf{Mean Test Recall} & \textbf{Mean Test F1} & \textbf{Mean Test ROC AUC} \\
         \hline
         AlBERT base v2          & 0.879                       & 0.845                        & 0.811                     & 0.8268                & 0.864                      \\
-        BERTweet base           & \textbf{0.934}                       & \textbf{0.897}                        & \textbf{0.920}                     & \textbf{0.908}                 & \textbf{0.931}                      \\
+        BERTweet base           & \textbf{0.934}              & \textbf{0.897}               & \textbf{0.920}            & \textbf{0.908}        & \textbf{0.931}             \\
         BERT base uncased       & 0.905                       & 0.878                        & 0.854                     & 0.865                 & 0.894                      \\
-        BERT tiny               & \te0.772                       & 0.701                        & 0.627                     & 0.662                 & 0.739                      \\
+        BERT tiny               & \textit{0.772}              & \textit{0.701}               & \textit{0.627}            & \textit{0.662}        & \textit{0.739}             \\
         DistilBERT base uncased & 0.903                       & 0.872                        & 0.860                     & 0.863                 & 0.894                      \\
         MobileBERT uncased      & 0.887                       & 0.843                        & 0.843                     & 0.841                 & 0.877                      \\
         RoBERTa base            & 0.914                       & 0.886                        & 0.873                     & 0.879                 & 0.905                      \\
         \hline
     \end{tabularx}
-    \caption{Mean performance metrics for all models after nested cross validation for finetuning and testing.}
+    \caption{Mean performance metrics for all models after nested cross-validation for finetuning and testing. Results in bold indicate the best-performing model for that metric while italics are used for the worst-performing.}
     \label{tab: model_mean_metrics}
 \end{table}
 

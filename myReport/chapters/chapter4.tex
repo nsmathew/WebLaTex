@@ -137,7 +137,7 @@ Finally, examining some of the key statistical measures from the tweets dataset 
 \section{Comparision of model performance}
 As described in the previous chapter, to compare the performance of the models a nested cross-validation approach was adopted. The cross-validation method finetuned the models using 4 learning rates, $l\:\epsilon\:[1e-5, 5e-6, 5e-5, 3e-5]$ with the best-performing model based on the F1 score being selected for the testing. \\
 
-The best-performing model was found to be BERTweet with an F1 score of 0.908 and accuracy of 0.934 as shown in Table \ref{tab: model_mean_metrics}. BERTweet being pre-trained on a corpus of 850M tweets seems to give it a significant advantage in capturing the nuances of social media posts including informal language, typographic errors, use of slang and expressive lengthening and more specific characteristics of tweets such as the use of shorter messages, abbreviations and hashtags. Following 
+The best-performing model was found to be BERTweet with an F1 score of 0.908 and accuracy of 0.934 as shown in Table \ref{tab: model_mean_metrics}. BERTweet being pre-trained on a corpus of 850M tweets seems to give it a significant advantage in capturing the nuances of social media posts including informal language, typographic errors, use of slang and expressive lengthening and more specific characteristics of tweets such as the use of shorter messages, abbreviations and hashtags. RoBERTa was the next best performing model with an F1 of 0.879 and accuracy of 0.914. It was followed closely by BERT base and DistilBERT with F1 scores of 0.
 
 \begin{table}[htbp]
     \centering
@@ -145,7 +145,7 @@ The best-performing model was found to be BERTweet with an F1 score of 0.908 and
     \begin{tabularx}{\textwidth}{|X|X|X|X|X|X|}
         \hline
         \rowcolor[gray]{0.7}
-        \textbf{Model}                        & \textbf{Test Accuracy} & \textbf{Test Precision} & \textbf{Test Recall} & \textbf{Test F1} & \textbf{Test ROC AUC} \\
+        \textbf{Model}                        & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{ROC AUC} \\
         \hline
         AlBERT base v2                        & 0.879 (0.859)          & 0.845 (0.848)           & 0.811 (0.846)        & 0.827 (0.846)    & 0.864                 \\
         \rowcolor[gray]{0.9}

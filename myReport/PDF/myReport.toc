@@ -28,16 +28,16 @@
 \contentsline {chapter}{\numberline {4}Results and discussion}{17}{}%
 \contentsline {section}{\numberline {4.1}Data exploration}{17}{}%
 \contentsline {section}{\numberline {4.2}Comparision of model performance}{21}{}%
-\contentsline {section}{\numberline {4.3}Analysis of best performing model}{21}{}%
-\contentsline {section}{\numberline {4.4}Cross-domain results}{21}{}%
-\contentsline {chapter}{\numberline {5}Conclusions}{22}{}%
-\contentsline {chapter}{Appendices}{26}{}%
-\contentsline {chapter}{\numberline {A}Additional graphs and analysis}{27}{}%
-\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{27}{}%
-\contentsline {section}{\numberline {A.2}Sample data from dataset}{27}{}%
-\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{28}{}%
-\contentsline {chapter}{\numberline {B}Other references}{30}{}%
-\contentsline {section}{\numberline {B.1}Code Repository}{30}{}%
-\contentsline {section}{\numberline {B.2}References for models used in experiment sets 1 and 2}{30}{}%
-\contentsline {section}{\numberline {B.3}References for other models used}{30}{}%
-\contentsline {section}{\numberline {B.4}Evaluation metrics references}{31}{}%
+\contentsline {section}{\numberline {4.3}Analysis of best performing model}{22}{}%
+\contentsline {section}{\numberline {4.4}Cross-domain results}{22}{}%
+\contentsline {chapter}{\numberline {5}Conclusions}{23}{}%
+\contentsline {chapter}{Appendices}{27}{}%
+\contentsline {chapter}{\numberline {A}Additional graphs and analysis}{28}{}%
+\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{28}{}%
+\contentsline {section}{\numberline {A.2}Sample data from dataset}{28}{}%
+\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{29}{}%
+\contentsline {chapter}{\numberline {B}Other references}{31}{}%
+\contentsline {section}{\numberline {B.1}Code Repository}{31}{}%
+\contentsline {section}{\numberline {B.2}References for models used in experiment sets 1 and 2}{31}{}%
+\contentsline {section}{\numberline {B.3}References for other models used}{31}{}%
+\contentsline {section}{\numberline {B.4}Evaluation metrics references}{32}{}%

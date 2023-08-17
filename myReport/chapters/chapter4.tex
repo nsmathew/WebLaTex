@@ -137,25 +137,29 @@ Finally, examining some of the key statistical measures from the tweets dataset 
 \section{Comparision of model performance}
 As described in the previous chapter, to compare the performance of the models a nested cross-validation approach was adopted. The cross-validation method finetuned the models using 4 learning rates, $l\:\epsilon\:[1e-5, 5e-6, 5e-5, 3e-5]$ with the best-performing model based on the F1 score being selected for the testing. \\
 
-The best performing model was found to be BERTweet with a F1 score of 0.908 and accuracy of 0.934. 
+The best-performing model was found to be BERTweet with an F1 score of 0.908 and accuracy of 0.934, followed by RoBERTa with 0.879 and 0.914 for F1 and accuracy respectively. BERTweet being pre-trained on a corpus of 850M tweets seems to give it a significant advantage in capturing the nuances of social media posts including informal language, typographic errors, use of slang and more specific characteristics of tweets such as use of shorter texts and hashtags. 
 
 \begin{table}[htbp]
     \centering
-    \begin{tabularx}{\textwidth}{|l|X|X|X|X|X|}
+    \small % Set font size to \small
+    \begin{tabularx}{\textwidth}{|X|X|X|X|X|X|}
         \hline
         \rowcolor[gray]{0.7}
-        \textbf{Model}          & \textbf{Mean Test Accuracy} & \textbf{Mean Test Precision} & \textbf{Mean Test Recall} & \textbf{Mean Test F1} & \textbf{Mean Test ROC AUC} \\
+        \textbf{Model}                        & \textbf{Test Accuracy} & \textbf{Test Precision} & \textbf{Test Recall} & \textbf{Test F1} & \textbf{Test ROC AUC} \\
         \hline
-        AlBERT base v2          & 0.879                       & 0.845                        & 0.811                     & 0.8268                & 0.864                      \\
-        BERTweet base           & \textbf{0.934}              & \textbf{0.897}               & \textbf{0.920}            & \textbf{0.908}        & \textbf{0.931}             \\
-        BERT base uncased       & 0.905                       & 0.878                        & 0.854                     & 0.865                 & 0.894                      \\
-        BERT tiny               & \textit{0.772}              & \textit{0.701}               & \textit{0.627}            & \textit{0.662}        & \textit{0.739}             \\
-        DistilBERT base uncased & 0.903                       & 0.872                        & 0.860                     & 0.863                 & 0.894                      \\
-        MobileBERT uncased      & 0.887                       & 0.843                        & 0.843                     & 0.841                 & 0.877                      \\
-        RoBERTa base            & 0.914                       & 0.886                        & 0.873                     & 0.879                 & 0.905                      \\
+        AlBERT base v2                        & 0.879 (0.859)          & 0.845 (0.848)           & 0.811 (0.846)        & 0.827 (0.846)    & 0.864                 \\
+        \rowcolor[gray]{0.9}
+        \(\uparrow\) BERTweet base            & \textbf{0.934}         & \textbf{0.897}          & \textbf{0.920}       & \textbf{0.908}   & \textbf{0.931}        \\
+        BERT base uncased                     & 0.905 (0.88)           & 0.878  (0.871)          & 0.854  (0.873)       & 0.865 (0.87)     & 0.894                 \\
+        \rowcolor[gray]{0.9}
+        \(\downarrow\) BERT tiny \vspace{10pt} & 0.772                  & 0.701                   & 0.627                & 0.662            & 0.739                 \\
+        DistilBERT base uncased               & 0.903                  & 0.872                   & 0.860                & 0.863            & 0.894                 \\
+        \rowcolor[gray]{0.9}
+        MobileBERT uncased                    & 0.887                  & 0.843                   & 0.843                & 0.841            & 0.877                 \\
+        RoBERTa base                          & 0.914 (0.876)          & 0.886 (0.866)           & 0.873 (0.869)        & 0.879 (0.866)    & 0.905                 \\
         \hline
     \end{tabularx}
-    \caption{Mean performance metrics for all models after nested cross-validation for finetuning and testing. Results in bold indicate the best-performing model for that metric while italics are used for the worst-performing.}
+    \caption{Mean performance metrics for all models after nested cross-validation for finetuning and testing. The highest scores are in bold. \(\uparrow\) is the best performing and \(\downarrow\) is the worst performing model. Numbers in () are the results from \cite{jin_complaint_2020}.}
     \label{tab: model_mean_metrics}
 \end{table}
 

@@ -10,6 +10,7 @@
 \contentsline {table}{\numberline {3.6}{\ignorespaces The choice of key parameters and hyperparameters used for Experiment 2. Refer to the Chapter on results for the model and learning rate used for this experiment. \relax }}{15}{}%
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Statistics of tweets in the dataset.\relax }}{20}{}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Mean performance metrics for all models after nested cross validation for finetuning and testing.\relax }}{21}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {A.1}{\ignorespaces The nine domains and the distribution of tweets that are complaints and those that are not from the latest of the dataset available at https://archive.org/details/complaint\_severity\_data and as used for the experiments. Additionally, the table includes the number of random tweets and replies introduced into the dataset by the authors for a more proportionate representation of the classes.\relax }}{27}{}%

@@ -99,9 +99,9 @@ The act of complaining typically involves conveying a sense of negativity. The o
         \rowcolor[gray]{0.7}
         \textbf{Statistic}              & \textbf{All Tweets} & \textbf{Complaints} & \textbf{Not Complaints} & \textbf{Random} \\
         \hline
-        Number of tweets                & 3,               & 1232               & 742                     & 1475           \\
+        Number of tweets                & 3,                  & 1232                & 742                     & 1475            \\
         \rowcolor[gray]{0.9}
-        Number of unique tweets         & 3395               & 1232               & 737                     & 1427            \\
+        Number of unique tweets         & 3395                & 1232                & 737                     & 1427            \\
         \hline
         \hline
         Max tweet length (char.)        & 297                 & 297                 & 266                     & 144             \\
@@ -113,9 +113,9 @@ The act of complaining typically involves conveying a sense of negativity. The o
         Standard Deviation tweet length & 41.4                & 40.5                & 38.9                    & 37.5            \\
         \hline
         \hline
-        Total number of tokens          & 55169              & 24260              & 10839                  & 20070          \\
+        Total number of tokens          & 55169               & 24260               & 10839                   & 20070           \\
         \rowcolor[gray]{0.9}
-        No. of unique tokens            & 7937               & 4031               & 2558                   & 4386           \\
+        No. of unique tokens            & 7937                & 4031                & 2558                    & 4386            \\
         Maximum tokens                  & 57                  & 57                  & 55                      & 39              \\
         \rowcolor[gray]{0.9}
         Minimum tokens                  & 1                   & 2                   & 1                       & 1               \\
@@ -125,7 +125,7 @@ The act of complaining typically involves conveying a sense of negativity. The o
         Standard Deviation for tokens   & 8.6                 & 8.4                 & 8.0                     & 8.0             \\
         \hline
         \hline
-        Mean punctuation count       & 3.4                 & 3.9                 & 2.7                     & 3.3             \\
+        Mean punctuation count          & 3.4                 & 3.9                 & 2.7                     & 3.3             \\
         \hline
     \end{tabularx}
     \caption{Statistics of tweets in the dataset.}
@@ -136,6 +136,26 @@ Finally, examining some of the key statistical measures from the tweets dataset 
 
 \section{Comparision of model performance}
 As described in the previous chapter, to compare the performance of the models a nested cross-validation approach was adopted. As part of these experiments
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabularx}{\textwidth}{|l|X|X|X|X|X|}
+        \hline
+        \rowcolor[gray]{0.7}
+        \textbf{Model}          & \textbf{Mean Test Accuracy} & \textbf{Mean Test Precision} & \textbf{Mean Test Recall} & \textbf{Mean Test F1} & \textbf{Mean Test ROC AUC} \\
+        \hline
+        AlBERT base v2          & 0.879                       & 0.845                        & 0.811                     & 0.8268                & 0.864                      \\
+        BERTweet base           & \textbf{0.934}                       & \textbf{0.897}                        & \textbf{0.920}                     & \textbf{0.908}                 & \textbf{0.931}                      \\
+        BERT base uncased       & 0.905                       & 0.878                        & 0.854                     & 0.865                 & 0.894                      \\
+        BERT tiny               & \te0.772                       & 0.701                        & 0.627                     & 0.662                 & 0.739                      \\
+        DistilBERT base uncased & 0.903                       & 0.872                        & 0.860                     & 0.863                 & 0.894                      \\
+        MobileBERT uncased      & 0.887                       & 0.843                        & 0.843                     & 0.841                 & 0.877                      \\
+        RoBERTa base            & 0.914                       & 0.886                        & 0.873                     & 0.879                 & 0.905                      \\
+        \hline
+    \end{tabularx}
+    \caption{Mean performance metrics for all models after nested cross validation for finetuning and testing.}
+    \label{tab: model_mean_metrics}
+\end{table}
 
 \section{Analysis of best performing model}
 **TO UPDATE**

@@ -1,9 +1,10 @@
-\chapter{Additional graphs and analysis}
+\chapter{Other supporting analysis and graphs}
 
 \section{Breakdown of tweets in full dataset}
 \label{sec: apdxa_fulldataset}
 \begin{table}[ht]
     \captionsetup{font=small}
+    \small
     \centering
     \begin{tabularx}{\textwidth}{|X|c|c|c|}
         \hline
@@ -46,9 +47,9 @@
 \end{table}
 
 \section{Sample data from dataset}
-The \texttt{binarylabel} represents the label for complaints with 1 indicating the tweet is a complaint. Columns \texttt{id} and \texttt{multilabel} are not used for the experiments.
 \begin{table}[ht]
     \captionsetup{font=small}
+    \small
     \centering
     \begin{tabularx}{\textwidth}{|l|X|c|c|l|}
         \hline
@@ -64,6 +65,9 @@ The \texttt{binarylabel} represents the label for complaints with 1 indicating t
     \label{tab: apdx_sample_data}
 \end{table}
 
+The \texttt{binarylabel} represents the label for complaints with 1 indicating the tweet is a complaint. Columns \texttt{id} and \texttt{multilabel} are not used for the experiments.
+
+
 
 \section{Token distribution after tokenization}
 \label{sec: apdxa_token_dist}
@@ -73,7 +77,7 @@ The graphs in Figure \ref{fig: apdxa_tokens} show the distribution of token size
     \captionsetup{font=small}
     \begin{subfigure}[b]{0.48\textwidth}
         \includegraphics[width=\textwidth]{figures/token_pp_hist_albert-base-v2.png}
-        \caption{Albert base}
+        \caption{AlBERT base}
         \label{fig: token_pp_hist_albert}
     \end{subfigure}
     \hfill
@@ -101,7 +105,7 @@ The graphs in Figure \ref{fig: apdxa_tokens} show the distribution of token size
     \hfill
     \begin{subfigure}[b]{0.48\textwidth}
         \includegraphics[width=\textwidth]{figures/token_pp_hist_roberta-base.png}
-        \caption{Roberta base}
+        \caption{RoBERTa base}
         \label{fig: token_pp_hist_roberta}
     \end{subfigure}
     \caption{The token count distribution for the full dataset of 3,449 tweets for all models.}

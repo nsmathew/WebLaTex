@@ -11,6 +11,7 @@ The data set created by \cite{preotiuc-pietro_automatically_2019} and further us
 A cross-industry representative collection of 93 customer service handles of organisations on Twitter were identified manually. These handles were then categorised into 9 domains based on their industry type. Since an organisation could have business activities across domains, the assigned domain was based on the products or services receiving the most number of complaints. All the domains used in the experiments are listed in Table \ref{tab: domains}.
 \begin{table}[ht]
     \captionsetup{font=small}
+    \small
     \centering
     \begin{tabularx}{\textwidth}{|X|c|c|c|}
         \hline
@@ -43,6 +44,7 @@ A cross-industry representative collection of 93 customer service handles of org
 The data was extracted from Twitter via the Twitter API\footnote{\url{https://developer.twitter.com/en}}. The latest 3,200 tweets at the time of the collection exercise were extracted and the original tweets to which the customer service handles responded were identified. Random sampling equally for each handle, 1,971 tweets were then identified where there was a response from the support's handle. To ensure a more balanced and diverse dataset, 1,478 randomly sampled tweets were added to the dataset. 739 tweets were replies to other handles (outside the 93 identified) and the remaining 739 tweets were not addressed to any Twitter handle. Table \ref{tab: tweet_counts} shows the breakdown of the total population of the tweets dataset. Tweets were filtered for English using langid.py \cite{luiLangidPyOfftheshelf2012}. Retweets were excluded and all usernames and URLs were anonymised and replaced with placeholder tokens.
 \begin{table}[ht]
     \captionsetup{font=small}
+    \small
     \centering
     \begin{tabularx}{\textwidth}{|X|c|c|c|}
         \hline
@@ -83,6 +85,7 @@ For the experiments, the BERT large language model along with a number of its va
 
 \begin{table}[ht]
     \captionsetup{font=small}
+    \small
     \centering
     \begin{tabularx}{\textwidth}{|X|X|X|}
         \hline
@@ -113,6 +116,7 @@ The transformer models used are listed in table \ref{tab: model_dtls} along with
 
 \begin{table}[ht]
     \captionsetup{font=small}
+    \small
     \centering
     \begin{tabularx}{\textwidth}{|l|X|l|X|}
         \hline
@@ -176,26 +180,26 @@ An example tweet from the input data is shown in \textbf{A}. The pre-processing 
 \textbf{A - Tweet from input dataset}\newline
 
 \begin{adjustbox}{minipage={\textwidth},fbox}
-    \begin{verbatim}love it when i almost die rear ended by a semi cause my jeep turns off again 
-. one day they will fix it #jeepsucks #chrysler\end{verbatim}
+    \texttt{love it when i almost die rear ended by a semi cause my jeep turns off again 
+. one day they will fix it \#jeepsucks \#chrysler}
 \end{adjustbox} \newline\newline
 
 \textbf{B - Encoding the input}\newline
 
 \begin{adjustbox}{minipage={\textwidth},fbox}
-    \begin{verbatim}[101, 2293, 2009, 2043, 1045, 2471, 3280, 4373, 3092, 2011, 1037, 4100, 3426, 
-2026, 14007, 4332, 2125, 2153, 1012, 2028, 2154, 2027, 2097, 8081, 2009, 1001, 
-14007, 6342, 10603, 1001, 17714, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-0, 0, 0, 0, 0]\end{verbatim}
+    \texttt{[101, 2293, 2009, 2043, 1045, 2471, 3280, 4373, 3092, 2011, 1037, 4100, 3426,
+                2026, 14007, 4332, 2125, 2153, 1012, 2028, 2154, 2027, 2097, 8081, 2009, 1001,
+                14007, 6342, 10603, 1001, 17714, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                0, 0, 0, 0, 0]}
 \end{adjustbox} \newline\newline
 
 \textbf{C - Decoding the tokenized input}\newline
 
 \begin{adjustbox}{minipage={\textwidth},fbox}
-    \begin{verbatim}[CLS] love it when i almost die rear ended by a semi cause my jeep turns off 
-again. one day they will fix it # jeepsucks # chrysler [SEP] [PAD] [PAD] [PAD] 
+    \texttt{[CLS] love it when i almost die rear ended by a semi cause my jeep turns off 
+again. one day they will fix it \# jeepsucks \# chrysler [SEP] [PAD] [PAD] [PAD] 
 [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] 
-[PAD] [PAD]\end{verbatim}
+[PAD] [PAD]}
 \end{adjustbox}\\ \\
 
 \section{Experiments set 1: Performance comparison of BERT variants}
@@ -204,6 +208,7 @@ In the first experiment, the objective is to identify which of the models perfor
 The nested cross-validation approach utilized is adapted from \cite{preotiuc-pietro_automatically_2019}. The outer loop consists of 6 iterations and the inner loop of 4 iterations. Each outer loop includes a stratified split of the entire dataset into train (\textbf{A}) and test (\textbf{B}) datasets. Within the inner loop, \textbf{A} is further split into inner train and dev datasets using stratified split with each iteration, finetuning and validating on 1 of the 4 learning rates set for hyperparameter tuning. The best model from the inner loop is selected based on the F1 score on the dev dataset. This best model is used to perform inference using the test dataset, \textbf{B}. At the end of the 6 outer loop iterations, the mean of the performance metrics is calculated as the final metrics for that model. While \cite{preotiuc-pietro_automatically_2019} used 10 iterations for the outer loop, it has been restricted to 6 for the experiments considering significant variations were not observed on the metrics. This is likely due to the 6 stratified splits capturing sufficient variability in the input dataset.\\
 \begin{table}[ht]
     \captionsetup{font=small}
+    \small
     \centering
     \begin{tabularx}{\textwidth}{|X|c|}
         \hline
@@ -244,6 +249,7 @@ To ensure the balance of classes is maintained for the training and evaluation s
 
 \begin{table}[ht]
     \captionsetup{font=small}
+    \small
     \centering
     \begin{tabularx}{\textwidth}{|X|c|}
         \hline

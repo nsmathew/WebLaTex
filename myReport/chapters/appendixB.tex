@@ -2,7 +2,7 @@
 \chapter{Other references}
 
 \section{Code Repository}
-The code (Jupyter notebook) used for the experiments in this report and the results from the finetuning and testing are available at \url{https://github.com/nsmathew/complaints}.
+The code (Jupyter notebook) used for the experiments in this report and the results from the finetuning and testing are available at \url{https://github.com/nsmathew/transformers_complaints}.
 
 \section{References for models used in experiment sets 1 and 2}
 
@@ -15,7 +15,7 @@ The code (Jupyter notebook) used for the experiments in this report and the resu
         \textbf{Model}            & \textbf{Model Documentation}                                   \\
         \hline
 
-        ALBERT base               & \small{\url{https://huggingface.co/albert-base-v2}}            \\
+        AlBERT base               & \small{\url{https://huggingface.co/albert-base-v2}}            \\
         \hline
         BERT base (uncased)       & \small{\url{https://huggingface.co/bert-base-uncased}}         \\
         \hline
@@ -27,7 +27,7 @@ The code (Jupyter notebook) used for the experiments in this report and the resu
         \hline
         MobileBERT (uncased)      & \small{\url{https://huggingface.co/google/mobilebert-uncased}} \\
         \hline
-        ROBERTA base              & \small{\url{https://huggingface.co/roberta-base}}              \\
+        RoBERTa base              & \small{\url{https://huggingface.co/roberta-base}}              \\
         \hline
     \end{tabularx}
     \caption{The transformer models used for the experiments and links to their documentation.}
@@ -58,18 +58,22 @@ The code (Jupyter notebook) used for the experiments in this report and the resu
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
         \rowcolor[gray]{0.7}
-        \textbf{Metric} & \textbf{Metric Documentation}                                         \\
+        \textbf{Metric}                  & \textbf{Metric Documentation}                                                    \\
         \hline
 
-        Accuracy        & \small{\url{https://huggingface.co/spaces/evaluate-metric/accuracy}}  \\
+        Accuracy                         & \small{\url{https://huggingface.co/spaces/evaluate-metric/accuracy}}             \\
         \hline
-        F1              & \small{\url{https://huggingface.co/spaces/evaluate-metric/f1}}        \\
+        F1                               & \small{\url{https://huggingface.co/spaces/evaluate-metric/f1}}                   \\
         \hline
-        Precision       & \small{\url{https://huggingface.co/spaces/evaluate-metric/precision}} \\
+        Precision                        & \small{\url{https://huggingface.co/spaces/evaluate-metric/precision}}            \\
         \hline
-        Recall          & \small{\url{https://huggingface.co/spaces/evaluate-metric/recall}}    \\
+        Recall                           & \small{\url{https://huggingface.co/spaces/evaluate-metric/recall}}               \\
         \hline
-        ROC AUC         & \small{\url{https://huggingface.co/spaces/evaluate-metric/roc_auc}}   \\
+        ROC AUC                          & \small{\url{https://huggingface.co/spaces/evaluate-metric/roc_auc}}              \\
+        \hline
+        Matthews correlation coefficient & \small{\url{https://huggingface.co/spaces/evaluate-metric/matthews_correlation}} \\
+        \hline
+        Confusion Matrix                 & \small{\url{https://huggingface.co/spaces/BucketHeadP65/confusion_matrix}}       \\
         \hline
     \end{tabularx}
     \caption{The metrics used for evaluating the performance of the experiments and links to their documentation.}

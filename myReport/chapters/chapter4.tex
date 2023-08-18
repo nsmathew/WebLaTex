@@ -93,6 +93,7 @@ The act of complaining typically involves conveying a sense of negativity. The o
 
 \begin{table}[htbp]
     \captionsetup{font=small}
+    \small
     \centering
     \begin{tabularx}{\textwidth}{|l|X|X|X|X|}
         \hline
@@ -139,8 +140,7 @@ As described in the previous chapter, to compare the performance of the models a
 
 The best-performing model was found to be BERTweet with a mean F1 score of 0.908 (sd: $\pm$0.01) and accuracy of 0.934 (sd: $\pm$0.01) as shown in Table \ref{tab: model_mean_metrics}. BERTweet being pre-trained on a corpus of 850M tweets seems to give it a significant advantage in capturing the nuances of social media posts including informal language, typographic errors, use of slang and expressive lengthening and more specific characteristics of tweets such as the use of shorter messages, abbreviations and hashtags. RoBERTa was the next best performing model with an F1 of 0.879 ($\pm$0.03) and an accuracy of 0.914 ($\pm$0.02). It was followed by BERT base and DistilBERT with F1 scores of 0.865 ($\pm$0.02) and 0.863 ($\pm$0.02) respectively. \\
 
-The Table \ref{tab: model_mean_metrics} also shows the evaluation metrics from \cite{jin_complaint_2020} in []. Although the nested cross-validation is run with a different configuration as described in the previous chapter, it allows for some form of indicative comparison. RoBERTa shows an improved
-
+Table \ref{tab: model_mean_metrics} also shows the prediction metrics from \cite{jin_complaint_2020} in [] which is considered the baseline performance for this task. Although the nested cross-validation is run with a different configuration compared to \cite{jin_complaint_2020} as described in the previous chapter, it allows for some form of indicative comparison. Based on the F1, RoBERTa shows a slight improvement while BERT base and AlBERT do not improve. However, more importantly, BERTweet shows better performance when compared to the baseline.
 \begin{table}[htbp]
     \centering
     \small % Set font size to \small
@@ -161,7 +161,7 @@ The Table \ref{tab: model_mean_metrics} also shows the evaluation metrics from \
         RoBERTa base                           & 0.914 [0.876]     & 0.886 [0.866]      & 0.873 [0.869]   & 0.879 [0.866]  & 0.905            \\
         \hline
     \end{tabularx}
-    \caption{Mean performance metrics for all models after nested cross-validation for finetuning and testing. The highest scores are in bold. \(\uparrow\) is the best performing and \(\downarrow\) is the worst performing model. Numbers in [] are the results from \cite{jin_complaint_2020}.}
+    \caption{Mean prediction performance metrics for all models after nested cross-validation for finetuning and testing. The highest scores are in bold. \(\uparrow\) is the best performing and \(\downarrow\) is the worst performing model. Where available, numbers in [] are the results from \cite{jin_complaint_2020}.}
     \label{tab: model_mean_metrics}
 \end{table}
 

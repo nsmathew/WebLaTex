@@ -184,7 +184,7 @@ Examining the models characterized as lightweight based on their architecture an
 Figure \ref{fig: model_size_vs_perf} displays the relative variance in model performance when compared to BERTweet based on F1, alongside the corresponding model sizes or the number of parameters. Notably, ALBERT and MobileBERT exhibit relatively lower performance discrepancy of only 8.9\% and 7.4\%, considering the model sizes are lower significantly by 90\% and 77\% respectively. Similarly, DistilBERT demonstrates a performance deficit of merely 4.9\%, akin to that of BERT base, while having a 44\% reduction in model size. This correlation suggests that the knowledge distillation compression technique applied during the pretraining phase could be playing a pivotal role in enhancing DistilBERT's predictive capabilities \cite{sanhDistilBERTDistilledVersion2020}.
 
 \subsubsection{Analyis of finetuning and inference time}
-Next, analysing the time required for inference and training or in the scope of the experiments, finetuning we fine 
+Next, the time required for inference and training or in the scope of the experiments, finetuning is analysed and shown in \ref{fig: mean_time_taken}. BERT Tiny as expected has the lowest mean training and inference time.
 \begin{figure}[htbp]
     \centering
     \captionsetup{font=small}
@@ -201,7 +201,7 @@ Next, analysing the time required for inference and training or in the scope of 
         \caption{Mean inference time}
         \label{fig: mean_inf_time}
     \end{subfigure}
-    \caption{Mean time taken for finetuning and inference during experiments set 1.}
+    \caption{Mean time taken for finetuning and inference during experiments set 1. BERTweet with the best predictive model is highlighted in red.}
     \label{fig: mean_time_taken}
 \end{figure}
 

@@ -8,7 +8,7 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Top n-grams(excl. unigrams) and hashtags in the complaint tweets.\relax }}{18}{}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Distribution of positive, negative and neutral sentiments in the tweets.\relax }}{20}{}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Relative performance of models against BERTweet and model sizes. BERTweet's model size is 110M.\relax }}{22}{}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Mean inference time.\relax }}{23}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Mean time taken for finetuning and inference during experiments set 1.\relax }}{23}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {A.1}{\ignorespaces The token count distribution for the full dataset of 3,449 tweets for all models.\relax }}{30}{}%

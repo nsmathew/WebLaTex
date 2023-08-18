@@ -146,6 +146,8 @@ The best-performing model was found to be BERTweet with a mean F1 score of 0.908
 
 Table \ref{tab: model_mean_metrics} also shows the prediction metrics from \cite{jin_complaint_2020} in '[ ]' which is considered the baseline performance for this task. Although the nested cross-validation is run with a different configuration compared to \cite{jin_complaint_2020} as described in the previous chapter, it allows for some form of indicative comparison. Based on the F1, RoBERTa shows a slight improvement while BERT base and AlBERT do not improve. However, overall BERTweet provides the best predictive results for this task when compared to the baseline with an F1 score of 0.908.
 
+Table \ref{tab: model_mean_metrics} presents the prediction metrics sourced from \cite{jin_complaint_2020}, enclosed within '[ ]', which serves as the established baseline performance for this task. Despite the variation in nested cross-validation configuration, as outlined in the preceding chapter, a level of preliminary comparison becomes feasible. In terms of F1 scores, RoBERTa shows marginal improvement, while BERT base and ALBERT display no noticeable improvement. Nonetheless, when considering the task against the baseline, BERTweet emerges as the optimal predictor, achieving an impressive F1 score of 0.908.
+
 \begin{table}[htbp]
     \centering
     \small % Set font size to \small
@@ -171,7 +173,7 @@ Table \ref{tab: model_mean_metrics} also shows the prediction metrics from \cite
 \end{table}
 
 \subsection{Performance of 'lightweight' models}
-Looking at the models that are considered lightweight based on their architecture and number of parameters, DistilBERT performs the best, followed by MobileBERT and AlBERT with F1 scores of 0.863 (sd: $\pm$0.02), 0.841 (sd: $\pm$0.02) and 0.827 (sd: $\pm$0.05) respectively. BERT Tiny, the smallest model used in the experiments shows a significant gap in performance with an F1 score of only 0.662 (sd: $\pm$0.04) or lower by 27.6\%. There appears to be a significant performance penalty in this case from the reduced model size although the model is expected to perform better in the context of a knowledge distillation teacher \cite{turcWellReadStudentsLearn2019} which has not been tested here. In Figure \ref{fig: model_size_vs_perf} the relative difference in performance of the models against BERTweet and their corresponding model sizes are shown. ALBERT and MobileBERT while having significantly lower model sizes by 90\% and  have a 
+Examining the models characterized as lightweight based on their architecture and parameter count, DistilBERT emerges as the top performer, achieving an F1 score of 0.863 (sd: $\pm$0.02). MobileBERT and ALBERT follow suit with F1 scores of 0.841 (sd: $\pm$0.02) and 0.827 (sd: $\pm$0.05) respectively. On the other hand, BERT Tiny, the smallest model employed in the experiments, exhibits a notable performance gap, achieving only an F1 score of 0.662 (sd: $\pm$0.04), which is lower by 27.6\% in comparison to BERTweet. This points to a likely and significant performance penalty in this case from the reduced model size although it is expected to perform better in the context of a knowledge distillation teacher \cite{turcWellReadStudentsLearn2019}, something that has not been tested here.
 
 \begin{figure}[htb]
     \centering
@@ -181,7 +183,10 @@ Looking at the models that are considered lightweight based on their architectur
     \label{fig: model_size_vs_perf}
 \end{figure}
 
+The Figure \ref{fig: model_size_vs_perf} displays the relative variance in model performance when compared to BERTweet, alongside the corresponding sizes of the models. Notably, ALBERT and MobileBERT exhibit relatively lower performance discrepancy of only 8.9\% and 7.4\%, despite having considerably reduced model sizes by 90\% and 77\% respectively. Similarly, DistilBERT demonstrates a performance deficit of merely 4.9\%, akin to that of BERT base, while having a 44\% reduction in model size. This correlation suggests that the knowledge distillation compression technique applied during the pretraining phase could be playing a pivotal role in enhancing DistilBERT's predictive capabilities \cite{sanhDistilBERTDistilledVersion2020}.
+
 \subsubsection{Analyis of finetuning and inference time}
+
 \begin{figure}[htbp]
     \centering
     \captionsetup{font=small}
@@ -198,7 +203,7 @@ Looking at the models that are considered lightweight based on their architectur
         \caption{Mean inference time}
         \label{fig: mean_inf_time}
     \end{subfigure}
-    \caption{Mean inference time.}
+    \caption{Mean time taken for finetuning and inference during experiments set 1.}
     \label{fig: mean_time_taken}
 \end{figure}
 

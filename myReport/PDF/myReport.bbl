@@ -130,6 +130,11 @@
 \newblock {\em MIT Sloan management review 52}, 3 (2011), 37.
 \newblock Place: Cambridge Publisher: Sloan Management Review.
 
+\bibitem{turcWellReadStudentsLearn2019}
+{\sc Turc, I., Chang, M.-W., Lee, K., and Toutanova, K.}
+\newblock Well-{Read} {Students} {Learn} {Better}: {On} the {Importance} of {Pre}-training {Compact} {Models}, Sept. 2019.
+\newblock arXiv:1908.08962 [cs].
+
 \bibitem{vaswaniAttentionAllYou2023a}
 {\sc Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N., Kaiser, L., and Polosukhin, I.}
 \newblock Attention {Is} {All} {You} {Need}, Aug. 2023.

@@ -519,6 +519,11 @@ INPUT ./figures/sentiment.png
 INPUT figures/sentiment.png
 INPUT ./figures/sentiment.png
 INPUT ./figures/sentiment.png
+INPUT ./figures/model_size_vs_perf.png
+INPUT ./figures/model_size_vs_perf.png
+INPUT figures/model_size_vs_perf.png
+INPUT ./figures/model_size_vs_perf.png
+INPUT ./figures/model_size_vs_perf.png
 INPUT ./chapters/chapter5.tex
 INPUT chapters/chapter5.tex
 INPUT ./chapters/chapter5.tex

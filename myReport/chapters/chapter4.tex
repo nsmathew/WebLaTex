@@ -1,9 +1,9 @@
 \chapter{Results and discussion}
 
 \section{Data exploration}
-As described earlier in Chapter 3, the data for the experiments is from Twitter. It was extracted and pre-processed by \cite{preotiuc-pietro_automatically_2019} and further enhanced with the labels for complaint severity by \cite{jinModelingSeverityComplaints2021}. What follows are the key findings from the exploratory data analysis performed. Additionally, some minor differences in the distribution of the tweets across the domains are observed between the latest version of the dataset available in the public domain\footnote{\url{https://archive.org/details/complaint_severity_data}} and the distribution described in the original paper. Since the variations are minor (0.5 to 2\%), any potential impact on the model performance should be insignificant in the context of the objectives of the experiments. Refer \ref{sec: apdxa_fulldataset} for the full breakdown of the dataset used
+As described earlier in Chapter 3, the data for the experiments is from Twitter. It was extracted and pre-processed by \cite{preotiuc-pietro_automatically_2019} and further enhanced with the labels for complaint severity by \cite{jinModelingSeverityComplaints2021}. What follows are the key findings from the exploratory data analysis performed. Additionally, some minor differences in the distribution of the tweets across the domains are observed between the latest version of the dataset available in the public domain\footnote{\url{https://archive.org/details/complaint_severity_data}} and the distribution described in the original paper. Since the variations are minor (0.5 to 2\%), any potential impact on the model performance should be insignificant in the context of the objectives of the experiments. Refer \ref{sec: apdxa_fulldataset} for the full breakdown of the dataset used here.
 
-
+\subsection{Domain and class distribution}
 \begin{figure}[htb]
     \centering
     \includegraphics[width=9cm]{figures/compl_non_random_dist.png}
@@ -57,7 +57,8 @@ The dataset comprises domains encompassing both complaint-related tweets and non
     \label{fig: top_ngrams_hashtags}
 \end{figure}
 
-Delving deeper into the language used in Twitter complaints, the top phrases are analysed by extracting the top 15 n-grams. As depicted in Figure \ref{fig: top_ngrams}, phrases used are to convey anticipation of resolution (such as "please help" and "need help"), express frustration (like "still waiting," "worst customer service," and "call back"), and pertain to broader customer service themes (for instance, "tracking number" and "customer care"). To elaborate further, sample tweets with these phrases are shown below. They showcase various characteristics previously discussed, including instances of Face Threatening Acts, feelings of betrayal, altruistic behaviour (warning others), as well as elements like sarcasm. These findings align with the definition of a complaint and the intentions of the speaker as outlined in previous chapters.\\
+\subsection{Linguistic analysis}
+Delving deeper into the language used in Twitter complaints, the top phrases are analysed by extracting the top 15 n-grams. As depicted in Figure \ref{fig: top_ngrams}, common phrases used are meant to convey anticipation of resolution (such as "please help" and "need help"), express frustration (like "still waiting," "worst customer service," and "call back"), and pertain to broader customer service themes (for instance, "tracking number" and "customer care"). To elaborate further, sample tweets with these phrases are shown below. They showcase various characteristics previously discussed, including instances of Face Threatening Acts, feelings of betrayal, altruistic behaviour (warning others), as well as elements like sarcasm. These findings align with the definition of a complaint and the intentions of the speaker as outlined in previous chapters.\\
 
 \textbf{Examples for expectation of rectification}
 \begin{quote}
@@ -77,10 +78,11 @@ Delving deeper into the language used in Twitter complaints, the top phrases are
     \textit{"\textbf{worst customer service} to-date <user> in greensboro off wendover . avoid this place and let's show them we have other choices . \#otherchoices"}
 \end{quote}
 
-Examination of the hashtags within the complaint tweets indicates that hashtags are predominantly used as a means of conveying frustration, as illustrated in Figure \ref{fig: top_hashtags}. Hashtags such as \texttt{\#nothappy}, \texttt{\#fail}, and \texttt{\#disappointed} serve as examples. Consequently, in addition to serving as an supplementary channel for expressing dissatisfaction, these hashtags also communicate negative sentiment. Apart from these particular types of hashtags, various brand-specific or product-specific are used as well. As per Twitter\footnote{\url{https://help.twitter.com/en/using-twitter/how-to-use-hashtags#}}, users utilize the symbol "\#" (hashtag) preceding a keyword or phrase significant to the context in their tweet to classify those tweets, facilitating their visibility in Twitter searches. Clicking or tapping on a hashtagged term within any message reveals additional Tweets containing the same hashtag. Hashtags can be inserted at any point within a Tweet. Frequently, words marked with hashtags that attain significant popularity transform into trending topics. \\
+Examination of the hashtags within the complaint tweets indicates that hashtags are predominantly used as a means of conveying frustration, as illustrated in Figure \ref{fig: top_hashtags}. Hashtags such as \texttt{\#nothappy}, \texttt{\#fail}, and \texttt{\#disappointed} serve as examples. Consequently, in addition to being used as a medium for expressing dissatisfaction, these hashtags also communicate negative sentiments. Apart from these particular types of hashtags, various brand-specific or product-specific hashtags are used as well. As per Twitter\footnote{\url{https://help.twitter.com/en/using-twitter/how-to-use-hashtags#}}, users utilize the symbol "\#" (hashtag) preceding a keyword or phrase significant to the context in their tweet to classify those tweets, facilitating their visibility in Twitter searches. Clicking or tapping on a hashtagged term within any message reveals additional Tweets containing the same hashtag. Hashtags can be inserted at any point within a Tweet. Frequently, words marked with hashtags that attain significant popularity transform into trending topics. \\
 
-However, focusing solely on the volumes, the presence of hashtags within the dataset, particularly in the context of complaints, is relatively low. Out of a total of 459 tweets, only 149 complaint tweets incorporate hashtags, constituting roughly 12\% of all complaint-related tweets. When excluding random tweets and replies, the tweets that are not complaints containing hashtags amount to only 67 instances. On average, tweets with at least one hashtag feature 1.56 hashtags. While the inclusion of hashtags may offer some assistance to the predictions by the models, their overall impact on the fine-tuning process could be quite limited.\\
+However, focusing solely on the volumes, the presence of hashtags within the dataset, particularly in the context of complaints, is relatively low. Out of a total of 459 tweets, only 149 complaint tweets incorporate hashtags, constituting roughly 12\% of all complaint-related tweets. When excluding random tweets and replies, the tweets that are not complaints containing hashtags amount to only 67 instances. On average, tweets with at least one hashtag feature 1.56 hashtags. While the inclusion of hashtags may offer some assistance to the predictions by the models, their overall impact on the fine-tuning process could be quite limited due to their low prevalance in the dataset.\\
 
+\subsection{Sentiment analysis}
 \begin{figure}[htb]
     \centering
     \includegraphics[width=9cm]{figures/sentiment.png}
@@ -89,8 +91,9 @@ However, focusing solely on the volumes, the presence of hashtags within the dat
     \label{fig: sentiment}
 \end{figure}
 
-The act of complaining typically involves conveying a sense of negativity. The outcome of sentiment analysis, conducted using pysentimiento's sentiment analysis tool \cite{perezPysentimientoPythonToolkit2021}, is depicted in Figure \ref{fig: sentiment}. As anticipated, the majority of complaint-related tweets convey some form of negative sentiment, while approximately a quarter of them exhibit a neutral sentiment. A couple of examples of such neutral sentiment tweets are as follows: \textit{"anyone know what's up with the geforce 500 series 580 gpx driver 275.33"} and \textit{"hi m order is 913181 did you revise the money ? if you did .. how about the shipping ?"}. These instances appear to involve raising a complaint while simultaneously posing a question that doesn't overtly express negative sentiment. While an undercurrent of dissatisfaction is evident, the situation has not escalated to the point requiring language which explicitly expresses negative sentiment. For tweets that are not complaints, the majority of them express neutral or positive sentiments.
+The act of complaining typically involves conveying a sense of negativity. The outcome of sentiment analysis, conducted using pysentimiento's sentiment analysis tool \cite{perezPysentimientoPythonToolkit2021}, is depicted in Figure \ref{fig: sentiment}. As expected, the majority of complaint-related tweets convey some form of negative sentiment, while approximately a quarter of them exhibit a neutral sentiment. A couple of examples of such neutral sentiment tweets are as follows: \textit{"anyone know what's up with the geforce 500 series 580 gpx driver 275.33"} and \textit{"hi m order is 913181 did you revise the money ? if you did .. how about the shipping ?"}. These instances appear to involve raising a complaint while simultaneously posing a question that doesn't overtly express negative sentiment. While an undercurrent of dissatisfaction is evident, the situation has not escalated to the point requiring language which explicitly expresses negative sentiment. For tweets that are not complaints, the majority of them express neutral or positive sentiments.
 
+\subsection{Key statistics}
 \begin{table}[htbp]
     \captionsetup{font=small}
     \small
@@ -135,12 +138,14 @@ The act of complaining typically involves conveying a sense of negativity. The o
 
 Finally, examining some of the key statistical measures from the tweets dataset in Table \ref{tab: tweets_statistics}, we observe that complaint tweets tend to exhibit a higher average tweet length, both in terms of characters (96.7) and tokens (19.7). In contrast, random tweets and replies have a token count lower by 30\%, while non-complaint tweets possess an average of 14.6 tokens or 25\% fewer than complaint tweets. This disparity may stem from individuals employing diverse linguistic expressions to express their dissatisfaction or disappointment, or to communicate a Face Threatening Act directed at the subject of the complaint.
 
-\section{Comparision of model performance}
-As described in the previous chapter, to compare the performance of the models a nested cross-validation approach was adopted. The cross-validation method finetuned the models using 4 learning rates, $l\:\epsilon\:[1e-5, 5e-6, 5e-5, 3e-5]$ with the best-performing model based on the F1 score being selected for the testing. \\
+\section{Experiment set 1 results: Comparision of model performance}
+As described in the previous chapter, to compare the performance of the models a nested cross-validation approach was adopted. The cross-validation method finetuned the models using 4 learning rates, $l\:\epsilon\:[1e-5, 5e-6, 5e-5, 3e-5]$ with the best-performing model based on the F1 score being selected for the testing for each iteration of the outer loop. \\
 
-The best-performing model was found to be BERTweet with a mean F1 score of 0.908 (sd: $\pm$0.01) and accuracy of 0.934 (sd: $\pm$0.01) as shown in Table \ref{tab: model_mean_metrics}. BERTweet being pre-trained on a corpus of 850M tweets seems to give it a significant advantage in capturing the nuances of social media posts including informal language, typographic errors, use of slang and expressive lengthening and more specific characteristics of tweets such as the use of shorter messages, abbreviations and hashtags. RoBERTa was the next best performing model with an F1 of 0.879 ($\pm$0.03) and an accuracy of 0.914 ($\pm$0.02). It was followed by BERT base and DistilBERT with F1 scores of 0.865 ($\pm$0.02) and 0.863 ($\pm$0.02) respectively. \\
+\subsection{Best predictive performance}
+The best-performing model was found to be BERTweet with a mean F1 score of 0.908 (sd: $\pm$0.01) and accuracy of 0.934 (sd: $\pm$0.01) as shown in Table \ref{tab: model_mean_metrics}. BERTweet being pre-trained on a corpus of 850M tweets seems to give it a significant advantage in capturing the nuances of social media posts including informal language, typographic errors, use of slang and expressive lengthening and more specific characteristics of tweets such as the use of shorter messages, abbreviations and hashtags. RoBERTa was the next best performing model with an F1 of 0.879 (sd: $\pm$0.03) and an accuracy of 0.914 (sd: $\pm$0.02). It was followed by BERT base and DistilBERT with F1 scores of 0.865 (sd: $\pm$0.02) and 0.863 (sd: $\pm$0.02) respectively. \\
 
-Table \ref{tab: model_mean_metrics} also shows the prediction metrics from \cite{jin_complaint_2020} in [] which is considered the baseline performance for this task. Although the nested cross-validation is run with a different configuration compared to \cite{jin_complaint_2020} as described in the previous chapter, it allows for some form of indicative comparison. Based on the F1, RoBERTa shows a slight improvement while BERT base and AlBERT do not improve. However, more importantly, BERTweet shows better performance when compared to the baseline.
+Table \ref{tab: model_mean_metrics} also shows the prediction metrics from \cite{jin_complaint_2020} in '[ ]' which is considered the baseline performance for this task. Although the nested cross-validation is run with a different configuration compared to \cite{jin_complaint_2020} as described in the previous chapter, it allows for some form of indicative comparison. Based on the F1, RoBERTa shows a slight improvement while BERT base and AlBERT do not improve. However, overall BERTweet provides the best predictive results for this task when compared to the baseline with an F1 score of 0.908.
+
 \begin{table}[htbp]
     \centering
     \small % Set font size to \small
@@ -161,12 +166,18 @@ Table \ref{tab: model_mean_metrics} also shows the prediction metrics from \cite
         RoBERTa base                           & 0.914 [0.876]     & 0.886 [0.866]      & 0.873 [0.869]   & 0.879 [0.866]  & 0.905            \\
         \hline
     \end{tabularx}
-    \caption{Mean prediction performance metrics for all models after nested cross-validation for finetuning and testing. The highest scores are in bold. \(\uparrow\) is the best performing and \(\downarrow\) is the worst performing model. Where available, numbers in [] are the results from \cite{jin_complaint_2020}.}
+    \caption{Mean prediction performance metrics for all models after nested cross-validation for finetuning and testing. The highest scores are in bold. \(\uparrow\) is the best performing and \(\downarrow\) is the worst performing model. Where available, numbers in '[ ]' are the results from \cite{jin_complaint_2020}.}
     \label{tab: model_mean_metrics}
 \end{table}
 
-\section{Analysis of best performing model}
+\subsection{Predictive performance of 'lightweight' models}
+Looking at some of the models that are considered lightweight based on their architecture and number of parameters
+
+\subsection{Deep-dive into the results}
 **TO UPDATE**
 
-\section{Cross-domain results}
+\subsection{Analyis of inference time}
+**TO UPDATE**
+
+\section{Experiment set 2 results: Cross-domain results}
 **TO UPDATE**

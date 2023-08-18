@@ -7,7 +7,7 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Shows the distribution of the domains used in the dataset\relax }}{18}{}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Top n-grams(excl. unigrams) and hashtags in the complaint tweets.\relax }}{18}{}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Distribution of positive, negative and neutral sentiments in the tweets.\relax }}{20}{}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Relative performance of models against BERTweet and model sizes. BERTweet's model size is 110M.\relax }}{22}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Relative performance of models against BERTweet and model sizes based on F1. BERTweet's model size is 110M.\relax }}{23}{}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Mean time taken for finetuning and inference during experiments set 1.\relax }}{23}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

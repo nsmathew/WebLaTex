@@ -144,9 +144,7 @@ As described in the previous chapter, to compare the performance of the models a
 \subsection{Best predictive performance}
 The best-performing model was found to be BERTweet with a mean F1 score of 0.908 (sd: $\pm$0.01) and accuracy of 0.934 (sd: $\pm$0.01) as shown in Table \ref{tab: model_mean_metrics}. BERTweet being pre-trained on a corpus of 850M tweets seems to give it a significant advantage in capturing the nuances of social media posts including informal language, typographic errors, use of slang and expressive lengthening and more specific characteristics of tweets such as the use of shorter messages, abbreviations and hashtags. RoBERTa was the next best performing model with an F1 of 0.879 (sd: $\pm$0.03) and an accuracy of 0.914 (sd: $\pm$0.02). It was followed by BERT base and DistilBERT with F1 scores of 0.865 (sd: $\pm$0.02) and 0.863 (sd: $\pm$0.02) respectively. \\
 
-Table \ref{tab: model_mean_metrics} also shows the prediction metrics from \cite{jin_complaint_2020} in '[ ]' which is considered the baseline performance for this task. Although the nested cross-validation is run with a different configuration compared to \cite{jin_complaint_2020} as described in the previous chapter, it allows for some form of indicative comparison. Based on the F1, RoBERTa shows a slight improvement while BERT base and AlBERT do not improve. However, overall BERTweet provides the best predictive results for this task when compared to the baseline with an F1 score of 0.908.
-
-Table \ref{tab: model_mean_metrics} presents the prediction metrics sourced from \cite{jin_complaint_2020}, enclosed within '[ ]', which serves as the established baseline performance for this task. Despite the variation in nested cross-validation configuration, as outlined in the preceding chapter, a level of preliminary comparison becomes feasible. In terms of F1 scores, RoBERTa shows marginal improvement, while BERT base and ALBERT display no noticeable improvement. Nonetheless, when considering the task against the baseline, BERTweet emerges as the optimal predictor, achieving an impressive F1 score of 0.908.
+Table \ref{tab: model_mean_metrics} also includes the prediction metrics sourced from \cite{jin_complaint_2020}, enclosed within '[ ]', which serves as the established baseline performance for this task. Despite the variation in nested cross-validation configuration, as outlined in the preceding chapter, a level of preliminary comparison becomes feasible. In terms of F1 scores, RoBERTa shows marginal improvement, while BERT base and ALBERT perform slightly worse. However, overall BERTweet provides the best predictive results for this task when compared to the baseline.\\
 
 \begin{table}[htbp]
     \centering
@@ -173,20 +171,20 @@ Table \ref{tab: model_mean_metrics} presents the prediction metrics sourced from
 \end{table}
 
 \subsection{Performance of 'lightweight' models}
-Examining the models characterized as lightweight based on their architecture and parameter count, DistilBERT emerges as the top performer, achieving an F1 score of 0.863 (sd: $\pm$0.02). MobileBERT and ALBERT follow suit with F1 scores of 0.841 (sd: $\pm$0.02) and 0.827 (sd: $\pm$0.05) respectively. On the other hand, BERT Tiny, the smallest model employed in the experiments, exhibits a notable performance gap, achieving only an F1 score of 0.662 (sd: $\pm$0.04), which is lower by 27.6\% in comparison to BERTweet. This points to a likely and significant performance penalty in this case from the reduced model size although it is expected to perform better in the context of a knowledge distillation teacher \cite{turcWellReadStudentsLearn2019}, something that has not been tested here.
+Examining the models characterized as lightweight based on their architecture and parameter count, DistilBERT emerges as the top performer, achieving an F1 score of 0.863 (sd: $\pm$0.02). MobileBERT and ALBERT follow suit with F1 scores of 0.841 (sd: $\pm$0.02) and 0.827 (sd: $\pm$0.05) respectively. On the other hand, BERT Tiny, the smallest model employed in the experiments, exhibits a notable performance gap, achieving only an F1 score of 0.662 (sd: $\pm$0.04), which is lower by 27.6\% in comparison to BERTweet. This points to a likely and significant performance penalty in this case from the reduced model size although it is expected to perform better in the context of a knowledge distillation teacher \cite{turcWellReadStudentsLearn2019}, something that has not been tested here.\\
 
 \begin{figure}[htb]
     \centering
     \includegraphics[width=9cm]{figures/model_size_vs_perf.png}
     \vspace*{-3mm}
-    \caption{Relative performance of models against BERTweet and model sizes. BERTweet's model size is 110M.}
+    \caption{Relative performance of models against BERTweet and model sizes based on F1. BERTweet's model size is 110M.}
     \label{fig: model_size_vs_perf}
 \end{figure}
 
-The Figure \ref{fig: model_size_vs_perf} displays the relative variance in model performance when compared to BERTweet, alongside the corresponding sizes of the models. Notably, ALBERT and MobileBERT exhibit relatively lower performance discrepancy of only 8.9\% and 7.4\%, despite having considerably reduced model sizes by 90\% and 77\% respectively. Similarly, DistilBERT demonstrates a performance deficit of merely 4.9\%, akin to that of BERT base, while having a 44\% reduction in model size. This correlation suggests that the knowledge distillation compression technique applied during the pretraining phase could be playing a pivotal role in enhancing DistilBERT's predictive capabilities \cite{sanhDistilBERTDistilledVersion2020}.
+Figure \ref{fig: model_size_vs_perf} displays the relative variance in model performance when compared to BERTweet based on F1, alongside the corresponding model sizes or the number of parameters. Notably, ALBERT and MobileBERT exhibit relatively lower performance discrepancy of only 8.9\% and 7.4\%, considering the model sizes are lower significantly by 90\% and 77\% respectively. Similarly, DistilBERT demonstrates a performance deficit of merely 4.9\%, akin to that of BERT base, while having a 44\% reduction in model size. This correlation suggests that the knowledge distillation compression technique applied during the pretraining phase could be playing a pivotal role in enhancing DistilBERT's predictive capabilities \cite{sanhDistilBERTDistilledVersion2020}.
 
 \subsubsection{Analyis of finetuning and inference time}
-
+Next, analysing the time required for inference and training or in the scope of the experiments, finetuning we fine 
 \begin{figure}[htbp]
     \centering
     \captionsetup{font=small}

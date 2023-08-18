@@ -171,7 +171,7 @@ Table \ref{tab: model_mean_metrics} also shows the prediction metrics from \cite
 \end{table}
 
 \subsection{Performance of 'lightweight' models}
-Looking at some of the models that are considered lightweight based on their architecture and number of parameters, DistilBERT performs the best, followed by MobileBERT and AlBERT with F1 scores of 0.863 (sd: $\pm$0.02), 0.841 (sd: $\pm$0.02) and 0.827 (sd: $\pm$0.05) respectively. BERT Tiny, the smallest model used in the experiments shows a significant gap in performance with an F1 score of only 0.662 (sd: $\pm$0.04). In Figure \ref{fig: model_size_vs_perf} the relative difference in performance of the models against BERTweet and their corresponding model sizes are shown. DistilBERT 
+Looking at the models that are considered lightweight based on their architecture and number of parameters, DistilBERT performs the best, followed by MobileBERT and AlBERT with F1 scores of 0.863 (sd: $\pm$0.02), 0.841 (sd: $\pm$0.02) and 0.827 (sd: $\pm$0.05) respectively. BERT Tiny, the smallest model used in the experiments shows a significant gap in performance with an F1 score of only 0.662 (sd: $\pm$0.04). There appears to be a significant performance penalty in this case from the reduced model size without any additional In Figure \ref{fig: model_size_vs_perf} the relative difference in performance of the models against BERTweet and their corresponding model sizes are shown. ALBERT and MobileBERT while having significantly lower DistilBERT 
 
 \begin{figure}[htb]
     \centering
@@ -182,7 +182,25 @@ Looking at some of the models that are considered lightweight based on their arc
 \end{figure}
 
 \subsubsection{Analyis of finetuning and inference time}
-**TO UPDATE**
+\begin{figure}[htbp]
+    \centering
+    \captionsetup{font=small}
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/mean_train_time.png}
+        \caption{Mean training time.}
+        \label{fig: mean_train_time}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/mean_inference_time.png}
+        \caption{Mean inference time}
+        \label{fig: mean_inf_time}
+    \end{subfigure}
+    \caption{Mean inference time.}
+    \label{fig: mean_time_taken}
+\end{figure}
 
 \subsection{Deep-dive into the results}
 **TO UPDATE**

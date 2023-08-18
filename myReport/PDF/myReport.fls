@@ -524,6 +524,16 @@ INPUT ./figures/model_size_vs_perf.png
 INPUT figures/model_size_vs_perf.png
 INPUT ./figures/model_size_vs_perf.png
 INPUT ./figures/model_size_vs_perf.png
+INPUT ./figures/mean_train_time.png
+INPUT ./figures/mean_train_time.png
+INPUT figures/mean_train_time.png
+INPUT ./figures/mean_train_time.png
+INPUT ./figures/mean_train_time.png
+INPUT ./figures/mean_inference_time.png
+INPUT ./figures/mean_inference_time.png
+INPUT figures/mean_inference_time.png
+INPUT ./figures/mean_inference_time.png
+INPUT ./figures/mean_inference_time.png
 INPUT ./chapters/chapter5.tex
 INPUT chapters/chapter5.tex
 INPUT ./chapters/chapter5.tex

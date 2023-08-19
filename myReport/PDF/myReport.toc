@@ -37,14 +37,14 @@
 \contentsline {subsubsection}{Analyis of finetuning and inference time}{23}{}%
 \contentsline {subsection}{\numberline {4.2.3}Deep-dive into the results}{23}{}%
 \contentsline {section}{\numberline {4.3}Experiment set 2 results: Cross-domain results}{23}{}%
-\contentsline {chapter}{\numberline {5}Conclusions}{24}{}%
-\contentsline {chapter}{Appendices}{28}{}%
-\contentsline {chapter}{\numberline {A}Other supporting analysis and graphs}{29}{}%
-\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{29}{}%
-\contentsline {section}{\numberline {A.2}Sample data from dataset}{29}{}%
-\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{30}{}%
-\contentsline {chapter}{\numberline {B}Other references}{31}{}%
-\contentsline {section}{\numberline {B.1}Code Repository}{31}{}%
-\contentsline {section}{\numberline {B.2}References for models used in experiment sets 1 and 2}{31}{}%
-\contentsline {section}{\numberline {B.3}References for other models used}{31}{}%
-\contentsline {section}{\numberline {B.4}Evaluation metrics references}{32}{}%
+\contentsline {chapter}{\numberline {5}Conclusions}{25}{}%
+\contentsline {chapter}{Appendices}{29}{}%
+\contentsline {chapter}{\numberline {A}Other supporting analysis and graphs}{30}{}%
+\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{30}{}%
+\contentsline {section}{\numberline {A.2}Sample data from dataset}{30}{}%
+\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{31}{}%
+\contentsline {chapter}{\numberline {B}Other references}{32}{}%
+\contentsline {section}{\numberline {B.1}Code Repository}{32}{}%
+\contentsline {section}{\numberline {B.2}References for models used in experiment sets 1 and 2}{32}{}%
+\contentsline {section}{\numberline {B.3}References for other models used}{32}{}%
+\contentsline {section}{\numberline {B.4}Evaluation metrics references}{33}{}%

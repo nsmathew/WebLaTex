@@ -6,7 +6,7 @@ As described earlier in Chapter 3, the data for the experiments is from Twitter.
 \subsection{Domain and class distribution}
 \begin{figure}[htb]
     \centering
-    \includegraphics[width=9cm]{figures/compl_non_random_dist.png}
+    \includegraphics[width=9cm]{figures/compl_non_random_dist.pdf}
     \vspace*{-3mm}
     \caption{Illustrates the distribution of tweets categorised as 'complaints' and 'not complaints', with random 'tweets / replies' shown separately.}
     \label{fig: compl_non_random_dist}
@@ -20,14 +20,14 @@ All tweets categorised as complaints are assigned the label \texttt{label:1}, wh
     \captionsetup{font=small}
     \begin{subfigure}{0.49\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{figures/domain_dist.png}
+        \includegraphics[width=\linewidth]{figures/domain_dist.pdf}
         \caption{Proportion of each domain}
         \label{fig: domain_dist_pct}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.49\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{figures/domain_counts_bar_norandom.png}
+        \includegraphics[width=\linewidth]{figures/domain_counts_bar_norandom.pdf}
         \caption{No. of tweets for each domain}
         \label{fig: domain_dist_count}
     \end{subfigure}
@@ -85,7 +85,7 @@ However, focusing solely on the volumes, the presence of hashtags within the dat
 \subsection{Sentiment analysis}
 \begin{figure}[htb]
     \centering
-    \includegraphics[width=9cm]{figures/sentiment.png}
+    \includegraphics[width=12cm]{figures/sentiment.png}
     \vspace*{-3mm}
     \caption{Distribution of positive, negative and neutral sentiments in the tweets.}
     \label{fig: sentiment}
@@ -175,35 +175,62 @@ Examining the models characterized as lightweight based on their architecture an
 
 \begin{figure}[htb]
     \centering
-    \includegraphics[width=9cm]{figures/model_size_vs_perf.png}
+    \includegraphics[width=12cm]{figures/model_size_vs_perf.pdf}
     \vspace*{-3mm}
     \caption{Relative performance of models against BERTweet and model sizes based on F1. BERTweet's model size is 110M.}
     \label{fig: model_size_vs_perf}
 \end{figure}
 
-Figure \ref{fig: model_size_vs_perf} displays the relative variance in model performance when compared to BERTweet based on F1, alongside the corresponding model sizes or the number of parameters. Notably, ALBERT and MobileBERT exhibit relatively lower performance discrepancy of only 8.9\% and 7.4\%, considering the model sizes are lower significantly by 90\% and 77\% respectively. Similarly, DistilBERT demonstrates a performance deficit of merely 4.9\%, akin to that of BERT base, while having a 44\% reduction in model size. This correlation suggests that the knowledge distillation compression technique applied during the pretraining phase could be playing a pivotal role in enhancing DistilBERT's predictive capabilities \cite{sanhDistilBERTDistilledVersion2020}.
+Figure \ref{fig: model_size_vs_perf} displays the relative variance in model performance when compared to BERTweet based on F1, alongside the corresponding model sizes or the number of parameters. Notably, ALBERT and MobileBERT exhibit relatively lower performance discrepancies of 8.9\% and 7.4\%, considering the model sizes are lower significantly by 90\% and 77\% respectively as presented in Table \ref{tab: relative_comparison_metrics}. Similarly, DistilBERT demonstrates a performance deficit of merely 4.9\%, akin to that of BERT base, while having a model size lower by 44\%. This could likely be due to the knowledge distillation compression technique applied during the pretraining phase, which could be playing a key role in enhancing DistilBERT's predictive capabilities \cite{sanhDistilBERTDistilledVersion2020}.
 
 \subsubsection{Analyis of finetuning and inference time}
-Next, the time required for inference and training (finetuning) is analysed and shown in \ref{fig: mean_time_taken}. BERT Tiny as expected has the lowest mean training and inference time. 
+
+\begin{table}
+    \small
+    \centering
+    \begin{tabularx}{\textwidth}{|X|c|c|c|c|}
+        \hline
+        \rowcolor[gray]{0.7}
+        \textbf{Model} & \textbf{F1} & \textbf{Model size} & \textbf{Train time} & \textbf{Inference time} \\
+        \hline
+        \rowcolor[gray]{0.9}
+        BERTweet       & 0.908       & 110M                & 87.19 s             & 0.987 s                 \\
+        \hline
+        RoBERTa base   & -3.2\%      & +13.6\%             & -4.5\%              & -1.6\%                  \\
+        BERT base      & -4.8\%      & +0.0\%              & -10.7\%             & +1.2\%                  \\
+        DistilBERT     & -5.0\%      & -40.0\%             & -50.7\%             & -43.3\%                 \\
+        MobileBERT     & -7.4\%      & -77.0\%             & +122.7\%            & +86.4\%                 \\
+        ALBERT         & -9.0\%      & -90.0\%             & -40.3\%             & +22.8\%                 \\
+        BERT Tiny      & -27.1\%     & -96.0\%             & -86.4\%             & -70.2\%                 \\
+        \hline
+    \end{tabularx}
+    \caption{Comparison of key metrics of the models relative to BERTweet.}
+    \label{tab: relative_comparison_metrics}
+\end{table}
+
+Next, the time required for inference and training (finetuning) is analysed and shown in \ref{fig: mean_time_taken}. BERT Tiny as expected has the lowest mean training and inference time. It is lower by over 85\% and 70\% for training and inference respectively as shown in Table \ref{tab: relative_comparison_metrics} when compared to BERTweet. DistilBERT follows next with a lower train and inference times by 51\% and 43\% in comparison to BERTweet. For ALBERT the results are mixed. While the 
 \begin{figure}[htbp]
     \centering
     \captionsetup{font=small}
     \begin{subfigure}{0.49\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{figures/mean_train_time.png}
+        \includegraphics[width=\linewidth]{figures/mean_train_time.pdf}
         \caption{Mean training time.}
         \label{fig: mean_train_time}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.49\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{figures/mean_inference_time.png}
+        \includegraphics[width=\linewidth]{figures/mean_inference_time.pdf}
         \caption{Mean inference time}
         \label{fig: mean_inf_time}
     \end{subfigure}
-    \caption{Mean time taken for finetuning and inference during experiments set 1. BERTweet with the best predictive model is highlighted in red.}
+    \caption{Mean time taken (in seconds) for finetuning and inference during experiments set 1. BERTweet with the best predictive model is highlighted in red.}
     \label{fig: mean_time_taken}
 \end{figure}
+
+
+
 
 \subsection{Deep-dive into the results}
 **TO UPDATE**

@@ -112,7 +112,7 @@ For the experiments, the BERT large language model along with a number of its va
 \section{Model selection}
 The performance of BERT and its variants on the text classification task will be explored as part of the experiments. BERT \cite{devlinBERTPretrainingDeep2018} is based on the modern transformers network architecture \cite{vaswaniAttentionAllYou2023a}. Using BERT for the text classification task has several advantages over previous dominant methods such as Gated Recurrent Units GRU) \cite{chungEmpiricalEvaluationGated2014} or Long Short Term Memory (LSTM) \cite{hochreiterLongShortTermMemory1997} networks. Although tweets tend to be made up of short texts, the ability to capture long-term dependencies is still useful for better understanding relationships across the content better. They also rely on bidirectional processing to use contextual information to have a more nuanced understanding of the intention of the author of the tweet or post. Since BERT is already pre-trained on large corpora, it possess a significant general understanding of language. Finally, the pre-training enables transfer learning and domain adaptation with relative ease which is very useful for tasks where annotated data is limited (we use only 3,449 tweets for the experiments).
 \newline\newline
-The transformer models used are listed in table \ref{tab: model_dtls} along with the number of parameters for each of them. The number of parameters or model size is based on the embedding and output layers along with the attention heads. The models chosen are such that there is a wide range of model sizes, from ROBERTA and BERT base with 110 million parameters to lightweight variants such as DistilBERT base, MobileBERT and others with much lower model sizes. This allows for a comparison of the model performance both in terms of the predictions as well as the inference time in relation to the model size. **Add content on the impact of layers and parameters on model performance**
+The transformer models used are listed in table \ref{tab: model_dtls} along with the number of parameters for each of them. The number of parameters or model size is based on the embedding and output layers along with the attention heads. The models chosen are such that there is a wide range of model sizes, from RoBERTa and BERT base with 110 million parameters to lightweight variants such as DistilBERT base, MobileBERT and others with much lower model sizes. This allows for a comparison of the model performance both in terms of the predictions as well as the inference time in relation to the model size. **Add content on the impact of layers and parameters on model performance**
 
 \begin{table}[ht]
     \captionsetup{font=small}
@@ -123,7 +123,7 @@ The transformer models used are listed in table \ref{tab: model_dtls} along with
         \rowcolor[gray]{0.7}
         \textbf{Model}            & \textbf{Parameter Count} & \textbf{Tokenizer Type}  & \textbf{Vocab. Size} \\
         \hline
-        ROBERTA base              & 125M                     & Byte-level BPE           & 50,265               \\
+        RoBERTa base              & 125M                     & Byte-level BPE           & 50,265               \\
         \rowcolor[gray]{0.9}
         BERT base (uncased)       & 110M                     & WordPiece                & 30,522               \\
         BERTweet base             & 110M                     & Byte-Pair Encoding (BPE) & 64,000               \\
@@ -131,11 +131,11 @@ The transformer models used are listed in table \ref{tab: model_dtls} along with
         DistilBERT base (uncased) & 66M                      & WordPiece                & 30,522               \\
         MobileBERT (uncased)      & 25.3M                    & WordPiece                & 30,522               \\
         \rowcolor[gray]{0.9}
-        AlBERT base               & 11M                      & SentencePiece            & 30,000               \\
+        ALBERT base               & 11M                      & SentencePiece            & 30,000               \\
         BERT Tiny                 & 4.4M                     & WordPiece                & 30,522               \\
         \hline
     \end{tabularx}
-    \caption{The transformer models used for the experiments along with type of tokenization, and vocabulary size and sorted by the number of parameters for each of them. The parameter counts are from \cite{bhargavaGeneralizationNLIWays2021} for Roberta, Bert, Albert and Bert Tiny. For Bertweet it is from \cite{nguyenBERTweetPretrainedLanguage2020}, MobileBert from \cite{sunMobileBERTCompactTaskAgnostic2020} and Distilbert from \cite{sanhDistilBERTDistilledVersion2020}.}
+    \caption{The transformer models used for the experiments along with type of tokenization, and vocabulary size and sorted by the number of parameters for each of them. The parameter counts are from \cite{bhargavaGeneralizationNLIWays2021} for RoBERTa, BERT base, ALBERT and BERT Tiny. For Bertweet it is from \cite{nguyenBERTweetPretrainedLanguage2020}, MobileBERT from \cite{sunMobileBERTCompactTaskAgnostic2020} and DistilBERT from \cite{sanhDistilBERTDistilledVersion2020}.}
     \label{tab: model_dtls}
 \end{table}
 

@@ -103,7 +103,7 @@ The act of complaining typically involves conveying a sense of negativity. Senti
         \rowcolor[gray]{0.7}
         \textbf{Statistic}              & \textbf{All Tweets} & \textbf{Complaints} & \textbf{Not Complaints} & \textbf{Random} \\
         \hline
-        Number of tweets                & 3,                  & 1232                & 742                     & 1475            \\
+        Number of tweets                & 3449                & 1232                & 742                     & 1475            \\
         \rowcolor[gray]{0.9}
         Number of unique tweets         & 3395                & 1232                & 737                     & 1427            \\
         \hline
@@ -136,13 +136,13 @@ The act of complaining typically involves conveying a sense of negativity. Senti
     \label{tab: tweets_statistics}
 \end{table}
 
-Finally, examining some of the key statistical measures from the tweets dataset in Table \ref{tab: tweets_statistics}, we observe that complaint tweets tend to exhibit a higher average tweet length, both in terms of characters (96.7) and tokens (19.7). In contrast, random tweets and replies have a token count lower by 30\%, while non-complaint tweets possess an average of 25\% fewer than complaint tweets. This disparity may stem from individuals employing diverse linguistic expressions to express their dissatisfaction or disappointment, or to communicate a Face Threatening Act directed at the subject of the complaint.
+Finally, examining some of the key statistical measures from the tweets dataset in Table \ref{tab: tweets_statistics}, we observe that complaint tweets tend to exhibit a higher average tweet length, both in terms of characters (96.7) and tokens (19.7). In contrast, random tweets and replies have a token count lower by 30\%, while non-complaint tweets possess an average of 25\% fewer tokens than complaint tweets. This disparity may stem from individuals employing diverse linguistic expressions to express their dissatisfaction or disappointment, or to communicate a Face Threatening Act directed at the subject of the complaint.
 
 \section{Experiment set 1 results: Comparision of model performance}
 As described in the previous chapter, to compare the performance of the models a nested cross-validation approach was adopted. The cross-validation method finetuned the models using 4 learning rates, $l\:\epsilon\:[1e-5, 5e-6, 5e-5, 3e-5]$ with the best-performing model based on the F1 score being selected for the testing for each iteration of the outer loop. \\
 
 \subsection{Best predictive performance}
-The best-performing model was found to be BERTweet with a mean F1 score of 0.908 (sd: $\pm$0.01) and accuracy of 0.934 (sd: $\pm$0.01) as shown in Table \ref{tab: model_mean_metrics}. BERTweet being pre-trained on a corpus of 850M tweets seems to give it a significant advantage in capturing the nuances of social media posts including informal language, typographic errors, use of slang and expressive lengthening and more specific characteristics of tweets such as the use of shorter messages, abbreviations and hashtags. RoBERTa was the next best performing model with an F1 of 0.879 (sd: $\pm$0.03) and an accuracy of 0.914 (sd: $\pm$0.02). It was followed by BERT base and DistilBERT with F1 scores of 0.865 (sd: $\pm$0.02) and 0.863 (sd: $\pm$0.02) respectively. \\
+The best-performing model was found to be BERTweet with a mean F1 score of 0.908 (sd: $\pm$0.01) and accuracy of 0.934 (sd: $\pm$0.01) as shown in Table \ref{tab: model_mean_metrics}. BERTweet being pre-trained on a corpus of 850M tweets could possibly be giving it an advantage in capturing the nuances of social media posts including informal language, typographic errors, use of slang and expressive lengthening and more specific characteristics of tweets such as the use of shorter messages, abbreviations and hashtags. RoBERTa was the next best performing model with an F1 of 0.879 (sd: $\pm$0.03) and an accuracy of 0.914 (sd: $\pm$0.02). corpusIt was followed by BERT base and DistilBERT with F1 scores of 0.865 (sd: $\pm$0.02) and 0.863 (sd: $\pm$0.02) respectively. 
 
 Table \ref{tab: model_mean_metrics} also includes the prediction metrics sourced from \cite{jin_complaint_2020}, enclosed within '[ ]', which serves as the established baseline performance for this task. Despite the variation in nested cross-validation configuration, as outlined in the preceding chapter, a level of preliminary comparison becomes feasible. In terms of F1 scores, RoBERTa shows marginal improvement, while BERT base and ALBERT perform slightly worse. However, overall BERTweet provides the best predictive results for this task when compared to the baseline.\\
 
@@ -171,7 +171,7 @@ Table \ref{tab: model_mean_metrics} also includes the prediction metrics sourced
 \end{table}
 
 \subsection{Performance of 'lightweight' models}
-Examining the models characterized as lightweight based on their architecture and parameter count, DistilBERT emerges as the top performer, achieving an F1 score of 0.863 (sd: $\pm$0.02). MobileBERT and ALBERT follow suit with F1 scores of 0.841 (sd: $\pm$0.02) and 0.827 (sd: $\pm$0.05) respectively. On the other hand, BERT Tiny, the smallest model employed in the experiments, exhibits a notable performance gap, achieving only an F1 score of 0.662 (sd: $\pm$0.04), which is lower by 27.6\% in comparison to BERTweet. This points to a likely and significant performance penalty in this case from the reduced model size although it is expected to perform better in the context of a knowledge distillation teacher \cite{turcWellReadStudentsLearn2019}, something that has not been tested here.\\
+Examining the models characterized as lightweight based on their architecture and parameter count, DistilBERT emerges as the top performer, achieving an F1 score of 0.863 (sd: $\pm$0.02). MobileBERT and ALBERT follow suit with F1 scores of 0.841 (sd: $\pm$0.02) and 0.827 (sd: $\pm$0.05) respectively. BERT Tiny, the smallest model employed in the experiments, exhibits a notable performance gap, achieving only an F1 score of 0.662 (sd: $\pm$0.04), which is lower by 27.6\% in comparison to BERTweet. This points to a likely and significant performance penalty from the reduced model. However, it is expected to perform better in the context of a knowledge distillation teacher \cite{turcWellReadStudentsLearn2019}, something that has not been tested here.\\
 
 \begin{figure}[htb]
     \centering
@@ -181,7 +181,7 @@ Examining the models characterized as lightweight based on their architecture an
     \label{fig: model_size_vs_perf}
 \end{figure}
 
-Figure \ref{fig: model_size_vs_perf} displays the relative variance in model performance when compared to BERTweet based on F1, alongside the corresponding model sizes or the number of parameters. Notably, ALBERT and MobileBERT exhibit relatively lower performance discrepancies of 8.9\% and 7.4\%, considering the model sizes are lower significantly by 90\% and 77\% respectively as presented in Table \ref{tab: relative_comparison_metrics}. Similarly, DistilBERT demonstrates a performance deficit of merely 4.9\%, akin to that of BERT base, while having a model size lower by 44\%. This could likely be due to the knowledge distillation compression technique applied during the pretraining phase, which could be playing a key role in enhancing DistilBERT's predictive capabilities \cite{sanhDistilBERTDistilledVersion2020}.
+Figure \ref{fig: model_size_vs_perf} displays the relative variance in model performance when compared to BERTweet based on F1, alongside the corresponding model sizes or the number of parameters. Table \ref{tab: relative_comparison_metrics} expands on this by including the relative difference of the models compared to BERTweet in terms of model size, training time and inference time. Notably, ALBERT and MobileBERT exhibit relatively lower performance discrepancies of 8.9\% and 7.4\%, considering the model sizes are significantly smaller by 90\% and 77\% respectively. DistilBERT demonstrates a performance deficit of merely 4.9\%, not far off from BERT base while having a model size lower by 44\%. This could likely be due to the knowledge distillation and compression techniques applied during the pretraining phase, which could be playing a key role in enhancing DistilBERT's predictive capabilities \cite{sanhDistilBERTDistilledVersion2020}.
 
 \subsubsection{Analyis of finetuning and inference time}
 
@@ -208,7 +208,7 @@ Figure \ref{fig: model_size_vs_perf} displays the relative variance in model per
     \label{tab: relative_comparison_metrics}
 \end{table}
 
-Next, the time required for inference and training (finetuning) is analysed and shown in Figure \ref{fig: mean_time_taken}. On average, the number of rows for the train, dev and test splits was 2155, 719 and 575. BERT Tiny as expected has the lowest mean training and inference time. It is lower by over 85\% and 70\% for training and inference respectively as shown in Table \ref{tab: relative_comparison_metrics} when compared to BERTweet. DistilBERT follows next with a lower train and inference times by 51\% and 43\% in comparison to BERTweet. For ALBERT the results are mixed. While the train time is lower than BERTweet by 40\%, the inference time is much higher than all models except for MobileBERT. 
+Next, the time required for inference and training (finetuning) is analysed and shown in Figure \ref{fig: mean_time_taken}. On average, the number of rows for the train, dev and test splits was 2155, 719 and 575. The training and inference were executed on a single NVIDIA RTX A4000 GPU with 16GB VRAM. BERT Tiny as expected has the lowest mean training and inference time. It is lower by over 85\% and 70\% for training and inference respectively as shown in Table \ref{tab: relative_comparison_metrics} when compared to BERTweet. DistilBERT follows next with lower train and inference times by 51\% and 43\%. For ALBERT the results are mixed. While the train time is lower than BERTweet by 40\%, the inference time is much higher than all models except for MobileBERT. 
 \begin{figure}[htbp]
     \centering
     \captionsetup{font=small}

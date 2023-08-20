@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  20 AUG 2023 10:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  20 AUG 2023 10:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -704,13 +704,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--62
  []
 
 [18 <./figures/domain_dist.pdf> <./figures/domain_counts_bar_norandom.pdf> <./figures/top_ngram_horiz_bar.png> <./figures/top_hash_horiz_bar.png>]
+Overfull \hbox (12.08348pt too wide) in paragraph at lines 81--82
+\T1/cmtt/m/n/10.95 #fail\T1/cmr/m/n/10.95 , and \T1/cmtt/m/n/10.95 #disappointed \T1/cmr/m/n/10.95 are ex-am-ples. Con-se-quently, in ad-di-tion to ex-press-ing dis-sat-is-fac-tion,
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
 
-Overfull \hbox (10.69012pt too wide) in paragraph at lines 83--84
-[]\T1/cmr/m/n/10.95 However, fo-cus-ing solely on the vol-umes, the pres-ence of hash-tags within the dataset, par-tic-u-larly
+Overfull \hbox (1.79306pt too wide) in paragraph at lines 83--84
+[]\T1/cmr/m/n/10.95 However, the vol-ume of tweets which in-clude hash-tags, par-tic-u-larly in the con-text of com-plaints
  []
 
 
@@ -784,6 +789,11 @@ File: figures/model_size_vs_perf.pdf Graphic file (type pdf)
 <use figures/model_size_vs_perf.pdf>
 Package pdftex.def Info: figures/model_size_vs_perf.pdf  used on input line 178.
 (pdftex.def)             Requested size: 341.43306pt x 204.86006pt.
+
+Overfull \hbox (13.88686pt too wide) in paragraph at lines 184--185
+\T1/cmr/m/n/10.95 ap-plied dur-ing the pre-train-ing phase, which could be play-ing a key role in en-hanc-ing Dis-til-BERT's
+ []
+
 [22]
 <figures/mean_train_time.pdf, id=269, 722.7pt x 433.62pt>
 File: figures/mean_train_time.pdf Graphic file (type pdf)
@@ -795,7 +805,7 @@ File: figures/mean_inference_time.pdf Graphic file (type pdf)
 <use figures/mean_inference_time.pdf>
 Package pdftex.def Info: figures/mean_inference_time.pdf  used on input line 224.
 (pdftex.def)             Requested size: 216.01767pt x 129.61061pt.
- [23 <./figures/model_size_vs_perf.pdf>]) (./chapters/chapter5.tex [24 <./figures/mean_train_time.pdf> <./figures/mean_inference_time.pdf>]
+) (./chapters/chapter5.tex [23 <./figures/model_size_vs_perf.pdf>] [24 <./figures/mean_train_time.pdf> <./figures/mean_inference_time.pdf>]
 Chapter 5.
 ) (PDF/myReport.bbl [25
 
@@ -863,7 +873,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  57i,13n,79p,1479b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on PDF/myReport.pdf (41 pages, 1847385 bytes).
+Output written on PDF/myReport.pdf (41 pages, 1847378 bytes).
 PDF statistics:
  602 PDF objects out of 1000 (max. 8388607)
  217 compressed objects within 3 object streams

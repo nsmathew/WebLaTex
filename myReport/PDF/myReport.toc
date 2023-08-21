@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {2.1}The act of complaining}{3}{}%
 \contentsline {section}{\numberline {2.2}Complaining online}{4}{}%
 \contentsline {section}{\numberline {2.3}Complaining in social media}{5}{}%
-\contentsline {section}{\numberline {2.4}Self-expression on Twitter}{6}{}%
+\contentsline {section}{\numberline {2.4}Self-expression on Twitter}{7}{}%
 \contentsline {section}{\numberline {2.5}Transformers}{7}{}%
 \contentsline {section}{\numberline {2.6}Ongoing research}{7}{}%
 \contentsline {chapter}{\numberline {3}Methodology}{8}{}%
@@ -30,12 +30,12 @@
 \contentsline {subsection}{\numberline {4.1.1}Domain and class distribution}{18}{}%
 \contentsline {subsection}{\numberline {4.1.2}Linguistic analysis}{19}{}%
 \contentsline {subsection}{\numberline {4.1.3}Sentiment analysis}{21}{}%
-\contentsline {subsection}{\numberline {4.1.4}Key statistics}{21}{}%
+\contentsline {subsection}{\numberline {4.1.4}Key statistics}{22}{}%
 \contentsline {section}{\numberline {4.2}Experiment set 1 results: Comparision of model performance}{22}{}%
 \contentsline {subsection}{\numberline {4.2.1}Best predictive performance}{22}{}%
 \contentsline {subsection}{\numberline {4.2.2}Performance of 'lightweight' models}{23}{}%
 \contentsline {subsubsection}{Analyis of finetuning and inference time}{24}{}%
-\contentsline {subsection}{\numberline {4.2.3}Deep-dive into the results}{24}{}%
+\contentsline {subsection}{\numberline {4.2.3}Deep-dive into the results}{25}{}%
 \contentsline {section}{\numberline {4.3}Experiment set 2 results: Cross-domain results}{25}{}%
 \contentsline {chapter}{\numberline {5}Conclusions}{26}{}%
 \contentsline {chapter}{Appendices}{30}{}%

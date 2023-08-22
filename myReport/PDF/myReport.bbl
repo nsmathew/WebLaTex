@@ -54,6 +54,11 @@
 {\sc Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K.}
 \newblock {BERT}: {Pre}-training of {Deep} {Bidirectional} {Transformers} for {Language} {Understanding}.
 
+\bibitem{faucherSocialCapitalOnline2018}
+{\sc Faucher, K.~X.}
+\newblock {\em Social {Capital} {Online}: alienation and accumulation}.
+\newblock {CDSMS} ({Series}). University of Westminster Press, London, London, England, 2018.
+
 \bibitem{hennig-thurauElectronicWordofmouthConsumeropinion2004}
 {\sc Hennig-Thurau, T., Gwinner, K.~P., Walsh, G., and Gremler, D.~D.}
 \newblock Electronic word-of-mouth via consumer-opinion platforms: {What} motivates consumers to articulate themselves on the {Internet}?
@@ -118,6 +123,11 @@
 {\sc Pérez, J.~M., Giudici, J.~C., and Luque, F.}
 \newblock pysentimiento: {A} {Python} {Toolkit} for {Sentiment} {Analysis} and {SocialNLP} tasks, June 2021.
 \newblock arXiv:2106.09462 [cs].
+
+\bibitem{qiuYouAreWhat2012}
+{\sc Qiu, L., Lin, H., Ramsay, J., and Yang, F.}
+\newblock You are what you tweet: {Personality} expression and perception on {Twitter}.
+\newblock {\em Journal of Research in Personality 46}, 6 (Dec. 2012), 710--718.
 
 \bibitem{rookNormativeInfluencesImpulsive1995}
 {\sc Rook, D.~W., and Fisher, R.~J.}

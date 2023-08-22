@@ -9,45 +9,45 @@ Warning--empty journal in jin_complaint_2020
 Warning--empty journal in jinModelingSeverityComplaints2021
 Warning--empty journal in olshtain_speechact_1987
 Warning--empty journal in preotiuc-pietro_automatically_2019
-You've used 33 entries,
+You've used 35 entries,
             2253 wiz_defined-function locations,
-            755 strings with 12413 characters,
-and the built_in function-call counts, 10779 in all, are:
-= -- 1055
-> -- 571
+            770 strings with 12827 characters,
+and the built_in function-call counts, 11404 in all, are:
+= -- 1117
+> -- 600
 < -- 0
-+ -- 235
-- -- 202
-* -- 890
-:= -- 1815
-add.period$ -- 109
-call.type$ -- 33
-change.case$ -- 199
++ -- 247
+- -- 212
+* -- 941
+:= -- 1921
+add.period$ -- 116
+call.type$ -- 35
+change.case$ -- 209
 chr.to.int$ -- 0
-cite$ -- 39
-duplicate$ -- 301
-empty$ -- 791
-format.name$ -- 202
-if$ -- 2154
+cite$ -- 41
+duplicate$ -- 323
+empty$ -- 841
+format.name$ -- 212
+if$ -- 2282
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 27
-newline$ -- 177
-num.names$ -- 66
-pop$ -- 188
+int.to.str$ -- 35
+missing$ -- 30
+newline$ -- 187
+num.names$ -- 70
+pop$ -- 198
 preamble$ -- 1
-purify$ -- 167
+purify$ -- 176
 quote$ -- 0
-skip$ -- 189
+skip$ -- 200
 stack$ -- 0
-substring$ -- 645
-swap$ -- 66
+substring$ -- 680
+swap$ -- 70
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 130
+type$ -- 136
 warning$ -- 6
-while$ -- 106
-width$ -- 35
-write$ -- 347
+while$ -- 112
+width$ -- 37
+write$ -- 369
 (There were 6 warnings)

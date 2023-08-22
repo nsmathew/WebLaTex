@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {2.1}The act of complaining}{3}{}%
 \contentsline {section}{\numberline {2.2}Complaining online}{4}{}%
 \contentsline {section}{\numberline {2.3}Complaining in social media}{5}{}%
-\contentsline {section}{\numberline {2.4}Self-expression on Twitter}{7}{}%
+\contentsline {section}{\numberline {2.4}Twitter as a medium for self-expression}{7}{}%
 \contentsline {section}{\numberline {2.5}Transformers}{8}{}%
 \contentsline {section}{\numberline {2.6}Ongoing research}{8}{}%
 \contentsline {chapter}{\numberline {3}Methodology}{9}{}%
@@ -38,13 +38,13 @@
 \contentsline {subsection}{\numberline {4.2.3}Deep-dive into the results}{26}{}%
 \contentsline {section}{\numberline {4.3}Experiment set 2 results: Cross-domain results}{26}{}%
 \contentsline {chapter}{\numberline {5}Conclusions}{27}{}%
-\contentsline {chapter}{Appendices}{31}{}%
-\contentsline {chapter}{\numberline {A}Other supporting analysis and graphs}{32}{}%
-\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{32}{}%
-\contentsline {section}{\numberline {A.2}Sample data from dataset}{32}{}%
-\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{33}{}%
-\contentsline {chapter}{\numberline {B}Other references}{34}{}%
-\contentsline {section}{\numberline {B.1}Code Repository}{34}{}%
-\contentsline {section}{\numberline {B.2}References for models used in experiment sets 1 and 2}{34}{}%
-\contentsline {section}{\numberline {B.3}References for other models used}{34}{}%
-\contentsline {section}{\numberline {B.4}Evaluation metrics references}{35}{}%
+\contentsline {chapter}{Appendices}{32}{}%
+\contentsline {chapter}{\numberline {A}Other supporting analysis and graphs}{33}{}%
+\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{33}{}%
+\contentsline {section}{\numberline {A.2}Sample data from dataset}{33}{}%
+\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{34}{}%
+\contentsline {chapter}{\numberline {B}Other references}{35}{}%
+\contentsline {section}{\numberline {B.1}Code Repository}{35}{}%
+\contentsline {section}{\numberline {B.2}References for models used in experiment sets 1 and 2}{35}{}%
+\contentsline {section}{\numberline {B.3}References for other models used}{35}{}%
+\contentsline {section}{\numberline {B.4}Evaluation metrics references}{36}{}%

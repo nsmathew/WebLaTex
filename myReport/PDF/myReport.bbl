@@ -40,6 +40,10 @@
 \newblock {\em Politeness : some universals in language usage}.
 \newblock Studies in interactional sociolinguistics ; 4. Cambridge University Press, Cambridge [Cambridgeshire] ; New York, 1987.
 
+\bibitem{choPropertiesNeuralMachine2014}
+{\sc Cho, K., van Merrienboer, B., Bahdanau, D., and Bengio, Y.}
+\newblock On the {Properties} of {Neural} {Machine} {Translation}: {Encoder}-{Decoder} {Approaches}.
+
 \bibitem{chungEmpiricalEvaluationGated2014}
 {\sc Chung, J., Gulcehre, C., Cho, K., and Bengio, Y.}
 \newblock Empirical {Evaluation} of {Gated} {Recurrent} {Neural} {Networks} on {Sequence} {Modeling}.

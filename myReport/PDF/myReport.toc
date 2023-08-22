@@ -24,7 +24,7 @@
 \contentsline {subsection}{\numberline {3.5.3}Tokenisation example}{15}{}%
 \contentsline {section}{\numberline {3.6}Experiments set 1: Predictive performance comparison of BERT variants}{16}{}%
 \contentsline {section}{\numberline {3.7}Experiments set 2: Cross-domain predictive performance comparison}{17}{}%
-\contentsline {section}{\numberline {3.8}Ethical, Professional and Legal Issues}{18}{}%
+\contentsline {section}{\numberline {3.8}Ethical, Professional and Legal Issues}{19}{}%
 \contentsline {chapter}{\numberline {4}Results and discussion}{20}{}%
 \contentsline {section}{\numberline {4.1}Data exploration}{20}{}%
 \contentsline {subsection}{\numberline {4.1.1}Domain and class distribution}{20}{}%

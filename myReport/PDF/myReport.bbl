@@ -65,6 +65,12 @@
 \newblock {\em Journal of interactive marketing 18}, 1 (2004), 38--52.
 \newblock Place: Hoboken Publisher: Elsevier Inc.
 
+\bibitem{hirschbergAdvancesNaturalLanguage2015}
+{\sc Hirschberg, J., and Manning, C.~D.}
+\newblock Advances in natural language processing.
+\newblock {\em Science 349}, 6245 (July 2015), 261--266.
+\newblock Publisher: American Association for the Advancement of Science.
+
 \bibitem{hochreiterLongShortTermMemory1997}
 {\sc Hochreiter, S., and Schmidhuber, J.}
 \newblock Long {Short}-{Term} {Memory}.

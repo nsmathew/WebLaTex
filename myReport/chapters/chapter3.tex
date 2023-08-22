@@ -4,11 +4,9 @@
 For a short text segment, $T = \{t_1, t_2, ..., t_n\}$ where $t_i$ is defined as a token, classify if the sequence of tokens $T$ is a complaint or not.
 
 \section{Data and pre-processing}
-The data used for the experiments is from Twitter. Twitter provides a good representation of social media text due to the direct connection consumers have with organisations and brands as well as the ability to express oneself \cite{preotiuc-pietro_automatically_2019}. As described in the previous chapter, Twitter provides users with a medium where they can self-express to a high degree while maintaining 
-\newline \newline
-The data set created by \cite{preotiuc-pietro_automatically_2019} and further used by \cite{jin_complaint_2020} is utilised for this project. The original process for collection and annotation employed by them is briefly described below. The particular version\footnote{\url{https://archive.org/details/complaint_severity_data}} used for the experiments is the one enhanced by \cite{jinModelingSeverityComplaints2021} with the addition of labels for the severity of complaints. These additional labels are not used for the experiments in this project.
+The data used for the experiments is from Twitter which provides a good representation of social media text due to the direct connection consumers have with organisations and brands \cite{preotiuc-pietro_automatically_2019}. With Twitter, users have a medium where they can self-express to a higher degree while maintaining flexible connections across their social network\cite{shane-simpsonWhyCollegeStudents2018}. The data set created by \cite{preotiuc-pietro_automatically_2019} and further used by \cite{jin_complaint_2020} is utilised for this project. The original process for collection and annotation employed by them is briefly described below. The particular version\footnote{\url{https://archive.org/details/complaint_severity_data}} used for the experiments is the one enhanced by \cite{jinModelingSeverityComplaints2021} with the addition of labels for the severity of complaints. These additional labels are not used for the experiments in this project.
 \subsection{Criteria for Tweets}
-A cross-industry representative collection of 93 customer service handles of organisations on Twitter were identified manually. These handles were then categorised into 9 domains based on their industry type. Since an organisation could have business activities across domains, the assigned domain was based on the products or services receiving the most number of complaints. All the domains used in the experiments are listed in Table \ref{tab: domains}.
+A cross-industry representative collection of 93 customer service handles of organisations on Twitter were identified manually. These handles were then categorised into 9 domains using their industry type. Since an organisation could have business activities across domains, the assigned domain was based on the products or services receiving the most number of complaints. All the domains used in the experiments are listed in Table \ref{tab: domains}.
 \begin{table}[ht]
     \captionsetup{font=small}
     \small
@@ -41,7 +39,7 @@ A cross-industry representative collection of 93 customer service handles of org
 \end{table}
 
 \subsection{Data Extraction}
-The data was extracted from Twitter via the Twitter API\footnote{\url{https://developer.twitter.com/en}}. The latest 3,200 Tweets at the time of the collection exercise were extracted and the original Tweets to which the customer service handles responded were identified. Random sampling equally for each handle, 1,971 Tweets were then identified where there was a response from the support's handle. To ensure a more balanced and diverse dataset, 1,478 randomly sampled Tweets were added to the dataset. 739 Tweets were replies to other handles (outside the 93 identified) and the remaining 739 Tweets were not addressed to any Twitter handle. Table \ref{tab: tweet_counts} shows the breakdown of the total population of the Tweets dataset. Tweets were filtered for English using langid.py \cite{luiLangidPyOfftheshelf2012}. Retweets were excluded and all usernames and URLs were anonymised and replaced with placeholder tokens.
+Twitter API\footnote{\url{https://developer.twitter.com/en}} was utilised to extract the Tweets. The latest 3,200 Tweets at the time of the collection exercise were retrieved and the original Tweets to which the customer service handles responded were identified. Random sampling equally for each handle, 1,971 Tweets were then identified where there was a response from the support's handle. To ensure a more balanced and diverse dataset, 1,478 randomly sampled Tweets were added to the dataset. 739 Tweets were replies to other handles (outside the 93 identified) and the remaining 739 Tweets were not addressed to any Twitter handle. Table \ref{tab: tweet_counts} shows the breakdown of the total population of the Tweets dataset. Tweets were filtered for English using langid.py \cite{luiLangidPyOfftheshelf2012}. Retweets were excluded and all usernames and URLs were anonymised and replaced with placeholder tokens.
 \begin{table}[ht]
     \captionsetup{font=small}
     \small
@@ -69,7 +67,7 @@ The classification of the 1,971 Tweets as complaints or not was carried out usin
 
 \section{Environment}
 
-The key details of the environment used for the experiments are listed below. All experiments are run in a Jupyter notebook on a single GPU.
+The key details of the environment used for the experiments are listed below. All experiments are run in a Jupyter Notebook and on a single GPU.
 \subsection{Hardware}
 \begin{itemize}
     \small
@@ -110,9 +108,9 @@ For the experiments, the BERT large language model along with a number of its va
 \end{table}
 
 \section{Model selection}
-The performance of BERT and its variants on the text classification task will be explored as part of the experiments. BERT \cite{devlinBERTPretrainingDeep2018} is based on the modern transformers network architecture \cite{vaswaniAttentionAllYou2023a}. Using BERT for the text classification task has several advantages over previous dominant methods such as Gated Recurrent Units GRU) \cite{chungEmpiricalEvaluationGated2014} or Long Short Term Memory (LSTM) \cite{hochreiterLongShortTermMemory1997} networks. Although Tweets tend to be made up of short texts, the ability to capture long-term dependencies is still useful for better understanding relationships across the content better. They also rely on bidirectional processing to use contextual information to have a more nuanced understanding of the intention of the author of the tweet or post. Since BERT is already pre-trained on large corpora, it possess a significant general understanding of language. Finally, the pre-training enables transfer learning and domain adaptation with relative ease which is very useful for tasks where annotated data is limited (we use only 3,449 Tweets for the experiments).
+The performance of BERT and its variants on the text classification task will be explored as part of the experiments. BERT \cite{devlinBERTPretrainingDeep2018} is based on the modern transformers network architecture \cite{vaswaniAttentionAllYou2023a}. Using BERT for the text classification task has several advantages over previous dominant methods such as Gated Recurrent Units GRU) \cite{chungEmpiricalEvaluationGated2014} or Long Short Term Memory (LSTM) \cite{hochreiterLongShortTermMemory1997} networks. Although Tweets tend to be made up of short texts, the ability to capture long-term dependencies is still useful for understanding relationships across the content better. They also rely on bidirectional processing to use contextual information to have a more nuanced understanding of the intention of the author of the tweet or post. Since BERT is already pre-trained on large corpora, it possesses a significant general understanding of language. Finally, the pre-training enables transfer learning and domain adaptation with relative ease which is very useful for tasks where annotated data is limited (we use only 3,449 Tweets for the experiments).
 \newline\newline
-The transformer models used are listed in table \ref{tab: model_dtls} along with the number of parameters for each of them. The number of parameters or model size is based on the embedding and output layers along with the attention heads. The models chosen are such that there is a wide range of model sizes, from RoBERTa and BERT base with 110 million parameters to lightweight variants such as DistilBERT base, MobileBERT and others with much lower model sizes. This allows for a comparison of the model performance both in terms of the predictions as well as the inference time in relation to the model size. **Add content on the impact of layers and parameters on model performance**
+The transformer models used are listed in table \ref{tab: model_dtls} along with the number of parameters for each of them. The number of parameters or model size is based on the embedding and output layers along with the attention heads. The models chosen are such that there is a wide range of model sizes, from RoBERTa and BERT base with 125 and 110 million parameters to lightweight variants such as DistilBERT base, MobileBERT and others with much lower model sizes. This allows for a comparison of the model performance both in terms of the predictions as well as the inference time in relation to the model size.
 
 \begin{table}[ht]
     \captionsetup{font=small}
@@ -131,7 +129,7 @@ The transformer models used are listed in table \ref{tab: model_dtls} along with
         DistilBERT base (uncased) & 66M                      & WordPiece                & 30,522               \\
         MobileBERT (uncased)      & 25.3M                    & WordPiece                & 30,522               \\
         \rowcolor[gray]{0.9}
-        ALBERT base v2               & 11M                      & SentencePiece            & 30,000               \\
+        ALBERT base v2            & 11M                      & SentencePiece            & 30,000               \\
         BERT Tiny                 & 4.4M                     & WordPiece                & 30,522               \\
         \hline
     \end{tabularx}
@@ -140,7 +138,7 @@ The transformer models used are listed in table \ref{tab: model_dtls} along with
 \end{table}
 
 \section{Data tokenisation}
-The tokenization process is required to be applied to input data for it to be prepared appropriately for use by BERT and its variants. The tokenization process involves dividing the input text into tokens based on a predefined set of rules. These tokens are subsequently transformed into numerical representations and tensors, along with any extra inputs needed by the model. Tokens in general could be words, subwords, phrases or even characters. There are various approaches to tokenization with each having advantages and shortcomings. The methods used by each of the models in the scope of the experiments are briefly described below and shown in Table \ref{tab: model_dtls}.
+The tokenization process is required for appropriate preparation of input data for use by BERT and its variants. The tokenization process involves dividing the input text into tokens based on a predefined set of rules. These tokens are subsequently transformed into numerical representations and tensors, along with any extra inputs needed by the model. Tokens in general could be words, subwords, phrases or even characters. There are various approaches to tokenization with each having advantages and shortcomings. The methods used by each of the models in the scope of the experiments are briefly described below and shown in Table \ref{tab: model_dtls}.
 
 \subsection{Tokenization methods}
 \textbf{Byte-Pair Encoding or BPE:} BPE works by iteratively combining the most frequently occurring pairs of characters or subwords within a corpus until a predefined vocabulary size is reached or after reaching a maximum number of iterations. The vocabulary will consist of a set of subwords, which can include characters, character sequences, or partial words. \newline\newline
@@ -152,7 +150,7 @@ The tokenizer provided by the \texttt{transformers} library is used for tokenizi
 
 
 \subsection{Choice of settings}
-Prior to applying tokenization, the settings for padding and truncation \footnote{\url{https://huggingface.co/docs/transformers/pad_truncation}} are chosen to ensure the varying input length will still result in rectangular tensors. The parameter, \texttt{max\_length} determines the maximum number of tokens for each input, \texttt{padding} controls the type of padding and \texttt{truncation} allows to truncate input to a pre-determined number of tokens.\newline
+Prior to applying tokenization, the settings for padding and truncation \footnote{\url{https://huggingface.co/docs/transformers/pad_truncation}} are chosen to ensure the varying input length will still result in rectangular tensors. The parameter, \texttt{max\_length} determines the maximum number of tokens for each input while \texttt{padding} controls the type of padding and \texttt{truncation} allows to truncate input to a pre-determined number of tokens.\newline
 
 \begin{figure}[htbp]
     \centering
@@ -180,8 +178,8 @@ An example tweet from the input data is shown in \textbf{A}. The pre-processing 
 \textbf{A - Tweet from input dataset}\newline
 
 \begin{adjustbox}{minipage={\textwidth},fbox}
-    \texttt{love it when i almost die rear ended by a semi cause my jeep turns off again 
-. one day they will fix it \#jeepsucks \#chrysler}
+    \texttt{love it when i almost die rear ended by a semi cause my jeep turns off again
+        . one day they will fix it \#jeepsucks \#chrysler}
 \end{adjustbox} \newline\newline
 
 \textbf{B - Encoding the input}\newline
@@ -196,16 +194,16 @@ An example tweet from the input data is shown in \textbf{A}. The pre-processing 
 \textbf{C - Decoding the tokenized input}\newline
 
 \begin{adjustbox}{minipage={\textwidth},fbox}
-    \texttt{[CLS] love it when i almost die rear ended by a semi cause my jeep turns off 
-again. one day they will fix it \# jeepsucks \# chrysler [SEP] [PAD] [PAD] [PAD] 
-[PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] 
-[PAD] [PAD]}
+    \texttt{[CLS] love it when i almost die rear ended by a semi cause my jeep turns off
+        again. one day they will fix it \# jeepsucks \# chrysler [SEP] [PAD] [PAD] [PAD]
+            [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD]
+            [PAD] [PAD]}
 \end{adjustbox}\\ \\
 
-\section{Experiments set 1: Performance comparison of BERT variants}
+\section{Experiments set 1: Predictive performance comparison of BERT variants}
 In the first experiment, the objective is to identify which of the models performs the best for the text classification task of complaints identification. Additionally, the relative performance of the models and the inference time will be analysed to assess how the model size impacts these aspects. A nested cross-validation approach will be used to experiment finetuning the model the various learning rate hyperparameter values and calculate mean performance metrics on inference. All models in scope for the experiments are pre-trained, hence finetuning will be performed for the downstream complaints identification task.\\
 
-The nested cross-validation approach utilized is adapted from \cite{preotiuc-pietro_automatically_2019}. The outer loop consists of 6 iterations and the inner loop of 4 iterations. Each outer loop includes a stratified split of the entire dataset into train (\textbf{A}) and test (\textbf{B}) datasets. Within the inner loop, \textbf{A} is further split into inner train and dev datasets using stratified split with each iteration, finetuning and validating on 1 of the 4 learning rates set for hyperparameter tuning. The best model from the inner loop is selected based on the F1 score on the dev dataset. This best model is used to perform inference using the test dataset, \textbf{B}. At the end of the 6 outer loop iterations, the mean of the performance metrics is calculated as the final metrics for that model. While \cite{preotiuc-pietro_automatically_2019} used 10 iterations for the outer loop, it has been restricted to 6 for the experiments considering significant variations were not observed on the metrics. This is likely due to the 6 stratified splits capturing sufficient variability in the input dataset.\\
+The nested cross-validation approach utilized is adapted from \cite{preotiuc-pietro_automatically_2019}. The outer loop consists of 6 iterations and the inner loop of 4 iterations. Each outer loop includes a stratified split of the entire dataset into train (\textbf{A}) and test (\textbf{B}) datasets. Within the inner loop, \textbf{A} is further split into inner train and dev datasets using stratified split with each iteration, finetuning and validating on 1 of the 4 learning rates set for hyperparameter tuning. The best model from the inner loop is selected based on the F1 score on the dev dataset. This best model is used to perform inference using the test dataset, \textbf{B}. At the end of the 6 outer loop iterations, the mean of the performance metrics is calculated as the final metrics for that model. While \cite{preotiuc-pietro_automatically_2019} used 10 iterations for the outer loop, it has been restricted to 6 for the experiments considering significant variations were not observed on the metrics. This is likely due to the smaller size of the dataset and 6 stratified splits capturing sufficient variability in the input dataset.\\
 \begin{table}[ht]
     \captionsetup{font=small}
     \small
@@ -236,9 +234,9 @@ The nested cross-validation approach utilized is adapted from \cite{preotiuc-pie
 
 The key choices for the experiments including that of the hyperparameters are described in Table \ref{tab: exp1_params}. For the stratified split, the \texttt{StratifiedKFold} function from \texttt{sklearn} library is used. This results in approximately 2874 and 575 Tweets for the outer loop's train and test datasets and 2155 and 719 Tweets for the inner loop's train and dev datasets. The number of epochs is set to 4 in line with official documentation for BERT \footnote{\url{https://github.com/google-research/bert}} where they use between 2 and 4 epochs for the various downstream tasks. The learning rate includes the default rate used by the models as well as a range of alternate values. All other hyperparameters take on their default values for the models as defined in the \texttt{transformers} library.\\
 
-For the performance metrics, precision, recall, accuracy, F1, and AOC scores are computed for both the inner loop's validation as well as the outer loop's testing. Further, the final metrics for each model are based on each of the mean metrics from the 6 outer loop iterations. Additionally, the samples per second and steps per second are captured for each of the models during the inference phase to analyse the time taken for inference in relation to the model size.
+For the predictive performance metrics, precision, recall, accuracy, F1 and Area under the ROC Curve (AOC) scores are computed for both the inner loop's validation as well as the outer loop's testing. Further, the final metrics for each model are based on each of the mean metrics from the 6 outer loop iterations. Additionally, the samples per second and steps per second are captured for each of the models during the inference phase to analyse the time taken for inference in relation to the model size.
 
-\section{Experiments set 2: Cross-domain performance}
+\section{Experiments set 2: Cross-domain predictive performance comparison}
 To evaluate the performance of finetuned models using a significantly small dataset with additional constraints of class imbalance, cross-domain experiments are conducted. This approach also offers an avenue to assess any linguistic variations among complaints across different domains and their consequent effects on the classification performance. \\
 
 For the experiments, the best-performing model from the first experiment is utilised. The Tweets for each of the 9 domains are used for training separately with Tweets from every other domain used for testing. Additionally, each domain is used for testing while training is based on all Tweets except the domain used for testing. Stratified split is applied on the training dataset for each domain using the \texttt{StratifiedKFold} function from \texttt{sklearn} library for 3 iterations of finetuning. At the end of each iteration, inference is performed on the testing data.  The number of epochs remains at '4', similar to experiment 1 while the learning rate used is the best learning for the selected model from experiment 1. All other hyperparameters are the model defaults. The parameters and hyperparameters used for the experiment are listed in Table \ref{tab: exp2_params}.\\
@@ -273,7 +271,7 @@ To ensure the balance of classes is maintained for the training and evaluation s
     \caption{The choice of key parameters and hyperparameters used for Experiment 2. Refer to the Chapter on results for the model and learning rate used for this experiment. }
     \label{tab: exp2_params}
 \end{table}
-For each iteration and combination of domains for finetuning and testing, the performance metrics are calculated for precision, recall, accuracy, F1, and AOC. At the end of the third iteration, the mean of the metrics is calculated. The results and findings from this set of experiments are presented in Chapter 4.
+For each iteration and combination of domains for finetuning and testing, the prediction performance metrics are calculated for precision, recall, accuracy, F1, and AOC. Matthews correlation coefficient (MCC) metric is also included to provide an additional dimension on the predictive performance considering the class imbalance present in the dataset used for this experiment set. At the end of the third iteration, the mean of the metrics is calculated. The results and findings from this set of experiments are presented in Chapter 4.
 
 \section{Ethical, Professional and Legal Issues}
 The data used for the experiments were created by \cite{preotiuc-pietro_automatically_2019} and further enhanced with complaints severity type annotation by \cite{jinModelingSeverityComplaints2021}. This data is anonymised and is available in the public domain\footnote{\url{ https://archive.org/details/complaint_severity_data}}. No additional data has been collected for the experiments conducted for this project. To ensure the appropriate compliance with the ethical review requirements of the University of Sheffield, a self-declared ethics review application with reference number 054854 was raised and subsequently approved by the University Research Ethics Committee.

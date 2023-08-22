@@ -11,19 +11,19 @@
 \contentsline {chapter}{\numberline {3}Methodology}{9}{}%
 \contentsline {section}{\numberline {3.1}Task}{9}{}%
 \contentsline {section}{\numberline {3.2}Data and pre-processing}{9}{}%
-\contentsline {subsection}{\numberline {3.2.1}Criteria for tweets}{9}{}%
-\contentsline {subsection}{\numberline {3.2.2}Data Extraction}{10}{}%
+\contentsline {subsection}{\numberline {3.2.1}Criteria for Tweets}{9}{}%
+\contentsline {subsection}{\numberline {3.2.2}Data Extraction}{9}{}%
 \contentsline {subsection}{\numberline {3.2.3}Annotation}{10}{}%
 \contentsline {section}{\numberline {3.3}Environment}{11}{}%
 \contentsline {subsection}{\numberline {3.3.1}Hardware}{11}{}%
 \contentsline {subsection}{\numberline {3.3.2}Software}{11}{}%
-\contentsline {section}{\numberline {3.4}Model selection}{11}{}%
-\contentsline {section}{\numberline {3.5}Data tokenisation}{13}{}%
+\contentsline {section}{\numberline {3.4}Model selection}{12}{}%
+\contentsline {section}{\numberline {3.5}Data tokenisation}{12}{}%
 \contentsline {subsection}{\numberline {3.5.1}Tokenization methods}{13}{}%
-\contentsline {subsection}{\numberline {3.5.2}Choice of settings}{14}{}%
+\contentsline {subsection}{\numberline {3.5.2}Choice of settings}{13}{}%
 \contentsline {subsection}{\numberline {3.5.3}Tokenisation example}{14}{}%
-\contentsline {section}{\numberline {3.6}Experiments set 1: Performance comparison of BERT variants}{15}{}%
-\contentsline {section}{\numberline {3.7}Experiments set 2: Cross-domain performance}{16}{}%
+\contentsline {section}{\numberline {3.6}Experiments set 1: Predictive performance comparison of BERT variants}{15}{}%
+\contentsline {section}{\numberline {3.7}Experiments set 2: Cross-domain predictive performance comparison}{16}{}%
 \contentsline {section}{\numberline {3.8}Ethical, Professional and Legal Issues}{17}{}%
 \contentsline {chapter}{\numberline {4}Results and discussion}{19}{}%
 \contentsline {section}{\numberline {4.1}Data exploration}{19}{}%

@@ -114,6 +114,10 @@
 \newblock Dictionary-based text categorization of chemical web pages.
 \newblock {\em Information Processing \& Management 42}, 4 (2006), 1017--1029.
 
+\bibitem{liuRoBERTaRobustlyOptimized2019}
+{\sc Liu, Y., Ott, M., Goyal, N., Du, J., Joshi, M., Chen, D., Levy, O., Lewis, M., Zettlemoyer, L., and Stoyanov, V.}
+\newblock {RoBERTa}: {A} {Robustly} {Optimized} {BERT} {Pretraining} {Approach}.
+
 \bibitem{luiLangidPyOfftheshelf2012}
 {\sc Lui, M., and Baldwin, T.}
 \newblock langid.py: {An} {Off}-the-shelf {Language} {Identification} {Tool}.

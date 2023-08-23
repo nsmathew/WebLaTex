@@ -85,6 +85,11 @@
 \newblock Long {Short}-{Term} {Memory}.
 \newblock {\em Neural Computation 9}, 8 (Nov. 1997), 1735--1780.
 
+\bibitem{howardUniversalLanguageModel2018}
+{\sc Howard, J., and Ruder, S.}
+\newblock Universal {Language} {Model} {Fine}-tuning for {Text} {Classification}, May 2018.
+\newblock arXiv:1801.06146 [cs, stat].
+
 \bibitem{istanbulluogluComplaintHandlingSocial2017}
 {\sc Istanbulluoglu, D.}
 \newblock Complaint handling on social media: {The} impact of multiple response times on consumer satisfaction.
@@ -113,6 +118,10 @@
 {\sc Lui, M., and Baldwin, T.}
 \newblock langid.py: {An} {Off}-the-shelf {Language} {Identification} {Tool}.
 \newblock In {\em Proceedings of the {ACL} 2012 {System} {Demonstrations}\/} (Jeju Island, Korea, July 2012), Association for Computational Linguistics, pp.~25--30.
+
+\bibitem{merityPointerSentinelMixture2016}
+{\sc Merity, S., Xiong, C., Bradbury, J., and Socher, R.}
+\newblock Pointer {Sentinel} {Mixture} {Models}, Sept. 2016.
 
 \bibitem{nguyenBERTweetPretrainedLanguage2020}
 {\sc Nguyen, D.~Q., Vu, T., and Nguyen, A.~T.}

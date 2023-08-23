@@ -12,6 +12,11 @@
 \newblock {\em Computational linguistics - Association for Computational Linguistics 34}, 4 (2008), 555--596.
 \newblock Place: One Rogers Street, Cambridge, MA 02142-1209, USA Publisher: MIT Press.
 
+\bibitem{bahdanauNeuralMachineTranslation2016}
+{\sc Bahdanau, D., Cho, K., and Bengio, Y.}
+\newblock Neural {Machine} {Translation} by {Jointly} {Learning} to {Align} and {Translate}, May 2016.
+\newblock arXiv:1409.0473 [cs, stat].
+
 \bibitem{balaji_customer_2015}
 {\sc Balaji, M.~S., Jha, S., and Royne, M.~B.}
 \newblock Customer e-complaining behaviours using social media.

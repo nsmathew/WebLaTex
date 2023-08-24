@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {2.5.1}Recurrent Neural Networks}{9}{}%
 \contentsline {subsection}{\numberline {2.5.2}Transformer and inductive transfer learning}{10}{}%
 \contentsline {subsection}{\numberline {2.5.3}BERT and its variants}{11}{}%
-\contentsline {section}{\numberline {2.6}Ongoing research}{11}{}%
+\contentsline {subsection}{\numberline {2.5.4}Ongoing research}{11}{}%
 \contentsline {chapter}{\numberline {3}Methodology}{12}{}%
 \contentsline {section}{\numberline {3.1}Task}{12}{}%
 \contentsline {section}{\numberline {3.2}Data and pre-processing}{12}{}%
@@ -21,9 +21,9 @@
 \contentsline {subsection}{\numberline {3.3.1}Hardware}{14}{}%
 \contentsline {subsection}{\numberline {3.3.2}Software}{14}{}%
 \contentsline {section}{\numberline {3.4}Model selection}{15}{}%
-\contentsline {section}{\numberline {3.5}Data tokenisation}{15}{}%
+\contentsline {section}{\numberline {3.5}Data tokenisation}{16}{}%
 \contentsline {subsection}{\numberline {3.5.1}Tokenization methods}{16}{}%
-\contentsline {subsection}{\numberline {3.5.2}Choice of settings}{16}{}%
+\contentsline {subsection}{\numberline {3.5.2}Choice of settings}{17}{}%
 \contentsline {subsection}{\numberline {3.5.3}Tokenisation example}{17}{}%
 \contentsline {section}{\numberline {3.6}Experiments set 1: Predictive performance comparison of BERT variants}{18}{}%
 \contentsline {section}{\numberline {3.7}Experiments set 2: Cross-domain predictive performance comparison}{19}{}%

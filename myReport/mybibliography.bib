@@ -32,6 +32,21 @@
   pages     = {555--596}
 }
 
+@misc{bahdanauNeuralMachineTranslation2016,
+  title     = {Neural {Machine} {Translation} by {Jointly} {Learning} to {Align} and {Translate}},
+  url       = {http://arxiv.org/abs/1409.0473},
+  doi       = {10.48550/arXiv.1409.0473},
+  abstract  = {Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder-decoders and consists of an encoder that encodes a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition.},
+  urldate   = {2023-08-23},
+  publisher = {arXiv},
+  author    = {Bahdanau, Dzmitry and Cho, Kyunghyun and Bengio, Yoshua},
+  month     = may,
+  year      = {2016},
+  keywords  = {Computer Science - Computation and Language, Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing, Statistics - Machine Learning},
+  annote    = {Comment: Accepted at ICLR 2015 as oral presentation},
+  file      = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/7K5E49B9/Bahdanau et al. - 2016 - Neural Machine Translation by Jointly Learning to .pdf:application/pdf;arXiv.org Snapshot:/Users/nitinmathew/Zotero/storage/BGK9QIB7/1409.html:text/html}
+}
+
 @article{balaji_customer_2015,
   title     = {Customer e-complaining behaviours using social media},
   volume    = {35},
@@ -93,6 +108,7 @@
   pages     = {103--125}
 }
 
+
 @book{brownPolitenessUniversalsLanguage1987,
   address   = {Cambridge [Cambridgeshire] ; New York},
   series    = {Studies in interactional sociolinguistics ; 4},
@@ -108,19 +124,57 @@
 }
 
 
+@article{chiccoAdvantagesMatthewsCorrelation2020,
+  title    = {The advantages of the {Matthews} correlation coefficient ({MCC}) over {F1} score and accuracy in binary classification evaluation},
+  volume   = {21},
+  issn     = {1471-2164},
+  doi      = {10.1186/s12864-019-6413-7},
+  abstract = {To evaluate binary classifications and their confusion matrices, scientific researchers can employ several statistical rates, accordingly to the goal of the experiment they are investigating. Despite being a crucial issue in machine learning, no widespread consensus has been reached on a unified elective chosen measure yet. Accuracy and F
+              score computed on confusion matrices have been (and still are) among the most popular adopted metrics in binary classification tasks. However, these statistical measures can dangerously show overoptimistic inflated results, especially on imbalanced datasets.
+              The Matthews correlation coefficient (MCC), instead, is a more reliable statistical rate which produces a high score only if the prediction obtained good results in all of the four confusion matrix categories (true positives, false negatives, true negatives, and false positives), proportionally both to the size of positive elements and the size of negative elements in the dataset.
+              In this article, we show how MCC produces a more informative and truthful score in evaluating binary classifications than accuracy and F
+              score, by first explaining the mathematical properties, and then the asset of MCC in six synthetic use cases and in a real genomics scenario. We believe that the Matthews correlation coefficient should be preferred to accuracy and F
+              score in evaluating binary classification tasks by all scientific communities.},
+  language = {eng},
+  number   = {1},
+  journal  = {BMC genomics},
+  author   = {Chicco, Davide and Jurman, Giuseppe},
+  year     = {2020},
+  keywords = {Accuracy, Analysis, Binary classification, Biostatistics, Business metrics, Classification, Confusion, Confusion matrices, Correlation coefficient, Correlation coefficients, Dataset imbalance, Datasets, Evaluation, F1 score, Gene expression, Genomics, Learning algorithms, Machine learning, Mathematical analysis, Matrix methods, Matthews correlation coefficient, Researchers, score, Statistics},
+  pages    = {6--6},
+  file     = {Full Text:/Users/nitinmathew/Zotero/storage/ETMUS27I/Chicco and Jurman - 2020 - The advantages of the Matthews correlation coeffic.pdf:application/pdf}
+}
+
+@misc{choPropertiesNeuralMachine2014,
+  title      = {On the {Properties} of {Neural} {Machine} {Translation}: {Encoder}-{Decoder} {Approaches}},
+  shorttitle = {On the {Properties} of {Neural} {Machine} {Translation}},
+  url        = {http://arxiv.org/abs/1409.1259},
+  doi        = {10.48550/arXiv.1409.1259},
+  abstract   = {Neural machine translation is a relatively new approach to statistical machine translation based purely on neural networks. The neural machine translation models often consist of an encoder and a decoder. The encoder extracts a fixed-length representation from a variable-length input sentence, and the decoder generates a correct translation from this representation. In this paper, we focus on analyzing the properties of the neural machine translation using two models; RNN Encoder--Decoder and a newly proposed gated recursive convolutional neural network. We show that the neural machine translation performs relatively well on short sentences without unknown words, but its performance degrades rapidly as the length of the sentence and the number of unknown words increase. Furthermore, we find that the proposed gated recursive convolutional network learns a grammatical structure of a sentence automatically.},
+  urldate    = {2023-08-24},
+  publisher  = {arXiv},
+  author     = {Cho, Kyunghyun and van Merrienboer, Bart and Bahdanau, Dzmitry and Bengio, Yoshua},
+  month      = oct,
+  year       = {2014},
+  keywords   = {Computer Science - Computation and Language, Statistics - Machine Learning},
+  annote     = {Comment: Eighth Workshop on Syntax, Semantics and Structure in Statistical Translation (SSST-8)},
+  file       = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/35BEVIJF/Cho et al. - 2014 - On the Properties of Neural Machine Translation E.pdf:application/pdf;arXiv.org Snapshot:/Users/nitinmathew/Zotero/storage/M89462X7/1409.html:text/html}
+}
+
+
 @misc{chungEmpiricalEvaluationGated2014,
-	title = {Empirical {Evaluation} of {Gated} {Recurrent} {Neural} {Networks} on {Sequence} {Modeling}},
-	url = {http://arxiv.org/abs/1412.3555},
-	doi = {10.48550/arXiv.1412.3555},
-	abstract = {In this paper we compare different types of recurrent units in recurrent neural networks (RNNs). Especially, we focus on more sophisticated units that implement a gating mechanism, such as a long short-term memory (LSTM) unit and a recently proposed gated recurrent unit (GRU). We evaluate these recurrent units on the tasks of polyphonic music modeling and speech signal modeling. Our experiments revealed that these advanced recurrent units are indeed better than more traditional recurrent units such as tanh units. Also, we found GRU to be comparable to LSTM.},
-	urldate = {2023-08-24},
-	publisher = {arXiv},
-	author = {Chung, Junyoung and Gulcehre, Caglar and Cho, KyungHyun and Bengio, Yoshua},
-	month = dec,
-	year = {2014},
-	keywords = {Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing},
-	annote = {Comment: Presented in NIPS 2014 Deep Learning and Representation Learning Workshop},
-	file = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/HEKU9EJ9/Chung et al. - 2014 - Empirical Evaluation of Gated Recurrent Neural Net.pdf:application/pdf;arXiv.org Snapshot:/Users/nitinmathew/Zotero/storage/DVG4JDRI/1412.html:text/html},
+  title     = {Empirical {Evaluation} of {Gated} {Recurrent} {Neural} {Networks} on {Sequence} {Modeling}},
+  url       = {http://arxiv.org/abs/1412.3555},
+  doi       = {10.48550/arXiv.1412.3555},
+  abstract  = {In this paper we compare different types of recurrent units in recurrent neural networks (RNNs). Especially, we focus on more sophisticated units that implement a gating mechanism, such as a long short-term memory (LSTM) unit and a recently proposed gated recurrent unit (GRU). We evaluate these recurrent units on the tasks of polyphonic music modeling and speech signal modeling. Our experiments revealed that these advanced recurrent units are indeed better than more traditional recurrent units such as tanh units. Also, we found GRU to be comparable to LSTM.},
+  urldate   = {2023-08-24},
+  publisher = {arXiv},
+  author    = {Chung, Junyoung and Gulcehre, Caglar and Cho, KyungHyun and Bengio, Yoshua},
+  month     = dec,
+  year      = {2014},
+  keywords  = {Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing},
+  annote    = {Comment: Presented in NIPS 2014 Deep Learning and Representation Learning Workshop},
+  file      = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/HEKU9EJ9/Chung et al. - 2014 - Empirical Evaluation of Gated Recurrent Neural Net.pdf:application/pdf;arXiv.org Snapshot:/Users/nitinmathew/Zotero/storage/DVG4JDRI/1412.html:text/html}
 }
 
 
@@ -140,18 +194,18 @@
 }
 
 @misc{devlinBERTPretrainingDeep2018,
-	title = {{BERT}: {Pre}-training of {Deep} {Bidirectional} {Transformers} for {Language} {Understanding}},
-	shorttitle = {{BERT}},
-	url = {http://arxiv.org/abs/1810.04805},
-	doi = {10.48550/arXiv.1810.04805},
-	abstract = {We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5\% (7.7\% point absolute improvement), MultiNLI accuracy to 86.7\% (4.6\% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).},
-	urldate = {2023-08-24},
-	publisher = {arXiv},
-	author = {Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
-	month = may,
-	year = {2019},
-	keywords = {Computer Science - Computation and Language},
-	file = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/BWUZFZQW/Devlin et al. - 2019 - BERT Pre-training of Deep Bidirectional Transform.pdf:application/pdf},
+  title      = {{BERT}: {Pre}-training of {Deep} {Bidirectional} {Transformers} for {Language} {Understanding}},
+  shorttitle = {{BERT}},
+  url        = {http://arxiv.org/abs/1810.04805},
+  doi        = {10.48550/arXiv.1810.04805},
+  abstract   = {We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5\% (7.7\% point absolute improvement), MultiNLI accuracy to 86.7\% (4.6\% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).},
+  urldate    = {2023-08-24},
+  publisher  = {arXiv},
+  author     = {Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+  month      = may,
+  year       = {2019},
+  keywords   = {Computer Science - Computation and Language},
+  file       = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/BWUZFZQW/Devlin et al. - 2019 - BERT Pre-training of Deep Bidirectional Transform.pdf:application/pdf}
 }
 
 
@@ -186,6 +240,25 @@
   pages      = {38--52}
 }
 
+@article{hirschbergAdvancesNaturalLanguage2015,
+  title    = {Advances in natural language processing},
+  volume   = {349},
+  url      = {https://www.science.org/doi/full/10.1126/science.aaa8685},
+  doi      = {10.1126/science.aaa8685},
+  abstract = {Natural language processing employs computational techniques for the purpose of learning, understanding, and producing human language content. Early computational approaches to language research focused on automating the analysis of the linguistic structure of language and developing basic technologies such as machine translation, speech recognition, and speech synthesis. Today’s researchers refine and make use of such tools in real-world applications, creating spoken dialogue systems and speech-to-speech translation engines, mining social media for information about health or finance, and identifying sentiment and emotion toward products and services. We describe successes and challenges in this rapidly advancing area.},
+  number   = {6245},
+  urldate  = {2023-08-22},
+  journal  = {Science},
+  author   = {Hirschberg, Julia and Manning, Christopher D.},
+  month    = jul,
+  year     = {2015},
+  pages    = {261--266},
+  file     = {Full Text PDF:/Users/nitinmathew/Zotero/storage/3NNPPFDB/Hirschberg and Manning - 2015 - Advances in natural language processing.pdf:application/pdf}
+}
+
+
+
+
 @article{hochreiterLongShortTermMemory1997,
   title    = {Long {Short}-{Term} {Memory}},
   volume   = {9},
@@ -201,6 +274,24 @@
   year     = {1997},
   pages    = {1735--1780}
 }
+
+
+
+@misc{howardUniversalLanguageModel2018,
+  title     = {Universal {Language} {Model} {Fine}-tuning for {Text} {Classification}},
+  url       = {http://arxiv.org/abs/1801.06146},
+  doi       = {10.48550/arXiv.1801.06146},
+  abstract  = {Inductive transfer learning has greatly impacted computer vision, but existing approaches in NLP still require task-specific modifications and training from scratch. We propose Universal Language Model Fine-tuning (ULMFiT), an effective transfer learning method that can be applied to any task in NLP, and introduce techniques that are key for fine-tuning a language model. Our method significantly outperforms the state-of-the-art on six text classification tasks, reducing the error by 18-24\% on the majority of datasets. Furthermore, with only 100 labeled examples, it matches the performance of training from scratch on 100x more data. We open-source our pretrained models and code.},
+  urldate   = {2023-08-07},
+  publisher = {arXiv},
+  author    = {Howard, Jeremy and Ruder, Sebastian},
+  month     = may,
+  year      = {2018},
+  keywords  = {Computer Science - Computation and Language, Computer Science - Machine Learning, Statistics - Machine Learning},
+  annote    = {Comment: ACL 2018, fixed denominator in Equation 3, line 3},
+  file      = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/YGH879MW/Howard and Ruder - 2018 - Universal Language Model Fine-tuning for Text Clas.pdf:application/pdf;arXiv.org Snapshot:/Users/nitinmathew/Zotero/storage/NGKPX4UF/1801.html:text/html}
+}
+
 
 
 @article{istanbulluogluComplaintHandlingSocial2017,
@@ -222,37 +313,37 @@
 }
 
 
+
 @misc{jin_complaint_2020,
-	title = {Complaint {Identification} in {Social} {Media} with {Transformer} {Networks}},
-	url = {http://arxiv.org/abs/2010.10910},
-	doi = {10.48550/arXiv.2010.10910},
-	abstract = {Complaining is a speech act extensively used by humans to communicate a negative inconsistency between reality and expectations. Previous work on automatically identifying complaints in social media has focused on using feature-based and task-specific neural network models. Adapting state-of-the-art pre-trained neural language models and their combinations with other linguistic information from topics or sentiment for complaint prediction has yet to be explored. In this paper, we evaluate a battery of neural models underpinned by transformer networks which we subsequently combine with linguistic information. Experiments on a publicly available data set of complaints demonstrate that our models outperform previous state-of-the-art methods by a large margin achieving a macro F1 up to 87.},
-	urldate = {2023-08-24},
-	publisher = {arXiv},
-	author = {Jin, Mali and Aletras, Nikolaos},
-	month = oct,
-	year = {2020},
-	keywords = {Computer Science - Computation and Language},
-	annote = {Comment: Accepted at COLING 2020},
-	file = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/9ZLP2XY7/Jin and Aletras - 2020 - Complaint Identification in Social Media with Tran.pdf:application/pdf;arXiv.org Snapshot:/Users/nitinmathew/Zotero/storage/GMSIHMRB/2010.html:text/html},
+  title     = {Complaint {Identification} in {Social} {Media} with {Transformer} {Networks}},
+  url       = {http://arxiv.org/abs/2010.10910},
+  doi       = {10.48550/arXiv.2010.10910},
+  abstract  = {Complaining is a speech act extensively used by humans to communicate a negative inconsistency between reality and expectations. Previous work on automatically identifying complaints in social media has focused on using feature-based and task-specific neural network models. Adapting state-of-the-art pre-trained neural language models and their combinations with other linguistic information from topics or sentiment for complaint prediction has yet to be explored. In this paper, we evaluate a battery of neural models underpinned by transformer networks which we subsequently combine with linguistic information. Experiments on a publicly available data set of complaints demonstrate that our models outperform previous state-of-the-art methods by a large margin achieving a macro F1 up to 87.},
+  urldate   = {2023-08-24},
+  publisher = {arXiv},
+  author    = {Jin, Mali and Aletras, Nikolaos},
+  month     = oct,
+  year      = {2020},
+  keywords  = {Computer Science - Computation and Language},
+  annote    = {Comment: Accepted at COLING 2020},
+  file      = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/9ZLP2XY7/Jin and Aletras - 2020 - Complaint Identification in Social Media with Tran.pdf:application/pdf;arXiv.org Snapshot:/Users/nitinmathew/Zotero/storage/GMSIHMRB/2010.html:text/html}
 }
+
 
 @misc{jinModelingSeverityComplaints2021,
-	title = {Modeling the {Severity} of {Complaints} in {Social} {Media}},
-	url = {http://arxiv.org/abs/2103.12428},
-	doi = {10.48550/arXiv.2103.12428},
-	abstract = {The speech act of complaining is used by humans to communicate a negative mismatch between reality and expectations as a reaction to an unfavorable situation. Linguistic theory of pragmatics categorizes complaints into various severity levels based on the face-threat that the complainer is willing to undertake. This is particularly useful for understanding the intent of complainers and how humans develop suitable apology strategies. In this paper, we study the severity level of complaints for the first time in computational linguistics. To facilitate this, we enrich a publicly available data set of complaints with four severity categories and train different transformer-based networks combined with linguistic information achieving 55.7 macro F1. We also jointly model binary complaint classification and complaint severity in a multi-task setting achieving new state-of-the-art results on binary complaint detection reaching up to 88.2 macro F1. Finally, we present a qualitative analysis of the behavior of our models in predicting complaint severity levels.},
-	urldate = {2023-08-24},
-	publisher = {arXiv},
-	author = {Jin, Mali and Aletras, Nikolaos},
-	month = mar,
-	year = {2021},
-	keywords = {Computer Science - Computation and Language},
-	annote = {Comment: Accepted at NAACL 2021},
-	file = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/TTH87XQC/Jin and Aletras - 2021 - Modeling the Severity of Complaints in Social Medi.pdf:application/pdf},
+  title     = {Modeling the {Severity} of {Complaints} in {Social} {Media}},
+  url       = {http://arxiv.org/abs/2103.12428},
+  doi       = {10.48550/arXiv.2103.12428},
+  abstract  = {The speech act of complaining is used by humans to communicate a negative mismatch between reality and expectations as a reaction to an unfavorable situation. Linguistic theory of pragmatics categorizes complaints into various severity levels based on the face-threat that the complainer is willing to undertake. This is particularly useful for understanding the intent of complainers and how humans develop suitable apology strategies. In this paper, we study the severity level of complaints for the first time in computational linguistics. To facilitate this, we enrich a publicly available data set of complaints with four severity categories and train different transformer-based networks combined with linguistic information achieving 55.7 macro F1. We also jointly model binary complaint classification and complaint severity in a multi-task setting achieving new state-of-the-art results on binary complaint detection reaching up to 88.2 macro F1. Finally, we present a qualitative analysis of the behavior of our models in predicting complaint severity levels.},
+  urldate   = {2023-08-24},
+  publisher = {arXiv},
+  author    = {Jin, Mali and Aletras, Nikolaos},
+  month     = mar,
+  year      = {2021},
+  keywords  = {Computer Science - Computation and Language},
+  annote    = {Comment: Accepted at NAACL 2021},
+  file      = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/TTH87XQC/Jin and Aletras - 2021 - Modeling the Severity of Complaints in Social Medi.pdf:application/pdf}
 }
-
-
 
 
 @article{lauIndividualSituationalFactors2001,
@@ -291,6 +382,22 @@
 }
 
 
+@misc{liuRoBERTaRobustlyOptimized2019,
+  title      = {{RoBERTa}: {A} {Robustly} {Optimized} {BERT} {Pretraining} {Approach}},
+  shorttitle = {{RoBERTa}},
+  url        = {http://arxiv.org/abs/1907.11692},
+  doi        = {10.48550/arXiv.1907.11692},
+  abstract   = {Language model pretraining has led to significant performance gains but careful comparison between different approaches is challenging. Training is computationally expensive, often done on private datasets of different sizes, and, as we will show, hyperparameter choices have significant impact on the final results. We present a replication study of BERT pretraining (Devlin et al., 2019) that carefully measures the impact of many key hyperparameters and training data size. We find that BERT was significantly undertrained, and can match or exceed the performance of every model published after it. Our best model achieves state-of-the-art results on GLUE, RACE and SQuAD. These results highlight the importance of previously overlooked design choices, and raise questions about the source of recently reported improvements. We release our models and code.},
+  urldate    = {2023-08-24},
+  publisher  = {arXiv},
+  author     = {Liu, Yinhan and Ott, Myle and Goyal, Naman and Du, Jingfei and Joshi, Mandar and Chen, Danqi and Levy, Omer and Lewis, Mike and Zettlemoyer, Luke and Stoyanov, Veselin},
+  month      = jul,
+  year       = {2019},
+  keywords   = {Computer Science - Computation and Language},
+  file       = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/PTRXRRSF/Liu et al. - 2019 - RoBERTa A Robustly Optimized BERT Pretraining App.pdf:application/pdf}
+}
+
+
 
 @inproceedings{luiLangidPyOfftheshelf2012,
   address   = {Jeju Island, Korea},
@@ -304,6 +411,19 @@
   pages     = {25--30}
 }
 
+
+@misc{merityPointerSentinelMixture2016,
+  title    = {Pointer {Sentinel} {Mixture} {Models}},
+  url      = {https://arxiv.org/abs/1609.07843v1},
+  abstract = {Recent neural network sequence models with softmax classifiers have achieved their best language modeling performance only with very large hidden states and large vocabularies. Even then they struggle to predict rare or unseen words even if the context makes the prediction unambiguous. We introduce the pointer sentinel mixture architecture for neural sequence models which has the ability to either reproduce a word from the recent context or produce a word from a standard softmax classifier. Our pointer sentinel-LSTM model achieves state of the art language modeling performance on the Penn Treebank (70.9 perplexity) while using far fewer parameters than a standard softmax LSTM. In order to evaluate how well language models can exploit longer contexts and deal with more realistic vocabularies and larger corpora we also introduce the freely available WikiText corpus.},
+  language = {en},
+  urldate  = {2023-08-23},
+  journal  = {arXiv.org},
+  author   = {Merity, Stephen and Xiong, Caiming and Bradbury, James and Socher, Richard},
+  month    = sep,
+  year     = {2016},
+  file     = {Full Text PDF:/Users/nitinmathew/Zotero/storage/9FEJ3784/Merity et al. - 2016 - Pointer Sentinel Mixture Models.pdf:application/pdf}
+}
 
 
 @misc{nguyenBERTweetPretrainedLanguage2020,
@@ -351,7 +471,6 @@
 }
 
 
-
 @article{pfefferUnderstandingOnlineFirestorms2014,
   title      = {Understanding online firestorms: {Negative} word-of-mouth dynamics in social media networks},
   volume     = {20},
@@ -372,21 +491,21 @@
 }
 
 
-@misc{preotiuc-pietro_automatically_2019,
-	title = {Automatically {Identifying} {Complaints} in {Social} {Media}},
-	url = {http://arxiv.org/abs/1906.03890},
-	doi = {10.48550/arXiv.1906.03890},
-	abstract = {Complaining is a basic speech act regularly used in human and computer mediated communication to express a negative mismatch between reality and expectations in a particular situation. Automatically identifying complaints in social media is of utmost importance for organizations or brands to improve the customer experience or in developing dialogue systems for handling and responding to complaints. In this paper, we introduce the first systematic analysis of complaints in computational linguistics. We collect a new annotated data set of written complaints expressed in English on Twitter.{\textbackslash}footnote\{Data and code is available here: {\textbackslash}url\{https://github.com/danielpreotiuc/complaints-social-media\}\} We present an extensive linguistic analysis of complaining as a speech act in social media and train strong feature-based and neural models of complaints across nine domains achieving a predictive performance of up to 79 F1 using distant supervision.},
-	urldate = {2023-08-24},
-	publisher = {arXiv},
-	author = {Preotiuc-Pietro, Daniel and Gaman, Mihaela and Aletras, Nikolaos},
-	month = jun,
-	year = {2019},
-	keywords = {Computer Science - Computation and Language, Computer Science - Social and Information Networks},
-	annote = {Comment: Accepted at ACL 2019},
-	file = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/UVR8FACQ/Preotiuc-Pietro et al. - 2019 - Automatically Identifying Complaints in Social Med.pdf:application/pdf},
-}
 
+@misc{preotiuc-pietro_automatically_2019,
+  title     = {Automatically {Identifying} {Complaints} in {Social} {Media}},
+  url       = {http://arxiv.org/abs/1906.03890},
+  doi       = {10.48550/arXiv.1906.03890},
+  abstract  = {Complaining is a basic speech act regularly used in human and computer mediated communication to express a negative mismatch between reality and expectations in a particular situation. Automatically identifying complaints in social media is of utmost importance for organizations or brands to improve the customer experience or in developing dialogue systems for handling and responding to complaints. In this paper, we introduce the first systematic analysis of complaints in computational linguistics. We collect a new annotated data set of written complaints expressed in English on Twitter.{\textbackslash}footnote\{Data and code is available here: {\textbackslash}url\{https://github.com/danielpreotiuc/complaints-social-media\}\} We present an extensive linguistic analysis of complaining as a speech act in social media and train strong feature-based and neural models of complaints across nine domains achieving a predictive performance of up to 79 F1 using distant supervision.},
+  urldate   = {2023-08-24},
+  publisher = {arXiv},
+  author    = {Preotiuc-Pietro, Daniel and Gaman, Mihaela and Aletras, Nikolaos},
+  month     = jun,
+  year      = {2019},
+  keywords  = {Computer Science - Computation and Language, Computer Science - Social and Information Networks},
+  annote    = {Comment: Accepted at ACL 2019},
+  file      = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/UVR8FACQ/Preotiuc-Pietro et al. - 2019 - Automatically Identifying Complaints in Social Med.pdf:application/pdf}
+}
 
 
 @article{qiuYouAreWhat2012,
@@ -407,6 +526,7 @@
   pages      = {710--718},
   file       = {ScienceDirect Full Text PDF:/Users/nitinmathew/Zotero/storage/SD55V6YS/Qiu et al. - 2012 - You are what you tweet Personality expression and.pdf:application/pdf;ScienceDirect Snapshot:/Users/nitinmathew/Zotero/storage/4YZS9JDA/S009265661200133X.html:text/html}
 }
+
 
 
 @article{rookNormativeInfluencesImpulsive1995,
@@ -460,7 +580,6 @@
   file       = {ScienceDirect Full Text PDF:/Users/nitinmathew/Zotero/storage/PJ68ZG8B/Shane-Simpson et al. - 2018 - Why do college students prefer Facebook, Twitter, .pdf:application/pdf;ScienceDirect Snapshot:/Users/nitinmathew/Zotero/storage/3IVB43CA/S074756321830205X.html:text/html}
 }
 
-
 @article{sharma_complainers_2010,
   title     = {Complainers versus non-complainers: a multi-national investigation of individual and situational influences on customer complaint behaviour},
   volume    = {26},
@@ -475,7 +594,6 @@
   keywords  = {Analysis, Studies, Complaints, Consumer complaints, Consumer behavior, Customer satisfaction, Correlation analysis, customer complaint behaviour, dissatisfaction, Impulse, impulsivity, International aspects, involvement, self-monitoring},
   pages     = {163--180}
 }
-
 
 @article{sparksComplainingCyberspaceMotives2010,
   title      = {Complaining in {Cyberspace}: {The} {Motives} and {Forms} of {Hotel} {Guests}' {Complaints} {Online}},
@@ -493,7 +611,6 @@
   pages      = {797--818},
   file       = {Full Text:/Users/nitinmathew/Zotero/storage/FZNNG5VM/Sparks and Browning - 2010 - Complaining in Cyberspace The Motives and Forms o.pdf:application/pdf}
 }
-
 
 
 @article{sunDoesActiveService2021,
@@ -515,7 +632,6 @@
   file       = {Full Text PDF:/Users/nitinmathew/Zotero/storage/YL5CBMQ5/Sun et al. - 2021 - Does Active Service Intervention Drive More Compla.pdf:application/pdf}
 }
 
-
 @misc{sunMobileBERTCompactTaskAgnostic2020,
   title      = {{MobileBERT}: a {Compact} {Task}-{Agnostic} {BERT} for {Resource}-{Limited} {Devices}},
   shorttitle = {{MobileBERT}},
@@ -531,8 +647,6 @@
   annote     = {Comment: Accepted to ACL 2020},
   file       = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/UPVNAA52/Sun et al. - 2020 - MobileBERT a Compact Task-Agnostic BERT for Resou.pdf:application/pdf;arXiv.org Snapshot:/Users/nitinmathew/Zotero/storage/NMDTPAQ6/2004.html:text/html}
 }
-
-
 
 @article{tripp_when_2011,
   title     = {When unhappy customers strike back on the {Internet}},
@@ -566,7 +680,6 @@
   file       = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/GTRS3K2K/Turc et al. - 2019 - Well-Read Students Learn Better On the Importance.pdf:application/pdf;arXiv.org Snapshot:/Users/nitinmathew/Zotero/storage/AATUTP35/1908.html:text/html}
 }
 
-
 @misc{vaswaniAttentionAllYou2023a,
   title     = {Attention {Is} {All} {You} {Need}},
   url       = {http://arxiv.org/abs/1706.03762},
@@ -580,118 +693,5 @@
   keywords  = {Computer Science - Computation and Language, Computer Science - Machine Learning},
   annote    = {Comment: 15 pages, 5 figures},
   file      = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/ANXW2JI7/Vaswani et al. - 2023 - Attention Is All You Need.pdf:application/pdf;arXiv.org Snapshot:/Users/nitinmathew/Zotero/storage/MZ6M9IFF/1706.html:text/html}
-}
-
-@article{hirschbergAdvancesNaturalLanguage2015,
-	title = {Advances in natural language processing},
-	volume = {349},
-	url = {https://www.science.org/doi/full/10.1126/science.aaa8685},
-	doi = {10.1126/science.aaa8685},
-	abstract = {Natural language processing employs computational techniques for the purpose of learning, understanding, and producing human language content. Early computational approaches to language research focused on automating the analysis of the linguistic structure of language and developing basic technologies such as machine translation, speech recognition, and speech synthesis. Today’s researchers refine and make use of such tools in real-world applications, creating spoken dialogue systems and speech-to-speech translation engines, mining social media for information about health or finance, and identifying sentiment and emotion toward products and services. We describe successes and challenges in this rapidly advancing area.},
-	number = {6245},
-	urldate = {2023-08-22},
-	journal = {Science},
-	author = {Hirschberg, Julia and Manning, Christopher D.},
-	month = jul,
-	year = {2015},
-	pages = {261--266},
-	file = {Full Text PDF:/Users/nitinmathew/Zotero/storage/3NNPPFDB/Hirschberg and Manning - 2015 - Advances in natural language processing.pdf:application/pdf},
-}
-
-@misc{choPropertiesNeuralMachine2014,
-	title = {On the {Properties} of {Neural} {Machine} {Translation}: {Encoder}-{Decoder} {Approaches}},
-	shorttitle = {On the {Properties} of {Neural} {Machine} {Translation}},
-	url = {http://arxiv.org/abs/1409.1259},
-	doi = {10.48550/arXiv.1409.1259},
-	abstract = {Neural machine translation is a relatively new approach to statistical machine translation based purely on neural networks. The neural machine translation models often consist of an encoder and a decoder. The encoder extracts a fixed-length representation from a variable-length input sentence, and the decoder generates a correct translation from this representation. In this paper, we focus on analyzing the properties of the neural machine translation using two models; RNN Encoder--Decoder and a newly proposed gated recursive convolutional neural network. We show that the neural machine translation performs relatively well on short sentences without unknown words, but its performance degrades rapidly as the length of the sentence and the number of unknown words increase. Furthermore, we find that the proposed gated recursive convolutional network learns a grammatical structure of a sentence automatically.},
-	urldate = {2023-08-24},
-	publisher = {arXiv},
-	author = {Cho, Kyunghyun and van Merrienboer, Bart and Bahdanau, Dzmitry and Bengio, Yoshua},
-	month = oct,
-	year = {2014},
-	keywords = {Computer Science - Computation and Language, Statistics - Machine Learning},
-	annote = {Comment: Eighth Workshop on Syntax, Semantics and Structure in Statistical Translation (SSST-8)},
-	file = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/35BEVIJF/Cho et al. - 2014 - On the Properties of Neural Machine Translation E.pdf:application/pdf;arXiv.org Snapshot:/Users/nitinmathew/Zotero/storage/M89462X7/1409.html:text/html},
-}
-
-
-@misc{bahdanauNeuralMachineTranslation2016,
-	title = {Neural {Machine} {Translation} by {Jointly} {Learning} to {Align} and {Translate}},
-	url = {http://arxiv.org/abs/1409.0473},
-	doi = {10.48550/arXiv.1409.0473},
-	abstract = {Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder-decoders and consists of an encoder that encodes a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition.},
-	urldate = {2023-08-23},
-	publisher = {arXiv},
-	author = {Bahdanau, Dzmitry and Cho, Kyunghyun and Bengio, Yoshua},
-	month = may,
-	year = {2016},
-	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing, Statistics - Machine Learning},
-	annote = {Comment: Accepted at ICLR 2015 as oral presentation},
-	file = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/7K5E49B9/Bahdanau et al. - 2016 - Neural Machine Translation by Jointly Learning to .pdf:application/pdf;arXiv.org Snapshot:/Users/nitinmathew/Zotero/storage/BGK9QIB7/1409.html:text/html},
-}
-
-@misc{howardUniversalLanguageModel2018,
-	title = {Universal {Language} {Model} {Fine}-tuning for {Text} {Classification}},
-	url = {http://arxiv.org/abs/1801.06146},
-	doi = {10.48550/arXiv.1801.06146},
-	abstract = {Inductive transfer learning has greatly impacted computer vision, but existing approaches in NLP still require task-specific modifications and training from scratch. We propose Universal Language Model Fine-tuning (ULMFiT), an effective transfer learning method that can be applied to any task in NLP, and introduce techniques that are key for fine-tuning a language model. Our method significantly outperforms the state-of-the-art on six text classification tasks, reducing the error by 18-24\% on the majority of datasets. Furthermore, with only 100 labeled examples, it matches the performance of training from scratch on 100x more data. We open-source our pretrained models and code.},
-	urldate = {2023-08-07},
-	publisher = {arXiv},
-	author = {Howard, Jeremy and Ruder, Sebastian},
-	month = may,
-	year = {2018},
-	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning, Statistics - Machine Learning},
-	annote = {Comment: ACL 2018, fixed denominator in Equation 3, line 3},
-	file = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/YGH879MW/Howard and Ruder - 2018 - Universal Language Model Fine-tuning for Text Clas.pdf:application/pdf;arXiv.org Snapshot:/Users/nitinmathew/Zotero/storage/NGKPX4UF/1801.html:text/html},
-}
-
-@misc{merityPointerSentinelMixture2016,
-	title = {Pointer {Sentinel} {Mixture} {Models}},
-	url = {https://arxiv.org/abs/1609.07843v1},
-	abstract = {Recent neural network sequence models with softmax classifiers have achieved their best language modeling performance only with very large hidden states and large vocabularies. Even then they struggle to predict rare or unseen words even if the context makes the prediction unambiguous. We introduce the pointer sentinel mixture architecture for neural sequence models which has the ability to either reproduce a word from the recent context or produce a word from a standard softmax classifier. Our pointer sentinel-LSTM model achieves state of the art language modeling performance on the Penn Treebank (70.9 perplexity) while using far fewer parameters than a standard softmax LSTM. In order to evaluate how well language models can exploit longer contexts and deal with more realistic vocabularies and larger corpora we also introduce the freely available WikiText corpus.},
-	language = {en},
-	urldate = {2023-08-23},
-	journal = {arXiv.org},
-	author = {Merity, Stephen and Xiong, Caiming and Bradbury, James and Socher, Richard},
-	month = sep,
-	year = {2016},
-	file = {Full Text PDF:/Users/nitinmathew/Zotero/storage/9FEJ3784/Merity et al. - 2016 - Pointer Sentinel Mixture Models.pdf:application/pdf},
-}
-
-
-@misc{liuRoBERTaRobustlyOptimized2019,
-	title = {{RoBERTa}: {A} {Robustly} {Optimized} {BERT} {Pretraining} {Approach}},
-	shorttitle = {{RoBERTa}},
-	url = {http://arxiv.org/abs/1907.11692},
-	doi = {10.48550/arXiv.1907.11692},
-	abstract = {Language model pretraining has led to significant performance gains but careful comparison between different approaches is challenging. Training is computationally expensive, often done on private datasets of different sizes, and, as we will show, hyperparameter choices have significant impact on the final results. We present a replication study of BERT pretraining (Devlin et al., 2019) that carefully measures the impact of many key hyperparameters and training data size. We find that BERT was significantly undertrained, and can match or exceed the performance of every model published after it. Our best model achieves state-of-the-art results on GLUE, RACE and SQuAD. These results highlight the importance of previously overlooked design choices, and raise questions about the source of recently reported improvements. We release our models and code.},
-	urldate = {2023-08-24},
-	publisher = {arXiv},
-	author = {Liu, Yinhan and Ott, Myle and Goyal, Naman and Du, Jingfei and Joshi, Mandar and Chen, Danqi and Levy, Omer and Lewis, Mike and Zettlemoyer, Luke and Stoyanov, Veselin},
-	month = jul,
-	year = {2019},
-	keywords = {Computer Science - Computation and Language},
-	file = {arXiv Fulltext PDF:/Users/nitinmathew/Zotero/storage/PTRXRRSF/Liu et al. - 2019 - RoBERTa A Robustly Optimized BERT Pretraining App.pdf:application/pdf},
-}
-
-@article{chiccoAdvantagesMatthewsCorrelation2020,
-	title = {The advantages of the {Matthews} correlation coefficient ({MCC}) over {F1} score and accuracy in binary classification evaluation},
-	volume = {21},
-	issn = {1471-2164},
-	doi = {10.1186/s12864-019-6413-7},
-	abstract = {To evaluate binary classifications and their confusion matrices, scientific researchers can employ several statistical rates, accordingly to the goal of the experiment they are investigating. Despite being a crucial issue in machine learning, no widespread consensus has been reached on a unified elective chosen measure yet. Accuracy and F
-score computed on confusion matrices have been (and still are) among the most popular adopted metrics in binary classification tasks. However, these statistical measures can dangerously show overoptimistic inflated results, especially on imbalanced datasets.
-The Matthews correlation coefficient (MCC), instead, is a more reliable statistical rate which produces a high score only if the prediction obtained good results in all of the four confusion matrix categories (true positives, false negatives, true negatives, and false positives), proportionally both to the size of positive elements and the size of negative elements in the dataset.
-In this article, we show how MCC produces a more informative and truthful score in evaluating binary classifications than accuracy and F
-score, by first explaining the mathematical properties, and then the asset of MCC in six synthetic use cases and in a real genomics scenario. We believe that the Matthews correlation coefficient should be preferred to accuracy and F
-score in evaluating binary classification tasks by all scientific communities.},
-	language = {eng},
-	number = {1},
-	journal = {BMC genomics},
-	author = {Chicco, Davide and Jurman, Giuseppe},
-	year = {2020},
-	keywords = {Accuracy, Analysis, Binary classification, Biostatistics, Business metrics, Classification, Confusion, Confusion matrices, Correlation coefficient, Correlation coefficients, Dataset imbalance, Datasets, Evaluation, F1 score, Gene expression, Genomics, Learning algorithms, Machine learning, Mathematical analysis, Matrix methods, Matthews correlation coefficient, Researchers, score, Statistics},
-	pages = {6--6},
-	file = {Full Text:/Users/nitinmathew/Zotero/storage/ETMUS27I/Chicco and Jurman - 2020 - The advantages of the Matthews correlation coeffic.pdf:application/pdf},
 }
 

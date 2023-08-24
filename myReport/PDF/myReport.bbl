@@ -4,50 +4,49 @@
 {\sc Ahluwalia, R., Burnkrant, R.~E., and Unnava, H.~R.}
 \newblock Consumer {Response} to {Negative} {Publicity}: {The} {Moderating} {Role} of {Commitment}.
 \newblock {\em Journal of Marketing Research 37}, 2 (May 2000), 203--214.
-\newblock Publisher: SAGE Publications Inc.
 
 \bibitem{artsteinInterCoderAgreementComputational2008}
 {\sc Artstein, R., and Poesio, M.}
 \newblock Inter-{Coder} {Agreement} for {Computational} {Linguistics}.
 \newblock {\em Computational linguistics - Association for Computational Linguistics 34}, 4 (2008), 555--596.
-\newblock Place: One Rogers Street, Cambridge, MA 02142-1209, USA Publisher: MIT Press.
 
 \bibitem{bahdanauNeuralMachineTranslation2016}
 {\sc Bahdanau, D., Cho, K., and Bengio, Y.}
 \newblock Neural {Machine} {Translation} by {Jointly} {Learning} to {Align} and {Translate}, May 2016.
-\newblock arXiv:1409.0473 [cs, stat].
 
 \bibitem{balaji_customer_2015}
 {\sc Balaji, M.~S., Jha, S., and Royne, M.~B.}
 \newblock Customer e-complaining behaviours using social media.
 \newblock {\em The Service industries journal 35}, 11-12 (2015), 633--654.
-\newblock Place: London Publisher: Routledge.
 
 \bibitem{bechererSelfMonitoringModeratingVariable1978}
 {\sc Becherer, R.~C., and Richard, L.~M.}
 \newblock Self-{Monitoring} as a {Moderating} {Variable} in {Consumer} {Behavior}.
 \newblock {\em The Journal of consumer research 5}, 3 (1978), 159--162.
-\newblock Place: CHICAGO Publisher: Journal of Consumer Research.
 
 \bibitem{bhargavaGeneralizationNLIWays2021}
 {\sc Bhargava, P., Drozd, A., and Rogers, A.}
 \newblock Generalization in {NLI}: {Ways} ({Not}) {To} {Go} {Beyond} {Simple} {Heuristics}, Oct. 2021.
-\newblock arXiv:2110.01518 [cs].
 
 \bibitem{boxerSocialDistanceSpeech1993}
 {\sc Boxer, D.}
 \newblock Social distance and speech behavior: {The} case of indirect complaints.
 \newblock {\em Journal of pragmatics 19}, 2 (1993), 103--125.
-\newblock Place: AMSTERDAM Publisher: Elsevier B.V.
 
 \bibitem{brownPolitenessUniversalsLanguage1987}
 {\sc Brown, P., and {Levinson, Stephen C}}.
 \newblock {\em Politeness : some universals in language usage}.
 \newblock Studies in interactional sociolinguistics ; 4. Cambridge University Press, Cambridge [Cambridgeshire] ; New York, 1987.
 
+\bibitem{chiccoAdvantagesMatthewsCorrelation2020}
+{\sc Chicco, D., and Jurman, G.}
+\newblock The advantages of the {Matthews} correlation coefficient ({MCC}) over {F1} score and accuracy in binary classification evaluation.
+\newblock {\em BMC genomics 21}, 1 (2020), 6--6.
+
 \bibitem{choPropertiesNeuralMachine2014}
 {\sc Cho, K., van Merrienboer, B., Bahdanau, D., and Bengio, Y.}
-\newblock On the {Properties} of {Neural} {Machine} {Translation}: {Encoder}-{Decoder} {Approaches}.
+\newblock On the {Properties} of {Neural} {Machine} {Translation}: {Encoder}-{Decoder} {Approaches}, Oct. 2014.
+\newblock arXiv:1409.1259 [cs, stat].
 
 \bibitem{chungEmpiricalEvaluationGated2014}
 {\sc Chung, J., Gulcehre, C., Cho, K., and Bengio, Y.}
@@ -57,7 +56,6 @@
 {\sc Coussement, K., and Van~den Poel, D.}
 \newblock Improving customer complaint management by automatic email classification using linguistic style features as predictors.
 \newblock {\em DECISION SUPPORT SYSTEMS 44}, 4 (2008), 870--882.
-\newblock Place: AMSTERDAM Publisher: Elsevier B.V.
 
 \bibitem{devlinBERTPretrainingDeep2018}
 {\sc Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K.}
@@ -72,13 +70,11 @@
 {\sc Hennig-Thurau, T., Gwinner, K.~P., Walsh, G., and Gremler, D.~D.}
 \newblock Electronic word-of-mouth via consumer-opinion platforms: {What} motivates consumers to articulate themselves on the {Internet}?
 \newblock {\em Journal of interactive marketing 18}, 1 (2004), 38--52.
-\newblock Place: Hoboken Publisher: Elsevier Inc.
 
 \bibitem{hirschbergAdvancesNaturalLanguage2015}
 {\sc Hirschberg, J., and Manning, C.~D.}
 \newblock Advances in natural language processing.
 \newblock {\em Science 349}, 6245 (July 2015), 261--266.
-\newblock Publisher: American Association for the Advancement of Science.
 
 \bibitem{hochreiterLongShortTermMemory1997}
 {\sc Hochreiter, S., and Schmidhuber, J.}
@@ -88,7 +84,6 @@
 \bibitem{howardUniversalLanguageModel2018}
 {\sc Howard, J., and Ruder, S.}
 \newblock Universal {Language} {Model} {Fine}-tuning for {Text} {Classification}, May 2018.
-\newblock arXiv:1801.06146 [cs, stat].
 
 \bibitem{istanbulluogluComplaintHandlingSocial2017}
 {\sc Istanbulluoglu, D.}
@@ -107,7 +102,6 @@
 {\sc Lau, G.~T., and Ng, S.}
 \newblock Individual and {Situational} {Factors} {Influencing} {Negative} {Word}-of-{Mouth} {Behaviour}.
 \newblock {\em Canadian Journal of Administrative Sciences / Revue Canadienne des Sciences de l'Administration 18}, 3 (2001), 163--178.
-\newblock \_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1936-4490.2001.tb00253.x.
 
 \bibitem{liang_dictionary-based_2006}
 {\sc Liang, C.-Y., Guo, L., Xia, Z.-J., Nie, F.-G., Li, X.-X., Su, L., and Yang, Z.-Y.}
@@ -130,7 +124,6 @@
 \bibitem{nguyenBERTweetPretrainedLanguage2020}
 {\sc Nguyen, D.~Q., Vu, T., and Nguyen, A.~T.}
 \newblock {BERTweet}: {A} pre-trained language model for {English} {Tweets}, Oct. 2020.
-\newblock arXiv:2005.10200 [cs].
 
 \bibitem{olshtain_speechact_1987}
 {\sc Olshtain, E., and Weinbach, L.}
@@ -141,7 +134,6 @@
 {\sc Pfeffer, J., Zorbach, T., and Carley, K.~M.}
 \newblock Understanding online firestorms: {Negative} word-of-mouth dynamics in social media networks.
 \newblock {\em Journal of Marketing Communications 20}, 1-2 (Mar. 2014), 117--128.
-\newblock Publisher: Routledge \_eprint: https://doi.org/10.1080/13527266.2013.797778.
 
 \bibitem{preotiuc-pietro_automatically_2019}
 {\sc Preotiuc-Pietro, D., Gaman, M., and Aletras, N.}
@@ -150,7 +142,6 @@
 \bibitem{perezPysentimientoPythonToolkit2021}
 {\sc Pérez, J.~M., Giudici, J.~C., and Luque, F.}
 \newblock pysentimiento: {A} {Python} {Toolkit} for {Sentiment} {Analysis} and {SocialNLP} tasks, June 2021.
-\newblock arXiv:2106.09462 [cs].
 
 \bibitem{qiuYouAreWhat2012}
 {\sc Qiu, L., Lin, H., Ramsay, J., and Yang, F.}
@@ -161,12 +152,10 @@
 {\sc Rook, D.~W., and Fisher, R.~J.}
 \newblock Normative {Influences} on {Impulsive} {Buying} {Behavior}.
 \newblock {\em The Journal of consumer research 22}, 3 (1995), 305--313.
-\newblock Place: CARY Publisher: University of Chicago Press.
 
 \bibitem{sanhDistilBERTDistilledVersion2020}
 {\sc Sanh, V., Debut, L., Chaumond, J., and Wolf, T.}
 \newblock {DistilBERT}, a distilled version of {BERT}: smaller, faster, cheaper and lighter, Feb. 2020.
-\newblock arXiv:1910.01108 [cs].
 
 \bibitem{shane-simpsonWhyCollegeStudents2018}
 {\sc Shane-Simpson, C., Manago, A., Gaggi, N., and Gillespie-Lynch, K.}
@@ -177,39 +166,32 @@
 {\sc Sharma, P., Marshall, R., Alan~Reday, P., and Na, W.}
 \newblock Complainers versus non-complainers: a multi-national investigation of individual and situational influences on customer complaint behaviour.
 \newblock {\em Journal of marketing management 26}, 1-2 (2010), 163--180.
-\newblock Place: Helensburg Publisher: Taylor \& Francis.
 
 \bibitem{sparksComplainingCyberspaceMotives2010}
 {\sc Sparks, B.~A., and Browning, V.}
 \newblock Complaining in {Cyberspace}: {The} {Motives} and {Forms} of {Hotel} {Guests}' {Complaints} {Online}.
 \newblock {\em Journal of hospitality marketing \& management 19}, 7 (2010), 797--818.
-\newblock Publisher: Taylor \& Francis Group.
 
 \bibitem{sunDoesActiveService2021}
 {\sc Sun, S., Gao, Y., and Rui, H.}
 \newblock Does {Active} {Service} {Intervention} {Drive} {More} {Complaints} on {Social} {Media}? {The} {Roles} of {Service} {Quality} and {Awareness}.
 \newblock {\em Journal of Management Information Systems 38}, 3 (July 2021), 579--611.
-\newblock Publisher: Routledge \_eprint: https://doi.org/10.1080/07421222.2021.1958548.
 
 \bibitem{sunMobileBERTCompactTaskAgnostic2020}
 {\sc Sun, Z., Yu, H., Song, X., Liu, R., Yang, Y., and Zhou, D.}
 \newblock {MobileBERT}: a {Compact} {Task}-{Agnostic} {BERT} for {Resource}-{Limited} {Devices}, Apr. 2020.
-\newblock arXiv:2004.02984 [cs].
 
 \bibitem{tripp_when_2011}
 {\sc Tripp, T.~M., and Gregoire, Y.}
 \newblock When unhappy customers strike back on the {Internet}.
 \newblock {\em MIT Sloan management review 52}, 3 (2011), 37.
-\newblock Place: Cambridge Publisher: Sloan Management Review.
 
 \bibitem{turcWellReadStudentsLearn2019}
 {\sc Turc, I., Chang, M.-W., Lee, K., and Toutanova, K.}
 \newblock Well-{Read} {Students} {Learn} {Better}: {On} the {Importance} of {Pre}-training {Compact} {Models}, Sept. 2019.
-\newblock arXiv:1908.08962 [cs].
 
 \bibitem{vaswaniAttentionAllYou2023a}
 {\sc Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N., Kaiser, L., and Polosukhin, I.}
 \newblock Attention {Is} {All} {You} {Need}, Aug. 2023.
-\newblock arXiv:1706.03762 [cs].
 
 \end{thebibliography}

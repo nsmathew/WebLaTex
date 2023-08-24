@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  24 AUG 2023 09:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  24 AUG 2023 10:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -901,22 +901,7 @@ Chapter 5.
 
 ] [31
 
-]
-Underfull \hbox (badness 1688) in paragraph at lines 107--111
-\T1/cmr/m/it/10.95 Cana-di-enne des Sci-ences de l'Administration 18\T1/cmr/m/n/10.95 , 3 (2001), 163--178.  _-eprint:
- []
-
-[32]
-Underfull \hbox (badness 1102) in paragraph at lines 141--145
-\T1/cmr/m/it/10.95 Com-mu-ni-ca-tions 20\T1/cmr/m/n/10.95 , 1-2 (Mar. 2014), 117--128.  Pub-lisher: Rout-ledge _-eprint:
- []
-
-[33]
-Underfull \hbox (badness 4859) in paragraph at lines 195--198
-[]\T1/cmr/m/sc/10.95 Sun, Z., Yu, H., Song, X., Liu, R., Yang, Y., and Zhou, D.
- []
-
-) [34] [35
+] [32] [33]) [34] [35
 
 
 ] (./chapters/appendixA.tex
@@ -965,15 +950,15 @@ Appendix B.
 
 ]) [39] (PDF/myReport.aux) ) 
 Here is how much of TeX's memory you used:
- 5770 strings out of 476047
- 104266 string characters out of 5790254
+ 5771 strings out of 476047
+ 104307 string characters out of 5790254
  1875248 words of memory out of 5000000
- 26052 multiletter control sequences out of 15000+600000
+ 26053 multiletter control sequences out of 15000+600000
  533890 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,13n,79p,1936b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on PDF/myReport.pdf (47 pages, 1888534 bytes).
+Output written on PDF/myReport.pdf (47 pages, 1887442 bytes).
 PDF statistics:
  621 PDF objects out of 1000 (max. 8388607)
  230 compressed objects within 3 object streams

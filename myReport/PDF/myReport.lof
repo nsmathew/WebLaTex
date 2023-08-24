@@ -1,15 +1,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The token count distribution for the full dataset of 3,449 Tweets before and after tokenization with the red dashed line indicating 95\% coverage of Tweets. BertTokenizer is used here.\relax }}{17}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The token count distribution for the full dataset of 3,449 Tweets before and after tokenization with the red dashed line indicating 95\% coverage of Tweets. BertTokenizer is used here.\relax }}{18}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustrates the distribution of Tweets categorised as 'complaints' and 'not complaints', with random 'Tweets / replies' shown separately.\relax }}{22}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Shows the distribution of the domains used in the dataset\relax }}{23}{}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Top phrases as n-grams(excl. unigrams) and hashtags in the complaint Tweets.\relax }}{23}{}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Distribution of positive, negative and neutral sentiments in the Tweets.\relax }}{25}{}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Relative performance of models against BERTweet and model sizes based on F1. BERTweet's model size is 110M.\relax }}{28}{}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Mean time taken (in seconds) for finetuning and inference during experiments set 1. BERTweet with the best predictive model is highlighted in red.\relax }}{29}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustrates the distribution of Tweets categorised as 'complaints' and 'not complaints', with random 'Tweets / replies' shown separately.\relax }}{23}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Shows the distribution of the domains used in the dataset\relax }}{24}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Top phrases as n-grams(excl. unigrams) and hashtags in the complaint Tweets.\relax }}{24}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Distribution of positive, negative and neutral sentiments in the Tweets.\relax }}{26}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Relative performance of models against BERTweet and model sizes based on F1. BERTweet's model size is 110M.\relax }}{29}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Mean time taken (in seconds) for finetuning and inference during experiments set 1. BERTweet with the best predictive model is highlighted in red.\relax }}{30}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces The token count distribution for the full dataset of 3,449 tweets for all models.\relax }}{37}{}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces The token count distribution for the full dataset of 3,449 tweets for all models.\relax }}{38}{}%
 \addvspace {10\p@ }

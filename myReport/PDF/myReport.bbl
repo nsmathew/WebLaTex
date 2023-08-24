@@ -97,6 +97,10 @@
 {\sc Jin, M., and Aletras, N.}
 \newblock Modeling the {Severity} of {Complaints} in {Social} {Media}, Mar. 2021.
 
+\bibitem{lanALBERTLiteBERT2020}
+{\sc Lan, Z., Chen, M., Goodman, S., Gimpel, K., Sharma, P., and Soricut, R.}
+\newblock {ALBERT}: {A} {Lite} {BERT} for {Self}-supervised {Learning} of {Language} {Representations}, Feb. 2020.
+
 \bibitem{lauIndividualSituationalFactors2001}
 {\sc Lau, G.~T., and Ng, S.}
 \newblock Individual and {Situational} {Factors} {Influencing} {Negative} {Word}-of-{Mouth} {Behaviour}.

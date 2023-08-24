@@ -46,11 +46,10 @@
 \bibitem{choPropertiesNeuralMachine2014}
 {\sc Cho, K., van Merrienboer, B., Bahdanau, D., and Bengio, Y.}
 \newblock On the {Properties} of {Neural} {Machine} {Translation}: {Encoder}-{Decoder} {Approaches}, Oct. 2014.
-\newblock arXiv:1409.1259 [cs, stat].
 
 \bibitem{chungEmpiricalEvaluationGated2014}
 {\sc Chung, J., Gulcehre, C., Cho, K., and Bengio, Y.}
-\newblock Empirical {Evaluation} of {Gated} {Recurrent} {Neural} {Networks} on {Sequence} {Modeling}.
+\newblock Empirical {Evaluation} of {Gated} {Recurrent} {Neural} {Networks} on {Sequence} {Modeling}, Dec. 2014.
 
 \bibitem{coussement_improving_2008}
 {\sc Coussement, K., and Van~den Poel, D.}
@@ -59,7 +58,7 @@
 
 \bibitem{devlinBERTPretrainingDeep2018}
 {\sc Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K.}
-\newblock {BERT}: {Pre}-training of {Deep} {Bidirectional} {Transformers} for {Language} {Understanding}.
+\newblock {BERT}: {Pre}-training of {Deep} {Bidirectional} {Transformers} for {Language} {Understanding}, May 2019.
 
 \bibitem{faucherSocialCapitalOnline2018}
 {\sc Faucher, K.~X.}
@@ -92,11 +91,11 @@
 
 \bibitem{jin_complaint_2020}
 {\sc Jin, M., and Aletras, N.}
-\newblock Complaint {Identification} in {Social} {Media} with {Transformer} {Networks}.
+\newblock Complaint {Identification} in {Social} {Media} with {Transformer} {Networks}, Oct. 2020.
 
 \bibitem{jinModelingSeverityComplaints2021}
 {\sc Jin, M., and Aletras, N.}
-\newblock Modeling the {Severity} of {Complaints} in {Social} {Media}.
+\newblock Modeling the {Severity} of {Complaints} in {Social} {Media}, Mar. 2021.
 
 \bibitem{lauIndividualSituationalFactors2001}
 {\sc Lau, G.~T., and Ng, S.}
@@ -110,7 +109,7 @@
 
 \bibitem{liuRoBERTaRobustlyOptimized2019}
 {\sc Liu, Y., Ott, M., Goyal, N., Du, J., Joshi, M., Chen, D., Levy, O., Lewis, M., Zettlemoyer, L., and Stoyanov, V.}
-\newblock {RoBERTa}: {A} {Robustly} {Optimized} {BERT} {Pretraining} {Approach}.
+\newblock {RoBERTa}: {A} {Robustly} {Optimized} {BERT} {Pretraining} {Approach}, July 2019.
 
 \bibitem{luiLangidPyOfftheshelf2012}
 {\sc Lui, M., and Baldwin, T.}
@@ -137,7 +136,7 @@
 
 \bibitem{preotiuc-pietro_automatically_2019}
 {\sc Preotiuc-Pietro, D., Gaman, M., and Aletras, N.}
-\newblock Automatically {Identifying} {Complaints} in {Social} {Media}.
+\newblock Automatically {Identifying} {Complaints} in {Social} {Media}, June 2019.
 
 \bibitem{perezPysentimientoPythonToolkit2021}
 {\sc Pérez, J.~M., Giudici, J.~C., and Luque, F.}

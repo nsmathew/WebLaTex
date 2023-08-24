@@ -4,45 +4,45 @@ The top-level auxiliary file: myReport.aux
 The style file: acm.bst
 Database file #1: mybibliography.bib
 Warning--empty journal in olshtain_speechact_1987
-You've used 43 entries,
+You've used 46 entries,
             2253 wiz_defined-function locations,
-            791 strings with 13766 characters,
-and the built_in function-call counts, 13921 in all, are:
-= -- 1293
-> -- 781
+            806 strings with 15195 characters,
+and the built_in function-call counts, 16148 in all, are:
+= -- 1454
+> -- 1057
 < -- 0
-+ -- 322
-- -- 278
-* -- 1159
-:= -- 2299
-add.period$ -- 113
-call.type$ -- 43
-change.case$ -- 266
++ -- 433
+- -- 386
+* -- 1393
+:= -- 2707
+add.period$ -- 122
+call.type$ -- 46
+change.case$ -- 329
 chr.to.int$ -- 0
-cite$ -- 44
-duplicate$ -- 389
-empty$ -- 1079
-format.name$ -- 278
-if$ -- 2799
+cite$ -- 47
+duplicate$ -- 413
+empty$ -- 1148
+format.name$ -- 386
+if$ -- 3194
 int.to.chr$ -- 0
-int.to.str$ -- 43
+int.to.str$ -- 46
 missing$ -- 27
-newline$ -- 200
-num.names$ -- 86
-pop$ -- 320
+newline$ -- 215
+num.names$ -- 92
+pop$ -- 398
 preamble$ -- 1
-purify$ -- 225
+purify$ -- 285
 quote$ -- 0
-skip$ -- 280
+skip$ -- 301
 stack$ -- 0
-substring$ -- 759
-swap$ -- 91
+substring$ -- 774
+swap$ -- 97
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 168
+type$ -- 180
 warning$ -- 1
-while$ -- 132
-width$ -- 45
-write$ -- 400
+while$ -- 138
+width$ -- 48
+write$ -- 430
 (There was 1 warning)

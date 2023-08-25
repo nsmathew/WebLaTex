@@ -233,6 +233,26 @@ Next, the time required for inference and training (finetuning) is analysed and 
 
 \subsection{Deep-dive into the results}
 To comprehend where the models are misclassifying, deep-dive analysis is carried out on the performance for select models. The overall best-performing model, BERTweet Base, the best-performing lightweight model, DistilBERT and the worst-performing model, BERT Tiny are chosen for this exercise. The confusion matrix, sample misclassified tweets and Mathews Correlation Coefficient (MCC) will be analysed for them. The confusion matrix and MCC are based on the mean values from the 6 runs of inference carried out. 
+\subsubsection{BERTweet Base}
+\begin{figure}[htbp]
+    \centering
+    \captionsetup{font=small}
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/mean_train_time.pdf}
+        \caption{Mean training time.}
+        \label{fig: mean_train_time}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/mean_inference_time.pdf}
+        \caption{Mean inference time}
+        \label{fig: mean_inf_time}
+    \end{subfigure}
+    \caption{Mean time taken (in seconds) for finetuning and inference during experiments set 1. BERTweet with the best predictive model is highlighted in red.}
+    \label{fig: mean_time_taken}
+\end{figure}
 
 \section{Experiment set 2 results: Cross-domain results}
 **TO UPDATE**

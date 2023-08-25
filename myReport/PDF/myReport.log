@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  25 AUG 2023 08:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  25 AUG 2023 10:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -179,27 +179,36 @@ Package caption Info: New subtype `subfigure' on input line 239.
 \c@subfigure=\count274
 Package caption Info: New subtype `subtable' on input line 239.
 \c@subtable=\count275
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count276
+\sf@farskip=\skip55
+\sf@captopadj=\dimen181
+\sf@capskip=\skip56
+\sf@nearskip=\skip57
+\sf@top=\skip58
+\sf@bottom=\skip59
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count276
+\l__color_backend_stack_int=\count277
 \l__pdf_internal_box=\box55
 ) (PDF/myReport.aux)
 \openout1 = `myReport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -237,16 +246,16 @@ LaTeX Font Info:    ... okay on input line 27.
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count277
-\scratchdimen=\dimen181
+\scratchcounter=\count278
+\scratchdimen=\dimen182
 \scratchbox=\box56
-\nofMPsegments=\count278
-\nofMParguments=\count279
+\nofMPsegments=\count279
+\nofMParguments=\count280
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count280
-\MPscratchDim=\dimen182
-\MPnumerator=\count281
-\makeMPintoPDFobject=\count282
+\MPscratchCnt=\count281
+\MPscratchDim=\dimen183
+\MPnumerator=\count282
+\makeMPintoPDFobject=\count283
 \everyMPtoPDFconversion=\toks24
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -255,30 +264,31 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 <images/tuoslogo.png, id=1, 78.2925pt x 79.2561pt>
 File: images/tuoslogo.png Graphic file (type png)
 <use images/tuoslogo.png>
-Package pdftex.def Info: images/tuoslogo.png  used on input line 39.
+Package pdftex.def Info: images/tuoslogo.png  used on input line 40.
 (pdftex.def)             Requested size: 142.26378pt x 144.03468pt.
  [1
 
 
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./images/tuoslogo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
 (./chapters/abstract.tex [1
 
 ])
-Underfull \hbox (badness 10000) in paragraph at lines 3--80
+Underfull \hbox (badness 10000) in paragraph at lines 3--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--80
+Underfull \hbox (badness 10000) in paragraph at lines 3--81
 
  []
 
@@ -329,7 +339,7 @@ Overfull \hbox (0.93848pt too wide) in paragraph at lines 13--13
 [6
 
 ]
-Overfull \hbox (3.35544pt too wide) in paragraph at lines 20--20
+Overfull \hbox (3.35544pt too wide) in paragraph at lines 21--21
  [][] []\T1/cmr/m/n/10.95 The trans-former mod-els used for the ex-per-i-ments and links to their doc-u-men-ta-tion. [][]  
  []
 
@@ -935,13 +945,44 @@ File: figures/mean_inference_time.pdf Graphic file (type pdf)
 <use figures/mean_inference_time.pdf>
 Package pdftex.def Info: figures/mean_inference_time.pdf  used on input line 226.
 (pdftex.def)             Requested size: 216.01767pt x 129.61061pt.
- [31 <./figures/model_size_vs_perf.pdf>]) (./chapters/chapter5.tex [32 <./figures/mean_train_time.pdf> <./figures/mean_inference_time.pdf>]
+ [31 <./figures/model_size_vs_perf.pdf>]
+<figures/confusion_bertweet.png, id=377, 722.7pt x 433.62pt>
+File: figures/confusion_bertweet.png Graphic file (type png)
+<use figures/confusion_bertweet.png>
+Package pdftex.def Info: figures/confusion_bertweet.png  used on input line 264.
+(pdftex.def)             Requested size: 198.38pt x 119.02422pt.
+<figures/metrics_line_bertweet.pdf, id=378, 722.7pt x 433.62pt>
+File: figures/metrics_line_bertweet.pdf Graphic file (type pdf)
+<use figures/metrics_line_bertweet.pdf>
+Package pdftex.def Info: figures/metrics_line_bertweet.pdf  used on input line 269.
+(pdftex.def)             Requested size: 198.38pt x 119.02422pt.
+<figures/confusion_distilbert.png, id=379, 722.7pt x 433.62pt>
+File: figures/confusion_distilbert.png Graphic file (type png)
+<use figures/confusion_distilbert.png>
+Package pdftex.def Info: figures/confusion_distilbert.png  used on input line 274.
+(pdftex.def)             Requested size: 198.38pt x 119.02422pt.
+<figures/metrics_line_distilbert.pdf, id=380, 722.7pt x 433.62pt>
+File: figures/metrics_line_distilbert.pdf Graphic file (type pdf)
+<use figures/metrics_line_distilbert.pdf>
+Package pdftex.def Info: figures/metrics_line_distilbert.pdf  used on input line 279.
+(pdftex.def)             Requested size: 198.38pt x 119.02422pt.
+<figures/confusion_berttiny.png, id=381, 722.7pt x 433.62pt>
+File: figures/confusion_berttiny.png Graphic file (type png)
+<use figures/confusion_berttiny.png>
+Package pdftex.def Info: figures/confusion_berttiny.png  used on input line 284.
+(pdftex.def)             Requested size: 198.38pt x 119.02422pt.
+<figures/metrics_line_berrttiny.pdf, id=382, 722.7pt x 433.62pt>
+File: figures/metrics_line_berrttiny.pdf Graphic file (type pdf)
+<use figures/metrics_line_berrttiny.pdf>
+Package pdftex.def Info: figures/metrics_line_berrttiny.pdf  used on input line 289.
+(pdftex.def)             Requested size: 198.38pt x 119.02422pt.
+) (./chapters/chapter5.tex [32 <./figures/mean_train_time.pdf> <./figures/mean_inference_time.pdf>] [33 <./figures/confusion_bertweet.png> <./figures/metrics_line_bertweet.pdf> <./figures/confusion_distilbert.png> <./figures/metrics_line_distilbert.pdf> <./figures/confusion_berttiny.png> <./figures/metrics_line_berrttiny.pdf>]
 Chapter 5.
-) (PDF/myReport.bbl [33
+) (PDF/myReport.bbl [34
 
-] [34
+] [35
 
-] [35] [36]) [37] [38
+] [36] [37]) [38] [39
 
 
 ] (./chapters/appendixA.tex
@@ -951,57 +992,57 @@ Overfull \hbox (0.64908pt too wide) in paragraph at lines 68--69
 []\T1/cmr/m/n/10.95 The \T1/cmtt/m/n/10.95 binarylabel \T1/cmr/m/n/10.95 rep-re-sents the la-bel for com-plaints with 1 in-di-cat-ing the tweet is a com-plaint.
  []
 
-[39
+[40
 
 ]
-<figures/token_pp_hist_albert-base-v2.png, id=487, 578.16pt x 289.08pt>
+<figures/token_pp_hist_albert-base-v2.png, id=633, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_albert-base-v2.png Graphic file (type png)
 <use figures/token_pp_hist_albert-base-v2.png>
 Package pdftex.def Info: figures/token_pp_hist_albert-base-v2.png  used on input line 79.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-<figures/token_pp_hist_vinai-bertweet-base.png, id=488, 578.16pt x 289.08pt>
+<figures/token_pp_hist_vinai-bertweet-base.png, id=634, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_vinai-bertweet-base.png Graphic file (type png)
 <use figures/token_pp_hist_vinai-bertweet-base.png>
 Package pdftex.def Info: figures/token_pp_hist_vinai-bertweet-base.png  used on input line 85.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-<figures/token_pp_hist_prajjwal1-bert-tiny.png, id=489, 578.16pt x 289.08pt>
+<figures/token_pp_hist_prajjwal1-bert-tiny.png, id=635, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_prajjwal1-bert-tiny.png Graphic file (type png)
 <use figures/token_pp_hist_prajjwal1-bert-tiny.png>
 Package pdftex.def Info: figures/token_pp_hist_prajjwal1-bert-tiny.png  used on input line 90.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-<figures/token_pp_hist_distilbert-base-uncased.png, id=490, 578.16pt x 289.08pt>
+<figures/token_pp_hist_distilbert-base-uncased.png, id=636, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_distilbert-base-uncased.png Graphic file (type png)
 <use figures/token_pp_hist_distilbert-base-uncased.png>
 Package pdftex.def Info: figures/token_pp_hist_distilbert-base-uncased.png  used on input line 96.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-<figures/token_pp_hist_google-mobilebert-uncased.png, id=491, 578.16pt x 289.08pt>
+<figures/token_pp_hist_google-mobilebert-uncased.png, id=637, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_google-mobilebert-uncased.png Graphic file (type png)
 <use figures/token_pp_hist_google-mobilebert-uncased.png>
 Package pdftex.def Info: figures/token_pp_hist_google-mobilebert-uncased.png  used on input line 101.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-<figures/token_pp_hist_roberta-base.png, id=492, 578.16pt x 289.08pt>
+<figures/token_pp_hist_roberta-base.png, id=638, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_roberta-base.png Graphic file (type png)
 <use figures/token_pp_hist_roberta-base.png>
 Package pdftex.def Info: figures/token_pp_hist_roberta-base.png  used on input line 107.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-) (./chapters/appendixB.tex [40 <./figures/token_pp_hist_albert-base-v2.png> <./figures/token_pp_hist_vinai-bertweet-base.png> <./figures/token_pp_hist_prajjwal1-bert-tiny.png> <./figures/token_pp_hist_distilbert-base-uncased.png> <./figures/token_pp_hist_google-mobilebert-uncased.png> <./figures/token_pp_hist_roberta-base.png>]
+) (./chapters/appendixB.tex [41 <./figures/token_pp_hist_albert-base-v2.png> <./figures/token_pp_hist_vinai-bertweet-base.png> <./figures/token_pp_hist_prajjwal1-bert-tiny.png> <./figures/token_pp_hist_distilbert-base-uncased.png> <./figures/token_pp_hist_google-mobilebert-uncased.png> <./figures/token_pp_hist_roberta-base.png>]
 Appendix B.
-[41
+[42
 
-]) [42] (PDF/myReport.aux) ) 
+]) [43] (PDF/myReport.aux) ) 
 Here is how much of TeX's memory you used:
- 5775 strings out of 476047
- 104435 string characters out of 5790254
+ 5943 strings out of 476047
+ 108381 string characters out of 5790254
  1875248 words of memory out of 5000000
- 26057 multiletter control sequences out of 15000+600000
+ 26215 multiletter control sequences out of 15000+600000
  533890 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,13n,79p,1936b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on PDF/myReport.pdf (50 pages, 1896986 bytes).
+Output written on PDF/myReport.pdf (51 pages, 2552513 bytes).
 PDF statistics:
- 631 PDF objects out of 1000 (max. 8388607)
- 237 compressed objects within 3 object streams
+ 777 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

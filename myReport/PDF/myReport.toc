@@ -39,15 +39,15 @@
 \contentsline {subsection}{\numberline {4.2.2}Performance of 'lightweight' models}{30}{}%
 \contentsline {subsubsection}{Analyis of finetuning and inference time}{31}{}%
 \contentsline {subsection}{\numberline {4.2.3}Deep-dive into the results}{32}{}%
-\contentsline {section}{\numberline {4.3}Experiment set 2 results: Cross-domain results}{32}{}%
-\contentsline {chapter}{\numberline {5}Conclusions}{33}{}%
-\contentsline {chapter}{Appendices}{38}{}%
-\contentsline {chapter}{\numberline {A}Other supporting analysis and graphs}{39}{}%
-\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{39}{}%
-\contentsline {section}{\numberline {A.2}Sample data from dataset}{39}{}%
-\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{40}{}%
-\contentsline {chapter}{\numberline {B}Other references}{41}{}%
-\contentsline {section}{\numberline {B.1}Code Repository}{41}{}%
-\contentsline {section}{\numberline {B.2}References for models used in experiment sets 1 and 2}{41}{}%
-\contentsline {section}{\numberline {B.3}References for other models used}{41}{}%
-\contentsline {section}{\numberline {B.4}Evaluation metrics references}{42}{}%
+\contentsline {section}{\numberline {4.3}Experiment set 2 results: Cross-domain results}{33}{}%
+\contentsline {chapter}{\numberline {5}Conclusions}{34}{}%
+\contentsline {chapter}{Appendices}{39}{}%
+\contentsline {chapter}{\numberline {A}Other supporting analysis and graphs}{40}{}%
+\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{40}{}%
+\contentsline {section}{\numberline {A.2}Sample data from dataset}{40}{}%
+\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{41}{}%
+\contentsline {chapter}{\numberline {B}Other references}{42}{}%
+\contentsline {section}{\numberline {B.1}Code Repository}{42}{}%
+\contentsline {section}{\numberline {B.2}References for models used in experiment sets 1 and 2}{42}{}%
+\contentsline {section}{\numberline {B.3}References for other models used}{42}{}%
+\contentsline {section}{\numberline {B.4}Evaluation metrics references}{43}{}%

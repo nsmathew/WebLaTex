@@ -410,3 +410,11 @@ To comprehend where the models are misclassifying, deep-dive analysis is carried
     \caption{ROC-AUC scores for the cross-domain experiments. The rows hold the domain used for finetuning while the columns represent the domains used for testing. The last row are the scores where the full data except the corresponding test domain was used for finetuning. Best scores where applicable are highlighted in bold.}
     \label{tab: cross_domain_results}
 \end{table}
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=9cm]{figures/cross_domain_data_heat.pdf}
+    \vspace*{-3mm}
+    \caption{Shows the heatmap of the ratio of train to test data with the best performing combination highlighted with '*'. }
+    \label{fig: cross_domain_heat}
+\end{figure}

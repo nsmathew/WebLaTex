@@ -646,6 +646,11 @@ INPUT ./figures/metrics_line_berrttiny.pdf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT ./figures/cross_domain_data_heat.pdf
+INPUT ./figures/cross_domain_data_heat.pdf
+INPUT figures/cross_domain_data_heat.pdf
+INPUT ./figures/cross_domain_data_heat.pdf
+INPUT ./figures/cross_domain_data_heat.pdf
 INPUT ./chapters/chapter5.tex
 INPUT chapters/chapter5.tex
 INPUT ./chapters/chapter5.tex

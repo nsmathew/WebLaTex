@@ -96,6 +96,7 @@ The act of complaining typically involves conveying a sense of negativity. Senti
 Next, the small number of positive Tweets among the complaints were analysed. It was found they mostly involved sarcasm or where the consumer was expressing their liking for a product with the hope this could quicken the resolution process. Some of the example Tweets for these scenarios are: \textit{"hello i have a 2012 impreza and i love it . my driver seat back is broken down after 1 year and 12000 miles 32000 total 2nd owner"} and \textit{"i love waiting at mcdonalds for 15 minutes just for some semi-good ice cream <url>"}. For Tweets that were not complaints, the majority of them expressed neutral or positive sentiments.
 
 \subsection{Key statistics}
+% key statistcis table
 \begin{table}[htbp]
     \captionsetup{font=small}
     \small
@@ -154,18 +155,18 @@ Table \ref{tab: model_mean_metrics} also includes the prediction metrics sourced
     \begin{tabularx}{\textwidth}{|X|X|X|X|X|X|}
         \hline
         \rowcolor[gray]{0.7}
-        \textbf{Model}                      & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1}    & \textbf{ROC AUC} \\
+        \textbf{Model}                                  & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1}    & \textbf{ROC AUC} \\
         \hline
-        AlBERT base v2                      & 0.879 [0.859]     & 0.845 [0.848]      & 0.811 [0.846]   & 0.827 [0.846]  & 0.864            \\
+        AlBERT Base v2                                  & 0.879 [0.859]     & 0.845 [0.848]      & 0.811 [0.846]   & 0.827 [0.846]  & 0.864            \\
         \rowcolor[gray]{0.9}
-        \(\star\)\(\uparrow\) BERTweet base & \textbf{0.934}    & \textbf{0.897}     & \textbf{0.920}  & \textbf{0.908} & \textbf{0.931}   \\
-        BERT base uncased                   & 0.905 [0.88]      & 0.878  [0.871]     & 0.854  [0.873]  & 0.865 [0.87]   & 0.894            \\
+        \(\star\)\(\uparrow\) BERTweet Base             & \textbf{0.934}    & \textbf{0.897}     & \textbf{0.920}  & \textbf{0.908} & \textbf{0.931}   \\
+        BERT Base uncased                               & 0.905 [0.88]      & 0.878  [0.871]     & 0.854  [0.873]  & 0.865 [0.87]   & 0.894            \\
         \rowcolor[gray]{0.9}
-        \(\star\)\(\downarrow\) BERT tiny   & 0.772             & 0.701              & 0.627           & 0.662          & 0.739            \\
-        \(\star\) DistilBERT base uncased   & 0.903             & 0.872              & 0.860           & 0.863          & 0.894            \\
+        \(\star\)\(\downarrow\) BERT \vspace{15pt} Tiny & 0.772             & 0.701              & 0.627           & 0.662          & 0.739            \\
+        \(\star\) DistilBERT Base uncased               & 0.903             & 0.872              & 0.860           & 0.863          & 0.894            \\
         \rowcolor[gray]{0.9}
-        MobileBERT uncased                  & 0.887             & 0.843              & 0.843           & 0.841          & 0.877            \\
-        RoBERTa base                        & 0.914 [0.876]     & 0.886 [0.866]      & 0.873 [0.869]   & 0.879 [0.866]  & 0.905            \\
+        MobileBERT uncased                              & 0.887             & 0.843              & 0.843           & 0.841          & 0.877            \\
+        RoBERTa Base                                    & 0.914 [0.876]     & 0.886 [0.866]      & 0.873 [0.869]   & 0.879 [0.866]  & 0.905            \\
         \hline
     \end{tabularx}
     \caption{Mean prediction performance metrics for all models after nested cross-validation for finetuning and testing. The highest scores are in bold. \(\uparrow\) is the best performing and \(\downarrow\) is the worst performing model. \(\star\) models are included for deep-dive analysis. Where available, numbers in '[ ]' are the results from \cite{jin_complaint_2020}.}
@@ -175,6 +176,7 @@ Table \ref{tab: model_mean_metrics} also includes the prediction metrics sourced
 \subsection{Performance of 'lightweight' models}
 Examining the models characterized as lightweight based on their architecture and parameter count, DistilBERT emerges as the top performer, achieving an F1 score of 0.863 (sd: $\pm$0.02). MobileBERT and ALBERT follow suit with F1 scores of 0.841 (sd: $\pm$0.02) and 0.827 (sd: $\pm$0.05) respectively. BERT Tiny, the smallest model employed in the experiments, exhibits a notable performance gap, achieving only an F1 score of 0.662 (sd: $\pm$0.04), which is lower by 27.6\% in comparison to BERTweet. This points to a likely and significant performance penalty from the reduced model. However, it is expected to perform better in the context of a knowledge distillation teacher \cite{turcWellReadStudentsLearn2019}, something that has not been tested here.\\
 
+% Model size vs performance against BERTweet
 \begin{figure}[htb]
     \centering
     \includegraphics[width=12cm]{figures/model_size_vs_perf.pdf}
@@ -186,7 +188,7 @@ Examining the models characterized as lightweight based on their architecture an
 Figure \ref{fig: model_size_vs_perf} displays the relative variance in model performance when compared to BERTweet based on F1, alongside the corresponding model sizes or the number of parameters. Table \ref{tab: relative_comparison_metrics} expands on this by including the relative difference of the models compared to BERTweet in terms of model size, training time and inference time. Notably, ALBERT and MobileBERT exhibit relatively lower performance discrepancies of 8.9\% and 7.4\%, considering the model sizes are significantly smaller by 90\% and 77\% respectively. DistilBERT demonstrates a performance deficit of merely 4.9\%, not far off from BERT base while having a model size lower by 44\%. This could likely be due to the knowledge distillation and compression techniques applied during the pretraining phase, which could be playing a key role in enhancing DistilBERT's predictive capabilities \cite{sanhDistilBERTDistilledVersion2020}.
 
 \subsubsection{Analyis of finetuning and inference time}
-
+% Relative performance table
 \begin{table}
     \small
     \centering
@@ -211,6 +213,7 @@ Figure \ref{fig: model_size_vs_perf} displays the relative variance in model per
 \end{table}
 
 Next, the time required for inference and training (finetuning) is analysed and shown in Figure \ref{fig: mean_time_taken}. On average, the number of rows for the train, dev and test splits was 2155, 719 and 575. The training and inference were executed on a single NVIDIA RTX A4000 GPU with 16GB VRAM. BERT Tiny as expected has the lowest mean training and inference time. It is lower by over 85\% and 70\% for training and inference respectively as shown in Table \ref{tab: relative_comparison_metrics} when compared to BERTweet. DistilBERT follows next with lower train and inference times by 51\% and 43\%. For ALBERT the train time is lower than BERTweet by 40\%, while the inference time is slightly higher than BERT base. The architecture of ALBERT is designed such that the training time is reduced there is a low memory footprint and it is not expected to significantly lower the inference time. MobileBERT shows very high training and inference times and is 123\% and 86\% higher than BERTweet.
+% training and inference time bar chart
 \begin{figure}[htbp]
     \centering
     \captionsetup{font=small}
@@ -233,6 +236,7 @@ Next, the time required for inference and training (finetuning) is analysed and 
 
 \subsection{Deep-dive into the results}
 To comprehend where the models are misclassifying, deep-dive analysis is carried out on the performance of select models. The overall best-performing model, BERTweet Base, the best-performing lightweight model, DistilBERT and the worst-performing model, BERT Tiny are chosen for this exercise. The confusion matrix, sample misclassified tweets and Mathews Correlation Coefficient (MCC) will be analysed for them. The confusion matrix and MCC are based on the mean values from the 6 runs of inference carried out.
+% Test loss table
 \begin{table}[ht]
     \centering
     \begin{tabularx}{\textwidth}{|X|X|X|X|}
@@ -240,23 +244,23 @@ To comprehend where the models are misclassifying, deep-dive analysis is carried
         \rowcolor[gray]{0.7}
         \textbf{Test Run} & \textbf{BERTweet Base} & \textbf{DistilBERT} & \textbf{BERT Tiny} \\
         \hline
-        1                & 0.21701               & 0.22481            & 0.49180           \\
+        1                 & 0.21701                & 0.22481             & 0.49180            \\
         \rowcolor[gray]{0.9}
-        2                & 0.20056               & 0.24783            & 0.50118           \\
-        3                & 0.23015               & 0.26190             & 0.48807           \\
+        2                 & 0.20056                & 0.24783             & 0.50118            \\
+        3                 & 0.23015                & 0.26190             & 0.48807            \\
         \rowcolor[gray]{0.9}
-        4                & 0.23572               & 0.25394            & 0.48178           \\
-        5                & 0.25255               & 0.30100            & 0.53076           \\
+        4                 & 0.23572                & 0.25394             & 0.48178            \\
+        5                 & 0.25255                & 0.30100             & 0.53076            \\
         \rowcolor[gray]{0.9}
-        6                & 0.17506               & 0.26712            & 0.48810           \\
+        6                 & 0.17506                & 0.26712             & 0.48810            \\
         \hline
     \end{tabularx}
     \caption{Test loss from the inference phase for the 6 outer loop iterations for the 3 selected models.}
     \label{tab: test_loss}
 \end{table}
 
-
-
+The test losses are for the 6 runs given Table \ref{tab: test_loss} while the graphs for the performance scores from inference are illustrated in Figure \ref{{fig: deep_dive_results}. As expected, the test loss is lower for most the of 6 runs for BERTweet Base compared to the other two models. We find DistilBERT Base having losses that are closer to BERT Base in 2 runs but otherwise are generally higher. There is a considerable difference for BERT Tiny which reflects in the predictive performance scores discussed earlier. 
+% Deep dive confusion matrices and line graphs
 \begin{figure}[!ht]
     \small
     \centering
@@ -293,7 +297,52 @@ To comprehend where the models are misclassifying, deep-dive analysis is carried
     \label{fig: deep_dive_results}
 \end{figure}
 
+% error analysis tweets
+\begin{table}
+    \small
+    \centering
+    \begin{tblr}{
+        width = \linewidth,
+        colspec = {Q[35]Q[908]},
+        row{1} = {Nobel,c},
+        row{2} = {c},
+        row{5} = {Mercury},
+        row{6} = {Mercury},
+        row{7} = {c},
+        row{10} = {Mercury},
+        row{11} = {Mercury},
+        row{12} = {c},
+        row{15} = {Mercury},
+        row{16} = {Mercury},
+        cell{2}{1} = {c=2}{0.943\linewidth},
+        cell{7}{1} = {c=2}{0.943\linewidth},
+        cell{12}{1} = {c=2}{0.943\linewidth},
+        hlines,
+        vlines,
+        }
+        \textbf{No.}        & \textbf{Tweet}                                                                                                                                                                                                                                                      \\
+        \textbf{BERTweet}   &                                                                                                                                                                                                                                                                     \\
+        1                   & do potato based products belong in sandwiches ?                                                                                                                                                                                                                     \\
+        2                   & worst *                                                                                                                                                                                                                                                             \\
+        3                   & i had entered in giveway contest for oneplus 5t lava . so waiting for the result                                                                                                                                                                                    \\
+        4                   & i just checked again and i'm not having the same issues i had earlier . thanks for the help                                                                                                                                                                         \\
+        \textbf{DistilBERT} &                                                                                                                                                                                                                                                                     \\
+        5                   & hey guys , i love this product featured on user today but don't see a price ? help a girl out ?                                                                                                                                                                     \\
+        6                   & is this really what you call a large milkshake user url                                                                                                                                                                                                             \\
+        7                   & shout out to the social media team user user whilst i get the frustration , there's never a time people should be insulting or rude when tweeting . these good people responding are employee's just tyring to help . \#heathrowairport \#heathrow \#britishairways \\
+        8                   & no , see screenshot . it's the app . i got it straight off the playstore on android .                                                                                                                                                                               \\
+        \textbf{BERT Tiny}  &                                                                                                                                                                                                                                                                     \\
+        9                   & whyyyy is your wifi so slow user ?                                                                                                                                                                                                                                  \\
+        10                  & my 2nd visit to kfc chadwell heath after the last fiasco . this time they had no gravy or corn  amp ; forgot my chips \#fail                                                                                                                                        \\
+        11                  & is it possible to integrate my medium account on my personal website with your api ?                                                                                                                                                                                \\
+        12                  & thanks for your response . what is the twitter handle for your care centre in delhi , india ?
+    \end{tblr}
+    \caption{Sample tweets which have been misclassified by the 3 selected models. Tweets in the \colorbox{Mercury}{lighter shade of grey} are misclassified as complaints while rest are misclassified as not complaints.}
+    \label{fig: error_tweets}
+\end{table}
+
 \section{Experiment set 2 results: Cross-domain results}
+% Cross domain results table
 \begin{table}
     \centering
     \resizebox{\linewidth}{!}{%
@@ -411,6 +460,7 @@ To comprehend where the models are misclassifying, deep-dive analysis is carried
     \label{tab: cross_domain_results}
 \end{table}
 
+% cross domain heatmap
 \begin{figure}[htb]
     \centering
     \includegraphics[width=9cm]{figures/cross_domain_data_heat.pdf}

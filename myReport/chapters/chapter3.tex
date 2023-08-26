@@ -79,7 +79,7 @@ The key details of the environment used for the experiments are listed below. Al
 \end{itemize}
 
 \subsection{Software}
-For the experiments, the BERT large language model along with a number of its variants are used to classify the Tweets and compare the performance. The models are based on the \texttt{transformers} library implementation from Hugging Face\footnote{\url{https://huggingface.co/}} \cite{wolfHuggingFaceTransformersStateoftheart2020}. Additionally, the \texttt{datasets} and \texttt{evaluate} libraries are used. From scikit-learn\footnote{\url{https://scikit-learn.org/stable/}} the \texttt{sklearn} library is utilised to generate the stratified splits for the nested cross-fold validation. The versions for each library are shown in the table \ref{tab: libs_used}.
+For the experiments, the BERT large language model along with a number of its variants are used to classify the Tweets and compare the performance. The models are based on the \texttt{transformers} library implementation from Hugging Face\footnote{\url{https://huggingface.co/}} \cite{wolfHuggingFaceTransformersStateoftheart2020} in Python. Additionally, the \texttt{datasets} and \texttt{evaluate} libraries are used. From scikit-learn\footnote{\url{https://scikit-learn.org/stable/}} the \texttt{sklearn} library is utilised to generate the stratified splits for the nested cross-fold validation. The versions for each library are shown in the table \ref{tab: libs_used}. Python version used is v3.9.16.
 
 \begin{table}[ht]
     \captionsetup{font=small}
@@ -110,7 +110,7 @@ For the experiments, the BERT large language model along with a number of its va
 \section{Model selection}
 The performance of BERT and its variants on the text classification task will be explored as part of the experiments. BERT \cite{devlinBERTPretrainingDeep2018} is based on the modern transformers network architecture \cite{vaswaniAttentionAllYou2023a}. Using BERT for the text classification task has several advantages over previous dominant methods such as Gated Recurrent Units GRU) \cite{chungEmpiricalEvaluationGated2014} or Long Short Term Memory (LSTM) \cite{hochreiterLongShortTermMemory1997} networks. Although Tweets tend to be made up of short texts, the ability to capture long-term dependencies is still useful for understanding relationships across the content better. They also rely on bidirectional processing to use contextual information to have a more nuanced understanding of the intention of the author of the tweet or post. Since BERT is already pre-trained on large corpora, it possesses a significant general understanding of language. Finally, the pre-training enables transfer learning and domain adaptation with relative ease which is very useful for tasks where annotated data is limited (we use only 3,449 Tweets for the experiments).
 \newline\newline
-The transformer models used are listed in table \ref{tab: model_dtls} along with the number of parameters for each of them. The number of parameters or model size is based on the embedding and output layers along with the attention heads. The models chosen are such that there is a wide range of model sizes, from RoBERTa base and BERT base with 125 and 110 million parameters to lightweight variants such as DistilBERT base, MobileBERT and others with much lower model sizes. This allows for a comparison of the model performance both in terms of the predictions as well as the inference time to the model size. Various studies have pointed to a relation between the size of the model and its predictive performance conditional to appropriate pre-training \cite{vaswaniAttentionAllYou2023a,liuRoBERTaRobustlyOptimized2019}.
+The transformer models used are listed in table \ref{tab: model_dtls} along with the number of parameters for each of them. The number of parameters or model size is based on the embedding and output layers along with the attention heads. The models chosen are such that there is a wide range of model sizes, from RoBERTa base and BERT base with 125 and 110 million parameters to lightweight variants such as DistilBERT base, MobileBERT and others with much lower model sizes. This allows for a comparison of the model performance both in terms of the predictions as well as the inference time to the model size. Various studies have pointed to a relation between the size of the model and its predictive performance conditional to appropriate pre-training \cite{vaswaniAttentionAllYou2023a,liuRoBERTaRobustlyOptimized2019}. The summary of BERT Base and BERT Tiny are shown in Figure \ref{fig: model_summary} for a view of the different layers and the number of parameters in each of them.
 
 \begin{table}[ht]
     \captionsetup{font=small}
@@ -136,6 +136,14 @@ The transformer models used are listed in table \ref{tab: model_dtls} along with
     \caption{The transformer models used for the experiments along with the type of tokenization, and vocabulary size and sorted by the number of parameters for each of them. The parameter counts are from \cite{bhargavaGeneralizationNLIWays2021} for RoBERTa base, BERT base, ALBERT base and BERT Tiny. For BERTweet it is from \cite{nguyenBERTweetPretrainedLanguage2020}, MobileBERT from \cite{sunMobileBERTCompactTaskAgnostic2020} and DistilBERT from \cite{sanhDistilBERTDistilledVersion2020}. Vocabulary sizes and tokenizer types are based on documentation at \texttt{https://huggingface.co/}.}
     \label{tab: model_dtls}
 \end{table}
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=15cm]{figures/model-summary.png}
+    \vspace*{-3mm}
+    \caption{A summary of the BERT Base (left) and BERT Tiny (right) models for comparison in terms of the layers used and number of parameters.}
+    \label{fig: model_summary}
+\end{figure}
 
 \section{Data tokenisation}
 The tokenization process is required for appropriate preparation of input data for use by BERT and its variants. The tokenization process involves dividing the input text into tokens based on a predefined set of rules. These tokens are subsequently transformed into numerical representations and tensors, along with any extra inputs needed by the model. Tokens in general could be words, subwords, phrases or even characters. There are various approaches to tokenization with each having advantages and shortcomings. The methods used by each of the models in the scope of the experiments are briefly described below and shown in Table \ref{tab: model_dtls}.

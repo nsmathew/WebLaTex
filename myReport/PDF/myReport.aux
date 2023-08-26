@@ -154,31 +154,33 @@
 \@writefile{toc}{\contentsline {section}{\numberline {3.4}Model selection}{18}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces The transformer models used for the experiments along with the type of tokenization, and vocabulary size and sorted by the number of parameters for each of them. The parameter counts are from \cite  {bhargavaGeneralizationNLIWays2021} for RoBERTa base, BERT base, ALBERT base and BERT Tiny. For BERTweet it is from \cite  {nguyenBERTweetPretrainedLanguage2020}, MobileBERT from \cite  {sunMobileBERTCompactTaskAgnostic2020} and DistilBERT from \cite  {sanhDistilBERTDistilledVersion2020}. Vocabulary sizes and tokenizer types are based on documentation at \texttt  {https://huggingface.co/}.\relax }}{18}{}\protected@file@percent }
 \newlabel{tab: model_dtls}{{3.4}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces A summary of the BERT Base (left) and BERT Tiny (right) models for comparison in terms of the layers used and number of parameters.\relax }}{19}{}\protected@file@percent }
+\newlabel{fig: model_summary}{{3.1}{19}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.5}Data tokenisation}{19}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Tokenization methods}{19}{}\protected@file@percent }
 \citation{preotiuc-pietro_automatically_2019}
 \citation{jinModelingSeverityComplaints2021}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}Choice of settings}{20}{}\protected@file@percent }
+\newlabel{fig: token_hist}{{3.2a}{20}}
+\newlabel{sub@fig: token_hist}{{a}{20}}
+\newlabel{fig: token_pp_hist}{{3.2b}{20}}
+\newlabel{sub@fig: token_pp_hist}{{b}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces The token count distribution for the full dataset of 3,449 Tweets before and after tokenization with the red dashed line indicating 95\% coverage of Tweets. BertTokenizer is used here.\relax }}{20}{}\protected@file@percent }
+\newlabel{fig: bef_aft_token}{{3.2}{20}}
 \citation{preotiuc-pietro_automatically_2019}
 \citation{jinModelingSeverityComplaints2021}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}Choice of settings}{20}{}\protected@file@percent }
-\newlabel{fig: token_hist}{{3.1a}{20}}
-\newlabel{sub@fig: token_hist}{{a}{20}}
-\newlabel{fig: token_pp_hist}{{3.1b}{20}}
-\newlabel{sub@fig: token_pp_hist}{{b}{20}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces The token count distribution for the full dataset of 3,449 Tweets before and after tokenization with the red dashed line indicating 95\% coverage of Tweets. BertTokenizer is used here.\relax }}{20}{}\protected@file@percent }
-\newlabel{fig: bef_aft_token}{{3.1}{20}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}Tokenisation example}{20}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}Tokenisation example}{21}{}\protected@file@percent }
 \citation{preotiuc-pietro_automatically_2019}
 \citation{preotiuc-pietro_automatically_2019}
-\@writefile{toc}{\contentsline {section}{\numberline {3.6}Experiments set 1: Predictive performance comparison of BERT variants}{21}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Experiments set 1: Predictive performance comparison of BERT variants}{22}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces The choice of key parameters and hyperparameters used for Experiment 1.\relax }}{22}{}\protected@file@percent }
 \newlabel{tab: exp1_params}{{3.5}{22}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.7}Experiments set 2: Cross-domain predictive performance comparison}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.7}Experiments set 2: Cross-domain predictive performance comparison}{23}{}\protected@file@percent }
 \citation{chiccoAdvantagesMatthewsCorrelation2020}
-\@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces The choice of key parameters and hyperparameters used for Experiment 2. Refer to the Chapter on results for the model and learning rate used for this experiment. \relax }}{23}{}\protected@file@percent }
-\newlabel{tab: exp2_params}{{3.6}{23}}
 \citation{preotiuc-pietro_automatically_2019}
 \citation{jinModelingSeverityComplaints2021}
+\@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces The choice of key parameters and hyperparameters used for Experiment 2. Refer to the Chapter on results for the model and learning rate used for this experiment. \relax }}{24}{}\protected@file@percent }
+\newlabel{tab: exp2_params}{{3.6}{24}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.8}Ethical, Professional and Legal Issues}{24}{}\protected@file@percent }
 \citation{preotiuc-pietro_automatically_2019}
 \citation{jinModelingSeverityComplaints2021}
@@ -234,16 +236,18 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Deep-dive into the results}{32}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Test loss from the inference phase for the 6 outer loop iterations for the 3 selected models.\relax }}{32}{}\protected@file@percent }
 \newlabel{tab: test_loss}{{4.4}{32}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Experiment set 2 results: Cross-domain results}{32}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Confusion matrix and performance metrics for the 3 selected models from the inference phase. The confusion matrix is based on the mean of values from the 6 outer loop iterations.\relax }}{33}{}\protected@file@percent }
-\newlabel{fig: deep_dive_results}{{4.7}{33}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces ROC-AUC scores for the cross-domain experiments. The rows hold the domain used for finetuning while the columns represent the domains used for testing. The last row are the scores where the full data except the corresponding test domain was used for finetuning. Best scores where applicable are highlighted in bold.\relax }}{34}{}\protected@file@percent }
-\newlabel{tab: cross_domain_results}{{4.5}{34}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Shows the heatmap of the log of the ratio of the train to test data for every combination executed during the experiments. The best-performing combination using AUC scores is highlighted with $\bullet $. Denoted next to the y-axis labels is the number of rows used for the train dataset for that domain.\relax }}{34}{}\protected@file@percent }
-\newlabel{fig: cross_domain_heat}{{4.8}{34}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces Sample tweets which have been misclassified by the 3 selected models. Tweets in the \colorbox {Mercury}{lighter shade of grey} are misclassified as complaints while rest are misclassified as not complaints.\relax }}{33}{}\protected@file@percent }
+\newlabel{fig: error_tweets}{{4.5}{33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Confusion matrix and performance metrics for the 3 selected models from the inference phase. The confusion matrix is based on the mean of values from the 6 outer loop iterations.\relax }}{34}{}\protected@file@percent }
+\newlabel{fig: deep_dive_results}{{4.7}{34}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Experiment set 2 results: Cross-domain results}{34}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces ROC-AUC scores for the cross-domain experiments. The rows hold the domain used for finetuning while the columns represent the domains used for testing. The last row are the scores where the full data except the corresponding test domain was used for finetuning. Best scores where applicable are highlighted in bold.\relax }}{35}{}\protected@file@percent }
+\newlabel{tab: cross_domain_results}{{4.6}{35}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Shows the heatmap of the log of the ratio of the train to test data for every combination executed during the experiments. The best-performing combination using AUC scores is highlighted with $\bullet $. Denoted next to the y-axis labels is the number of rows used for the train dataset for that domain.\relax }}{35}{}\protected@file@percent }
+\newlabel{fig: cross_domain_heat}{{4.8}{35}}
 \bibstyle{acm}
 \bibdata{mybibliography}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusions}{35}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusions}{36}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \bibcite{ahluwaliaConsumerResponseNegative2000}{1}
@@ -292,46 +296,47 @@
 \bibcite{turcWellReadStudentsLearn2019}{44}
 \bibcite{vaswaniAttentionAllYou2023a}{45}
 \bibcite{wolfHuggingFaceTransformersStateoftheart2020}{46}
-\@writefile{toc}{\contentsline {chapter}{Appendices}{40}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{Appendices}{41}{}\protected@file@percent }
 \citation{jinModelingSeverityComplaints2021}
 \citation{jinModelingSeverityComplaints2021}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Other supporting analysis and graphs}{41}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Other supporting analysis and graphs}{42}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{41}{}\protected@file@percent }
-\newlabel{sec: apdxa_fulldataset}{{A.1}{41}}
-\@writefile{lot}{\contentsline {table}{\numberline {A.1}{\ignorespaces The nine domains and the distribution of tweets that are complaints and those that are not from the latest version of the dataset available in the public domain and for the experiments. Additionally, the table includes the number of random tweets and replies introduced into the dataset by the authors for a more proportionate representation of the classes.\relax }}{41}{}\protected@file@percent }
-\newlabel{tab: fulldataset_breakdown}{{A.1}{41}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.2}Sample data from dataset}{41}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {A.2}{\ignorespaces Sample data from \cite  {jinModelingSeverityComplaints2021}.\relax }}{41}{}\protected@file@percent }
-\newlabel{tab: apdx_sample_data}{{A.2}{41}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{42}{}\protected@file@percent }
-\newlabel{sec: apdxa_token_dist}{{A.3}{42}}
-\newlabel{fig: token_pp_hist_albert}{{A.1a}{42}}
-\newlabel{sub@fig: token_pp_hist_albert}{{a}{42}}
-\newlabel{fig: token_pp_hist_bertwteet}{{A.1b}{42}}
-\newlabel{sub@fig: token_pp_hist_bertwteet}{{b}{42}}
-\newlabel{fig: token_pp_hist_tiny}{{A.1c}{42}}
-\newlabel{sub@fig: token_pp_hist_tiny}{{c}{42}}
-\newlabel{fig: token_pp_hist_distilbert}{{A.1d}{42}}
-\newlabel{sub@fig: token_pp_hist_distilbert}{{d}{42}}
-\newlabel{fig: token_pp_hist_mobile}{{A.1e}{42}}
-\newlabel{sub@fig: token_pp_hist_mobile}{{e}{42}}
-\newlabel{fig: token_pp_hist_roberta}{{A.1f}{42}}
-\newlabel{sub@fig: token_pp_hist_roberta}{{f}{42}}
-\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces The token count distribution for the full dataset of 3,449 tweets for all models.\relax }}{42}{}\protected@file@percent }
-\newlabel{fig: apdxa_tokens}{{A.1}{42}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}Other references}{43}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{42}{}\protected@file@percent }
+\newlabel{sec: apdxa_fulldataset}{{A.1}{42}}
+\@writefile{lot}{\contentsline {table}{\numberline {A.1}{\ignorespaces The nine domains and the distribution of tweets that are complaints and those that are not from the latest version of the dataset available in the public domain and for the experiments. Additionally, the table includes the number of random tweets and replies introduced into the dataset by the authors for a more proportionate representation of the classes.\relax }}{42}{}\protected@file@percent }
+\newlabel{tab: fulldataset_breakdown}{{A.1}{42}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}Sample data from dataset}{42}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {A.2}{\ignorespaces Sample data from \cite  {jinModelingSeverityComplaints2021}.\relax }}{42}{}\protected@file@percent }
+\newlabel{tab: apdx_sample_data}{{A.2}{42}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{43}{}\protected@file@percent }
+\newlabel{sec: apdxa_token_dist}{{A.3}{43}}
+\newlabel{fig: token_pp_hist_albert}{{A.1a}{43}}
+\newlabel{sub@fig: token_pp_hist_albert}{{a}{43}}
+\newlabel{fig: token_pp_hist_bertwteet}{{A.1b}{43}}
+\newlabel{sub@fig: token_pp_hist_bertwteet}{{b}{43}}
+\newlabel{fig: token_pp_hist_tiny}{{A.1c}{43}}
+\newlabel{sub@fig: token_pp_hist_tiny}{{c}{43}}
+\newlabel{fig: token_pp_hist_distilbert}{{A.1d}{43}}
+\newlabel{sub@fig: token_pp_hist_distilbert}{{d}{43}}
+\newlabel{fig: token_pp_hist_mobile}{{A.1e}{43}}
+\newlabel{sub@fig: token_pp_hist_mobile}{{e}{43}}
+\newlabel{fig: token_pp_hist_roberta}{{A.1f}{43}}
+\newlabel{sub@fig: token_pp_hist_roberta}{{f}{43}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces The token count distribution for the full dataset of 3,449 tweets for all models.\relax }}{43}{}\protected@file@percent }
+\newlabel{fig: apdxa_tokens}{{A.1}{43}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Other references}{44}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {B.1}Code Repository}{43}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {B.2}References for models used in experiment sets 1 and 2}{43}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {B.1}{\ignorespaces The transformer models used for the experiments and links to their documentation.\relax }}{43}{}\protected@file@percent }
-\newlabel{tab: apdxb_model_doc}{{B.1}{43}}
-\@writefile{toc}{\contentsline {section}{\numberline {B.3}References for other models used}{43}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {B.2}{\ignorespaces The other models used in the chapter on results and their documentation.\relax }}{43}{}\protected@file@percent }
-\newlabel{tab: apdxb_other_model_doc}{{B.2}{43}}
-\@writefile{toc}{\contentsline {section}{\numberline {B.4}Evaluation metrics references}{44}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {B.3}{\ignorespaces The metrics used for evaluating the performance of the experiments and links to their documentation.\relax }}{44}{}\protected@file@percent }
-\newlabel{tab: apdxb_metric_doc}{{B.3}{44}}
-\gdef \@abspage@last{52}
+\@writefile{toc}{\contentsline {section}{\numberline {B.1}Code Repository}{44}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {B.2}References for models used in experiment sets 1 and 2}{44}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {B.1}{\ignorespaces The transformer models used for the experiments and links to their documentation.\relax }}{44}{}\protected@file@percent }
+\newlabel{tab: apdxb_model_doc}{{B.1}{44}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.3}References for other models used}{44}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {B.2}{\ignorespaces The other models used in the chapter on results and their documentation.\relax }}{44}{}\protected@file@percent }
+\newlabel{tab: apdxb_other_model_doc}{{B.2}{44}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.4}Evaluation metrics references}{45}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {B.3}{\ignorespaces The metrics used for evaluating the performance of the experiments and links to their documentation.\relax }}{45}{}\protected@file@percent }
+\newlabel{tab: apdxb_metric_doc}{{B.3}{45}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.5}Additional information on environment used}{45}{}\protected@file@percent }
+\gdef \@abspage@last{53}

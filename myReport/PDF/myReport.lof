@@ -10,9 +10,9 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Distribution of positive, negative and neutral sentiments in the Tweets.\relax }}{28}{}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Relative performance of models against BERTweet and model sizes based on F1. BERTweet's model size is 110M.\relax }}{31}{}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Mean time taken (in seconds) for finetuning and inference during experiments set 1. BERTweet with the best predictive model is highlighted in red.\relax }}{32}{}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Confusion matrix and performance metrics for the 3 selected models from the inference phase. The confusion matrix is based on the mean of values from the 6 outer loop iterations.\relax }}{34}{}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Shows the heatmap of the log of the ratio of the train to test data for every combination executed during the experiments. The best-performing combination using AUC scores is highlighted with $\bullet $. Denoted next to the y-axis labels is the number of rows used for the train dataset for that domain.\relax }}{35}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Confusion matrix and performance metrics for the 3 selected models from the inference phase. The confusion matrix is based on the mean of values from the 6 outer loop iterations.\relax }}{33}{}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Shows the heatmap of the log of the ratio of the train to test data for every combination executed during the experiments. The best-performing combination using AUC scores is highlighted with $\bullet $. Denoted next to the y-axis labels is the number of rows used for the train dataset for that domain.\relax }}{36}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces The token count distribution for the full dataset of 3,449 tweets for all models.\relax }}{43}{}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces The token count distribution for the full dataset of 3,449 tweets for all models.\relax }}{44}{}%
 \addvspace {10\p@ }

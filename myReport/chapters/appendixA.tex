@@ -121,6 +121,26 @@ The graphs in Figure \ref{fig: apdxa_tokens} show the distribution of token size
       colspec = {Q[152]Q[283]Q[292]Q[194]},
       row{odd} = {Mercury},
       row{1} = {Nobel,c},
+      cell{2}{2} = {c},
+      cell{2}{3} = {c},
+      cell{2}{4} = {c},
+      cell{3}{2} = {c},
+      cell{3}{3} = {c},
+      cell{3}{4} = {c},
+      cell{4}{2} = {c},
+      cell{4}{3} = {c},
+      cell{4}{4} = {c},
+      cell{5}{2} = {c},
+      cell{5}{3} = {c},
+      cell{5}{4} = {c},
+      cell{6}{2} = {c},
+      cell{6}{3} = {c},
+      cell{6}{4} = {c},
+      cell{7}{2} = {c},
+      cell{7}{3} = {c},
+      cell{7}{4} = {c},
+      hline{1-2,8} = {-}{},
+      vlines,
     }
     \textbf{Test run} & \textbf{BERTweet Base}       & \textbf{DistilBERT Base}     & \textbf{BERT Tiny}           \\
     1                 & {{[}353~ ~17]\\{[} 22~ 183]} & {{[}350~ ~20]\\{[} 22~ 183]} & {{[}323~ ~47]\\{[} 74~ 131]} \\
@@ -130,7 +150,7 @@ The graphs in Figure \ref{fig: apdxa_tokens} show the distribution of token size
     5                 & {{[}348~ ~21]\\{[} 24~ 182]} & {{[}330~ ~39]\\{[} 24~ 182]} & {{[}309~ ~60]\\{[} 88~ 118]} \\
     6                 & {{[}353~ ~16]\\{[} 10~ 195]} & {{[}354~ ~15]\\{[} 40~ 165]} & {{[}316~ ~53]\\{[} 64~ 141]} 
     \end{tblr}
-    \caption{Confusion matrix from every test run for the experiments set 1. The elements of the matrix are true negative, false positive, false negative and true positive}
+    \caption{Confusion matrix from every test run for the experiments set 1. The elements of the matrix in left-to-right order are true negative, false positive, false negative and true positive}
     \label{tab: conf_matrix_test_runs}    
 \end{table}
 

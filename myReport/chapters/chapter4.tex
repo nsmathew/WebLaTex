@@ -145,7 +145,7 @@ Finally, examining some of the key statistical measures from the Tweets dataset 
 As described in the previous chapter, to compare the performance of the models a nested cross-validation approach was adopted. The cross-validation method finetuned the models using 4 learning rates, $l\:\epsilon\:[1e-5, 5e-6, 5e-5, 3e-5]$ with the best-performing model based on the F1 score being selected for the testing for each iteration of the outer loop. \\
 
 \subsection{Best predictive performance}
-The best-performing model was found to be BERTweet with a mean F1 score of 0.908 (sd: $\pm$0.01) and accuracy of 0.934 (sd: $\pm$0.01) as shown in Table \ref{tab: model_mean_metrics}. BERTweet being pre-trained on a corpus of 850M Tweets could possibly be giving it an advantage in capturing the nuances of social media posts including informal language, typographic errors, use of slang and expressive lengthening and more specific characteristics of Tweets such as the use of shorter messages, abbreviations and hashtags. RoBERTa was the next best performing model with an F1 of 0.879 (sd: $\pm$0.03) and an accuracy of 0.914 (sd: $\pm$0.02). corpusIt was followed by BERT base and DistilBERT with F1 scores of 0.865 (sd: $\pm$0.02) and 0.863 (sd: $\pm$0.02) respectively.
+The best-performing model was found to be BERTweet with a mean F1 score of 0.908 (sd: $\pm$0.01) and accuracy of 0.934 (sd: $\pm$0.01) as shown in Table \ref{tab: model_mean_metrics}. BERTweet being pre-trained on a corpus of 850M Tweets could possibly be giving it an advantage in capturing the nuances of social media posts including informal language, typographic errors, use of slang and expressive lengthening and more specific characteristics of Tweets such as the use of shorter messages, abbreviations and hashtags. From the experiments, 0.00003 was the best learning rate identified from the inner loop iterations for BERTweet Base and this is used for the experiments set 2, the results for which are detailed in the next section. RoBERTa was the next best performing model with an F1 of 0.879 (sd: $\pm$0.03) and an accuracy of 0.914 (sd: $\pm$0.02). corpusIt was followed by BERT base and DistilBERT with F1 scores of 0.865 (sd: $\pm$0.02) and 0.863 (sd: $\pm$0.02) respectively.
 
 Table \ref{tab: model_mean_metrics} also includes the prediction metrics sourced from \cite{jin_complaint_2020}, enclosed within '[ ]', which serves as the established baseline performance for this task. Despite the variation in nested cross-validation configuration, as outlined in the preceding chapter, a level of preliminary comparison becomes feasible. In terms of F1 scores, RoBERTa shows marginal improvement, while BERT base and ALBERT perform slightly worse. However, overall BERTweet provides the best predictive results for this task when compared to the baseline.\\
 
@@ -259,7 +259,7 @@ To comprehend where the models are misclassifying, deep-dive analysis is carried
     \label{tab: test_loss}
 \end{table}
 
-The test losses are for the 6 runs given Table \ref{tab: test_loss} while the graphs for the performance scores from inference are illustrated in Figure \ref{fig: deep_dive_results}. As expected, the test loss is lower for most the of 6 runs for BERTweet Base compared to the other two models. We find DistilBERT Base having losses that are closer to BERT Base in 2 runs but otherwise are generally higher. There is a considerable difference for BERT Tiny which reflects in the predictive performance scores discussed earlier. Referring to Figure \ref{fig: deep_dive_results}, BERT Tiny exhibits a pattern that differs from the other 2 models. All the performance metrics follow similar trends as the testing progresses. Based on the confuson matrix for each run, it is found that for BERT Tiny true values increase and decrease togther while The confusion matrix for each run is detailed in sec: conf_matrix_test_runs 
+The test losses are for the 6 runs given Table \ref{tab: test_loss} while the graphs for the performance scores from inference are illustrated in Figure \ref{fig: deep_dive_results}. As expected, the test loss is lower for most the of 6 runs for BERTweet Base compared to the other two models. We find DistilBERT Base having losses that are closer to BERT Base in 2 runs but otherwise are generally higher. There is a considerable difference for BERT Tiny which reflects in the predictive performance scores discussed earlier. Referring to the metrics in Figure \ref{fig: deep_dive_results}, BERT Tiny exhibits a pattern that differs from the other 2 models. Looking at the confusion matrix for all the inference executions (detailed in \ref{sec: conf_matrix_test_runs}), it appears within each test run that BERT Tiny is misclassifying complaints and non-complaint tweets in the same direction. BERTweet and DistilBERT seem to have relatively high fluctuations in recall and precision, likely due to variations in the test data from cross-fold splits for each run. 
 % Deep dive confusion matrices and line graphs
 \begin{figure}[!ht]
     \small
@@ -296,6 +296,8 @@ The test losses are for the 6 runs given Table \ref{tab: test_loss} while the gr
     \caption{Confusion matrix and performance metrics for the 3 selected models from the inference phase. The confusion matrix is based on the mean of values from the 6 outer loop iterations.}
     \label{fig: deep_dive_results}
 \end{figure}
+
+Figure \ref{fig: deep_dive_results} also shows the confusion matrices for the 3 models based on the average of the classifications from the 6 test runs. 
 
 % error analysis tweets
 \begin{table}
@@ -337,11 +339,12 @@ The test losses are for the 6 runs given Table \ref{tab: test_loss} while the gr
         11                  & is it possible to integrate my medium account on my personal website with your api ?                                                                                                                                                                                \\
         12                  & thanks for your response . what is the twitter handle for your care centre in delhi , india ?
     \end{tblr}
-    \caption{Sample tweets which have been misclassified by the 3 selected models. Tweets in the \colorbox{Mercury}{lighter shade of grey} are misclassified as complaints while rest are misclassified as not complaints.}
+    \caption{Sample tweets which have been misclassified by the 3 selected models. Tweets in the \colorbox{Mercury}{lighter shade of grey} are misclassified as complaints while the rest are misclassified as not complaints.}
     \label{fig: error_tweets}
 \end{table}
 
 \section{Experiment set 2 results: Cross-domain results}
+
 % Cross domain results table
 \begin{table}
     \centering

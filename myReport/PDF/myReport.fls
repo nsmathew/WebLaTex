@@ -702,6 +702,9 @@ INPUT ./figures/token_pp_hist_roberta-base.png
 INPUT figures/token_pp_hist_roberta-base.png
 INPUT ./figures/token_pp_hist_roberta-base.png
 INPUT ./figures/token_pp_hist_roberta-base.png
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT ./chapters/appendixB.tex
 INPUT chapters/appendixB.tex
 INPUT ./chapters/appendixB.tex

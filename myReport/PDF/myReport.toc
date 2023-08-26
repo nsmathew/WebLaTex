@@ -37,9 +37,9 @@
 \contentsline {section}{\numberline {4.2}Experiment set 1 results: Comparision of model performance}{29}{}%
 \contentsline {subsection}{\numberline {4.2.1}Best predictive performance}{29}{}%
 \contentsline {subsection}{\numberline {4.2.2}Performance of 'lightweight' models}{30}{}%
-\contentsline {subsubsection}{Analyis of finetuning and inference time}{31}{}%
+\contentsline {subsubsection}{Analyis of finetuning and inference time}{32}{}%
 \contentsline {subsection}{\numberline {4.2.3}Deep-dive into the results}{32}{}%
-\contentsline {section}{\numberline {4.3}Experiment set 2 results: Cross-domain results}{35}{}%
+\contentsline {section}{\numberline {4.3}Experiment set 2 results: Cross-domain results}{33}{}%
 \contentsline {chapter}{\numberline {5}Conclusions}{37}{}%
 \contentsline {chapter}{Appendices}{42}{}%
 \contentsline {chapter}{\numberline {A}Other supporting analysis and graphs}{43}{}%

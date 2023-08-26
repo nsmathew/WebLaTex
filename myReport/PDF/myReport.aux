@@ -218,15 +218,15 @@
 \citation{jin_complaint_2020}
 \citation{jin_complaint_2020}
 \citation{turcWellReadStudentsLearn2019}
-\citation{sanhDistilBERTDistilledVersion2020}
 \@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Mean prediction performance metrics for all models after nested cross-validation for finetuning and testing. The highest scores are in bold. \(\uparrow \) is the best performing and \(\downarrow \) is the worst performing model. \(\star \) models are included for deep-dive analysis. Where available, numbers in '[ ]' are the results from \cite  {jin_complaint_2020}.\relax }}{30}{}\protected@file@percent }
 \newlabel{tab: model_mean_metrics}{{4.2}{30}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Performance of 'lightweight' models}{30}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Relative performance of models against BERTweet and model sizes based on F1. BERTweet's model size is 110M.\relax }}{31}{}\protected@file@percent }
-\newlabel{fig: model_size_vs_perf}{{4.5}{31}}
+\citation{sanhDistilBERTDistilledVersion2020}
 \@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces Comparison of key metrics of the models relative to BERTweet.\relax }}{31}{}\protected@file@percent }
 \newlabel{tab: relative_comparison_metrics}{{4.3}{31}}
-\@writefile{toc}{\contentsline {subsubsection}{Analyis of finetuning and inference time}{31}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Relative performance of models against BERTweet and model sizes based on F1. BERTweet's model size is 110M.\relax }}{31}{}\protected@file@percent }
+\newlabel{fig: model_size_vs_perf}{{4.5}{31}}
+\@writefile{toc}{\contentsline {subsubsection}{Analyis of finetuning and inference time}{32}{}\protected@file@percent }
 \newlabel{fig: mean_train_time}{{4.6a}{32}}
 \newlabel{sub@fig: mean_train_time}{{a}{32}}
 \newlabel{fig: mean_inf_time}{{4.6b}{32}}
@@ -234,15 +234,15 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Mean time taken (in seconds) for finetuning and inference during experiments set 1. BERTweet with the best predictive model is highlighted in red.\relax }}{32}{}\protected@file@percent }
 \newlabel{fig: mean_time_taken}{{4.6}{32}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Deep-dive into the results}{32}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Test loss from the inference phase for the 6 outer loop iterations for the 3 selected models.\relax }}{32}{}\protected@file@percent }
-\newlabel{tab: test_loss}{{4.4}{32}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Confusion matrix and performance metrics for the 3 selected models from the inference phase. The confusion matrix is based on the mean of values from the 6 outer loop iterations.\relax }}{33}{}\protected@file@percent }
-\newlabel{fig: deep_dive_results}{{4.7}{33}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces Sample tweets which have been misclassified by the 3 selected models. Tweets in the \colorbox {Mercury}{lighter shade of grey} are misclassified as complaints while rest are misclassified as not complaints.\relax }}{34}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Test loss from the inference phase for the 6 outer loop iterations for the 3 selected models.\relax }}{33}{}\protected@file@percent }
+\newlabel{tab: test_loss}{{4.4}{33}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Experiment set 2 results: Cross-domain results}{33}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces Sample tweets which have been misclassified by the 3 selected models. Tweets in the \colorbox {Mercury}{lighter shade of grey} are misclassified as complaints while the rest are misclassified as not complaints.\relax }}{34}{}\protected@file@percent }
 \newlabel{fig: error_tweets}{{4.5}{34}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces ROC-AUC scores for the cross-domain experiments. The rows hold the domain used for finetuning while the columns represent the domains used for testing. The last row are the scores where the full data except the corresponding test domain was used for finetuning. Best scores where applicable are highlighted in bold.\relax }}{35}{}\protected@file@percent }
-\newlabel{tab: cross_domain_results}{{4.6}{35}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Experiment set 2 results: Cross-domain results}{35}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces ROC-AUC scores for the cross-domain experiments. The rows hold the domain used for finetuning while the columns represent the domains used for testing. The last row are the scores where the full data except the corresponding test domain was used for finetuning. Best scores where applicable are highlighted in bold.\relax }}{34}{}\protected@file@percent }
+\newlabel{tab: cross_domain_results}{{4.6}{34}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Confusion matrix and performance metrics for the 3 selected models from the inference phase. The confusion matrix is based on the mean of values from the 6 outer loop iterations.\relax }}{35}{}\protected@file@percent }
+\newlabel{fig: deep_dive_results}{{4.7}{35}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Shows the heatmap of the log of the ratio of the train to test data for every combination executed during the experiments. The best-performing combination using AUC scores is highlighted with $\bullet $. Denoted next to the y-axis labels is the number of rows used for the train dataset for that domain.\relax }}{36}{}\protected@file@percent }
 \newlabel{fig: cross_domain_heat}{{4.8}{36}}
 \bibstyle{acm}

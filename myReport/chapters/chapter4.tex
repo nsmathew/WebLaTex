@@ -185,9 +185,6 @@ Examining the models characterized as lightweight based on their architecture an
     \label{fig: model_size_vs_perf}
 \end{figure}
 
-Figure \ref{fig: model_size_vs_perf} displays the relative variance in model performance when compared to BERTweet based on F1, alongside the corresponding model sizes or the number of parameters. Table \ref{tab: relative_comparison_metrics} expands on this by including the relative difference of the models compared to BERTweet in terms of model size, training time and inference time. Notably, ALBERT and MobileBERT exhibit relatively lower performance discrepancies of 8.9\% and 7.4\%, considering the model sizes are significantly smaller by 90\% and 77\% respectively. DistilBERT demonstrates a performance deficit of merely 4.9\%, not far off from BERT base while having a model size lower by 44\%. This could likely be due to the knowledge distillation and compression techniques applied during the pretraining phase, which could be playing a key role in enhancing DistilBERT's predictive capabilities \cite{sanhDistilBERTDistilledVersion2020}.
-
-\subsubsection{Analyis of finetuning and inference time}
 % Relative performance table
 \begin{table}
     \small
@@ -197,20 +194,26 @@ Figure \ref{fig: model_size_vs_perf} displays the relative variance in model per
         \rowcolor[gray]{0.7}
         \textbf{Model} & \textbf{F1} & \textbf{Model size} & \textbf{Train time} & \textbf{Inference time} \\
         \hline
-        \rowcolor[gray]{0.9}
-        BERTweet       & 0.908       & 110M                & 87.19 s             & 0.987 s                 \\
+        \textit{BERTweet}       & \textit{0.908}       & \textit{110M}                & \textit{87.19 s}             & \textit{0.987 s}                 \\
         \hline
         RoBERTa base   & -3.2\%      & +13.6\%             & -4.5\%              & -1.6\%                  \\
+        \rowcolor[gray]{0.9}
         BERT base      & -4.8\%      & +0.0\%              & -10.7\%             & +1.2\%                  \\
         DistilBERT     & -5.0\%      & -40.0\%             & -50.7\%             & -43.3\%                 \\
+        \rowcolor[gray]{0.9}
         MobileBERT     & -7.4\%      & -77.0\%             & +122.7\%            & +86.4\%                 \\
         ALBERT         & -9.0\%      & -90.0\%             & -40.3\%             & +22.8\%                 \\
+        \rowcolor[gray]{0.9}
         BERT Tiny      & -27.1\%     & -96.0\%             & -86.4\%             & -70.2\%                 \\
         \hline
     \end{tabularx}
     \caption{Comparison of key metrics of the models relative to BERTweet.}
     \label{tab: relative_comparison_metrics}
 \end{table}
+
+Figure \ref{fig: model_size_vs_perf} displays the relative variance in model performance when compared to BERTweet based on F1, alongside the corresponding model sizes or the number of parameters. Table \ref{tab: relative_comparison_metrics} expands on this by including the relative difference of the models compared to BERTweet in terms of model size, training time and inference time. Notably, ALBERT and MobileBERT exhibit relatively lower performance discrepancies of 8.9\% and 7.4\%, considering the model sizes are significantly smaller by 90\% and 77\% respectively. DistilBERT demonstrates a performance deficit of merely 4.9\%, not far off from BERT base while having a model size lower by 44\%. This could likely be due to the knowledge distillation and compression techniques applied during the pretraining phase, which could be playing a key role in enhancing DistilBERT's predictive capabilities \cite{sanhDistilBERTDistilledVersion2020}.\\
+
+\subsubsection{Analyis of finetuning and inference time}
 
 Next, the time required for inference and training (finetuning) is analysed and shown in Figure \ref{fig: mean_time_taken}. On average, the number of rows for the train, dev and test splits was 2155, 719 and 575. The training and inference were executed on a single NVIDIA RTX A4000 GPU with 16GB VRAM. BERT Tiny as expected has the lowest mean training and inference time. It is lower by over 85\% and 70\% for training and inference respectively as shown in Table \ref{tab: relative_comparison_metrics} when compared to BERTweet. DistilBERT follows next with lower train and inference times by 51\% and 43\%. For ALBERT the train time is lower than BERTweet by 40\%, while the inference time is slightly higher than BERT base. The architecture of ALBERT is designed such that the training time is reduced there is a low memory footprint and it is not expected to significantly lower the inference time. MobileBERT shows very high training and inference times and is 123\% and 86\% higher than BERTweet.
 % training and inference time bar chart
@@ -235,7 +238,7 @@ Next, the time required for inference and training (finetuning) is analysed and 
 \end{figure}
 
 \subsection{Deep-dive into the results}
-To comprehend where the models are misclassifying, deep-dive analysis is carried out on the performance of select models. The overall best-performing model, BERTweet Base, the best-performing lightweight model, DistilBERT and the worst-performing model, BERT Tiny are chosen for this exercise. The confusion matrix, sample misclassified tweets and Mathews Correlation Coefficient (MCC) will be analysed for them. The confusion matrix and MCC are based on the mean values from the 6 runs of inference carried out.
+To comprehend where the models are misclassifying, deep-dive analysis is carried out on the performance of select models. The overall best-performing model, BERTweet Base, the best-performing lightweight model, DistilBERT and the worst-performing model, BERT Tiny are chosen for this exercise. The confusion matrix, sample misclassified tweets and Mathews Correlation Coefficient (MCC) will be analysed for them. The confusion matrix and MCC are based on the mean values from the 6 runs of inference carried out.\\
 % Test loss table
 \begin{table}[ht]
     \centering
@@ -259,7 +262,7 @@ To comprehend where the models are misclassifying, deep-dive analysis is carried
     \label{tab: test_loss}
 \end{table}
 
-The test losses are for the 6 runs given Table \ref{tab: test_loss} while the graphs for the performance scores from inference are illustrated in Figure \ref{fig: deep_dive_results}. As expected, the test loss is lower for most the of 6 runs for BERTweet Base compared to the other two models. We find DistilBERT Base having losses that are closer to BERT Base in 2 runs but otherwise are generally higher. There is a considerable difference for BERT Tiny which reflects in the predictive performance scores discussed earlier. Referring to the metrics in Figure \ref{fig: deep_dive_results}, BERT Tiny exhibits a pattern that differs from the other 2 models. Looking at the confusion matrix for all the inference executions (detailed in \ref{sec: conf_matrix_test_runs}), it appears within each test run that BERT Tiny is misclassifying complaints and non-complaint tweets in the same direction. BERTweet and DistilBERT seem to have relatively high fluctuations in recall and precision, likely due to variations in the test data from cross-fold splits for each run. 
+The test losses for the 6 runs are given in Table \ref{tab: test_loss} while the graphs for the performance scores from inference are illustrated in Figure \ref{fig: deep_dive_results}. As expected, the test loss is lower for most the of 6 runs for BERTweet Base compared to the other two models. We find DistilBERT Base having losses that are closer to BERT Base in 2 runs but otherwise are generally higher. There is a considerable difference for BERT Tiny which reflects in the predictive performance scores discussed earlier. 
 % Deep dive confusion matrices and line graphs
 \begin{figure}[!ht]
     \small
@@ -293,11 +296,11 @@ The test losses are for the 6 runs given Table \ref{tab: test_loss} while the gr
         \includegraphics[width=\linewidth]{figures/metrics_line_berrttiny.pdf}
         \caption{BERT Tiny - Performance Metrics}
     \end{subfigure}
-    \caption{Confusion matrix and performance metrics for the 3 selected models from the inference phase. The confusion matrix is based on the mean of values from the 6 outer loop iterations.}
+    \caption{Confusion matrix and performance metrics for the 3 selected models from the inference phase. The confusion matrix is based on the mean of values from the 6 outer loop iterations and the grid can be read from left-to-right as true negative, false positive, false negative and true positive.}
     \label{fig: deep_dive_results}
 \end{figure}
 
-Figure \ref{fig: deep_dive_results} also shows the confusion matrices for the 3 models based on the average of the classifications from the 6 test runs. 
+Referring to the metrics in Figure \ref{fig: deep_dive_results}, BERT Tiny exhibits a pattern that differs from the other 2 models. Looking at the correct and incorrect classifications for all the inference executions (detailed in \ref{sec: conf_matrix_test_runs}), it appears that within each test run, the change in misclassified complaint and non-complaint tweets move in the same direction. Another observation is that BERTweet and DistilBERT seem to have relatively high fluctuations in recall and precision, likely due to inherent variations in the test data from the cross-fold splits for each run. Figure \ref{fig: deep_dive_results} also shows the confusion matrices for the 3 models based on the average of the classifications from the 6 test runs. The proportion of correct classified complaints()
 
 % error analysis tweets
 \begin{table}
@@ -344,7 +347,6 @@ Figure \ref{fig: deep_dive_results} also shows the confusion matrices for the 3 
 \end{table}
 
 \section{Experiment set 2 results: Cross-domain results}
-
 % Cross domain results table
 \begin{table}
     \centering

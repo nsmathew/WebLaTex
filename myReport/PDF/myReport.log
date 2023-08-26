@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  25 AUG 2023 17:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  25 AUG 2023 17:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -448,8 +448,8 @@ Overfull \hbox (25.63065pt too wide) in paragraph at lines 6--6
  []
 
 
-Overfull \hbox (25.63065pt too wide) in paragraph at lines 13--13
- [][] []\T1/cmr/m/n/10.95 Illustrates the dis-tri-bu-tion of Tweets cat-e-gorised as 'com-plaints' and 'not com-plaints', 
+Overfull \hbox (5.78207pt too wide) in paragraph at lines 13--13
+ \T1/cmr/m/n/10.95 com-bi-na-tion ex-e-cuted dur-ing the ex-per-i-ments. The best-performing com-bi-na-tion 
  []
 
 )
@@ -1091,10 +1091,6 @@ File: figures/mean_inference_time.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/mean_inference_time.pdf  used on input line 226.
 (pdftex.def)             Requested size: 216.01767pt x 129.61061pt.
  [31 <./figures/model_size_vs_perf.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 253--253
-[]|\T1/cmr/m/n/10.95 textbfBERTweet
- []
-
 <figures/confusion_bertweet.png, id=377, 722.7pt x 433.62pt>
 File: figures/confusion_bertweet.png Graphic file (type png)
 <use figures/confusion_bertweet.png>
@@ -1133,16 +1129,16 @@ Package pdftex.def Info: figures/metrics_line_berrttiny.pdf  used on input line 
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 
+
 Package tabularray Warning: Table width is too small, need 76.94144pt more!
 
 > Step: build the whole table.
-[32 <./figures/mean_train_time.pdf> <./figures/mean_inference_time.pdf>]
-<figures/cross_domain_data_heat.pdf, id=470, 722.7pt x 578.16pt>
+<figures/cross_domain_data_heat.pdf, id=383, 722.7pt x 578.16pt>
 File: figures/cross_domain_data_heat.pdf Graphic file (type pdf)
 <use figures/cross_domain_data_heat.pdf>
 Package pdftex.def Info: figures/cross_domain_data_heat.pdf  used on input line 416.
 (pdftex.def)             Requested size: 256.0748pt x 204.85565pt.
-) (./chapters/chapter5.tex [33 <./figures/confusion_bertweet.png> <./figures/metrics_line_bertweet.pdf> <./figures/confusion_distilbert.png> <./figures/metrics_line_distilbert.pdf> <./figures/confusion_berttiny.png> <./figures/metrics_line_berrttiny.pdf>] [34 <./figures/cross_domain_data_heat.pdf>]
+) (./chapters/chapter5.tex [32 <./figures/mean_train_time.pdf> <./figures/mean_inference_time.pdf>] [33 <./figures/confusion_bertweet.png> <./figures/metrics_line_bertweet.pdf> <./figures/confusion_distilbert.png> <./figures/metrics_line_distilbert.pdf> <./figures/confusion_berttiny.png> <./figures/metrics_line_berrttiny.pdf>] [34 <./figures/cross_domain_data_heat.pdf>]
 Chapter 5.
 ) (PDF/myReport.bbl [35
 
@@ -1161,32 +1157,32 @@ Overfull \hbox (0.64908pt too wide) in paragraph at lines 68--69
 [41
 
 ]
-<figures/token_pp_hist_albert-base-v2.png, id=667, 578.16pt x 289.08pt>
+<figures/token_pp_hist_albert-base-v2.png, id=682, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_albert-base-v2.png Graphic file (type png)
 <use figures/token_pp_hist_albert-base-v2.png>
 Package pdftex.def Info: figures/token_pp_hist_albert-base-v2.png  used on input line 79.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-<figures/token_pp_hist_vinai-bertweet-base.png, id=668, 578.16pt x 289.08pt>
+<figures/token_pp_hist_vinai-bertweet-base.png, id=683, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_vinai-bertweet-base.png Graphic file (type png)
 <use figures/token_pp_hist_vinai-bertweet-base.png>
 Package pdftex.def Info: figures/token_pp_hist_vinai-bertweet-base.png  used on input line 85.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-<figures/token_pp_hist_prajjwal1-bert-tiny.png, id=669, 578.16pt x 289.08pt>
+<figures/token_pp_hist_prajjwal1-bert-tiny.png, id=684, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_prajjwal1-bert-tiny.png Graphic file (type png)
 <use figures/token_pp_hist_prajjwal1-bert-tiny.png>
 Package pdftex.def Info: figures/token_pp_hist_prajjwal1-bert-tiny.png  used on input line 90.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-<figures/token_pp_hist_distilbert-base-uncased.png, id=670, 578.16pt x 289.08pt>
+<figures/token_pp_hist_distilbert-base-uncased.png, id=685, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_distilbert-base-uncased.png Graphic file (type png)
 <use figures/token_pp_hist_distilbert-base-uncased.png>
 Package pdftex.def Info: figures/token_pp_hist_distilbert-base-uncased.png  used on input line 96.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-<figures/token_pp_hist_google-mobilebert-uncased.png, id=671, 578.16pt x 289.08pt>
+<figures/token_pp_hist_google-mobilebert-uncased.png, id=686, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_google-mobilebert-uncased.png Graphic file (type png)
 <use figures/token_pp_hist_google-mobilebert-uncased.png>
 Package pdftex.def Info: figures/token_pp_hist_google-mobilebert-uncased.png  used on input line 101.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-<figures/token_pp_hist_roberta-base.png, id=672, 578.16pt x 289.08pt>
+<figures/token_pp_hist_roberta-base.png, id=687, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_roberta-base.png Graphic file (type png)
 <use figures/token_pp_hist_roberta-base.png>
 Package pdftex.def Info: figures/token_pp_hist_roberta-base.png  used on input line 107.
@@ -1205,9 +1201,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  58i,18n,112p,1936b,1310s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on PDF/myReport.pdf (52 pages, 2681646 bytes).
+Output written on PDF/myReport.pdf (52 pages, 2690646 bytes).
 PDF statistics:
- 810 PDF objects out of 1000 (max. 8388607)
+ 825 PDF objects out of 1000 (max. 8388607)
  262 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)

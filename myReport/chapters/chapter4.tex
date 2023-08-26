@@ -238,7 +238,7 @@ To comprehend where the models are misclassifying, deep-dive analysis is carried
     \begin{tabularx}{\textwidth}{|X|X|X|X|}
         \hline
         \rowcolor[gray]{0.7}
-        textbf{Test Run} & textbf{BERTweet Base} & textbf{DistilBERT} & textbf{BERT Tiny} \\
+        \textbf{Test Run} & \textbf{BERTweet Base} & \textbf{DistilBERT} & \textbf{BERT Tiny} \\
         \hline
         1                & 0.21701               & 0.22481            & 0.49180           \\
         \rowcolor[gray]{0.9}
@@ -415,6 +415,6 @@ To comprehend where the models are misclassifying, deep-dive analysis is carried
     \centering
     \includegraphics[width=9cm]{figures/cross_domain_data_heat.pdf}
     \vspace*{-3mm}
-    \caption{Shows the heatmap of the ratio of train to test data with the best performing combination highlighted with '*'. }
+    \caption{Shows the heatmap of the log of the ratio of the train to test data for every combination executed during the experiments. The best-performing combination using AUC scores is highlighted with $\bullet$. Denoted next to the y-axis labels is the number of rows used for the train dataset for that domain.}
     \label{fig: cross_domain_heat}
 \end{figure}

@@ -475,7 +475,7 @@ Next, an error analysis is conducted on the tweets that were misclassified. Samp
 \end{table}
 What follows are the results from the cross-domain experiments. To recap, these experiments aim to evaluate the behaviour of the top-performing model from experiments set 1 in the context of smaller datasets and imbalanced class distributions. For these experiments, the chosen model is BERTweet Base, utilizing the optimal learning rate hyperparameter of 0.00003. The outcomes are detailed in Table \ref{fig: cross_domain_heat}, focusing on the assessment performed using ROC AUC scores. This metric is selected due to its appropriateness for datasets with class imbalance. The metric reported is the mean of 3 test runs based on a stratified cross-fold split of the data. For a comprehensive breakdown of classes within each domain, please refer to Section \ref{sec: apdxa_fulldataset}.
 
-The best performance is where we use 
+The best performance is where we use all the data except the 'other' domain tweets for finetuning and the 'other' domain for testing. It has a relatively high discriminative ability represented by a score of 0.908. This is followed by 
 
 % cross domain heatmap
 \begin{figure}[htb]

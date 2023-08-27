@@ -39,17 +39,17 @@
 \contentsline {subsection}{\numberline {4.2.2}Performance of 'lightweight' models}{30}{}%
 \contentsline {subsubsection}{Analyis of finetuning and inference time}{32}{}%
 \contentsline {subsection}{\numberline {4.2.3}Deep-dive into the results}{32}{}%
-\contentsline {section}{\numberline {4.3}Experiment set 2 results: Cross-domain results}{36}{}%
-\contentsline {chapter}{\numberline {5}Conclusions}{38}{}%
-\contentsline {chapter}{Appendices}{43}{}%
-\contentsline {chapter}{\numberline {A}Other supporting analysis and graphs}{44}{}%
-\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{44}{}%
-\contentsline {section}{\numberline {A.2}Sample data from dataset}{44}{}%
-\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{45}{}%
-\contentsline {subsection}{\numberline {A.3.1}Confusion matrix from every test run}{45}{}%
-\contentsline {chapter}{\numberline {B}Other references}{47}{}%
-\contentsline {section}{\numberline {B.1}Code Repository}{47}{}%
-\contentsline {section}{\numberline {B.2}References for models used in experiment sets 1 and 2}{47}{}%
-\contentsline {section}{\numberline {B.3}References for other models used}{47}{}%
-\contentsline {section}{\numberline {B.4}Evaluation metrics references}{48}{}%
-\contentsline {section}{\numberline {B.5}Additional information on environment used}{48}{}%
+\contentsline {section}{\numberline {4.3}Experiment set 2 results: Cross-domain results}{35}{}%
+\contentsline {chapter}{\numberline {5}Conclusions}{37}{}%
+\contentsline {chapter}{Appendices}{42}{}%
+\contentsline {chapter}{\numberline {A}Other supporting analysis and graphs}{43}{}%
+\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{43}{}%
+\contentsline {section}{\numberline {A.2}Sample data from dataset}{43}{}%
+\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{44}{}%
+\contentsline {subsection}{\numberline {A.3.1}Confusion matrix from every test run}{44}{}%
+\contentsline {chapter}{\numberline {B}Other references}{46}{}%
+\contentsline {section}{\numberline {B.1}Code Repository}{46}{}%
+\contentsline {section}{\numberline {B.2}References for models used in experiment sets 1 and 2}{46}{}%
+\contentsline {section}{\numberline {B.3}References for other models used}{46}{}%
+\contentsline {section}{\numberline {B.4}Evaluation metrics references}{47}{}%
+\contentsline {section}{\numberline {B.5}Additional information on environment used}{47}{}%

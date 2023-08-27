@@ -473,7 +473,9 @@ Next, an error analysis is conducted on the tweets that were misclassified. Samp
     \caption{ROC-AUC scores for the cross-domain experiments. The rows hold the domain used for finetuning while the columns represent the domains used for testing. The last row are the scores where the full data except the corresponding test domain was used for finetuning. Best scores where applicable are highlighted in bold.}
     \label{tab: cross_domain_results}
 \end{table}
-What follows are the results from the cross-domain experiments. To recap, in the cross domain experiments the objective is to assess the behaviour of the best performing model from 
+What follows are the results from the cross-domain experiments. To recap, these experiments aim to evaluate the behaviour of the top-performing model from experiments set 1 in the context of smaller datasets and imbalanced class distributions. For these experiments, the chosen model is BERTweet Base, utilizing the optimal learning rate hyperparameter of 0.00003. The outcomes are detailed in Table \ref{fig: cross_domain_heat}, focusing on the assessment performed using ROC AUC scores. This metric is selected due to its appropriateness for datasets with class imbalance. The metric reported is the mean of 3 test runs based on a stratified cross-fold split of the data. For a comprehensive breakdown of classes within each domain, please refer to Section \ref{sec: apdxa_fulldataset}.
+
+The best performance is where we use 
 
 % cross domain heatmap
 \begin{figure}[htb]

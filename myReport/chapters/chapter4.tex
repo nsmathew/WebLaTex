@@ -262,7 +262,6 @@ To comprehend where the models are misclassifying, deep-dive analysis is carried
     \label{tab: test_loss}
 \end{table}
 
-The test losses for the 6 runs are given in Table \ref{tab: test_loss} while the graphs for the performance scores from inference are illustrated in Figure \ref{fig: deep_dive_results}. As expected, the test loss is lower for most the of 6 runs for BERTweet Base compared to the other two models. We find DistilBERT Base having losses that are closer to BERT Base in 2 runs but otherwise are generally higher. There is a considerable difference for BERT Tiny which reflects in the predictive performance scores discussed earlier. 
 % Deep dive confusion matrices and line graphs
 \begin{figure}[!ht]
     \small
@@ -300,7 +299,10 @@ The test losses for the 6 runs are given in Table \ref{tab: test_loss} while the
     \label{fig: deep_dive_results}
 \end{figure}
 
-Referring to the metrics in Figure \ref{fig: deep_dive_results}, BERT Tiny exhibits a pattern that differs from the other 2 models. Looking at the correct and incorrect classifications for all the inference executions (detailed in \ref{sec: conf_matrix_test_runs}), it appears that within each test run, the change in misclassified complaint and non-complaint tweets move in the same direction. Another point to note is that BERTweet and DistilBERT seem to have relatively high fluctuations in recall and precision, likely due to inherent variations in the data splits from the cross-folds for each run. Figure \ref{fig: deep_dive_results} also shows the confusion matrices for the 3 models based on the mean of the classifications from the 6 test runs. The ratio of accurately categorized non-complaint tweets (true negatives) to complaint tweets (true positives) is comparable between BERTweet and DistilBERT, but it's lower for BERT Tiny. All models appear to face greater challenges in accurately classifying complaint tweets compared to non-complaint tweets, although BERTWeet has the best recall scores overall.
+The test losses for the 6 runs are given in Table \ref{tab: test_loss} while the graphs for the performance scores from inference are illustrated in Figure \ref{fig: deep_dive_results}. As expected, the test loss is lower for most the of 6 runs for BERTweet Base compared to the other two models. We find DistilBERT Base having losses that are closer to BERT Base in 2 runs but otherwise are generally higher. There is a considerable difference for BERT Tiny which reflects in the predictive performance scores discussed earlier. 
+
+
+Referring to the metrics in Figure \ref{fig: deep_dive_results}, BERT Tiny exhibits a pattern that differs from the other 2 models. Looking at the correct and incorrect classifications for all the inference executions (detailed in \ref{sec: conf_matrix_test_runs}), it appears that within each test run, the change in misclassified complaint and non-complaint tweets move in the same direction. Another point to note is that BERTweet and DistilBERT seem to have relatively high fluctuations in recall and precision, likely due to inherent variations in the data splits from the cross-folds for each run. Figure \ref{fig: deep_dive_results} also shows the confusion matrices for the 3 models based on the mean of the classifications from the 6 test runs. The ratio of accurately categorized non-complaint tweets (true negatives) to complaint tweets (true positives) is comparable between BERTweet and DistilBERT, but it's lower for BERT Tiny. All models appear to face greater challenges in accurately classifying complaint tweets compared to non-complaint tweets, although BERTWeet has the best recall scores overall.\\
 
 % error analysis tweets
 \begin{table}
@@ -325,26 +327,28 @@ Referring to the metrics in Figure \ref{fig: deep_dive_results}, BERT Tiny exhib
         hlines,
         vlines,
         }
-        \textbf{No.}        & \textbf{Tweet}                                                                                                                                                                                                                                                      \\
-        \textbf{BERTweet}   &                                                                                                                                                                                                                                                                     \\
-        1                   & do potato based products belong in sandwiches ?                                                                                                                                                                                                                     \\
-        2                   & worst *                                                                                                                                                                                                                                                             \\
-        3                   & i had entered in giveway contest for oneplus 5t lava . so waiting for the result                                                                                                                                                                                    \\
-        4                   & i just checked again and i'm not having the same issues i had earlier . thanks for the help                                                                                                                                                                         \\
-        \textbf{DistilBERT} &                                                                                                                                                                                                                                                                     \\
-        5                   & hey guys , i love this product featured on user today but don't see a price ? help a girl out ?                                                                                                                                                                     \\
-        6                   & is this really what you call a large milkshake user url                                                                                                                                                                                                             \\
-        7                   & shout out to the social media team user user whilst i get the frustration , there's never a time people should be insulting or rude when tweeting . these good people responding are employee's just tyring to help . \#heathrowairport \#heathrow \#britishairways \\
-        8                   & no , see screenshot . it's the app . i got it straight off the playstore on android .                                                                                                                                                                               \\
-        \textbf{BERT Tiny}  &                                                                                                                                                                                                                                                                     \\
-        9                   & whyyyy is your wifi so slow user ?                                                                                                                                                                                                                                  \\
-        10                  & my 2nd visit to kfc chadwell heath after the last fiasco . this time they had no gravy or corn  amp ; forgot my chips \#fail                                                                                                                                        \\
-        11                  & is it possible to integrate my medium account on my personal website with your api ?                                                                                                                                                                                \\
+        \textbf{No.}        & \textbf{Tweet}\\
+        \textbf{BERTweet}   & \\
+        1                   & do potato based products belong in sandwiches ?\\
+        2                   & worst *\\
+        3                   & i had entered in giveway contest for oneplus 5t lava . so waiting for the result\\
+        4                   & i just checked again and i'm not having the same issues i had earlier . thanks for the help\\
+        \textbf{DistilBERT} & \\
+        5                   & hey guys , i love this product featured on user today but don't see a price ? help a girl out ?\\
+        6                   & is this really what you call a large milkshake <user> <url>\\
+        7                   & shout out to the social media team <user> <user> whilst i get the frustration , there's never a time people should be insulting or rude when tweeting . these good people responding are employee's just tyring to help . \#heathrowairport \#heathrow \#britishairways \\
+        8                   & no , see screenshot . it's the app . i got it straight off the playstore on android .\\
+        \textbf{BERT Tiny}  &\\
+        9                   & whyyyy is your wifi so slow <user> ?\\
+        10                  & my 2nd visit to kfc chadwell heath after the last fiasco . this time they had no gravy or corn  amp ; forgot my chips \#fail\\
+        11                  & is it possible to integrate my medium account on my personal website with your api ?\\
         12                  & thanks for your response . what is the twitter handle for your care centre in delhi , india ?
     \end{tblr}
     \caption{Sample tweets which have been misclassified by the 3 selected models. Tweets in the \colorbox{Mercury}{lighter shade of grey} are misclassified as complaints while the rest are misclassified as not complaints.}
-    \label{fig: error_tweets}
+    \label{tab: error_tweets}
 \end{table}
+
+Next, error analysis is performed on the misclassified tweets. Table \ref{tab: error_tweets} shows sample tweets wrongly classified by the 3 models. Looking at tweets classified incorrectly as non-complaints for BERTweet and DistilBERT some of the possible explanations are provided. The model's inability to detect inherent sarcasm with limited context used in the language (no. 1), very limited text (no. 2), combining a lower form of complaining and asking a question (no. 5) and use of rhetorical questions (no. 6). BERT Tiny seems to struggle with tweets even though they have several indicators of a complaint (no. 9 and 10). For the tweets incorrectly classified as complaints, there are instances of tweets that have words generally associated with complaining such as 'waiting' and 'issue' (no. 3 and 4), 
 
 \section{Experiment set 2 results: Cross-domain results}
 % Cross domain results table

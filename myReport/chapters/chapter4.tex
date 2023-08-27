@@ -6,6 +6,7 @@ As described in Chapter 3, the data for the experiments is taken from Twitter. I
 \subsection{Domain and class distribution}
 \begin{figure}[htb]
     \centering
+    \captionsetup{font=small}
     \includegraphics[width=9cm]{figures/compl_non_random_dist.pdf}
     \vspace*{-3mm}
     \caption{Illustrates the distribution of Tweets categorised as 'complaints' and 'not complaints', with random 'Tweets / replies' shown separately.}
@@ -85,6 +86,7 @@ However, the volume of Tweets which include hashtags, particularly in the contex
 \subsection{Sentiment analysis}
 \begin{figure}[htb]
     \centering
+    \captionsetup{font=small}
     \includegraphics[width=12cm]{figures/sentiment.png}
     \vspace*{-3mm}
     \caption{Distribution of positive, negative and neutral sentiments in the Tweets.}
@@ -179,6 +181,7 @@ Examining the models characterized as lightweight based on their architecture an
 % Model size vs performance against BERTweet
 \begin{figure}[htb]
     \centering
+    \captionsetup{font=small}
     \includegraphics[width=12cm]{figures/model_size_vs_perf.pdf}
     \vspace*{-3mm}
     \caption{Relative performance of models against BERTweet and model sizes based on F1. BERTweet's model size is 110M.}
@@ -264,8 +267,8 @@ To comprehend where the models are misclassifying, deep-dive analysis is carried
 
 % Deep dive confusion matrices and line graphs
 \begin{figure}[!ht]
-    \small
     \centering
+    \captionsetup{font=small}
     \begin{subfigure}{0.45\linewidth}
         \includegraphics[width=\linewidth]{figures/confusion_bertweet.png}
         \caption{BERTweet - Confusion Matrix}
@@ -305,7 +308,7 @@ Referring to the metrics in Figure \ref{fig: deep_dive_results}, BERT Tiny exhib
 
 Figure \ref{fig: deep_dive_results} also shows the confusion matrices for the 3 models based on the mean of the classifications from the 6 test runs. The ratio of accurately categorized non-complaint tweets (true negatives) to complaint tweets (true positives) is comparable between BERTweet and DistilBERT, but it's lower for BERT Tiny. All models appear to face greater challenges in accurately classifying complaint tweets compared to non-complaint tweets, although BERTWeet has the best recall scores overall. Even though there is an inherent class imbalance in the dataset, the confusion matrix and the metrics presented still offer valuable insights into the predictive capabilities of the models\\
 
-Next, an error analysis is conducted on the tweets that were misclassified. Sample tweets that were inaccurately classified by the three models are presented in Table \ref{tab: error_tweets}. Examining tweets that were wrongly labelled as non-complaints by BERTweet and DistilBERT, several observations are discussed. The models seem to have challenges in identifying sarcasm within a constrained linguistic context (example 1), the presence of very concise text (example 2), the combination of mild expressions of dissatisfaction with questions (example 5), and the usage of rhetorical questions (example 6). Notably, BERT Tiny struggles even when tweets exhibit multiple indicators of being complaints, as seen in examples 9 and 10. Regarding tweets that were erroneously classified as complaints the potential reasons are more difficult to . there are tweets containing words commonly associated with grievances, like 'waiting' and 'issue' (examples 3 and 4), as well as tweets that narrate negative experiences rather than expressing complaints (example 7). Additionally, instances arise where the text represents an intermediate segment of a conversation (example 8). BERT Tiny appears to get confused when encountering text containing questions which carry no hint of complaining and are about mundane topics (examples 11 and 12).
+Next, an error analysis is conducted on the tweets that were misclassified. Sample tweets that were inaccurately classified by the three models are presented in Table \ref{tab: error_tweets}. Examining tweets that were wrongly labelled as non-complaints by BERTweet and DistilBERT, several observations are discussed. The models seem to have challenges in identifying sarcasm within a constrained linguistic context (example 1), the presence of very concise text (example 2), the combination of mild expressions of dissatisfaction with questions (example 5), and the usage of rhetorical questions (example 6). Notably, BERT Tiny struggles even when tweets exhibit multiple indicators of being complaints, as seen in examples 9 and 10. Regarding tweets that were erroneously classified as complaints the potential reasons are more difficult to speculate on. There are tweets containing words commonly associated with grievances, like 'waiting' and 'issue' (examples 3 and 4) which could be confusing the models. Tweets that narrate negative experiences rather than expressing complaints (example 7) is another scenario. Additionally, instances arise where the text represents an intermediate segment of a conversation (example 8). While there is a hint of complaining it is not a complaint in the current context. BERT Tiny appears to get confused when encountering text containing questions which carry no hint of complaining and are about mundane topics (examples 11 and 12).
 
 % error analysis tweets
 \begin{table}
@@ -474,8 +477,9 @@ Next, an error analysis is conducted on the tweets that were misclassified. Samp
 % cross domain heatmap
 \begin{figure}[htb]
     \centering
+    \captionsetup{font=small}
     \includegraphics[width=9cm]{figures/cross_domain_data_heat.pdf}
     \vspace*{-3mm}
-    \caption{Shows the heatmap of the log of the ratio of the train to test data for every combination executed during the experiments. The best-performing combination using AUC scores is highlighted with $\bullet$. Denoted next to the y-axis labels is the number of rows used for the train dataset for that domain.}
+    \caption{Shows the heatmap of the log of the ratio of the train to test data for every combination executed during the experiments. The best-performing combination using AUC scores is highlighted with '$\bullet$'. Denoted next to the y-axis labels is the number of rows used for the train dataset for that domain.}
     \label{fig: cross_domain_heat}
 \end{figure}

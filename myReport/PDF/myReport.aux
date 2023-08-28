@@ -226,6 +226,7 @@
 \newlabel{tab: relative_comparison_metrics}{{4.3}{31}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Relative performance of models against BERTweet and model sizes based on F1. BERTweet's model size is 110M.\relax }}{31}{}\protected@file@percent }
 \newlabel{fig: model_size_vs_perf}{{4.5}{31}}
+\citation{lanALBERTLiteBERT2020}
 \@writefile{toc}{\contentsline {subsubsection}{Analyis of finetuning and inference time}{32}{}\protected@file@percent }
 \newlabel{fig: mean_train_time}{{4.6a}{32}}
 \newlabel{sub@fig: mean_train_time}{{a}{32}}
@@ -241,10 +242,14 @@
 \@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces Sample tweets which have been misclassified by the 3 selected models. Tweets in the \colorbox {Mercury}{lighter shade of grey} are misclassified as complaints while the rest are misclassified as not complaints.\relax }}{35}{}\protected@file@percent }
 \newlabel{tab: error_tweets}{{4.5}{35}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.3}Experiment set 2 results: Cross-domain results}{35}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces ROC-AUC scores for the cross-domain experiments. The rows hold the domain used for finetuning while the columns represent the domains used for testing. The last row are the scores where the full data except the corresponding test domain was used for finetuning. Best scores where applicable are highlighted in bold.\relax }}{36}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces ROC-AUC and F1 scores for the cross-domain experiments are recorded here. The rows show the domain used for finetuning while the columns represent the domains used for testing. The last row shows the scores where the full data except the corresponding test domain was used for finetuning. Best scores where applicable are highlighted in bold.\relax }}{36}{}\protected@file@percent }
 \newlabel{tab: cross_domain_results}{{4.6}{36}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Shows the heatmap of the log of the ratio of the train to test data for every combination executed during the experiments. The best-performing combination using AUC scores is highlighted with '$\bullet $'. Denoted next to the y-axis labels is the number of rows used for the train dataset for that domain.\relax }}{36}{}\protected@file@percent }
-\newlabel{fig: cross_domain_heat}{{4.8}{36}}
+\newlabel{fig: cross_domain_train_domain}{{4.8a}{36}}
+\newlabel{sub@fig: cross_domain_train_domain}{{a}{36}}
+\newlabel{fig: cross_domain_heat}{{4.8b}{36}}
+\newlabel{sub@fig: cross_domain_heat}{{b}{36}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces On the left is a heatmap of the log of the ratio of the train to test data for every combination executed during the experiments. The best-performing combination using AUC scores is highlighted with '$\bullet $'. Denoted next to the y-axis labels is the number of rows used for the train dataset for that domain. On the right is a plot of the no. of rows for each domain against the performance when that domain is used for finetuning.\relax }}{36}{}\protected@file@percent }
+\newlabel{fig: cross_domain_pair}{{4.8}{36}}
 \bibstyle{acm}
 \bibdata{mybibliography}
 \@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusions}{37}{}\protected@file@percent }

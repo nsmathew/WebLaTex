@@ -11,7 +11,7 @@
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Relative performance of models against BERTweet and model sizes based on F1. BERTweet's model size is 110M.\relax }}{31}{}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Mean time taken (in seconds) for finetuning and inference during experiments set 1. BERTweet with the best predictive model is highlighted in red.\relax }}{32}{}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Confusion matrix and performance metrics for the 3 selected models from the inference phase. The confusion matrix is based on the mean of values from the 6 outer loop iterations and the grid can be read from left to right as true negative, false positive, false negative and true positive.\relax }}{33}{}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces On the left is a plot of the no. of tweets for each domain against the average performance when that domain is used for finetuning. On the right is a heatmap of the number of tweets used for every combination tested during the experiments. The best-performing combination using AUC scores is highlighted with '$\bullet $'.\relax }}{37}{}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Shows a plot of the number of tweets for each domain against the average performance when that domain is used for finetuning.\relax }}{37}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {A.1}{\ignorespaces The token count distribution for the full dataset of 3,449 tweets for all models.\relax }}{45}{}%

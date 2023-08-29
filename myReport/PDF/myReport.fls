@@ -619,6 +619,9 @@ INPUT ./figures/mean_inference_time.pdf
 INPUT figures/mean_inference_time.pdf
 INPUT ./figures/mean_inference_time.pdf
 INPUT ./figures/mean_inference_time.pdf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT ./figures/confusion_bertweet.png
 INPUT ./figures/confusion_bertweet.png
 INPUT figures/confusion_bertweet.png

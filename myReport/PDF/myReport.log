@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  28 AUG 2023 18:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  29 AUG 2023 14:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1105,58 +1105,66 @@ File: figures/mean_inference_time.pdf Graphic file (type pdf)
 <use figures/mean_inference_time.pdf>
 Package pdftex.def Info: figures/mean_inference_time.pdf  used on input line 235.
 (pdftex.def)             Requested size: 216.01767pt x 129.61061pt.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
 <figures/confusion_bertweet.png, id=380, 722.7pt x 433.62pt>
 File: figures/confusion_bertweet.png Graphic file (type png)
 <use figures/confusion_bertweet.png>
-Package pdftex.def Info: figures/confusion_bertweet.png  used on input line 273.
+Package pdftex.def Info: figures/confusion_bertweet.png  used on input line 282.
 (pdftex.def)             Requested size: 198.38pt x 119.02422pt.
 <figures/metrics_line_bertweet.pdf, id=381, 722.7pt x 433.62pt>
 File: figures/metrics_line_bertweet.pdf Graphic file (type pdf)
 <use figures/metrics_line_bertweet.pdf>
-Package pdftex.def Info: figures/metrics_line_bertweet.pdf  used on input line 278.
+Package pdftex.def Info: figures/metrics_line_bertweet.pdf  used on input line 287.
 (pdftex.def)             Requested size: 198.38pt x 119.02422pt.
 <figures/confusion_distilbert.png, id=382, 722.7pt x 433.62pt>
 File: figures/confusion_distilbert.png Graphic file (type png)
 <use figures/confusion_distilbert.png>
-Package pdftex.def Info: figures/confusion_distilbert.png  used on input line 283.
+Package pdftex.def Info: figures/confusion_distilbert.png  used on input line 292.
 (pdftex.def)             Requested size: 198.38pt x 119.02422pt.
 <figures/metrics_line_distilbert.pdf, id=383, 722.7pt x 433.62pt>
 File: figures/metrics_line_distilbert.pdf Graphic file (type pdf)
 <use figures/metrics_line_distilbert.pdf>
-Package pdftex.def Info: figures/metrics_line_distilbert.pdf  used on input line 288.
+Package pdftex.def Info: figures/metrics_line_distilbert.pdf  used on input line 297.
 (pdftex.def)             Requested size: 198.38pt x 119.02422pt.
 <figures/confusion_berttiny.png, id=384, 722.7pt x 433.62pt>
 File: figures/confusion_berttiny.png Graphic file (type png)
 <use figures/confusion_berttiny.png>
-Package pdftex.def Info: figures/confusion_berttiny.png  used on input line 293.
+Package pdftex.def Info: figures/confusion_berttiny.png  used on input line 302.
 (pdftex.def)             Requested size: 198.38pt x 119.02422pt.
 <figures/metrics_line_berrttiny.pdf, id=385, 722.7pt x 433.62pt>
 File: figures/metrics_line_berrttiny.pdf Graphic file (type pdf)
 <use figures/metrics_line_berrttiny.pdf>
-Package pdftex.def Info: figures/metrics_line_berrttiny.pdf  used on input line 298.
+Package pdftex.def Info: figures/metrics_line_berrttiny.pdf  used on input line 307.
 (pdftex.def)             Requested size: 198.38pt x 119.02422pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
+Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
 
 [32 <./figures/mean_train_time.pdf> <./figures/mean_inference_time.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
 
-Overfull \hbox (7.4253pt too wide) in paragraph at lines 309--310
+Overfull \hbox (7.4253pt too wide) in paragraph at lines 318--319
 \T1/cmr/m/n/10.95 ac-cu-rately clas-si-fy-ing com-plaint tweets com-pared to non-complaint tweets, al-though BERTWeet
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
  []
 
 
-Overfull \hbox (7.26212pt too wide) in paragraph at lines 311--312
+Overfull \hbox (7.26212pt too wide) in paragraph at lines 320--321
 \T1/cmr/m/n/10.95 com-monly as-so-ci-ated with grievances, like 'wait-ing' and 'is-sue' (ex-am-ples 3 and 4 for BERTweet)
  []
 
@@ -1169,18 +1177,18 @@ Overfull \hbox (7.26212pt too wide) in paragraph at lines 311--312
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 
-Overfull \hbox (2.51306pt too wide) in paragraph at lines 352--352
+Overfull \hbox (2.51306pt too wide) in paragraph at lines 361--361
  []\T1/cmr/bx/n/10 No. 
  []
 
 
-Overfull \hbox (2.51306pt too wide) in paragraph at lines 352--352
+Overfull \hbox (2.51306pt too wide) in paragraph at lines 361--361
  []\T1/cmr/bx/n/10 No. 
  []
 
 > Step: build the whole table.
 
-Overfull \hbox (2.51306pt too wide) in paragraph at lines 352--352
+Overfull \hbox (2.51306pt too wide) in paragraph at lines 361--361
  []\T1/cmr/bx/n/10 No. 
  []
 
@@ -1196,17 +1204,17 @@ Package tabularray Warning: Table width is too small, need 255.39575pt more!
 
 > Step: build the whole table.
 
-Overfull \hbox (1.48055pt too wide) in paragraph at lines 476--477
+Overfull \hbox (1.48055pt too wide) in paragraph at lines 485--486
 \T1/cmr/m/n/10.95 cho-sen model is BERTweet Base, uti-liz-ing the op-ti-mal learn-ing rate hy-per-pa-ram-e-ter of 0.00003.
  []
 
 
-Overfull \hbox (5.7933pt too wide) in paragraph at lines 476--477
+Overfull \hbox (5.7933pt too wide) in paragraph at lines 485--486
 \T1/cmr/m/n/10.95 The out-comes are de-tailed in Ta-ble 4.8b[], fo-cus-ing on the as-sess-ment per-formed us-ing ROC-AUC
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--477
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
 
  []
 
@@ -1214,19 +1222,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 476--477
 <figures/cross_domain_instancevsmetric.pdf, id=620, 722.7pt x 578.16pt>
 File: figures/cross_domain_instancevsmetric.pdf Graphic file (type pdf)
 <use figures/cross_domain_instancevsmetric.pdf>
-Package pdftex.def Info: figures/cross_domain_instancevsmetric.pdf  used on input line 486.
+Package pdftex.def Info: figures/cross_domain_instancevsmetric.pdf  used on input line 495.
 (pdftex.def)             Requested size: 216.01767pt x 172.81415pt.
 <figures/cross_domain_data_heat.pdf, id=621, 722.7pt x 578.16pt>
 File: figures/cross_domain_data_heat.pdf Graphic file (type pdf)
 <use figures/cross_domain_data_heat.pdf>
-Package pdftex.def Info: figures/cross_domain_data_heat.pdf  used on input line 493.
+Package pdftex.def Info: figures/cross_domain_data_heat.pdf  used on input line 502.
 (pdftex.def)             Requested size: 216.01767pt x 172.81415pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
 
  []
 
-[36 <./figures/cross_domain_instancevsmetric.pdf> <./figures/cross_domain_data_heat.pdf>]) (./chapters/chapter5.tex [37]
+) (./chapters/chapter5.tex [36] [37 <./figures/cross_domain_instancevsmetric.pdf> <./figures/cross_domain_data_heat.pdf>]
 Chapter 5.
 ) (PDF/myReport.bbl [38
 
@@ -1289,15 +1297,15 @@ Appendix B.
 
 ]) [48] (PDF/myReport.aux) ) 
 Here is how much of TeX's memory you used:
- 8672 strings out of 476047
- 179905 string characters out of 5790254
- 1933248 words of memory out of 5000000
- 28918 multiletter control sequences out of 15000+600000
- 540320 words of font info for 81 fonts, out of 8000000 for 9000
+ 8711 strings out of 476047
+ 181348 string characters out of 5790254
+ 1935248 words of memory out of 5000000
+ 28957 multiletter control sequences out of 15000+600000
+ 542090 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,18n,112p,1936b,1250s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 58i,18n,112p,1936b,1205s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on PDF/myReport.pdf (56 pages, 2867441 bytes).
+Output written on PDF/myReport.pdf (56 pages, 2868564 bytes).
 PDF statistics:
  895 PDF objects out of 1000 (max. 8388607)
  282 compressed objects within 3 object streams

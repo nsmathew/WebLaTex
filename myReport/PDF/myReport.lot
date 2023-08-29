@@ -12,7 +12,7 @@
 \contentsline {table}{\numberline {4.1}{\ignorespaces Statistics of Tweets in the dataset.\relax }}{29}{}%
 \contentsline {table}{\numberline {4.2}{\ignorespaces Mean prediction performance metrics for all models after nested cross-validation for finetuning and testing. The highest scores are in bold. \(\uparrow \) is the best performing and \(\downarrow \) is the worst performing model. \(\star \) models are included for deep-dive analysis. Where available, numbers in '[ ]' are the results from \cite {jin_complaint_2020}.\relax }}{30}{}%
 \contentsline {table}{\numberline {4.3}{\ignorespaces Comparison of key metrics of the models relative to BERTweet.\relax }}{31}{}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Test loss from the inference phase for the 6 outer loop iterations for the 3 selected models.\relax }}{33}{}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Test loss and Matthews Correlation Coefficient (MCC) from the inference phase for the 6 outer loop iterations for the 3 selected models.\relax }}{33}{}%
 \contentsline {table}{\numberline {4.5}{\ignorespaces Sample tweets which have been misclassified by the 3 selected models. Tweets in the \colorbox {Mercury}{lighter shade of grey} are misclassified as complaints while the rest are misclassified as not complaints.\relax }}{35}{}%
 \contentsline {table}{\numberline {4.6}{\ignorespaces ROC-AUC and F1 scores for the cross-domain experiments are recorded here. The rows show the domain used for finetuning while the columns represent the domains used for testing. The last row shows the scores where the full data except the corresponding test domain was used for finetuning. Best scores where applicable are highlighted in bold.\relax }}{36}{}%
 \addvspace {10\p@ }

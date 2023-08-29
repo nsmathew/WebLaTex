@@ -480,7 +480,7 @@ The best performance is where we use all the data except the 'Other' domain twee
 
 For single-domain finetuning cases, some instances exhibit performance levels approaching those attained through finetuning with the entire dataset, even though the volume of training data is significantly lower. Domains such as 'Apparel', 'Services', 'Transport' and 'Electronics' have AUC and F1 scores of over 0.8 despite the volume of data used for finetuning being on average only 10\% of the all data volume. However, it's also important to highlight that finetuning with single domains with extremely limited data for finetuning results in AUC scores around or close to 0.5. This indicates that the model's predictive ability is akin to random chance in these cases. These include the domains of Cars', 'Food & Beverage', and 'Others' with only 4\% of the 'All' data volume on average.\\
 
-The best score achieved by \cite{jin_complaint_2020} using BERT was  
+The best score achieved by \cite{jin_complaint_2020} using BERT Base was 0.882 when using all domains for finetuning and the 'Other' domain for testing. While BERTweet performs best for the same combination the performance is significantly higher at 0.951. This is likely due to the same advantages as described earlier for BERTweet Base being pre-trained on Twitter data. The predictive performance when finetuning with domains with very low tweet volumes is also higher for BERTweet. 'Cars' 
 
 % cross domain heatmap
 \begin{figure}[htbp]

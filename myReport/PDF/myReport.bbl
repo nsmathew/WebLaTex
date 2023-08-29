@@ -43,11 +43,6 @@
 \newblock Language {Models} are {Few}-{Shot} {Learners}, July 2020.
 \newblock arXiv:2005.14165 [cs].
 
-\bibitem{chiccoAdvantagesMatthewsCorrelation2020}
-{\sc Chicco, D., and Jurman, G.}
-\newblock The advantages of the {Matthews} correlation coefficient ({MCC}) over {F1} score and accuracy in binary classification evaluation.
-\newblock {\em BMC genomics 21}, 1 (2020), 6--6.
-
 \bibitem{choPropertiesNeuralMachine2014}
 {\sc Cho, K., van Merrienboer, B., Bahdanau, D., and Bengio, Y.}
 \newblock On the {Properties} of {Neural} {Machine} {Translation}: {Encoder}-{Decoder} {Approaches}, Oct. 2014.

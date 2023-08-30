@@ -6,16 +6,16 @@ Database file #1: mybibliography.bib
 Warning--empty journal in olshtain_speechact_1987
 You've used 46 entries,
             2253 wiz_defined-function locations,
-            803 strings with 15054 characters,
-and the built_in function-call counts, 16084 in all, are:
-= -- 1444
+            800 strings with 14991 characters,
+and the built_in function-call counts, 16057 in all, are:
+= -- 1438
 > -- 1052
 < -- 0
 + -- 430
 - -- 384
 * -- 1380
-:= -- 2698
-add.period$ -- 122
+:= -- 2692
+add.period$ -- 119
 call.type$ -- 46
 change.case$ -- 327
 chr.to.int$ -- 0
@@ -23,17 +23,17 @@ cite$ -- 47
 duplicate$ -- 416
 empty$ -- 1148
 format.name$ -- 384
-if$ -- 3184
+if$ -- 3178
 int.to.chr$ -- 0
 int.to.str$ -- 46
 missing$ -- 28
-newline$ -- 215
+newline$ -- 212
 num.names$ -- 92
 pop$ -- 402
 preamble$ -- 1
 purify$ -- 284
 quote$ -- 0
-skip$ -- 303
+skip$ -- 306
 stack$ -- 0
 substring$ -- 760
 swap$ -- 97
@@ -44,5 +44,5 @@ type$ -- 178
 warning$ -- 1
 while$ -- 136
 width$ -- 48
-write$ -- 431
+write$ -- 425
 (There was 1 warning)

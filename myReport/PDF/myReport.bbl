@@ -41,7 +41,6 @@
 \bibitem{brownLanguageModelsAre2020}
 {\sc Brown, T.~B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler, D.~M., Wu, J., Winter, C., Hesse, C., Chen, M., Sigler, E., Litwin, M., Gray, S., Chess, B., Clark, J., Berner, C., McCandlish, S., Radford, A., Sutskever, I., and Amodei, D.}
 \newblock Language {Models} are {Few}-{Shot} {Learners}, July 2020.
-\newblock arXiv:2005.14165 [cs].
 
 \bibitem{choPropertiesNeuralMachine2014}
 {\sc Cho, K., van Merrienboer, B., Bahdanau, D., and Bengio, Y.}
@@ -136,7 +135,6 @@
 \bibitem{openaiGPT4TechnicalReport2023}
 {\sc OpenAI}.
 \newblock {GPT}-4 {Technical} {Report}, Mar. 2023.
-\newblock arXiv:2303.08774 [cs].
 
 \bibitem{pfefferUnderstandingOnlineFirestorms2014}
 {\sc Pfeffer, J., Zorbach, T., and Carley, K.~M.}
@@ -210,6 +208,5 @@
 \bibitem{wolfHuggingFaceTransformersStateoftheart2020}
 {\sc Wolf, T., Debut, L., Sanh, V., Chaumond, J., Delangue, C., Moi, A., Cistac, P., Rault, T., Louf, R., Funtowicz, M., Davison, J., Shleifer, S., von Platen, P., Ma, C., Jernite, Y., Plu, J., Xu, C., Scao, T.~L., Gugger, S., Drame, M., Lhoest, Q., and Rush, A.~M.}
 \newblock {HuggingFace}'s {Transformers}: {State}-of-the-art {Natural} {Language} {Processing}, July 2020.
-\newblock arXiv:1910.03771 [cs].
 
 \end{thebibliography}

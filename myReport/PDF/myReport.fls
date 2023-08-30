@@ -539,6 +539,8 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecti1095.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ./chapters/chapter2.tex
 INPUT chapters/chapter2.tex
 INPUT ./chapters/chapter2.tex
@@ -551,7 +553,6 @@ INPUT ./chapters/chapter3.tex
 INPUT chapters/chapter3.tex
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecrm0700.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
 INPUT ./figures/model-summary.png
 INPUT ./figures/model-summary.png

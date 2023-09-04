@@ -11,7 +11,7 @@
 \contentsline {subsection}{\numberline {2.5.2}Transformer network and inductive transfer learning}{10}{}%
 \contentsline {subsection}{\numberline {2.5.3}BERT and its variants}{11}{}%
 \contentsline {subsection}{\numberline {2.5.4}Ongoing research}{13}{}%
-\contentsline {section}{\numberline {2.6}Previous work on automation}{15}{}%
+\contentsline {section}{\numberline {2.6}Previous work on automation of complaints identification}{15}{}%
 \contentsline {chapter}{\numberline {3}Methodology}{17}{}%
 \contentsline {section}{\numberline {3.1}Task}{17}{}%
 \contentsline {section}{\numberline {3.2}Data and pre-processing}{17}{}%

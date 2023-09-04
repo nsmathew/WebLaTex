@@ -10,10 +10,6 @@
 \newblock Inter-{Coder} {Agreement} for {Computational} {Linguistics}.
 \newblock {\em Computational linguistics - Association for Computational Linguistics 34}, 4 (2008), 555--596.
 
-\bibitem{bahdanauNeuralMachineTranslation2016}
-{\sc Bahdanau, D., Cho, K., and Bengio, Y.}
-\newblock Neural {Machine} {Translation} by {Jointly} {Learning} to {Align} and {Translate}, May 2016.
-
 \bibitem{balaji_customer_2015}
 {\sc Balaji, M.~S., Jha, S., and Royne, M.~B.}
 \newblock Customer e-complaining behaviours using social media.
@@ -41,10 +37,6 @@
 \bibitem{brownLanguageModelsAre2020}
 {\sc Brown, T.~B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler, D.~M., Wu, J., Winter, C., Hesse, C., Chen, M., Sigler, E., Litwin, M., Gray, S., Chess, B., Clark, J., Berner, C., McCandlish, S., Radford, A., Sutskever, I., and Amodei, D.}
 \newblock Language {Models} are {Few}-{Shot} {Learners}, July 2020.
-
-\bibitem{choPropertiesNeuralMachine2014}
-{\sc Cho, K., van Merrienboer, B., Bahdanau, D., and Bengio, Y.}
-\newblock On the {Properties} of {Neural} {Machine} {Translation}: {Encoder}-{Decoder} {Approaches}, Oct. 2014.
 
 \bibitem{chungEmpiricalEvaluationGated2014}
 {\sc Chung, J., Gulcehre, C., Cho, K., and Bengio, Y.}

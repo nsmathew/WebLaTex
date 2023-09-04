@@ -694,11 +694,6 @@ INPUT ./figures/token_pp_hist_distilbert-base-uncased.png
 INPUT figures/token_pp_hist_distilbert-base-uncased.png
 INPUT ./figures/token_pp_hist_distilbert-base-uncased.png
 INPUT ./figures/token_pp_hist_distilbert-base-uncased.png
-INPUT ./figures/token_pp_hist_google-mobilebert-uncased.png
-INPUT ./figures/token_pp_hist_google-mobilebert-uncased.png
-INPUT figures/token_pp_hist_google-mobilebert-uncased.png
-INPUT ./figures/token_pp_hist_google-mobilebert-uncased.png
-INPUT ./figures/token_pp_hist_google-mobilebert-uncased.png
 INPUT ./figures/token_pp_hist_roberta-base.png
 INPUT ./figures/token_pp_hist_roberta-base.png
 INPUT figures/token_pp_hist_roberta-base.png

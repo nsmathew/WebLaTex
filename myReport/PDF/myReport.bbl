@@ -1,10 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{ahluwaliaConsumerResponseNegative2000}
-{\sc Ahluwalia, R., Burnkrant, R.~E., and Unnava, H.~R.}
-\newblock Consumer {Response} to {Negative} {Publicity}: {The} {Moderating} {Role} of {Commitment}.
-\newblock {\em Journal of Marketing Research 37}, 2 (May 2000), 203--214.
-
 \bibitem{artsteinInterCoderAgreementComputational2008}
 {\sc Artstein, R., and Poesio, M.}
 \newblock Inter-{Coder} {Agreement} for {Computational} {Linguistics}.
@@ -174,10 +169,6 @@
 {\sc Sun, S., Gao, Y., and Rui, H.}
 \newblock Does {Active} {Service} {Intervention} {Drive} {More} {Complaints} on {Social} {Media}? {The} {Roles} of {Service} {Quality} and {Awareness}.
 \newblock {\em Journal of Management Information Systems 38}, 3 (July 2021), 579--611.
-
-\bibitem{sunMobileBERTCompactTaskAgnostic2020}
-{\sc Sun, Z., Yu, H., Song, X., Liu, R., Yang, Y., and Zhou, D.}
-\newblock {MobileBERT}: a {Compact} {Task}-{Agnostic} {BERT} for {Resource}-{Limited} {Devices}, Apr. 2020.
 
 \bibitem{tripp_when_2011}
 {\sc Tripp, T.~M., and Gregoire, Y.}

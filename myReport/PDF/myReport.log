@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  4 SEP 2023 16:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  4 SEP 2023 17:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -599,57 +599,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
-
- []
-
-
-Overfull \hbox (14.21613pt too wide) in paragraph at lines 41--42
+Overfull \hbox (14.21613pt too wide) in paragraph at lines 37--38
 []\T1/cmr/m/n/10.95 The au-thors of [[]] ex-plored how per-son-al-ity af-fects the con-tent and tone of tweets. Mi-croblog-ging
  []
 
 
-Overfull \hbox (3.16196pt too wide) in paragraph at lines 44--45
-\T1/cmr/m/n/10.95 Computational lin-guis-tics or Nat-u-ral Lan-guage Pro-cess-ing (NLP) has evolved into a com-pelling
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
  []
 
 
-Overfull \hbox (3.9433pt too wide) in paragraph at lines 44--45
-\T1/cmr/m/n/10.95 con-struct of so-cial us-age. The so-lu-tions tar-get to solve prob-lems in ar-eas of ma-chine trans-la-tion,
- []
-
-
-Overfull \hbox (9.1178pt too wide) in paragraph at lines 44--45
-\T1/cmr/m/n/10.95 text gen-er-a-tion, sum-mari-sa-tion and clas-si-fi-ca-tion, ques-tion an-swer-ing as well gen-er-at-ing busi-ness
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
+Overfull \hbox (3.16196pt too wide) in paragraph at lines 48--49
+\T1/cmr/m/n/10.95 Computational lin-guis-tics or Nat-u-ral Lan-guage Pro-cess-ing (NLP) has evolved into a com-pelling
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Overfull \hbox (3.9433pt too wide) in paragraph at lines 48--49
+\T1/cmr/m/n/10.95 con-struct of so-cial us-age. The so-lu-tions tar-get to solve prob-lems in ar-eas of ma-chine trans-la-tion,
+ []
+
+
+Overfull \hbox (9.1178pt too wide) in paragraph at lines 48--49
+\T1/cmr/m/n/10.95 text gen-er-a-tion, sum-mari-sa-tion and clas-si-fi-ca-tion, ques-tion an-swer-ing as well gen-er-at-ing busi-ness
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
@@ -658,19 +648,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-
- []
-
-
-Overfull \hbox (14.9294pt too wide) in paragraph at lines 58--59
-\T1/cmr/m/n/10.95 pa-ram-e-ter growth as net-work depth in-creased. These ap-proaches sig-nif-i-cantly re-duced pa-ram-e-ters
  []
 
 
@@ -684,6 +669,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--61
  []
 
 
+Overfull \hbox (14.9294pt too wide) in paragraph at lines 62--63
+\T1/cmr/m/n/10.95 pa-ram-e-ter growth as net-work depth in-creased. These ap-proaches sig-nif-i-cantly re-duced pa-ram-e-ters
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
@@ -694,7 +684,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--65
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
@@ -704,18 +694,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--72
  []
 
 
-Overfull \hbox (8.57544pt too wide) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+
+Overfull \hbox (8.57544pt too wide) in paragraph at lines 75--76
 \T1/cmr/m/n/10.95 lead-ing to en-hanced NLP per-for-mance [[]]. The au-thors ar-gue due to the na-ture of meta-learning,
  []
 
 
-Overfull \hbox (3.56935pt too wide) in paragraph at lines 73--74
+Overfull \hbox (3.56935pt too wide) in paragraph at lines 75--76
 \T1/cmr/m/n/10.95 and 'zero-shot' learn-ing, re-ly-ing solely on nat-u-ral lan-guage di-rec-tions. The model demon-strated
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-
  []
 
 
@@ -724,25 +714,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--76
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-
- []
-
-[13]) (./chapters/chapter3.tex [14]
+) (./chapters/chapter3.tex [13]
 Chapter 3.
 
 Underfull \hbox (badness 8170) in paragraph at lines 60--60
 []|\T1/cmr/m/n/10 Addressed to other cus-tomer ser-vice
  []
 
-[15
+[14
 
-] [16]
+] [15]
 Overfull \hbox (0.9916pt too wide) in paragraph at lines 111--114
 \T1/cmr/m/n/10.95 [[]]. Us-ing BERT for the text clas-si-fi-ca-tion task has sev-eral ad-van-tages over pre-vi-ous dom-i-nant
  []
@@ -752,164 +737,164 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--114
 
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 135--135
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 []|\T1/cmr/bx/n/10 Parameter
  []
 
-<figures/model-summary.png, id=110, 957.5775pt x 414.54875pt>
+<figures/model-summary.png, id=106, 957.5775pt x 414.54875pt>
 File: figures/model-summary.png Graphic file (type png)
 <use figures/model-summary.png>
-Package pdftex.def Info: figures/model-summary.png  used on input line 142.
+Package pdftex.def Info: figures/model-summary.png  used on input line 141.
 (pdftex.def)             Requested size: 426.79134pt x 184.76141pt.
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
-<figures/token_hist.png, id=116, 517.4532pt x 290.5254pt>
+<figures/token_hist.png, id=113, 517.4532pt x 290.5254pt>
 File: figures/token_hist.png Graphic file (type png)
 <use figures/token_hist.png>
-Package pdftex.def Info: figures/token_hist.png  used on input line 158.
+Package pdftex.def Info: figures/token_hist.png  used on input line 157.
 (pdftex.def)             Requested size: 211.60489pt x 118.80586pt.
-<figures/token_pp_hist.png, id=117, 517.4532pt x 290.5254pt>
+<figures/token_pp_hist.png, id=114, 517.4532pt x 290.5254pt>
 File: figures/token_pp_hist.png Graphic file (type png)
 <use figures/token_pp_hist.png>
-Package pdftex.def Info: figures/token_pp_hist.png  used on input line 164.
+Package pdftex.def Info: figures/token_pp_hist.png  used on input line 163.
 (pdftex.def)             Requested size: 211.60489pt x 118.80586pt.
-[19 <./figures/model-summary.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+[18 <./figures/model-summary.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 []\T1/cmtt/m/n/10.95 love it when i almost die rear ended by a semi cause my jeep turns off again
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 180--184
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 179--183
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--184
+Underfull \hbox (badness 10000) in paragraph at lines 179--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--184
+Underfull \hbox (badness 10000) in paragraph at lines 179--183
 
  []
 
-[20 <./figures/token_hist.png> <./figures/token_pp_hist.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+[19 <./figures/token_hist.png> <./figures/token_pp_hist.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 []\T1/cmtt/m/n/10.95 [101, 2293, 2009, 2043, 1045, 2471, 3280, 4373, 3092, 2011, 1037, 4100, 3426,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 \T1/cmtt/m/n/10.95 2026, 14007, 4332, 2125, 2153, 1012, 2028, 2154, 2027, 2097, 8081, 2009,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 \T1/cmtt/m/n/10.95 1001, 14007, 6342, 10603, 1001, 17714, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 187--193
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 186--192
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--193
+Underfull \hbox (badness 10000) in paragraph at lines 186--192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--193
+Underfull \hbox (badness 10000) in paragraph at lines 186--192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 []\T1/cmtt/m/n/10.95 [CLS] love it when i almost die rear ended by a semi cause my jeep turns off
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 \T1/cmtt/m/n/10.95 again. one day they will fix it # jeepsucks # chrysler [SEP] [PAD] [PAD]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 \T1/cmtt/m/n/10.95 [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD]
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 196--202
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 195--201
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--202
+Underfull \hbox (badness 10000) in paragraph at lines 195--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--202
+Underfull \hbox (badness 10000) in paragraph at lines 195--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
-
- []
-
-[22]
-Overfull \hbox (2.52618pt too wide) in paragraph at lines 244--245
+Overfull \hbox (2.52618pt too wide) in paragraph at lines 243--244
 []\T1/cmr/m/n/10.95 In this set of ex-per-i-ments, only the most ef-fec-tive model iden-ti-fied from the pre-vi-ous ex-per-i-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
  []
 
-) (./chapters/chapter4.tex [23]
+) (./chapters/chapter4.tex [22]
 Chapter 4.
-<figures/compl_non_random_dist.pdf, id=137, 578.16pt x 289.08pt>
+<figures/compl_non_random_dist.pdf, id=133, 578.16pt x 289.08pt>
 File: figures/compl_non_random_dist.pdf Graphic file (type pdf)
 <use figures/compl_non_random_dist.pdf>
 Package pdftex.def Info: figures/compl_non_random_dist.pdf  used on input line 10.
@@ -919,15 +904,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[24
+[23
 
  <./figures/compl_non_random_dist.pdf>]
-<figures/domain_dist.pdf, id=174, 578.16pt x 289.08pt>
+<figures/domain_dist.pdf, id=171, 578.16pt x 289.08pt>
 File: figures/domain_dist.pdf Graphic file (type pdf)
 <use figures/domain_dist.pdf>
 Package pdftex.def Info: figures/domain_dist.pdf  used on input line 24.
 (pdftex.def)             Requested size: 216.01767pt x 108.00774pt.
-<figures/domain_counts_bar_norandom.pdf, id=175, 578.16pt x 289.08pt>
+<figures/domain_counts_bar_norandom.pdf, id=172, 578.16pt x 289.08pt>
 File: figures/domain_counts_bar_norandom.pdf Graphic file (type pdf)
 <use figures/domain_counts_bar_norandom.pdf>
 Package pdftex.def Info: figures/domain_counts_bar_norandom.pdf  used on input line 31.
@@ -937,12 +922,12 @@ Overfull \hbox (5.10176pt too wide) in paragraph at lines 39--40
 []\T1/cmr/m/n/10.95 The dataset com-prises do-mains en-com-pass-ing both complaint-related tweets and non-complaint
  []
 
-<figures/top_ngram_horiz_bar.png, id=176, 578.16pt x 289.08pt>
+<figures/top_ngram_horiz_bar.png, id=173, 578.16pt x 289.08pt>
 File: figures/top_ngram_horiz_bar.png Graphic file (type png)
 <use figures/top_ngram_horiz_bar.png>
 Package pdftex.def Info: figures/top_ngram_horiz_bar.png  used on input line 46.
 (pdftex.def)             Requested size: 216.01767pt x 108.00774pt.
-<figures/top_hash_horiz_bar.png, id=177, 578.16pt x 289.08pt>
+<figures/top_hash_horiz_bar.png, id=174, 578.16pt x 289.08pt>
 File: figures/top_hash_horiz_bar.png Graphic file (type png)
 <use figures/top_hash_horiz_bar.png>
 Package pdftex.def Info: figures/top_hash_horiz_bar.png  used on input line 53.
@@ -952,7 +937,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-[25 <./figures/domain_dist.pdf> <./figures/domain_counts_bar_norandom.pdf> <./figures/top_ngram_horiz_bar.png> <./figures/top_hash_horiz_bar.png>]
+[24 <./figures/domain_dist.pdf> <./figures/domain_counts_bar_norandom.pdf> <./figures/top_ngram_horiz_bar.png> <./figures/top_hash_horiz_bar.png>]
 Overfull \hbox (12.08348pt too wide) in paragraph at lines 82--83
 \T1/cmtt/m/n/10.95 #fail\T1/cmr/m/n/10.95 , and \T1/cmtt/m/n/10.95 #disappointed \T1/cmr/m/n/10.95 are ex-am-ples. Con-se-quently, in ad-di-tion to ex-press-ing dis-sat-is-fac-tion,
  []
@@ -972,8 +957,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
-[26]
-<figures/sentiment.png, id=283, 722.7pt x 433.62pt>
+[25]
+<figures/sentiment.png, id=280, 722.7pt x 433.62pt>
 File: figures/sentiment.png Graphic file (type png)
 <use figures/sentiment.png>
 Package pdftex.def Info: figures/sentiment.png  used on input line 90.
@@ -988,7 +973,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--139
 []|\T1/cmr/bx/n/10 Not
  []
 
-[27 <./figures/sentiment.png>]
+[26 <./figures/sentiment.png>]
 Overfull \hbox (9.1906pt too wide) in paragraph at lines 146--146
 []\T1/cmr/bx/n/14.4 Experiment set 1 re-sults: Com-par-i-sion of model per-for-mance 
  []
@@ -998,123 +983,112 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
-[28]
+[27]
 Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
 []|\T1/cmr/m/n/10 BERT Base
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
 []|$\OML/cmm/m/it/10 ?$$\OMS/cmsy/m/n/10 #$ \T1/cmr/m/n/10 BERT
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
-[]|\T1/cmr/m/n/10 MobileBERT
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
 []|\T1/cmr/m/n/10 RoBERTa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
-[29]
-<figures/model_size_vs_perf.pdf, id=295, 722.7pt x 433.62pt>
+[28]
+<figures/model_size_vs_perf.pdf, id=291, 722.7pt x 433.62pt>
 File: figures/model_size_vs_perf.pdf Graphic file (type pdf)
 <use figures/model_size_vs_perf.pdf>
-Package pdftex.def Info: figures/model_size_vs_perf.pdf  used on input line 185.
+Package pdftex.def Info: figures/model_size_vs_perf.pdf  used on input line 184.
 (pdftex.def)             Requested size: 341.43306pt x 204.86006pt.
 
-Overfull \hbox (13.88686pt too wide) in paragraph at lines 217--218
-\T1/cmr/m/n/10.95 ap-plied dur-ing the pre-train-ing phase, which could be play-ing a key role in en-hanc-ing Dis-til-BERT's
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
-[30 <./figures/model_size_vs_perf.pdf>]
-<figures/mean_train_time.pdf, id=376, 722.7pt x 433.62pt>
+<figures/mean_train_time.pdf, id=292, 722.7pt x 433.62pt>
 File: figures/mean_train_time.pdf Graphic file (type pdf)
 <use figures/mean_train_time.pdf>
-Package pdftex.def Info: figures/mean_train_time.pdf  used on input line 228.
+Package pdftex.def Info: figures/mean_train_time.pdf  used on input line 225.
 (pdftex.def)             Requested size: 216.01767pt x 129.61061pt.
-<figures/mean_inference_time.pdf, id=377, 722.7pt x 433.62pt>
+<figures/mean_inference_time.pdf, id=293, 722.7pt x 433.62pt>
 File: figures/mean_inference_time.pdf Graphic file (type pdf)
 <use figures/mean_inference_time.pdf>
-Package pdftex.def Info: figures/mean_inference_time.pdf  used on input line 235.
+Package pdftex.def Info: figures/mean_inference_time.pdf  used on input line 232.
 (pdftex.def)             Requested size: 216.01767pt x 129.61061pt.
-<figures/confusion_bertweet.png, id=378, 722.7pt x 433.62pt>
+[29 <./figures/model_size_vs_perf.pdf>]
+<figures/confusion_bertweet.png, id=374, 722.7pt x 433.62pt>
 File: figures/confusion_bertweet.png Graphic file (type png)
 <use figures/confusion_bertweet.png>
-Package pdftex.def Info: figures/confusion_bertweet.png  used on input line 274.
+Package pdftex.def Info: figures/confusion_bertweet.png  used on input line 271.
 (pdftex.def)             Requested size: 198.38pt x 119.02422pt.
-<figures/metrics_line_bertweet.pdf, id=379, 722.7pt x 433.62pt>
+<figures/metrics_line_bertweet.pdf, id=375, 722.7pt x 433.62pt>
 File: figures/metrics_line_bertweet.pdf Graphic file (type pdf)
 <use figures/metrics_line_bertweet.pdf>
-Package pdftex.def Info: figures/metrics_line_bertweet.pdf  used on input line 279.
+Package pdftex.def Info: figures/metrics_line_bertweet.pdf  used on input line 276.
 (pdftex.def)             Requested size: 198.38pt x 119.02422pt.
-<figures/confusion_distilbert.png, id=380, 722.7pt x 433.62pt>
+<figures/confusion_distilbert.png, id=376, 722.7pt x 433.62pt>
 File: figures/confusion_distilbert.png Graphic file (type png)
 <use figures/confusion_distilbert.png>
-Package pdftex.def Info: figures/confusion_distilbert.png  used on input line 284.
+Package pdftex.def Info: figures/confusion_distilbert.png  used on input line 281.
 (pdftex.def)             Requested size: 198.38pt x 119.02422pt.
-<figures/metrics_line_distilbert.pdf, id=381, 722.7pt x 433.62pt>
+<figures/metrics_line_distilbert.pdf, id=377, 722.7pt x 433.62pt>
 File: figures/metrics_line_distilbert.pdf Graphic file (type pdf)
 <use figures/metrics_line_distilbert.pdf>
-Package pdftex.def Info: figures/metrics_line_distilbert.pdf  used on input line 289.
+Package pdftex.def Info: figures/metrics_line_distilbert.pdf  used on input line 286.
 (pdftex.def)             Requested size: 198.38pt x 119.02422pt.
-<figures/confusion_berttiny.png, id=382, 722.7pt x 433.62pt>
+<figures/confusion_berttiny.png, id=378, 722.7pt x 433.62pt>
 File: figures/confusion_berttiny.png Graphic file (type png)
 <use figures/confusion_berttiny.png>
-Package pdftex.def Info: figures/confusion_berttiny.png  used on input line 294.
+Package pdftex.def Info: figures/confusion_berttiny.png  used on input line 291.
 (pdftex.def)             Requested size: 198.38pt x 119.02422pt.
-<figures/metrics_line_berrttiny.pdf, id=383, 722.7pt x 433.62pt>
+<figures/metrics_line_berrttiny.pdf, id=379, 722.7pt x 433.62pt>
 File: figures/metrics_line_berrttiny.pdf Graphic file (type pdf)
 <use figures/metrics_line_berrttiny.pdf>
-Package pdftex.def Info: figures/metrics_line_berrttiny.pdf  used on input line 299.
+Package pdftex.def Info: figures/metrics_line_berrttiny.pdf  used on input line 296.
 (pdftex.def)             Requested size: 198.38pt x 119.02422pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
-
- []
-
-[31 <./figures/mean_train_time.pdf> <./figures/mean_inference_time.pdf>]
-
-LaTeX Warning: Text page 32 contains only floats.
-
-[32 <./figures/confusion_bertweet.png> <./figures/metrics_line_bertweet.pdf> <./figures/confusion_distilbert.png> <./figures/metrics_line_distilbert.pdf> <./figures/confusion_berttiny.png> <./figures/metrics_line_berrttiny.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 308--309
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
 
  []
 
 
-Overfull \hbox (7.4253pt too wide) in paragraph at lines 310--311
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
+
+ []
+
+[30 <./figures/mean_train_time.pdf> <./figures/mean_inference_time.pdf>]
+
+LaTeX Warning: Text page 31 contains only floats.
+
+[31 <./figures/confusion_bertweet.png> <./figures/metrics_line_bertweet.pdf> <./figures/confusion_distilbert.png> <./figures/metrics_line_distilbert.pdf> <./figures/confusion_berttiny.png> <./figures/metrics_line_berrttiny.pdf>]
+Overfull \hbox (7.4253pt too wide) in paragraph at lines 307--308
 \T1/cmr/m/n/10.95 ac-cu-rately clas-si-fy-ing com-plaint tweets com-pared to non-complaint tweets, al-though BERTWeet
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
  []
 
 
-Overfull \hbox (7.26212pt too wide) in paragraph at lines 312--313
+Overfull \hbox (7.26212pt too wide) in paragraph at lines 309--310
 \T1/cmr/m/n/10.95 com-monly as-so-ci-ated with grievances, like 'wait-ing' and 'is-sue' (ex-am-ples 3 and 4 for BERTweet)
  []
 
-[33]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1123,18 +1097,18 @@ Overfull \hbox (7.26212pt too wide) in paragraph at lines 312--313
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 
-Overfull \hbox (2.51306pt too wide) in paragraph at lines 353--353
+Overfull \hbox (2.51306pt too wide) in paragraph at lines 350--350
  []\T1/cmr/bx/n/10 No. 
  []
 
 
-Overfull \hbox (2.51306pt too wide) in paragraph at lines 353--353
+Overfull \hbox (2.51306pt too wide) in paragraph at lines 350--350
  []\T1/cmr/bx/n/10 No. 
  []
 
 > Step: build the whole table.
 
-Overfull \hbox (2.51306pt too wide) in paragraph at lines 353--353
+Overfull \hbox (2.51306pt too wide) in paragraph at lines 350--350
  []\T1/cmr/bx/n/10 No. 
  []
 
@@ -1149,50 +1123,51 @@ Overfull \hbox (2.51306pt too wide) in paragraph at lines 353--353
 Package tabularray Warning: Table width is too small, need 255.39575pt more!
 
 > Step: build the whole table.
+[32] [33]
 
-LaTeX Warning: Reference `fig: cross_domain_heat' on page 34 undefined on input line 477.
+LaTeX Warning: Reference `fig: cross_domain_heat' on page 34 undefined on input line 474.
 
 
-Overfull \hbox (1.48055pt too wide) in paragraph at lines 477--478
+Overfull \hbox (1.48055pt too wide) in paragraph at lines 474--475
 \T1/cmr/m/n/10.95 cho-sen model is BERTweet Base, uti-liz-ing the op-ti-mal learn-ing rate hy-per-pa-ram-e-ter of 0.00003.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--478
+Underfull \hbox (badness 10000) in paragraph at lines 474--475
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--480
+Underfull \hbox (badness 10000) in paragraph at lines 476--477
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 478--479
 
  []
 
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 481--482
-
- []
-
-
-Overfull \hbox (0.71106pt too wide) in paragraph at lines 483--484
+Overfull \hbox (0.71106pt too wide) in paragraph at lines 480--481
 \T1/cmr/m/n/10.95 out-lined for BERTweet Base, which is pre-trained on Twit-ter data. The pre-dic-tive per-for-mance
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--484
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
 
  []
 
 <figures/cross_domain_instancevsmetric.pdf, id=617, 722.7pt x 578.16pt>
 File: figures/cross_domain_instancevsmetric.pdf Graphic file (type pdf)
 <use figures/cross_domain_instancevsmetric.pdf>
-Package pdftex.def Info: figures/cross_domain_instancevsmetric.pdf  used on input line 489.
+Package pdftex.def Info: figures/cross_domain_instancevsmetric.pdf  used on input line 486.
 (pdftex.def)             Requested size: 341.43306pt x 273.14676pt.
 ) (./chapters/chapter5.tex
-Overfull \hbox (9.56639pt too wide) in paragraph at lines 495--1
+Overfull \hbox (9.56639pt too wide) in paragraph at lines 492--1
 \T1/cmr/m/n/10.95 like 'Other', 'Ap-parel', and 'Soft-ware' ex-hibit de-vi-a-tions from this trend. In-her-ent char-ac-ter-is-tics
  []
 
-[35] [36 <./figures/cross_domain_instancevsmetric.pdf>]
+[35 <./figures/cross_domain_instancevsmetric.pdf>] [36]
 Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -1251,15 +1226,10 @@ File: figures/token_pp_hist_distilbert-base-uncased.png Graphic file (type png)
 <use figures/token_pp_hist_distilbert-base-uncased.png>
 Package pdftex.def Info: figures/token_pp_hist_distilbert-base-uncased.png  used on input line 96.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-<figures/token_pp_hist_google-mobilebert-uncased.png, id=698, 578.16pt x 289.08pt>
-File: figures/token_pp_hist_google-mobilebert-uncased.png Graphic file (type png)
-<use figures/token_pp_hist_google-mobilebert-uncased.png>
-Package pdftex.def Info: figures/token_pp_hist_google-mobilebert-uncased.png  used on input line 101.
-(pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
-<figures/token_pp_hist_roberta-base.png, id=699, 578.16pt x 289.08pt>
+<figures/token_pp_hist_roberta-base.png, id=698, 578.16pt x 289.08pt>
 File: figures/token_pp_hist_roberta-base.png Graphic file (type png)
 <use figures/token_pp_hist_roberta-base.png>
-Package pdftex.def Info: figures/token_pp_hist_roberta-base.png  used on input line 107.
+Package pdftex.def Info: figures/token_pp_hist_roberta-base.png  used on input line 101.
 (pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
 > Step: init table outer spec.
 > Step: parse table options.
@@ -1269,7 +1239,7 @@ Package pdftex.def Info: figures/token_pp_hist_roberta-base.png  used on input l
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
-) (./chapters/appendixB.tex [44 <./figures/token_pp_hist_albert-base-v2.png> <./figures/token_pp_hist_vinai-bertweet-base.png> <./figures/token_pp_hist_prajjwal1-bert-tiny.png> <./figures/token_pp_hist_distilbert-base-uncased.png> <./figures/token_pp_hist_google-mobilebert-uncased.png> <./figures/token_pp_hist_roberta-base.png>] [45]
+) (./chapters/appendixB.tex [44 <./figures/token_pp_hist_albert-base-v2.png> <./figures/token_pp_hist_vinai-bertweet-base.png> <./figures/token_pp_hist_prajjwal1-bert-tiny.png> <./figures/token_pp_hist_distilbert-base-uncased.png> <./figures/token_pp_hist_roberta-base.png>] [45]
 Appendix B.
 [46
 
@@ -1279,18 +1249,18 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8660 strings out of 476047
- 179448 string characters out of 5790254
- 1933248 words of memory out of 5000000
- 28907 multiletter control sequences out of 15000+600000
+ 8649 strings out of 476047
+ 178933 string characters out of 5790254
+ 1938248 words of memory out of 5000000
+ 28897 multiletter control sequences out of 15000+600000
  540320 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,18n,112p,1938b,1250s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on PDF/myReport.pdf (55 pages, 2727136 bytes).
+Output written on PDF/myReport.pdf (55 pages, 2704122 bytes).
 PDF statistics:
- 847 PDF objects out of 1000 (max. 8388607)
+ 845 PDF objects out of 1000 (max. 8388607)
  273 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

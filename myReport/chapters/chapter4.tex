@@ -167,7 +167,6 @@ Table \ref{tab: model_mean_metrics} also includes the prediction metrics sourced
         \(\star\)\(\downarrow\) BERT \vspace{15pt} Tiny & 0.772             & 0.701              & 0.627           & 0.662          & 0.739            \\
         \(\star\) DistilBERT Base uncased               & 0.903             & 0.872              & 0.860           & 0.863          & 0.894            \\
         \rowcolor[gray]{0.9}
-        MobileBERT uncased                              & 0.887             & 0.843              & 0.843           & 0.841          & 0.877            \\
         RoBERTa Base                                    & 0.914 [0.876]     & 0.886 [0.866]      & 0.873 [0.869]   & 0.879 [0.866]  & 0.905            \\
         \hline
     \end{tabularx}
@@ -176,7 +175,7 @@ Table \ref{tab: model_mean_metrics} also includes the prediction metrics sourced
 \end{table}
 
 \subsection{Performance of 'lightweight' models}
-Examining the models characterized as lightweight based on their architecture and parameter count, DistilBERT emerges as the top performer, achieving an F1 score of 0.863 (sd: $\pm$0.02). MobileBERT and ALBERT follow suit with F1 scores of 0.841 (sd: $\pm$0.02) and 0.827 (sd: $\pm$0.05) respectively. BERT Tiny, the smallest model employed in the experiments, exhibits a notable performance gap, achieving only an F1 score of 0.662 (sd: $\pm$0.04), which is lower by 27.6\% in comparison to BERTweet. This aligns with its low accuracy and AUC scores of 0.772 (sd: $\pm$0.02) and 0.739 (sd: $\pm$0.03) respectively. This points to a likely and significant performance penalty from the reduced model size. However, it is expected to perform better in the context of a knowledge distillation teacher \cite{turcWellReadStudentsLearn2019}, something that has not been tested here.\\
+Examining the models characterized as lightweight based on their architecture and parameter count, DistilBERT emerges as the top performer, achieving an F1 score of 0.863 (sd: $\pm$0.02). ALBERT follows suit with an F1 score of 0.841 (sd: $\pm$0.02). BERT Tiny, the smallest model employed in the experiments, exhibits a notable performance gap, achieving only an F1 score of 0.662 (sd: $\pm$0.04), which is lower by 27.6\% in comparison to BERTweet. This aligns with its low accuracy and AUC scores of 0.772 (sd: $\pm$0.02) and 0.739 (sd: $\pm$0.03) respectively. This points to a likely and significant performance penalty from the reduced model size. However, it is expected to perform better in the context of a knowledge distillation teacher \cite{turcWellReadStudentsLearn2019}, something that has not been tested here.\\
 
 % Model size vs performance against BERTweet
 \begin{figure}[htb]
@@ -204,9 +203,7 @@ Examining the models characterized as lightweight based on their architecture an
         BERT base      & -4.8\%      & +0.0\%              & -10.7\%             & +1.2\%                  \\
         DistilBERT     & -5.0\%      & -40.0\%             & -50.7\%             & -43.3\%                 \\
         \rowcolor[gray]{0.9}
-        MobileBERT     & -7.4\%      & -77.0\%             & +122.7\%            & +86.4\%                 \\
         ALBERT         & -9.0\%      & -90.0\%             & -40.3\%             & +22.8\%                 \\
-        \rowcolor[gray]{0.9}
         BERT Tiny      & -27.1\%     & -96.0\%             & -86.4\%             & -70.2\%                 \\
         \hline
     \end{tabularx}
@@ -214,11 +211,11 @@ Examining the models characterized as lightweight based on their architecture an
     \label{tab: relative_comparison_metrics}
 \end{table}
 
-Figure \ref{fig: model_size_vs_perf} displays the relative variance in model performance when compared to BERTweet based on F1, alongside the corresponding model sizes or the number of parameters. Table \ref{tab: relative_comparison_metrics} expands on this by including the relative difference of the models compared to BERTweet in terms of model size, training time and inference time. Notably, ALBERT and MobileBERT exhibit relatively lower performance discrepancies of 8.9\% and 7.4\%, considering the model sizes are significantly smaller by 90\% and 77\% respectively. DistilBERT demonstrates a performance deficit of merely 4.9\%, not far off from BERT base while having a model size lower by 44\%. This could likely be due to the knowledge distillation and compression techniques applied during the pretraining phase, which could be playing a key role in enhancing DistilBERT's predictive capabilities \cite{sanhDistilBERTDistilledVersion2020}.\\
+Figure \ref{fig: model_size_vs_perf} displays the relative variance in model performance when compared to BERTweet based on F1, alongside the corresponding model sizes or the number of parameters. Table \ref{tab: relative_comparison_metrics} expands on this by including the relative difference of the models compared to BERTweet in terms of model size, training time and inference time. Notably, ALBERT exhibits a relatively lower performance discrepancy of 8.9\%, considering the model size is significantly smaller by 90\%. DistilBERT demonstrates a performance deficit of merely 4.9\%, not far off from BERT base while having a model size lower by 44\%. This could likely be due to the knowledge distillation and compression techniques applied during the pretraining phase, which could be playing a key role in enhancing DistilBERT's predictive capabilities \cite{sanhDistilBERTDistilledVersion2020}.\\
 
 \subsubsection{Analyis of finetuning and inference time}
 
-Next, the time required for inference and training (finetuning) is analysed and shown in Figure \ref{fig: mean_time_taken}. On average, the number of rows for the train, dev and test splits was 2155, 719 and 575. The training and inference were executed on a single NVIDIA RTX A4000 GPU with 16GB VRAM. BERT Tiny as expected has the lowest mean training and inference time. It is lower by over 85\% and 70\% for training and inference respectively as shown in Table \ref{tab: relative_comparison_metrics} when compared to BERTweet. DistilBERT follows next with lower train and inference times by 51\% and 43\%. For ALBERT the train time is lower than BERTweet by 40\%, while the inference time is slightly higher than BERT base. ALBERT was designed to reduce the training time and memory footprint while lowering the inference time was not an explicit goal \cite{lanALBERTLiteBERT2020}. Hence these results are in line with its architecture. MobileBERT although a smaller model, has very high training and inference times and is 123\% and 86\% higher than BERTweet. 
+Next, the time required for inference and training (finetuning) is analysed and shown in Figure \ref{fig: mean_time_taken}. On average, the number of rows for the train, dev and test splits was 2155, 719 and 575. The training and inference were executed on a single NVIDIA RTX A4000 GPU with 16GB VRAM. BERT Tiny as expected has the lowest mean training and inference time. It is lower by over 85\% and 70\% for training and inference respectively as shown in Table \ref{tab: relative_comparison_metrics} when compared to BERTweet. DistilBERT follows next with lower train and inference times by 51\% and 43\%. For ALBERT the train time is lower than BERTweet by 40\%, while the inference time is slightly higher than BERT base. ALBERT was designed to reduce the training time and memory footprint while lowering the inference time was not an explicit goal \cite{lanALBERTLiteBERT2020}. Hence these results are in line with its architecture. 
 % training and inference time bar chart
 \begin{figure}[htbp]
     \centering

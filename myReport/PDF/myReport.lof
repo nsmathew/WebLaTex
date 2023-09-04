@@ -1,18 +1,18 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces A summary of the BERT Base (left) and BERT Tiny (right) models for comparison in terms of the layers used and number of parameters. This is based on the models from Hugging Face.\relax }}{20}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The token count distribution for the full dataset of 3,449 tweets before and after tokenization with the red dashed line indicating 95\% coverage of tweets. BertTokenizer is used here.\relax }}{21}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces A summary of the BERT Base (left) and BERT Tiny (right) models for comparison in terms of the layers used and number of parameters. This is based on the models from Hugging Face.\relax }}{19}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The token count distribution for the full dataset of 3,449 tweets before and after tokenization with the red dashed line indicating 95\% coverage of tweets. BertTokenizer is used here.\relax }}{20}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustrates the distribution of tweets categorised as 'complaints' and 'not complaints', with random 'tweets / replies' shown separately.\relax }}{25}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Shows the distribution of the domains used in the dataset\relax }}{26}{}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Top phrases as n-grams(excl. unigrams) and hashtags in the complaint tweets.\relax }}{26}{}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Distribution of positive, negative and neutral sentiments in the tweets.\relax }}{28}{}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Relative performance of models against BERTweet and model sizes based on F1. BERTweet's model size is 110M.\relax }}{31}{}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Mean time taken (in seconds) for finetuning and inference during experiments set 1. BERTweet with the best predictive model is highlighted in red.\relax }}{32}{}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Confusion matrix and performance metrics for the 3 selected models from the inference phase. The confusion matrix is based on the mean of values from the 6 outer loop iterations and the grid can be read from left to right as true negative, false positive, false negative and true positive.\relax }}{33}{}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Shows a plot of the number of tweets for each domain against the average performance when that domain is used for finetuning.\relax }}{37}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustrates the distribution of tweets categorised as 'complaints' and 'not complaints', with random 'tweets / replies' shown separately.\relax }}{24}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Shows the distribution of the domains used in the dataset\relax }}{25}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Top phrases as n-grams(excl. unigrams) and hashtags in the complaint tweets.\relax }}{25}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Distribution of positive, negative and neutral sentiments in the tweets.\relax }}{27}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Relative performance of models against BERTweet and model sizes based on F1. BERTweet's model size is 110M.\relax }}{30}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Mean time taken (in seconds) for finetuning and inference during experiments set 1. BERTweet with the best predictive model is highlighted in red.\relax }}{31}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Confusion matrix and performance metrics for the 3 selected models from the inference phase. The confusion matrix is based on the mean of values from the 6 outer loop iterations and the grid can be read from left to right as true negative, false positive, false negative and true positive.\relax }}{32}{}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Shows a plot of the number of tweets for each domain against the average performance when that domain is used for finetuning.\relax }}{36}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces The token count distribution for the full dataset of 3,449 tweets for all models.\relax }}{45}{}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces The token count distribution for the full dataset of 3,449 tweets for all models.\relax }}{44}{}%
 \addvspace {10\p@ }

@@ -7,7 +7,7 @@
 \contentsline {section}{\numberline {2.3}Complaining in social media}{6}{}%
 \contentsline {section}{\numberline {2.4}Twitter as a medium for self-expression}{7}{}%
 \contentsline {section}{\numberline {2.5}Previous work on automation of complaints identification}{8}{}%
-\contentsline {section}{\numberline {2.6}NLP based solutions}{9}{}%
+\contentsline {section}{\numberline {2.6}Natural Language Processing approaches}{9}{}%
 \contentsline {subsection}{\numberline {2.6.1}Transformer network and inductive transfer learning}{10}{}%
 \contentsline {subsection}{\numberline {2.6.2}BERT and its variants}{11}{}%
 \contentsline {subsection}{\numberline {2.6.3}Ongoing research}{12}{}%

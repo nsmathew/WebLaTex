@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex PDF/myReport"] 1693847608 "PDF/myReport.aux" "PDF/myReport.bbl" "PDF/myReport" 1693847620 0
+["bibtex PDF/myReport"] 1693847608 "PDF/myReport.aux" "PDF/myReport.bbl" "PDF/myReport" 1693848867 0
   "./mybibliography.bib" 1693417137 80830 78318fd2325f000d3ab3f4e65e9f317d ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/base/acm.bst" 1292289607 21064 c61a48664f3c347ce7f73c1a6a530506 ""
-  "PDF/myReport.aux" 1693847619 25249 770049dee80a19e3020628741a955cdf "pdflatex"
+  "PDF/myReport.aux" 1693848866 25249 770049dee80a19e3020628741a955cdf "pdflatex"
   (generated)
   "PDF/myReport.bbl"
   "PDF/myReport.blg"
   (rewritten before read)
-["pdflatex"] 1693847608 "/workspaces/WebLaTex/myReport/myReport.tex" "PDF/myReport.pdf" "myReport" 1693847620 0
+["pdflatex"] 1693848855 "/workspaces/WebLaTex/myReport/myReport.tex" "PDF/myReport.pdf" "myReport" 1693848867 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -135,11 +135,11 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1683470675 7886660 8ca379e923703c32578767fd4cb91c4a ""
   "/usr/local/texlive/2023/texmf.cnf" 1683470455 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "/workspaces/WebLaTex/myReport/myReport.tex" 1693053437 3919 a5adc2502a3c47fcb2e9fb1944a9b601 ""
-  "PDF/myReport.aux" 1693847619 25249 770049dee80a19e3020628741a955cdf "pdflatex"
+  "PDF/myReport.aux" 1693848866 25249 770049dee80a19e3020628741a955cdf "pdflatex"
   "PDF/myReport.bbl" 1693847608 10306 0cb15b9920d4273c03e9651b47f61885 "bibtex PDF/myReport"
-  "PDF/myReport.lof" 1693847619 2384 5ca61ba26cac30621b48d039f53fc14d "pdflatex"
-  "PDF/myReport.lot" 1693847619 4879 78c6d1bf039ee2dd804de023e0369f85 "pdflatex"
-  "PDF/myReport.toc" 1693847619 4132 a42637b08a19a61fec35b54b8ae51ba2 "pdflatex"
+  "PDF/myReport.lof" 1693848866 2384 5ca61ba26cac30621b48d039f53fc14d "pdflatex"
+  "PDF/myReport.lot" 1693848866 4879 78c6d1bf039ee2dd804de023e0369f85 "pdflatex"
+  "PDF/myReport.toc" 1693848866 4132 a42637b08a19a61fec35b54b8ae51ba2 "pdflatex"
   "chapters/abstract.tex" 1693847222 1511 dc1a7401743eed40e6692c1801adca43 ""
   "chapters/appendixA.tex" 1693847596 7378 9f54e18f937e354dede742e7a1ba7bf9 ""
   "chapters/appendixB.tex" 1693040037 3951 8d502e60ff0111a749449dbd4cb98b87 ""
@@ -155,13 +155,13 @@
   "figures/cross_domain_instancevsmetric.pdf" 1693244464 17409 d149bece0d48829b54efcd3575b6d6cd ""
   "figures/domain_counts_bar_norandom.pdf" 1692427434 18119 e0d733bf71eead108aa99666a059b1df ""
   "figures/domain_dist.pdf" 1692426639 18331 d38cad971779c3a5542a06527c33fd52 ""
-  "figures/mean_inference_time.pdf" 1692427823 15223 6c21c4475adcfef8d6c198e5a2fa92a0 ""
-  "figures/mean_train_time.pdf" 1692427819 14145 96bf6808128586d4a94ddeec51a59434 ""
+  "figures/mean_inference_time.pdf" 1693848831 14666 6fb0905ffa0eeb7a09f67e1002826828 ""
+  "figures/mean_train_time.pdf" 1693848832 14524 a541a23d6d69737c466c231d6d359801 ""
   "figures/metrics_line_berrttiny.pdf" 1692964127 16139 e3f3d0cf80a2bf3c2de19f60cc826549 ""
   "figures/metrics_line_bertweet.pdf" 1692964126 16721 b801b8e5d65638287646d60d6ed22b80 ""
   "figures/metrics_line_distilbert.pdf" 1692964126 16674 4059d49f2dff37cc49f3f3baaf753ead ""
   "figures/model-summary.png" 1693057732 223626 2eff8a7c6421de98924c3a0eeda607f0 ""
-  "figures/model_size_vs_perf.pdf" 1692427647 30575 82ddba492b62207589f0e9a2f62abe94 ""
+  "figures/model_size_vs_perf.pdf" 1693848832 30231 8fa1324260ab615230599bf77e403930 ""
   "figures/sentiment.png" 1692137909 274665 aa14bcdd3b3cf92d43666708190ff1cf ""
   "figures/token_hist.png" 1691446736 27968 e98edb528d1e15b481ff823a6d2b86e1 ""
   "figures/token_pp_hist.png" 1691446618 27459 161abf8c494bea97d0624aa28d6387fb ""

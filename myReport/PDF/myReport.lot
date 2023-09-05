@@ -20,6 +20,7 @@
 \contentsline {table}{\numberline {A.1}{\ignorespaces The nine domains and the distribution of tweets that are complaints and those that are not from the latest version of the dataset available in the public domain and for the experiments. Additionally, the table includes the number of random tweets and replies introduced into the dataset by the authors for a more proportionate representation of the classes.\relax }}{43}{}%
 \contentsline {table}{\numberline {A.2}{\ignorespaces Sample data from \cite {jinModelingSeverityComplaints2021}.\relax }}{43}{}%
 \contentsline {table}{\numberline {A.3}{\ignorespaces Confusion matrix from every test run for the experiments set 1.\relax }}{45}{}%
+\contentsline {table}{\numberline {A.4}{\ignorespaces Mean token lengths for each domain\relax }}{45}{}%
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {B.1}{\ignorespaces The transformer models used for the experiments and links to their documentation.\relax }}{46}{}%
 \contentsline {table}{\numberline {B.2}{\ignorespaces The other models used in the chapter on results and their documentation.\relax }}{46}{}%

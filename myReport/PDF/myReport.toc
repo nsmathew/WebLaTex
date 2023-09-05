@@ -46,6 +46,7 @@
 \contentsline {section}{\numberline {A.2}Sample data from dataset}{43}{}%
 \contentsline {section}{\numberline {A.3}Token distribution after tokenization}{44}{}%
 \contentsline {subsection}{\numberline {A.3.1}Confusion matrix from every test run}{44}{}%
+\contentsline {subsection}{\numberline {A.3.2}Mean token length by domain}{45}{}%
 \contentsline {chapter}{\numberline {B}Other references}{46}{}%
 \contentsline {section}{\numberline {B.1}Code Repository}{46}{}%
 \contentsline {section}{\numberline {B.2}References for models used in experiment sets 1 and 2}{46}{}%

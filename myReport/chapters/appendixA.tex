@@ -114,7 +114,7 @@ The elements of the matrix in left-to-right order are true negative, false posit
     \begin{tblr}{
       width = \linewidth,
       colspec = {Q[152]Q[283]Q[292]Q[194]},
-      row{odd} = {Mercury},
+      %row{odd} = {Mercury},
       row{1} = {Nobel,c},
       column{1} = {c},
       cell{2}{2} = {c},
@@ -140,10 +140,15 @@ The elements of the matrix in left-to-right order are true negative, false posit
     }
     \textbf{Test run} & \textbf{BERTweet Base}       & \textbf{DistilBERT Base}     & \textbf{BERT Tiny}           \\
     1                 & {{[}353~ ~17]\\{[} 22~ 183]} & {{[}350~ ~20]\\{[} 22~ 183]} & {{[}323~ ~47]\\{[} 74~ 131]} \\
+    \hline
     2                 & {{[}342~ ~28]\\{[} 12~ 193]} & {{[}330~ ~40]\\{[} 16~ 189]} & {{[}314~ ~56]\\{[} 84~ 121]} \\
+    \hline
     3                 & {{[}347~ ~23]\\{[} 18~ 187]} & {{[}356~ ~14]\\{[} 53~ 152]} & {{[}312~ ~58]\\{[} 83~ 122]} \\
+    \hline
     4                 & {{[}343~ ~26]\\{[} 12~ 194]} & {{[}335~ ~34]\\{[} 17~ 189]} & {{[}315~ ~54]\\{[} 67~ 139]} \\
+    \hline
     5                 & {{[}348~ ~21]\\{[} 24~ 182]} & {{[}330~ ~39]\\{[} 24~ 182]} & {{[}309~ ~60]\\{[} 88~ 118]} \\
+    \hline
     6                 & {{[}353~ ~16]\\{[} 10~ 195]} & {{[}354~ ~15]\\{[} 40~ 165]} & {{[}316~ ~53]\\{[} 64~ 141]} 
     \end{tblr}
     \caption{Confusion matrix from every test run for the experiments set 1.}
@@ -151,3 +156,34 @@ The elements of the matrix in left-to-right order are true negative, false posit
 \end{table}
 
 \subsection{Mean token length by domain}
+\label{sec: avg_token_length_domains}
+\begin{table}[htbp]
+    \small
+    \centering
+    \begin{tabularx}{\textwidth}{|X|X|X|}
+        \hline
+        \rowcolor[gray]{0.7}
+        \textbf{Domain} & \textbf{Not Complaint} & \textbf{Complaint} \\
+        \hline
+        Apparel & 15.35 & 19.17 \\
+        \hline
+        Cars & 16.68 & 22.28 \\
+        \hline
+        Electronics & 13.83 & 19.61 \\
+        \hline
+        Food \& Bevarage & 10.91 & 18.35 \\
+        \hline
+        Other & 17.39 & 21.94 \\
+        \hline
+        Retail & 14.48 & 20.20 \\
+        \hline
+        Services & 14.29 & 19.31 \\
+        \hline
+        Software \& Online Service & 14.40 & 20.45 \\
+        \hline
+        Transport & 15.16 & 17.49 \\
+        \hline
+    \end{tabularx}
+    \caption{Mean token lengths for each domain}
+    \label{tab: avg_token_length_domains}    
+\end{table}

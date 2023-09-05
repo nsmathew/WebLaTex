@@ -8,47 +8,47 @@
 \contentsline {section}{\numberline {2.4}Twitter as a medium for self-expression}{7}{}%
 \contentsline {section}{\numberline {2.5}Previous work on automation of complaints identification}{8}{}%
 \contentsline {section}{\numberline {2.6}NLP based solutions}{9}{}%
-\contentsline {subsection}{\numberline {2.6.1}Transformer network and inductive transfer learning}{9}{}%
-\contentsline {subsection}{\numberline {2.6.2}BERT and its variants}{10}{}%
+\contentsline {subsection}{\numberline {2.6.1}Transformer network and inductive transfer learning}{10}{}%
+\contentsline {subsection}{\numberline {2.6.2}BERT and its variants}{11}{}%
 \contentsline {subsection}{\numberline {2.6.3}Ongoing research}{12}{}%
-\contentsline {chapter}{\numberline {3}Methodology}{14}{}%
-\contentsline {section}{\numberline {3.1}Task}{14}{}%
-\contentsline {section}{\numberline {3.2}Data and pre-processing}{14}{}%
-\contentsline {subsection}{\numberline {3.2.1}Criteria for tweets}{14}{}%
-\contentsline {subsection}{\numberline {3.2.2}Data Extraction}{14}{}%
-\contentsline {subsection}{\numberline {3.2.3}Annotation}{15}{}%
-\contentsline {section}{\numberline {3.3}Environment}{16}{}%
-\contentsline {subsection}{\numberline {3.3.1}Hardware}{16}{}%
-\contentsline {subsection}{\numberline {3.3.2}Software}{16}{}%
-\contentsline {section}{\numberline {3.4}Model selection}{17}{}%
-\contentsline {section}{\numberline {3.5}Data tokenisation}{18}{}%
-\contentsline {subsection}{\numberline {3.5.1}Choice of settings}{18}{}%
-\contentsline {subsection}{\numberline {3.5.2}Tokenisation example}{19}{}%
-\contentsline {section}{\numberline {3.6}Experiments set 1: Predictive performance comparison of BERT variants}{20}{}%
-\contentsline {section}{\numberline {3.7}Experiments set 2: Cross-domain predictive performance comparison}{21}{}%
-\contentsline {section}{\numberline {3.8}Ethical, Professional and Legal Issues}{22}{}%
-\contentsline {chapter}{\numberline {4}Results and discussion}{23}{}%
-\contentsline {section}{\numberline {4.1}Data exploration}{23}{}%
-\contentsline {subsection}{\numberline {4.1.1}Domain and class distribution}{23}{}%
-\contentsline {subsection}{\numberline {4.1.2}Linguistic analysis}{24}{}%
-\contentsline {subsection}{\numberline {4.1.3}Sentiment analysis}{26}{}%
-\contentsline {subsection}{\numberline {4.1.4}Key statistics}{27}{}%
-\contentsline {section}{\numberline {4.2}Experiment set 1 results: Comparision of model performance}{27}{}%
-\contentsline {subsection}{\numberline {4.2.1}Best predictive performance}{27}{}%
-\contentsline {subsection}{\numberline {4.2.2}Performance of 'lightweight' models}{28}{}%
-\contentsline {subsubsection}{Analyis of finetuning and inference time}{30}{}%
-\contentsline {subsection}{\numberline {4.2.3}Deep-dive into the results}{30}{}%
-\contentsline {section}{\numberline {4.3}Experiment set 2 results: Cross-domain results}{34}{}%
-\contentsline {chapter}{\numberline {5}Conclusions}{37}{}%
-\contentsline {chapter}{Appendices}{42}{}%
-\contentsline {chapter}{\numberline {A}Other supporting analysis and graphs}{43}{}%
-\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{43}{}%
-\contentsline {section}{\numberline {A.2}Sample data from dataset}{43}{}%
-\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{44}{}%
-\contentsline {subsection}{\numberline {A.3.1}Confusion matrix from every test run}{44}{}%
-\contentsline {chapter}{\numberline {B}Other references}{46}{}%
-\contentsline {section}{\numberline {B.1}Code Repository}{46}{}%
-\contentsline {section}{\numberline {B.2}References for models used in experiment sets 1 and 2}{46}{}%
-\contentsline {section}{\numberline {B.3}References for other models used}{46}{}%
-\contentsline {section}{\numberline {B.4}Evaluation metrics references}{47}{}%
-\contentsline {section}{\numberline {B.5}Additional information on environment used}{47}{}%
+\contentsline {chapter}{\numberline {3}Methodology}{15}{}%
+\contentsline {section}{\numberline {3.1}Task}{15}{}%
+\contentsline {section}{\numberline {3.2}Data and pre-processing}{15}{}%
+\contentsline {subsection}{\numberline {3.2.1}Criteria for tweets}{15}{}%
+\contentsline {subsection}{\numberline {3.2.2}Data Extraction}{15}{}%
+\contentsline {subsection}{\numberline {3.2.3}Annotation}{16}{}%
+\contentsline {section}{\numberline {3.3}Environment}{17}{}%
+\contentsline {subsection}{\numberline {3.3.1}Hardware}{17}{}%
+\contentsline {subsection}{\numberline {3.3.2}Software}{17}{}%
+\contentsline {section}{\numberline {3.4}Model selection}{18}{}%
+\contentsline {section}{\numberline {3.5}Data tokenisation}{19}{}%
+\contentsline {subsection}{\numberline {3.5.1}Choice of settings}{19}{}%
+\contentsline {subsection}{\numberline {3.5.2}Tokenisation example}{20}{}%
+\contentsline {section}{\numberline {3.6}Experiments set 1: Predictive performance comparison of BERT variants}{21}{}%
+\contentsline {section}{\numberline {3.7}Experiments set 2: Cross-domain predictive performance comparison}{22}{}%
+\contentsline {section}{\numberline {3.8}Ethical, Professional and Legal Issues}{23}{}%
+\contentsline {chapter}{\numberline {4}Results and discussion}{24}{}%
+\contentsline {section}{\numberline {4.1}Data exploration}{24}{}%
+\contentsline {subsection}{\numberline {4.1.1}Domain and class distribution}{24}{}%
+\contentsline {subsection}{\numberline {4.1.2}Linguistic analysis}{25}{}%
+\contentsline {subsection}{\numberline {4.1.3}Sentiment analysis}{27}{}%
+\contentsline {subsection}{\numberline {4.1.4}Key statistics}{28}{}%
+\contentsline {section}{\numberline {4.2}Experiment set 1 results: Comparision of model performance}{28}{}%
+\contentsline {subsection}{\numberline {4.2.1}Best predictive performance}{28}{}%
+\contentsline {subsection}{\numberline {4.2.2}Performance of 'lightweight' models}{29}{}%
+\contentsline {subsubsection}{Analyis of finetuning and inference time}{31}{}%
+\contentsline {subsection}{\numberline {4.2.3}Deep-dive into the results}{31}{}%
+\contentsline {section}{\numberline {4.3}Experiment set 2 results: Cross-domain results}{35}{}%
+\contentsline {chapter}{\numberline {5}Conclusions}{38}{}%
+\contentsline {chapter}{Appendices}{43}{}%
+\contentsline {chapter}{\numberline {A}Other supporting analysis and graphs}{44}{}%
+\contentsline {section}{\numberline {A.1}Breakdown of tweets in full dataset}{44}{}%
+\contentsline {section}{\numberline {A.2}Sample data from dataset}{44}{}%
+\contentsline {section}{\numberline {A.3}Token distribution after tokenization}{45}{}%
+\contentsline {subsection}{\numberline {A.3.1}Confusion matrix from every test run}{45}{}%
+\contentsline {chapter}{\numberline {B}Other references}{47}{}%
+\contentsline {section}{\numberline {B.1}Code Repository}{47}{}%
+\contentsline {section}{\numberline {B.2}References for models used in experiment sets 1 and 2}{47}{}%
+\contentsline {section}{\numberline {B.3}References for other models used}{47}{}%
+\contentsline {section}{\numberline {B.4}Evaluation metrics references}{48}{}%
+\contentsline {section}{\numberline {B.5}Additional information on environment used}{48}{}%

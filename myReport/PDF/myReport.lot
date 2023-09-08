@@ -1,0 +1,27 @@
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces Sample complaints extracted from Twitter, exhibiting diverse degrees of complaint expression and severity. These complaints are sourced from data that has undergone the preprocessing steps outlined in Chapter 3.\relax }}{2}{}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces The nine domains and the distribution of tweets that are complaints and those that are not. The percentages indicate how the splits are distributed \cite {preotiuc-pietro_automatically_2019}.\relax }}{16}{}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Selection of tweets based on random sampling and where they have received replies when addressed to the 93 customer service handles combined with random sampled tweets that are addressed to other handles (random\_reply) and tweets that are not addressed to any handle (random\_tweet) \cite {preotiuc-pietro_automatically_2019}.\relax }}{16}{}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Software and library versions used for this project.\relax }}{17}{}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces The transformer models used for the experiments along with the type of tokenization, and vocabulary size and sorted by the number of parameters for each of them. The parameter counts are from \cite {bhargavaGeneralizationNLIWays2021} for RoBERTa Base, BERT Base, ALBERT Base and BERT Tiny. For BERTweet it is from \cite {nguyenBERTweetPretrainedLanguage2020}, and DistilBERT from \cite {sanhDistilBERTDistilledVersion2020}. Vocabulary sizes and tokenizer types are based on documentation at \texttt {https://huggingface.co/}.\relax }}{18}{}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces The choice of key parameters and hyperparameters used for Experiment 1.\relax }}{22}{}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces The choice of key parameters and hyperparameters used for experiments set 2. Refer to the Chapter on results for the model and learning rate used for this experiment. \relax }}{23}{}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Statistics of tweets in the dataset.\relax }}{29}{}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Mean prediction performance metrics for all models after nested cross-validation for finetuning and testing. The highest scores are in bold. \(\uparrow \) is the best performing and \(\downarrow \) is the worst performing model. \(\star \) models are included for deep-dive analysis. Where available, numbers in '[ ]' are the results from \cite {jin_complaint_2020}.\relax }}{30}{}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Comparison of key metrics of the models relative to BERTweet.\relax }}{31}{}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Test loss from the inference phase for the 6 outer loop iterations for the 3 selected models.\relax }}{33}{}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Misclassified sample tweets. Tweets in the \colorbox {Mercury}{lighter shade of grey} are misclassified as complaints while the rest are misclassified as not complaints.\relax }}{35}{}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces AUC and F1 scores for experiments set 2. The rows show the domain used for finetuning and the columns the domains used for testing. The last row shows the scores where the full data except the corresponding test domain was used for finetuning. Best scores where applicable are highlighted in bold.\relax }}{35}{}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces The nine domains and the distribution of tweets that are complaints and those that are not, from the latest version of the dataset available in the public domain and used for the experiments. Additionally, the table includes the number of random tweets and replies introduced into the dataset by the authors for a more proportionate representation of the classes.\relax }}{44}{}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Sample data from \cite {jinModelingSeverityComplaints2021}.\relax }}{44}{}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces Confusion matrix from every test run for the experiments set 1.\relax }}{46}{}%
+\contentsline {table}{\numberline {A.4}{\ignorespaces Mean token lengths for each domain\relax }}{46}{}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {B.1}{\ignorespaces The transformer models used for the experiments and links to their documentation.\relax }}{47}{}%
+\contentsline {table}{\numberline {B.2}{\ignorespaces The other models used in the chapter on results and their documentation.\relax }}{47}{}%
+\contentsline {table}{\numberline {B.3}{\ignorespaces The metrics used for evaluating the performance of the experiments and links to their documentation.\relax }}{48}{}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  8 SEP 2023 22:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.7)  8 SEP 2023 23:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1058,4 +1058,217 @@ Package pdftex.def Info: figures/mean_train_time.pdf  used on input line 225.
 <figures/mean_inference_time.pdf, id=300, 722.7pt x 433.62pt>
 File: figures/mean_inference_time.pdf Graphic file (type pdf)
 <use figures/mean_inference_time.pdf>
-Package pdftex.def Info: figures/mean_inference_time.pdf  used on input line 23
+Package pdftex.def Info: figures/mean_inference_time.pdf  used on input line 232.
+(pdftex.def)             Requested size: 216.01767pt x 129.61061pt.
+[31 <./figures/model_size_vs_perf.pdf>]
+<figures/confusion_bertweet.png, id=380, 722.7pt x 433.62pt>
+File: figures/confusion_bertweet.png Graphic file (type png)
+<use figures/confusion_bertweet.png>
+Package pdftex.def Info: figures/confusion_bertweet.png  used on input line 271.
+(pdftex.def)             Requested size: 198.38pt x 119.02422pt.
+<figures/metrics_line_bertweet.pdf, id=381, 722.7pt x 433.62pt>
+File: figures/metrics_line_bertweet.pdf Graphic file (type pdf)
+<use figures/metrics_line_bertweet.pdf>
+Package pdftex.def Info: figures/metrics_line_bertweet.pdf  used on input line 276.
+(pdftex.def)             Requested size: 198.38pt x 119.02422pt.
+<figures/confusion_distilbert.png, id=382, 722.7pt x 433.62pt>
+File: figures/confusion_distilbert.png Graphic file (type png)
+<use figures/confusion_distilbert.png>
+Package pdftex.def Info: figures/confusion_distilbert.png  used on input line 281.
+(pdftex.def)             Requested size: 198.38pt x 119.02422pt.
+<figures/metrics_line_distilbert.pdf, id=383, 722.7pt x 433.62pt>
+File: figures/metrics_line_distilbert.pdf Graphic file (type pdf)
+<use figures/metrics_line_distilbert.pdf>
+Package pdftex.def Info: figures/metrics_line_distilbert.pdf  used on input line 286.
+(pdftex.def)             Requested size: 198.38pt x 119.02422pt.
+<figures/confusion_berttiny.png, id=384, 722.7pt x 433.62pt>
+File: figures/confusion_berttiny.png Graphic file (type png)
+<use figures/confusion_berttiny.png>
+Package pdftex.def Info: figures/confusion_berttiny.png  used on input line 291.
+(pdftex.def)             Requested size: 198.38pt x 119.02422pt.
+<figures/metrics_line_berrttiny.pdf, id=385, 722.7pt x 433.62pt>
+File: figures/metrics_line_berrttiny.pdf Graphic file (type pdf)
+<use figures/metrics_line_berrttiny.pdf>
+Package pdftex.def Info: figures/metrics_line_berrttiny.pdf  used on input line 296.
+(pdftex.def)             Requested size: 198.38pt x 119.02422pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
+
+ []
+
+[32 <./figures/mean_train_time.pdf> <./figures/mean_inference_time.pdf>]
+
+LaTeX Warning: Text page 33 contains only floats.
+
+[33 <./figures/confusion_bertweet.png> <./figures/metrics_line_bertweet.pdf> <./figures/confusion_distilbert.png> <./figures/metrics_line_distilbert.pdf> <./figures/confusion_berttiny.png> <./figures/metrics_line_berrttiny.pdf>]
+Overfull \hbox (3.80148pt too wide) in paragraph at lines 307--308
+\T1/cmr/m/n/10.95 ac-cu-rately clas-si-fy-ing com-plaint tweets com-pared to non-complaint tweets, al-though BERTweet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
+
+ []
+
+
+Overfull \hbox (7.26212pt too wide) in paragraph at lines 309--310
+\T1/cmr/m/n/10.95 com-monly as-so-ci-ated with grievances, like 'wait-ing' and 'is-sue' (ex-am-ples 3 and 4 for BERTweet)
+ []
+
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Overfull \hbox (2.51306pt too wide) in paragraph at lines 350--350
+ []\T1/cmr/bx/n/10 No. 
+ []
+
+
+Overfull \hbox (2.51306pt too wide) in paragraph at lines 350--350
+ []\T1/cmr/bx/n/10 No. 
+ []
+
+> Step: build the whole table.
+
+Overfull \hbox (2.51306pt too wide) in paragraph at lines 350--350
+ []\T1/cmr/bx/n/10 No. 
+ []
+
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Package tabularray Warning: Table width is too small, need 255.39575pt more!
+
+> Step: build the whole table.
+
+Overfull \hbox (26.42564pt too wide) in paragraph at lines 473--473
+[]\T1/cmr/bx/n/14.4 Experiment set 2 re-sults: Cross-domain pre-dic-tive per-for-mance
+ []
+
+
+Overfull \hbox (1.48055pt too wide) in paragraph at lines 474--475
+\T1/cmr/m/n/10.95 cho-sen model is BERTweet Base, uti-liz-ing the op-ti-mal learn-ing rate hy-per-pa-ram-e-ter of 0.00003.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--475
+
+ []
+
+[34] [35]
+Underfull \hbox (badness 10000) in paragraph at lines 476--477
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 478--479
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
+
+ []
+
+<figures/cross_domain_instancevsmetric.pdf, id=620, 722.7pt x 578.16pt>
+File: figures/cross_domain_instancevsmetric.pdf Graphic file (type pdf)
+<use figures/cross_domain_instancevsmetric.pdf>
+Package pdftex.def Info: figures/cross_domain_instancevsmetric.pdf  used on input line 486.
+(pdftex.def)             Requested size: 341.43306pt x 273.14676pt.
+) (./chapters/chapter5.tex [36] [37 <./figures/cross_domain_instancevsmetric.pdf>]
+Chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+) (PDF/myReport.bbl [38
+
+] [39
+
+] [40] [41]) [42] [43
+
+
+] (./chapters/appendixA.tex
+Appendix A.
+
+Overfull \hbox (0.64908pt too wide) in paragraph at lines 68--69
+[]\T1/cmr/m/n/10.95 The \T1/cmtt/m/n/10.95 binarylabel \T1/cmr/m/n/10.95 rep-re-sents the la-bel for com-plaints with 1 in-di-cat-ing the tweet is a com-plaint.
+ []
+
+[44
+
+]
+<figures/token_pp_hist_albert-base-v2.png, id=696, 578.16pt x 289.08pt>
+File: figures/token_pp_hist_albert-base-v2.png Graphic file (type png)
+<use figures/token_pp_hist_albert-base-v2.png>
+Package pdftex.def Info: figures/token_pp_hist_albert-base-v2.png  used on input line 79.
+(pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
+<figures/token_pp_hist_vinai-bertweet-base.png, id=697, 578.16pt x 289.08pt>
+File: figures/token_pp_hist_vinai-bertweet-base.png Graphic file (type png)
+<use figures/token_pp_hist_vinai-bertweet-base.png>
+Package pdftex.def Info: figures/token_pp_hist_vinai-bertweet-base.png  used on input line 85.
+(pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
+<figures/token_pp_hist_prajjwal1-bert-tiny.png, id=698, 578.16pt x 289.08pt>
+File: figures/token_pp_hist_prajjwal1-bert-tiny.png Graphic file (type png)
+<use figures/token_pp_hist_prajjwal1-bert-tiny.png>
+Package pdftex.def Info: figures/token_pp_hist_prajjwal1-bert-tiny.png  used on input line 90.
+(pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
+<figures/token_pp_hist_distilbert-base-uncased.png, id=699, 578.16pt x 289.08pt>
+File: figures/token_pp_hist_distilbert-base-uncased.png Graphic file (type png)
+<use figures/token_pp_hist_distilbert-base-uncased.png>
+Package pdftex.def Info: figures/token_pp_hist_distilbert-base-uncased.png  used on input line 96.
+(pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
+<figures/token_pp_hist_roberta-base.png, id=700, 578.16pt x 289.08pt>
+File: figures/token_pp_hist_roberta-base.png Graphic file (type png)
+<use figures/token_pp_hist_roberta-base.png>
+Package pdftex.def Info: figures/token_pp_hist_roberta-base.png  used on input line 101.
+(pdftex.def)             Requested size: 211.60489pt x 105.80223pt.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+ [45 <./figures/token_pp_hist_albert-base-v2.png> <./figures/token_pp_hist_vinai-bertweet-base.png> <./figures/token_pp_hist_prajjwal1-bert-tiny.png> <./figures/token_pp_hist_distilbert-base-uncased.png> <./figures/token_pp_hist_roberta-base.png>]) (./chapters/appendixB.tex [46]
+Appendix B.
+[47
+
+]) [48] (PDF/myReport.aux) ) 
+Here is how much of TeX's memory you used:
+ 8658 strings out of 476047
+ 179305 string characters out of 5790254
+ 1948248 words of memory out of 5000000
+ 28906 multiletter control sequences out of 15000+600000
+ 540320 words of font info for 81 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 58i,18n,112p,1938b,1248s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on PDF/myReport.pdf (56 pages, 2705480 bytes).
+PDF statistics:
+ 847 PDF objects out of 1000 (max. 8388607)
+ 275 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+

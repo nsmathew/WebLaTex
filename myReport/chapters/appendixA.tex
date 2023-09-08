@@ -42,7 +42,7 @@
         \textbf{Total}              & \textbf{1232 \small{(35.7\%)}} & \textbf{2217 \small{(64.3\%)}} & \textbf{3449}         \\
         \hline
     \end{tabularx}
-    \caption{The nine domains and the distribution of tweets that are complaints and those that are not from the latest version of the dataset available in the public domain and for the experiments. Additionally, the table includes the number of random tweets and replies introduced into the dataset by the authors for a more proportionate representation of the classes.}
+    \caption{The nine domains and the distribution of tweets that are complaints and those that are not, from the latest version of the dataset available in the public domain and used for the experiments. Additionally, the table includes the number of random tweets and replies introduced into the dataset by the authors for a more proportionate representation of the classes.}
     \label{tab: fulldataset_breakdown}
 \end{table}
 
@@ -71,7 +71,7 @@ The \texttt{binarylabel} represents the label for complaints with 1 indicating t
 
 \section{Token distribution after tokenization}
 \label{sec: apdxa_token_dist}
-The graphs in Figure \ref{fig: apdxa_tokens} show the distribution of token size for tweets from the full dataset for each of the models based on the tokenizer they use. The graph for BERT base uncased is in Chapter 3, Figure \ref{fig: bef_aft_token}.
+The graphs in Figure \ref{fig: apdxa_tokens} show the distribution of token size for tweets from the full dataset for each of the models based on the tokenizer they use. The graph for BERT Base is in Chapter 3, Figure \ref{fig: bef_aft_token}.
 \begin{figure}[htbp]
     \centering
     \captionsetup{font=small}
@@ -106,8 +106,8 @@ The graphs in Figure \ref{fig: apdxa_tokens} show the distribution of token size
     \label{fig: apdxa_tokens}
 \end{figure}
 
-\subsection{Confusion matrix from every test run}
-The elements of the matrix in left-to-right order are true negative, false positive, false negative and true positive.
+\section{Confusion matrix from every test run}
+Confusion matrix from every test run for the 3 models used for the deep-dive analysis in Chapter 4. The elements of the matrix in left-to-right order are true negative, false positive, false negative and true positive.
 \label{sec: conf_matrix_test_runs}
 \begin{table}
     \centering
@@ -155,7 +155,7 @@ The elements of the matrix in left-to-right order are true negative, false posit
     \label{tab: conf_matrix_test_runs}    
 \end{table}
 
-\subsection{Mean token length by domain}
+\section{Mean token length by domain}
 \label{sec: avg_token_length_domains}
 \begin{table}[htbp]
     \small

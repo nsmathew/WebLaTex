@@ -48,8 +48,7 @@
 \contentsline {section}{\numberline {A.4}Confusion matrix from every test run}{45}{}%
 \contentsline {section}{\numberline {A.5}Mean token length by domain}{46}{}%
 \contentsline {chapter}{\numberline {B}Other references}{47}{}%
-\contentsline {section}{\numberline {B.1}Code Repository}{47}{}%
-\contentsline {section}{\numberline {B.2}References for models used in experiment sets 1 and 2}{47}{}%
-\contentsline {section}{\numberline {B.3}References for other models used}{47}{}%
+\contentsline {section}{\numberline {B.1}Additional information on environment used}{47}{}%
+\contentsline {section}{\numberline {B.2}References for transformer models used in experiment sets 1 and 2}{47}{}%
+\contentsline {section}{\numberline {B.3}References for models used in data exploration}{47}{}%
 \contentsline {section}{\numberline {B.4}Evaluation metrics references}{48}{}%
-\contentsline {section}{\numberline {B.5}Additional information on environment used}{48}{}%

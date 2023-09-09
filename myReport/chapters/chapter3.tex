@@ -79,7 +79,7 @@ The key details of the environment used for the experiments are listed below. Al
 \end{itemize}
 
 \subsection{Software}
-For the experiments, the BERT large language model along with a number of its variants are used to classify the tweets and compare the performance. The models are based on the \texttt{transformers} library implementation from Hugging Face\footnote{\url{https://huggingface.co/}} \cite{wolfHuggingFaceTransformersStateoftheart2020} in Python. Additionally, the \texttt{datasets} and \texttt{evaluate} libraries are used. From scikit-learn\footnote{\url{https://scikit-learn.org/stable/}} the \texttt{sklearn} library is utilised to generate the stratified splits for the nested cross-fold validation. The versions for each library are shown in the table \ref{tab: libs_used}. Python version used is v3.9.16.
+For the experiments, the BERT large language model along with a number of its variants are used to classify the tweets and compare the performance. The models are based on the \texttt{transformers} library implementation from Hugging Face\footnote{\url{https://huggingface.co/}} \cite{wolfHuggingFaceTransformersStateoftheart2020} in Python. Additionally, the \texttt{datasets} and \texttt{evaluate} libraries are used. From scikit-learn\footnote{\url{https://scikit-learn.org/stable/}} the \texttt{sklearn} library is utilised to generate the stratified splits for the nested cross-fold validation. The versions for each library are shown in Table \ref{tab: libs_used}. The version of Python used is v3.9.16.
 
 \begin{table}[ht]
     \captionsetup{font=small}
@@ -110,7 +110,7 @@ For the experiments, the BERT large language model along with a number of its va
 \section{Model selection}
 The performance of BERT and its variants on the text classification task will be explored as part of the experiments. BERT \cite{devlinBERTPretrainingDeep2018} is based on the modern transformers network architecture \cite{vaswaniAttentionAllYou2023a}. Using BERT for the text classification task has several advantages over previous dominant methods such as Gated Recurrent Units GRU) \cite{chungEmpiricalEvaluationGated2014} or Long Short Term Memory (LSTM) \cite{hochreiterLongShortTermMemory1997} networks. Although tweets tend to be made up of short texts, the ability to capture long-term dependencies is still useful for understanding relationships across the content better. They also rely on bidirectional processing to use contextual information to have a more nuanced understanding of the intention of the author of the tweet or post. Since BERT is already pre-trained on large corpora, it is considered to possess a significant general understanding of the English language. Finally, the pre-training enables transfer learning and domain adaptation with relative ease which is very useful for tasks where annotated data is limited (only 3,449 tweets are used for the experiments).
 \newline\newline
-The transformer models used are listed in table \ref{tab: model_dtls} along with the number of parameters for each of them. The number of parameters or model size is based on the embedding and output layers along with the attention heads. The models chosen are such that there is a wide range of model sizes, from RoBERTa Base and BERT Base with 125 and 110 million parameters to lightweight variants such as DistilBERT Base and BERT Tiny with much lower model sizes. This allows for a comparison of the model performance both in terms of the predictions as well as the inference time to the model size. Various studies have pointed to a relation between the size of the model and its predictive performance conditional to appropriate pre-training \cite{vaswaniAttentionAllYou2023a,liuRoBERTaRobustlyOptimized2019}. The summary of BERT Base and BERT Tiny are shown in Figure \ref{fig: model_summary} for a high-level perspective on the layers and the number of parameters in each of them.
+The transformer models used are listed in Table \ref{tab: model_dtls} along with the number of parameters for each of them. The number of parameters or model size is based on the embedding and output layers along with the attention heads. The models chosen are such that there is a wide range of model sizes, from RoBERTa Base and BERT Base with 125 and 110 million parameters to lightweight variants such as DistilBERT Base and BERT Tiny with much lower model sizes. This allows for a comparison of the model performance both in terms of the predictions as well as the inference time to the model size. Various studies have pointed to a relation between the size of the model and its predictive performance conditional to appropriate pre-training \cite{vaswaniAttentionAllYou2023a,liuRoBERTaRobustlyOptimized2019}. The summary of BERT Base and BERT Tiny are shown in Figure \ref{fig: model_summary} for a high-level perspective on the layers and the number of parameters in each of them.
 
 \begin{table}[ht]
     \captionsetup{font=small}
@@ -199,7 +199,7 @@ An example tweet from the input data is shown in \textbf{A} below. The pre-proce
             [PAD] [PAD]}
 \end{adjustbox}\\ \\
 
-\section{Experiments set 1: Predictive performance comparison of BERT variants}
+\section{Experiment set 1: Predictive performance comparison of BERT variants}
 In the first experiment, the objective is to identify which of the models performs the best for the text classification task of complaint identification. Additionally, the relative performance of the models and the inference time will be analysed to assess how the model size impacts these aspects. A nested cross-validation approach will be used to experiment finetuning the model with various learning rate hyperparameter values and calculate mean performance metrics on inference. All models in scope for the experiments are pre-trained, hence finetuning will be performed for the downstream complaints identification task.\\
 
 The nested cross-validation approach utilized is adapted from \cite{preotiuc-pietro_automatically_2019}. The outer loop consists of 6 iterations and the inner loop of 4 iterations. Each outer loop includes a stratified split of the entire dataset into train (\textbf{a}) and test (\textbf{b}) datasets. Within the inner loop, \textbf{a} is further split into inner train and dev datasets using stratified split with each iteration, finetuning and validating on 1 of the 4 learning rates set for hyperparameter tuning. The best model from the inner loop is selected based on the F1 score on the dev dataset. This best model is used to perform inference using the test dataset, \textbf{b}. At the end of the 6 outer loop iterations, the mean of the performance metrics is calculated as the final metrics for that model. While \cite{preotiuc-pietro_automatically_2019} used 10 iterations for the outer loop, it has been restricted to 6 for the experiments considering significant variations were not observed on the metrics. This is likely due to the smaller size of the dataset and 6 stratified splits capturing sufficient variability in the input dataset.\\
@@ -227,7 +227,7 @@ The nested cross-validation approach utilized is adapted from \cite{preotiuc-pie
         All other hyperparameters & Model defaults           \\
         \hline
     \end{tabularx}
-    \caption{The choice of key parameters and hyperparameters used for Experiment 1.}
+    \caption{The choice of key parameters and hyperparameters used for experiment set 1.}
     \label{tab: exp1_params}
 \end{table}
 
@@ -235,10 +235,10 @@ The key choices for the experiments including that of the hyperparameters are de
 
 For the predictive performance metrics, precision, recall, accuracy, F1 and Area under the ROC Curve (AUC) scores are computed for both the inner loop's validation as well as the outer loop's testing. Further, the final metrics for each model are based on each of the mean metrics from the 6 outer loop iterations. Additionally, the samples per second and steps per second are captured for each of the models during the inference phase to analyse the time taken for inference in relation to the model size.
 
-\section{Experiments set 2: Cross-domain predictive performance comparison}
+\section{Experiment set 2: Cross-domain predictive performance comparison}
 Cross-domain experiments are conducted to understand how the performance of finetuned models varies as the volume, domain and class balance of the tweets change.  This approach also offers an avenue to assess any linguistic variations among complaints across different domains and their consequent effects on the classification performance. \\
 
-For the experiments, the best-performing model from the first experiment is utilised. The tweets for each of the 9 domains are used for training separately with tweets from every other domain used for testing. Additionally, each domain is used for testing while training is based on all tweets except the domain used for testing. Stratified split is applied on the training dataset for each domain using the \texttt{StratifiedKFold} function from \texttt{sklearn} library for 3 iterations of finetuning. At the end of each iteration, inference is performed on the testing data.  The number of epochs remains at '4', similar to experiments set 1 while the learning rate used is the best learning for the selected model from experiments set 1. All other hyperparameters are the model defaults. The parameters and hyperparameters used for the experiment are listed in Table \ref{tab: exp2_params}.\\
+For the experiments, the best-performing model from the first experiment is utilised. The tweets for each of the 9 domains are used for training separately with tweets from every other domain used for testing. Additionally, each domain is used for testing while training is based on all tweets except the domain used for testing. Stratified split is applied on the training dataset for each domain using the \texttt{StratifiedKFold} function from \texttt{sklearn} library for 3 iterations of finetuning. At the end of each iteration, inference is performed on the testing data.  The number of epochs remains at '4', similar to experiment set 1 while the learning rate used is the best learning for the selected model from experiment set 1. All other hyperparameters are the model defaults. The parameters and hyperparameters used for the experiment are listed in Table \ref{tab: exp2_params}.\\
 
 In this set of experiments, only the most effective model identified from the previous experiment is utilised. The model is finetuned using tweets belonging to one domain at a time while testing is performed for each of the remaining domains separately and performance recorded. Additionally, each domain is tested on a  model which is finetuned on all tweets except the domain used for testing.\\
 
@@ -263,11 +263,11 @@ To ensure the balance of classes is maintained for the training and evaluation s
         \hline
         No. of Epochs             & 4                                    \\
         \rowcolor[gray]{0.9}
-        Learning Rate             & Best learning rate from experiments set 1 \\
+        Learning Rate             & Best learning rate from experiment set 1 \\
         All other hyperparameters & Model defaults                       \\
         \hline
     \end{tabularx}
-    \caption{The choice of key parameters and hyperparameters used for experiments set 2. Refer to the Chapter on results for the model and learning rate used for this experiment. }
+    \caption{The choice of key parameters and hyperparameters used for experiment set 2. Refer to the Chapter on results for the model and learning rate used for this experiment. }
     \label{tab: exp2_params}
 \end{table}
 For each iteration and combination of domains for finetuning and testing, the prediction performance metrics are calculated for precision, recall, accuracy, F1, and AUC. At the end of the third iteration, the mean of the metrics is calculated. The results and findings from this set of experiments are presented in Chapter 4.

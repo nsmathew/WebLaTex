@@ -1,11 +1,14 @@
 
 \chapter{Other references}
 
-\section{Code Repository}
-The code (Jupyter notebook) used for the experiments in this report and the results from the finetuning and testing are available at \url{https://github.com/nsmathew/transformers_complaints}.
+\section{Additional information on environment used}
+\begin{itemize}
+    \small
+    \item \textbf{CPU Model:} Intel Xeon Gold 5315Y Processor
+    \item \textbf{Operating System:} Ubuntu 20.04.5 LTS
+\end{itemize}
 
-\section{References for models used in experiment sets 1 and 2}
-
+\section{References for transformer models used in experiment sets 1 and 2}
 \begin{table}[ht]
     \captionsetup{font=small}
     \centering
@@ -15,24 +18,25 @@ The code (Jupyter notebook) used for the experiments in this report and the resu
         \textbf{Model}            & \textbf{Model Documentation}                                   \\
         \hline
 
-        AlBERT base               & \small{\url{https://huggingface.co/albert-base-v2}}            \\
+        AlBERT Base               & \small{\url{https://huggingface.co/albert-base-v2}}            \\
         \hline
-        BERT base (uncased)       & \small{\url{https://huggingface.co/bert-base-uncased}}         \\
+        BERT Base (uncased)       & \small{\url{https://huggingface.co/bert-base-uncased}}         \\
         \hline
         BERT Tiny                 & \small{\url{https://huggingface.co/prajjwal1/bert-tiny}}       \\
         \hline
-        BERTweet base             & \small{\url{https://huggingface.co/vinai/bertweet-base}}       \\
+        BERTweet Base             & \small{\url{https://huggingface.co/vinai/bertweet-base}}       \\
         \hline
-        DistilBERT base (uncased) & \small{\url{https://huggingface.co/distilbert-base-uncased}}   \\
+        DistilBERT Base (uncased) & \small{\url{https://huggingface.co/distilbert-base-uncased}}   \\
         \hline
-        RoBERTa base              & \small{\url{https://huggingface.co/roberta-base}}              \\
+        RoBERTa Base              & \small{\url{https://huggingface.co/roberta-base}}              \\
         \hline
     \end{tabularx}
     \caption{The transformer models used for the experiments and links to their documentation.}
     \label{tab: apdxb_model_doc}
 \end{table}
 
-\section{References for other models used}
+\section{References for models used in data exploration}
+Models used in the data exploration and analysis.
 \begin{table}[ht]
     \captionsetup{font=small}
     \centering
@@ -44,12 +48,11 @@ The code (Jupyter notebook) used for the experiments in this report and the resu
         BERTweet base sentiment analysis (pysentimiento) & \small{\url{https://huggingface.co/finiteautomata/bertweet-base-sentiment-analysis}} \\
         \hline
     \end{tabularx}
-    \caption{The other models used in the chapter on results and their documentation.}
+    \caption{Sentiment analysis model and link to its documentation.}
     \label{tab: apdxb_other_model_doc}
 \end{table}
 
 \section{Evaluation metrics references}
-
 \begin{table}[ht]
     \captionsetup{font=small}
     \centering
@@ -72,13 +75,6 @@ The code (Jupyter notebook) used for the experiments in this report and the resu
         Confusion Matrix                 & \small{\url{https://huggingface.co/spaces/BucketHeadP65/confusion_matrix}}       \\
         \hline
     \end{tabularx}
-    \caption{The metrics used for evaluating the performance of the experiments and links to their documentation.}
+    \caption{The metrics used for evaluating the performance of the models in the experiments and links to their documentation.}
     \label{tab: apdxb_metric_doc}
 \end{table}
-
-\section{Additional information on environment used}
-\begin{itemize}
-    \small
-    \item \textbf{CPU Model:} Intel Xeon Gold 5315Y Processor
-    \item \textbf{Operating System:} Ubuntu 20.04.5 LTS
-\end{itemize}

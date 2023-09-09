@@ -38,7 +38,7 @@ A cross-industry representative collection of 93 customer service handles of org
     \label{tab: domains}
 \end{table}
 
-\subsection{Data Extraction}
+\subsection{Data extraction}
 Twitter API\footnote{\url{https://developer.twitter.com/en}} was utilised to extract the tweets. The latest 3,200 tweets at the time of the collection exercise were retrieved and the original tweets to which the customer service handles responded were identified. Random sampling equally for each handle, 1,971 tweets were then identified where there was a response from the support's handle. To ensure a more balanced and diverse dataset, 1,478 randomly sampled tweets were added to the dataset. 739 tweets were replies to other handles (outside the 93 identified) and the remaining 739 tweets were not addressed to any Twitter handle. Table \ref{tab: tweet_counts} shows the breakdown of the total population of the tweets dataset. Tweets were filtered for English using langid.py \cite{luiLangidPyOfftheshelf2012}. Retweets were excluded and all usernames and URLs were anonymised and replaced with placeholder tokens.
 \begin{table}[ht]
     \captionsetup{font=small}
@@ -272,5 +272,5 @@ To ensure the balance of classes is maintained for the training and evaluation s
 \end{table}
 For each iteration and combination of domains for finetuning and testing, the prediction performance metrics are calculated for precision, recall, accuracy, F1, and AUC. At the end of the third iteration, the mean of the metrics is calculated. The results and findings from this set of experiments are presented in Chapter 4.
 
-\section{Ethical, Professional and Legal Issues}
+\section{Ethical, professional and legal issues}
 The data used for the experiments were created by \cite{preotiuc-pietro_automatically_2019} and further enhanced with complaints severity type annotation by \cite{jinModelingSeverityComplaints2021}. This data is anonymised and is available in the public domain\footnote{\url{ https://archive.org/details/complaint_severity_data}}. No additional data has been collected for the experiments conducted for this project. To ensure the appropriate compliance with the ethical review requirements of the University of Sheffield, a self-declared ethics review application with reference number 054854 was raised and subsequently approved by the University Research Ethics Committee.

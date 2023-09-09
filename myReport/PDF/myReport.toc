@@ -15,7 +15,7 @@
 \contentsline {section}{\numberline {3.1}Task}{15}{}%
 \contentsline {section}{\numberline {3.2}Data and pre-processing}{15}{}%
 \contentsline {subsection}{\numberline {3.2.1}Criteria for tweets}{15}{}%
-\contentsline {subsection}{\numberline {3.2.2}Data Extraction}{15}{}%
+\contentsline {subsection}{\numberline {3.2.2}Data extraction}{15}{}%
 \contentsline {subsection}{\numberline {3.2.3}Annotation}{16}{}%
 \contentsline {section}{\numberline {3.3}Environment}{17}{}%
 \contentsline {subsection}{\numberline {3.3.1}Hardware}{17}{}%
@@ -24,9 +24,9 @@
 \contentsline {section}{\numberline {3.5}Data tokenisation}{19}{}%
 \contentsline {subsection}{\numberline {3.5.1}Choice of settings}{19}{}%
 \contentsline {subsection}{\numberline {3.5.2}Tokenisation example}{20}{}%
-\contentsline {section}{\numberline {3.6}Experiments set 1: Predictive performance comparison of BERT variants}{21}{}%
-\contentsline {section}{\numberline {3.7}Experiments set 2: Cross-domain predictive performance comparison}{22}{}%
-\contentsline {section}{\numberline {3.8}Ethical, Professional and Legal Issues}{23}{}%
+\contentsline {section}{\numberline {3.6}Experiment set 1: Predictive performance comparison of BERT variants}{21}{}%
+\contentsline {section}{\numberline {3.7}Experiment set 2: Cross-domain predictive performance comparison}{22}{}%
+\contentsline {section}{\numberline {3.8}Ethical, professional and legal issues}{23}{}%
 \contentsline {chapter}{\numberline {4}Results and discussion}{25}{}%
 \contentsline {section}{\numberline {4.1}Data exploration}{25}{}%
 \contentsline {subsection}{\numberline {4.1.1}Domain and class distribution}{25}{}%
@@ -51,4 +51,4 @@
 \contentsline {section}{\numberline {B.1}Additional information on environment used}{47}{}%
 \contentsline {section}{\numberline {B.2}References for transformer models used in experiment sets 1 and 2}{47}{}%
 \contentsline {section}{\numberline {B.3}References for models used in data exploration}{47}{}%
-\contentsline {section}{\numberline {B.4}Evaluation metrics references}{48}{}%
+\contentsline {section}{\numberline {B.4}References for evaluation metrics used in experiment sets 1 and 2}{48}{}%

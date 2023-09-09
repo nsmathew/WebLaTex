@@ -9,7 +9,7 @@ As described in Chapter 3, the data for the experiments is taken from Twitter. I
     \captionsetup{font=small}
     \includegraphics[width=9cm]{figures/compl_non_random_dist.pdf}
     \vspace*{-3mm}
-    \caption{Illustrates the distribution of tweets categorised as 'complaints' and 'not complaints', with random 'tweets / replies' shown separately.}
+    \caption{Illustrates the distribution of tweets categorised as 'complaints' and 'not complaints', with random 'tweets/replies' shown separately.}
     \label{fig: compl_non_random_dist}
 \end{figure}
 
@@ -98,7 +98,7 @@ The act of complaining typically involves conveying a sense of negativity. Senti
 Next, the small number of positive tweets among the complaints were analysed. It was found they mostly involved sarcasm or where the consumer was expressing their liking for a product with the hope this could quicken the resolution process. Some of the example tweets for these scenarios are: \textit{"hello i have a 2012 impreza and i love it . my driver seat back is broken down after 1 year and 12000 miles 32000 total 2nd owner"} and \textit{"i love waiting at mcdonalds for 15 minutes just for some semi-good ice cream <url>"}. For tweets that were not complaints, the majority of them expressed neutral or positive sentiments.
 
 \subsection{Key statistics}
-% key statistcis table
+% key statistics table
 \begin{table}[htbp]
     \captionsetup{font=small}
     \small
@@ -147,7 +147,7 @@ Finally, examining some of the key statistical measures from the tweets dataset 
 As described in the previous chapter, to compare the performance of the models a nested cross-validation approach was adopted. The cross-validation method finetuned the models using 4 learning rates, $l\:\epsilon\:[1e-5, 5e-6, 5e-5, 3e-5]$ with the best-performing model based on the F1 score being selected for the testing for each iteration of the outer loop. \\
 
 \subsection{Best predictive performance}
-The best-performing model was found to be BERTweet with a mean F1 score of 0.908 (sd: $\pm$0.01), accuracy of 0.934 (sd: $\pm$0.01) and AUC of 0.931 (sd: $\pm$0.01) as shown in Table \ref{tab: model_mean_metrics}. Using F1 and AUC scores for the assessment is more meaningful than using accuracy alone due to the class imbalance present in the dataset. BERTweet being pre-trained on a corpus of 850M tweets could be giving it an advantage in capturing the nuances of social media posts including informal language, typographic errors, use of slang and expressive lengthening and more specific characteristics of tweets such as the use of shorter messages, abbreviations and hashtags \cite{nguyenBERTweetPretrainedLanguage2020}. From the experiments, 0.00003 was the best learning rate identified from the inner loop iterations for BERTweet Base and this is used for the experiment set 2, the results for which are detailed in the next section. RoBERTa was the next best performing model with an F1 of 0.879 (sd: $\pm$0.03), an accuracy of 0.914 (sd: $\pm$0.02) and AUC of 0.905(sd: $\pm$ 0.02). It was followed by BERT Base and DistilBERT with F1 scores of 0.865 (sd: $\pm$0.02) and 0.863 (sd: $\pm$0.02) respectively.\\
+The best-performing model was found to be BERTweet with a mean F1 score of 0.908 (sd: $\pm$0.01), accuracy of 0.934 (sd: $\pm$0.01) and AUC of 0.931 (sd: $\pm$0.01) as shown in Table \ref{tab: model_mean_metrics}. Using F1 and AUC scores for the assessment is more meaningful than using accuracy alone due to the class imbalance present in the dataset. BERTweet being pre-trained on a corpus of 850M tweets could be giving it an advantage in capturing the nuances of social media posts including informal language, typographic errors, use of slang and expressive lengthening and more specific characteristics of tweets such as the use of shorter messages, abbreviations and hashtags \cite{nguyenBERTweetPretrainedLanguage2020}. From the experiments, 0.00003 was the best learning rate identified from the inner loop iterations for BERTweet Base and this is used for experiment set 2, the results for which are detailed in the next section. RoBERTa was the next best performing model with an F1 of 0.879 (sd: $\pm$0.03), an accuracy of 0.914 (sd: $\pm$0.02) and AUC of 0.905(sd: $\pm$ 0.02). It was followed by BERT Base and DistilBERT with F1 scores of 0.865 (sd: $\pm$0.02) and 0.863 (sd: $\pm$0.02) respectively.\\
 
 Table \ref{tab: model_mean_metrics} also includes the prediction metrics sourced from \cite{jin_complaint_2020}, enclosed within '[ ]', which serves as the established baseline performance for this task (in a Single Task Learning setup). Despite the variation in nested cross-validation configuration, as outlined in the preceding chapter, a level of preliminary comparison becomes feasible. In terms of F1 scores, RoBERTa shows marginal improvement, while BERT Base and ALBERT perform slightly worse. However, overall BERTweet provides the best predictive results for this task when compared to the baseline.\\
 
@@ -159,7 +159,7 @@ Table \ref{tab: model_mean_metrics} also includes the prediction metrics sourced
         \rowcolor[gray]{0.7}
         \textbf{Model}                                  & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1}    & \textbf{ROC AUC} \\
         \hline
-        AlBERT Base v2                                  & 0.879 [0.859]     & 0.845 [0.848]      & 0.811 [0.846]   & 0.827 [0.846]  & 0.864            \\
+        ALBERT Base v2                                  & 0.879 [0.859]     & 0.845 [0.848]      & 0.811 [0.846]   & 0.827 [0.846]  & 0.864            \\
         \rowcolor[gray]{0.9}
         \(\star\)\(\uparrow\) BERTweet Base             & \textbf{0.934}    & \textbf{0.897}     & \textbf{0.920}  & \textbf{0.908} & \textbf{0.931}   \\
         BERT Base uncased                               & 0.905 [0.88]      & 0.878  [0.871]     & 0.854  [0.873]  & 0.865 [0.87]   & 0.894            \\
@@ -175,7 +175,7 @@ Table \ref{tab: model_mean_metrics} also includes the prediction metrics sourced
 \end{table}
 
 \subsection{Performance of smaller models}
-Examining the smaller models characterized as lightweight based on their architecture and parameter count, DistilBERT emerges as the top performer, achieving an F1 score of 0.863 (sd: $\pm$0.02) and AUC of 0.894 (sd: $\pm$0.02). ALBERT follows suit with an F1 score of 0.827 (sd: $\pm$0.02) and AUC of 0.864 (sd: $\pm$0.04). BERT Tiny, the smallest model employed in the experiments, exhibits a notable performance gap, achieving only an F1 score of 0.662 (sd: $\pm$0.04), which is lower by 27.6\% in comparison to BERTweet. This aligns with its low accuracy and AUC scores of 0.772 (sd: $\pm$0.02) and 0.739 (sd: $\pm$0.03) respectively. This points to a likely and significant performance penalty from the reduced model size. However, it is expected to perform better in the context of a knowledge distillation teacher \cite{turcWellReadStudentsLearn2019}, something that has not been tested here.\\
+Examining the smaller models characterized as lightweight based on their architecture and parameter count, DistilBERT emerges as the top performer, achieving an F1 score of 0.863 (sd: $\pm$0.02) and AUC of 0.894 (sd: $\pm$0.02). ALBERT follows suit with an F1 score of 0.827 (sd: $\pm$0.02) and an AUC of 0.864 (sd: $\pm$0.04). BERT Tiny, the smallest model employed in the experiments, exhibits a notable performance gap, achieving only an F1 score of 0.662 (sd: $\pm$0.04), which is lower by 27.6\% in comparison to BERTweet. This aligns with its low accuracy and AUC scores of 0.772 (sd: $\pm$0.02) and 0.739 (sd: $\pm$0.03) respectively. This points to a likely and significant performance penalty from the reduced model size. However, it is expected to perform better in the context of a knowledge distillation teacher \cite{turcWellReadStudentsLearn2019}, something that has not been tested here.\\
 
 % Model size vs performance against BERTweet
 \begin{figure}[htb]
@@ -479,7 +479,7 @@ For single-domain finetuning cases, some instances exhibit performance levels ap
 
 The best score achieved by the previous baseline \cite{jin_complaint_2020} using BERT Base was 0.882 when employing all domains for finetuning and the 'Other' domain for testing. While BERTweet's best performance is for the same combination, the F1 score is significantly higher at 0.951. This notable difference in performance can likely be attributed to the advantages previously outlined for BERTweet, which is pre-trained on Twitter data. The predictive performance when finetuning with domains with very low tweet volumes is also higher for BERTweet. For the 'Cars' domain, which uses the lowest volume of data, BERT Base scores an average F1 of 0.623 \cite{jin_complaint_2020} while BERTweet achieves a substantially higher F1 of 0.774.\\
 
-% cross domain heatmap
+% cross-domain heatmap
 \begin{figure}[htb]
     \centering
     \captionsetup{font=small}
